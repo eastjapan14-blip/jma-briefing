@@ -1,0 +1,15 @@
+---
+description: 気象庁発表のURL（または「候補」）から台本とpptxを作る
+---
+引数: $ARGUMENTS （XMLのURLを1つ以上。空または「候補」なら fetch_feed.py で候補を出して止まる）
+
+手順:
+1. 引数が空か「候補」なら `python3 scripts/fetch_feed.py` を実行し、候補を段階つきで一覧して終了する。
+2. URLがあれば `python3 scripts/fetch_report.py <URL>... --slug <内容を表す短い英字>` を実行し、出力フォルダの `source.md` を読む。
+3. 図を取る。台風なら `python3 scripts/fetch_images.py --out <フォルダ>/images weather_map typhoon --center <台風中心の緯度,経度> --zoom 6`、大雨・線状降水帯なら `weather_map radar --center <対象地域> --zoom 7`。出典は `images/images.md` に出る。
+4. CLAUDE.md のルールに従い、同じフォルダに `script.md` を書く。図・表・定義表（[ref: ...]）を使い、28pt で収まるよう1枚4項目までにする。段階（A/B/C）は fetch_feed の判定に合わせる。
+   - 段階B: 表紙、結論、発表の要点（2〜4枚）、行動指針、次の更新、の6〜8枚。
+   - 段階C: 表紙、発表内容、行動指針、の3枚。
+   - 段階A: 報道資料PDFと会見の文字起こし（`transcript.txt` があれば）も読み、質疑は行動に関わるものだけ採用する。
+5. `python3 scripts/build_pptx.py <フォルダ>/script.md` を実行し、「注意:」が出たら台本を直して再実行する。
+6. 台本末尾の照合チェック表と、pptxのパス、ナレーションの目安時間を報告する。YouTube用のタイトル案3つと概要欄の文面も `meta.md` に書く。
