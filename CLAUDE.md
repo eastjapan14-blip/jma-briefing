@@ -36,6 +36,8 @@
 ```bash
 python3 scripts/fetch_feed.py                 # 候補一覧（未確認のみ）
 python3 scripts/fetch_report.py <URL>... --slug <名前>   # 素材化
+python3 scripts/fetch_press.py <報道発表URL> --out material/<dir>   # 報道資料（PDF全文）→ press.md
+python3 scripts/transcribe.py <YouTube URL> --out material/<dir>   # 記者会見の文字起こし → transcript.md
 python3 scripts/fetch_images.py --out material/<dir>/images weather_map typhoon radar  # 図の取得
 python3 scripts/build_pptx.py material/<dir>/script.md   # pptx生成
 ```

@@ -18,6 +18,37 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from fetch_feed import FEEDS, classify, load_feed  # noqa: E402
+from fetch_press import recent as recent_press  # noqa: E402
+import xml.etree.ElementTree as ET  # noqa: E402
+
+YT_RSS = "https://www.youtube.com/feeds/videos.xml?channel_id=UCajQ4ZQJrgwSxkF6xaCfrRw"  # 気象庁/JMA
+
+
+def youtube_conferences():
+    """公式YouTubeのRSSから記者会見（ライブ配信のアーカイブ）を拾う。"""
+    ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+    try:
+        with urllib.request.urlopen(YT_RSS, timeout=30) as r:
+            root = ET.fromstring(r.read())
+    except Exception as e:
+        print(f"YouTube RSS 取得失敗: {e}", file=sys.stderr)
+        return
+    for e in root.findall("a:entry", ns):
+        title = e.findtext("a:title", "", ns)
+        if "会見" not in title:
+            continue
+        vid = e.findtext("yt:videoId", "", ns)
+        yield {"updated": e.findtext("a:published", "", ns), "title": "記者会見（YouTube）", "content": title,
+               "author": "気象庁/JMA", "url": f"https://www.youtube.com/watch?v={vid}", "tier": "A"}
+
+
+def press_releases():
+    """報道発表資料のうち記者会見に対応するもの（見通し・影響について等）。日付しか無いので当日と前日を対象にする。"""
+    for e in recent_press(days=1):
+        if e["tier"] != "A":
+            continue
+        yield {"updated": f'{e["date"].isoformat()}T00:00:00+00:00', "title": "報道発表（記者会見資料）", "content": e["title"],
+               "author": "気象庁", "url": e["url"], "tier": "A"}
 
 SERVER = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
 TOPIC = os.environ.get("NTFY_TOPIC", "")
@@ -79,6 +110,13 @@ def main():
                 continue
             e["tier"] = tier
             new.append(e)
+    for e in list(youtube_conferences()) + list(press_releases()):
+        upd = datetime.fromisoformat(e["updated"].replace("Z", "+00:00"))
+        if e["title"].startswith("記者会見") and upd < cutoff:
+            continue
+        if e["url"] in sent:
+            continue
+        new.append(e)
     new.sort(key=lambda x: x["updated"])
     for e in new:
         line = f'[{e["tier"]}] {e["updated"]} {e["title"]}／{e["author"]} {e["url"]}'
