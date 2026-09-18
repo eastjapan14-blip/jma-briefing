@@ -10,7 +10,7 @@
    "first_seen": "2026-09-19T04:04:39+09:00",
    "flag": 9,
    "id": "pre24h:87492:2026-09-19",
-   "last_seen": "2026-09-19T06:36:02+09:00",
+   "last_seen": "2026-09-19T08:34:53+09:00",
    "last_stricter_date": null,
    "latitude": 31.5783,
    "local_rank": null,
@@ -60,44 +60,44 @@
    "years_since": null
   }
  },
- "last_run": "2026-09-19T06:36:02+09:00",
- "runs": 4,
+ "last_run": "2026-09-19T08:34:53+09:00",
+ "runs": 5,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 18 Sep 2026 20:45:56 GMT",
-   "last_success": "2026-09-19T06:36:04+09:00",
-   "source_time": "2026-09-19T05:00"
+   "last_modified": "Fri, 18 Sep 2026 22:48:19 GMT",
+   "last_success": "2026-09-19T08:34:55+09:00",
+   "source_time": "2026-09-19T07:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 18 Sep 2026 20:45:56 GMT",
-   "last_success": "2026-09-19T06:36:03+09:00",
-   "source_time": "2026-09-19T05:00"
+   "last_modified": "Fri, 18 Sep 2026 22:48:19 GMT",
+   "last_success": "2026-09-19T08:34:54+09:00",
+   "source_time": "2026-09-19T07:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 18 Sep 2026 21:20:45 GMT",
-   "last_success": "2026-09-19T06:36:05+09:00",
-   "source_time": "2026-09-19T06:00"
+   "last_modified": "Fri, 18 Sep 2026 23:20:42 GMT",
+   "last_success": "2026-09-19T08:34:57+09:00",
+   "source_time": "2026-09-19T08:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 18 Sep 2026 21:30:40 GMT",
-   "last_success": "2026-09-19T06:36:07+09:00",
-   "source_time": "2026-09-19T06:10"
+   "last_modified": "Fri, 18 Sep 2026 23:30:43 GMT",
+   "last_success": "2026-09-19T08:34:58+09:00",
+   "source_time": "2026-09-19T08:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 18 Sep 2026 21:30:40 GMT",
-   "last_success": "2026-09-19T06:36:09+09:00",
-   "source_time": "2026-09-19T06:00"
+   "last_modified": "Fri, 18 Sep 2026 23:30:43 GMT",
+   "last_success": "2026-09-19T08:35:00+09:00",
+   "source_time": "2026-09-19T08:00"
   }
  }
 }
