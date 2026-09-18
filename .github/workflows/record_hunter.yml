@@ -1,0 +1,45 @@
+name: record-hunter
+# アメダスの記録候補を検出して ntfy へ通知する。jma-watch（緊急XML）とは workflow・timeout・State を分離。
+on:
+  schedule:
+    - cron: "7,27,47 * * * *"   # 気温CSVは毎時:50更新、降水は10分ごと。:07 で毎時分を拾う
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "通知せずログだけ"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: record-hunter-state
+  cancel-in-progress: false
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: record-hunter-state
+          path: .rh-state
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 記録候補を検出して通知
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          RH_STATE_DIR: .rh-state
+          RH_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: python3 -m record_hunter run
+      - name: State を書き戻す
+        if: always()
+        working-directory: .rh-state
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          if git diff --cached --quiet; then echo "state unchanged"; exit 0; fi
+          git commit -m "state $(date -u +%FT%TZ)"
+          git push || (git pull --rebase && git push)

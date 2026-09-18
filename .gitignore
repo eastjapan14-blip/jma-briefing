@@ -2,3 +2,5 @@ material/
 state/
 __pycache__/
 .DS_Store
+.rh-state/
+.pytest_cache/

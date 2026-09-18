@@ -38,6 +38,13 @@
 - 対象: 全般1か月予報（毎週木曜14時30分）、全般3か月予報（毎月25日頃）、暖候期予報（2月）、寒候期予報（9月）
 - 通知の優先度は低め。定例コンテンツとして週1本のペースを想定
 
+## アメダス Record Hunter 2026-09-18 追加
+
+- Phase 1（観測史上1位・月別1位・歴代TOP3・タイ・都道府県クラスター・Sparse Cache・replay/dry-run）を実装。
+- 次: 実データで数日 `snapshot` → `replay` し、通知の多寡と閾値（`RH_RANK_THRESHOLD`, `RH_CLUSTER_MIN`, near margin）を調整する（引き継ぎ書 §42）。
+- Phase 2: 3/6/12/24/48/72時間降水量・降雪量、全国歴代ランキング、月途中の月間順位。`record_hunter/metrics.py` に定義を足す。
+- Phase 3: 年間日数・連続日数・最早最晩（derived summary 方式）。
+
 ## 保留（必要になったら）
 
 - 通知遅延が気になる場合: 監視を Cloudflare Workers へ移す（GitHub Actions は混雑時に遅れる）
