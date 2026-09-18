@@ -53,8 +53,8 @@ def press_releases():
 SERVER = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
 TOPIC = os.environ.get("NTFY_TOPIC", "")
 FRESH_HOURS = float(os.environ.get("FRESH_HOURS", "12"))
-PRIORITY = {"C": 5, "B": 4, "A": 4}
-TAGS = {"C": ["rotating_light"], "B": ["warning"], "A": ["studio_microphone"]}
+PRIORITY = {"C": 5, "B": 4, "A": 4, "D": 3}
+TAGS = {"C": ["rotating_light"], "B": ["warning"], "A": ["studio_microphone"], "D": ["calendar"]}
 
 
 def already_sent():

@@ -19,7 +19,8 @@ NS = {"a": "http://www.w3.org/2005/Atom"}
 STATE = Path(__file__).resolve().parent.parent / "state" / "seen.json"
 
 # 段階判定。上から順に評価し、最初に一致した段階を採用する。
-# C: 即時の一言動画  B: 速報テンプレ  A: 本編（記者会見級）
+# C: 即時の一言動画  B: 速報テンプレ  A: 本編（記者会見級）  D: 定例（長期予報）
+SEASONAL = ("全般１か月予報", "全般３か月予報", "全般暖候期予報", "全般寒候期予報")
 RULES = [
     ("C", lambda t, c: t == "気象特別警報・警報・注意報" and "特別警報" in c and "解除" not in c),
     ("C", lambda t, c: t == "府県気象防災速報"),
@@ -38,6 +39,8 @@ NEGATIVE = ("解除", "可能性は低くなりました", "おそれはなく�
 
 
 def classify(title, content):
+    if title in SEASONAL:
+        return "D"
     if any(k in content for k in NEGATIVE):
         return None
     for tier, fn in RULES:

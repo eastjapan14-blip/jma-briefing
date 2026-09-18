@@ -129,9 +129,99 @@ def typhoon_report(root):
     return "\n".join(out)
 
 
+def season_report(root):
+    """季節予報（1か月・3か月・暖候期・寒候期）を、見通しの文章と確率表にする。★は気象庁が「特徴あり」とした階級。"""
+    hb = "{http://xml.kishou.go.jp/jmaxml1/informationBasis1/}"
+    title = root.findtext(f"./{hb}Head/{hb}Title", "")
+    rdt = root.findtext(f"./{hb}Head/{hb}ReportDateTime", "")
+    headline = (root.findtext(f"./{hb}Head/{hb}Headline/{hb}Text", "") or "").strip()
+    out = [f"## {title}", f"- 発表: {rdt}（気象庁）"]
+    if headline:
+        out.append(f"- 見出し: {headline}")
+    out.append("")
+
+    def cells_of(cpv):
+        cells = []
+        for tag in ("ProbabilityOfBelowNormal", "ProbabilityOfNormal", "ProbabilityOfAboveNormal"):
+            el = cpv.find("{*}" + tag)
+            if el is None:
+                cells.append("")
+                continue
+            v = (el.text or "").strip()
+            cells.append(f"{v}%★" if el.get("significant") == "true" else f"{v}%")
+        return cells
+
+    def emit(period, gen, sig, tables):
+        if not (gen or sig or tables):
+            return
+        out.append(f"### {period}")
+        if gen:
+            out.append(gen.strip())
+            out.append("")
+        for kind, text in sig:
+            if text:
+                out.append(f"- {kind}: {text.strip()}")
+        if sig:
+            out.append("")
+        for kind, rows in tables.items():
+            lo, hi = ("低い", "高い") if kind == "気温" else ("少ない", "多い")
+            out.append(f"#### {kind} の確率（★＝気象庁が特徴ありとした階級）")
+            out.append(f"| 地域 | {lo} | 平年並 | {hi} |\n|---|---|---|---|")
+            for r in rows:
+                out.append("| " + " | ".join(r) + " |")
+            out.append("")
+
+    def area_of(item):
+        return item.findtext(".//{*}Area/{*}Name", "")
+
+    for mi in root.iter():
+        t = local(mi.tag)
+        if t == "MeteorologicalInfo":
+            period = mi.findtext("{*}Name", "") or mi.findtext("{*}DateTime", "")
+            gen = mi.findtext(".//{*}GeneralSituationText", "")
+            sig = [(e.get("kind", ""), e.findtext("{*}Text", "") or "") for e in mi.iter() if local(e.tag) == "SignificantClimateElement"]
+            tables = {}
+            for item in mi.iter():
+                if local(item.tag) != "Item":
+                    continue
+                for cpv in item.iter():
+                    if local(cpv.tag) == "ClimateProbabilityValues":
+                        tables.setdefault(cpv.get("kind", ""), []).append([area_of(item)] + cells_of(cpv))
+            emit(period, gen, sig, tables)
+        elif t == "TimeSeriesInfo":
+            names = {td.get("timeId"): td.findtext("{*}Name", "") for td in mi.iter() if local(td.tag) == "TimeDefine"}
+            per = {k: {"gen": "", "sig": [], "tables": {}} for k in names}
+            for el in mi.iter():
+                lt = local(el.tag)
+                if lt == "GeneralSituationText" and el.get("refID") in per:
+                    per[el.get("refID")]["gen"] = el.text or ""
+                elif lt == "SignificantClimateElement":
+                    for tx in el.findall("{*}Text"):
+                        if tx.get("refID") in per:
+                            per[tx.get("refID")]["sig"].append((el.get("kind", ""), tx.text or ""))
+            for item in mi.iter():
+                if local(item.tag) != "Item":
+                    continue
+                area = area_of(item)
+                for cpv in item.iter():
+                    if local(cpv.tag) == "ClimateProbabilityValues" and cpv.get("refID") in per:
+                        per[cpv.get("refID")]["tables"].setdefault(cpv.get("kind", ""), []).append([area] + cells_of(cpv))
+            for k in sorted(per, key=lambda x: int(x)):
+                emit(names[k], per[k]["gen"], per[k]["sig"], per[k]["tables"])
+    nexts = [el.findtext("{*}Text", "") for el in root.iter() if local(el.tag) == "NextForecastSchedule"]
+    if nexts:
+        out.append("### 次回発表")
+        out += [f"- {n}" for n in nexts if n]
+        out.append("")
+    return "\n".join(out)
+
+
 def convert(xml_bytes):
     root = ET.fromstring(xml_bytes)
     ct = root.findtext("./{http://xml.kishou.go.jp/jmaxml1/}Control/{http://xml.kishou.go.jp/jmaxml1/}Title", "")
+    hb = "{http://xml.kishou.go.jp/jmaxml1/informationBasis1/}"
+    if root.findtext(f"./{hb}Head/{hb}InfoKind", "") == "季節予報":
+        return season_report(root), ct
     if ct.startswith("台風解析・予報情報"):
         return typhoon_report(root), ct
     return text_report(root), ct
