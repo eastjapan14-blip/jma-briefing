@@ -22,14 +22,14 @@
    "first_seen": "2026-09-21T04:20:37+09:00",
    "flag": 9,
    "id": "pre24h:45061:2026-09-21",
-   "last_seen": "2026-09-21T06:38:53+09:00",
+   "last_seen": "2026-09-21T08:31:55+09:00",
    "last_stricter_date": null,
    "latitude": 35.8633,
    "local_rank": null,
    "local_tie": false,
    "longitude": 140.11,
-   "margin_abs": -83.5,
-   "margin_pct": -33.1,
+   "margin_abs": -70.5,
+   "margin_pct": -28.0,
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
@@ -66,10 +66,10 @@
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "06:10",
+   "time": "07:20",
    "top3": [],
    "unit": "mm",
-   "value": 168.5,
+   "value": 181.5,
    "years_since": null
   },
   "pre24h:45106:2026-09-21": {
@@ -80,14 +80,14 @@
    "first_seen": "2026-09-21T04:20:37+09:00",
    "flag": 9,
    "id": "pre24h:45106:2026-09-21",
-   "last_seen": "2026-09-21T06:38:53+09:00",
+   "last_seen": "2026-09-21T08:31:55+09:00",
    "last_stricter_date": null,
    "latitude": 35.7117,
    "local_rank": null,
    "local_tie": false,
    "longitude": 140.0433,
-   "margin_abs": -101.0,
-   "margin_pct": -35.4,
+   "margin_abs": -70.5,
+   "margin_pct": -24.7,
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
@@ -124,10 +124,10 @@
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "06:10",
+   "time": "08:10",
    "top3": [],
    "unit": "mm",
-   "value": 184.0,
+   "value": 214.5,
    "years_since": null
   },
   "pre24h:87492:2026-09-19": {
@@ -188,44 +188,44 @@
    "years_since": null
   }
  },
- "last_run": "2026-09-21T06:38:53+09:00",
- "runs": 19,
+ "last_run": "2026-09-21T08:31:55+09:00",
+ "runs": 20,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 20 Sep 2026 20:45:49 GMT",
-   "last_success": "2026-09-21T06:38:55+09:00",
-   "source_time": "2026-09-21T05:00"
+   "last_modified": "Sun, 20 Sep 2026 22:48:27 GMT",
+   "last_success": "2026-09-21T08:31:57+09:00",
+   "source_time": "2026-09-21T07:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 20 Sep 2026 20:45:48 GMT",
-   "last_success": "2026-09-21T06:38:53+09:00",
-   "source_time": "2026-09-21T05:00"
+   "last_modified": "Sun, 20 Sep 2026 22:48:26 GMT",
+   "last_success": "2026-09-21T08:31:56+09:00",
+   "source_time": "2026-09-21T07:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 20 Sep 2026 21:30:43 GMT",
-   "last_success": "2026-09-21T06:38:57+09:00",
-   "source_time": "2026-09-21T06:10"
+   "last_modified": "Sun, 20 Sep 2026 23:30:50 GMT",
+   "last_success": "2026-09-21T08:31:59+09:00",
+   "source_time": "2026-09-21T08:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 20 Sep 2026 21:30:40 GMT",
-   "last_success": "2026-09-21T06:38:58+09:00",
-   "source_time": "2026-09-21T06:10"
+   "last_modified": "Sun, 20 Sep 2026 23:30:45 GMT",
+   "last_success": "2026-09-21T08:32:00+09:00",
+   "source_time": "2026-09-21T08:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 20 Sep 2026 21:30:40 GMT",
-   "last_success": "2026-09-21T06:38:59+09:00",
-   "source_time": "2026-09-21T06:00"
+   "last_modified": "Sun, 20 Sep 2026 23:30:46 GMT",
+   "last_success": "2026-09-21T08:32:02+09:00",
+   "source_time": "2026-09-21T08:00"
   }
  }
 }
