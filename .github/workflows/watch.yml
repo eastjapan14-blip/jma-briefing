@@ -1,18 +1,40 @@
 name: jma-watch
+# 気象庁XML・報道発表・公式YouTubeの新着を検知して ntfy へ通知する。
+# 送信済みURLは watch-state ブランチの watch_seen.json に保存（main を汚さない）。
 on:
   schedule:
-    - cron: "*/10 * * * *"   # 10分ごと（GitHub の混雑時は遅れることがある）
+    - cron: "3-59/10 * * * *"   # 10分ごと（GitHub の混雑時は遅れる。毎時0分を避けるため3分ずらし）
   workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: watch-state
+  cancel-in-progress: false
 jobs:
   watch:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: watch-state
+          path: .watch-state
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: 候補を検知して ntfy に通知
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          WATCH_STATE_DIR: .watch-state
         run: python3 scripts/notify.py
+      - name: State を書き戻す
+        if: always()
+        working-directory: .watch-state
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          if git diff --cached --quiet; then echo "state unchanged"; exit 0; fi
+          git commit -m "state $(date -u +%FT%TZ)"
+          git push || (git pull --rebase && git push)

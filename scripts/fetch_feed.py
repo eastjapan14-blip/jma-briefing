@@ -36,9 +36,15 @@ RULES = [
 
 # 解除・見込み低下の情報は動画の対象外
 NEGATIVE = ("解除", "可能性は低くなりました", "おそれはなくなりました", "解消し", "警戒解除")
+# 「〜気象解説情報」は「〜気象情報」と同じ本文が別電文（VPFJ51 等）で流れる完全な重複なので読まない
+DUPLICATE_TITLES = ("全般気象解説情報", "地方気象解説情報", "府県気象解説情報")
+# 1件ずつ通知せず、1回の実行分をまとめて1通にする種別（台風時は府県ごとに十数件出るため）
+DIGEST_TITLES = ("地方気象情報", "府県気象情報", "土砂災害警戒情報", "指定河川洪水予報")
 
 
 def classify(title, content):
+    if title in DUPLICATE_TITLES:
+        return None
     if title in SEASONAL:
         return "D"
     if any(k in content for k in NEGATIVE):
