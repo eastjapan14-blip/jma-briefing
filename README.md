@@ -26,7 +26,20 @@ state/seen.json          確認済み候補
 - 通知は2種類。即時（段階A/C/D、全般気象情報、地方単位の線状降水帯）は1件1通、地方・府県気象情報や土砂災害警戒情報は1回の実行分を事象ごとにまとめて1通。
 - 「〜気象解説情報」は「〜気象情報」と同じ本文の重複電文なので読まない。
 - 送信済みURLは `watch-state` ブランチの `watch_seen.json` に保存（保険として ntfy 履歴も参照）。
-- GitHub の定期実行は混雑時に大きく遅れる（実測で2〜5時間おきのことがある）。通知本文に発表時刻と経過分数を出しているので、古い情報かどうかはそこで判断する。
+- 特別警報は電文の Status を読み、新規「発表」のときだけ通知する（継続中は同じ見出しが繰り返し流れるため）。段階Cは本文が同じ別電文（記録的短時間大雨情報と気象防災速報など）も1回にまとめる。
+- GitHub の定期実行は混雑時に大きく遅れる（実測で1日3〜6回しか動かない）。通知本文に発表時刻と経過分数を出しているので、古い情報かどうかはそこで判断する。
+
+### 実行間隔を確実に10分にする（外部 cron から起動）
+
+GitHub の schedule に頼らず、外部の cron サービスから `workflow_dispatch` を叩く。
+
+1. GitHub → Settings → Developer settings → Fine-grained personal access tokens で、対象リポジトリを `jma-briefing` に限定し、Repository permissions の **Actions: Read and write** だけを付けたトークンを作る。
+2. cron-job.org（無料）などで10分ごとのジョブを作る。
+   - URL: `https://api.github.com/repos/eastjapan14-blip/jma-briefing/actions/workflows/watch.yml/dispatches`
+   - Method: POST
+   - Headers: `Authorization: Bearer <トークン>` / `Accept: application/vnd.github+json`
+   - Body: `{"ref":"main"}`
+3. GitHub の schedule はそのまま残す（外部 cron が止まったときの保険）。
 
 ## アメダス Record Hunter（X 投稿候補の発見）
 

@@ -32,11 +32,17 @@ YT_RSS = "https://www.youtube.com/feeds/videos.xml?channel_id=UCajQ4ZQJrgwSxkF6x
 def youtube_conferences():
     """公式YouTubeのRSSから記者会見（ライブ配信のアーカイブ）を拾う。"""
     ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
-    try:
-        with urllib.request.urlopen(YT_RSS, timeout=30) as r:
-            root = ET.fromstring(r.read())
-    except Exception as e:
-        print(f"YouTube RSS 取得失敗: {e}", file=sys.stderr)
+    root = None
+    for attempt in range(3):  # GitHub のランナーからは時々 404 が返る
+        try:
+            req = urllib.request.Request(YT_RSS, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                root = ET.fromstring(r.read())
+            break
+        except Exception as e:
+            err = e
+    if root is None:
+        print(f"YouTube RSS 取得失敗（3回）: {err}", file=sys.stderr)
         return
     for e in root.findall("a:entry", ns):
         title = e.findtext("a:title", "", ns)
@@ -66,12 +72,15 @@ TAGS = {"C": ["rotating_light"], "B": ["warning"], "A": ["studio_microphone"], "
 
 
 def load_state():
+    """{"urls": {url: 送信時刻}, "bodies": {本文キー: 送信時刻}}。72時間より古いものは捨てる。"""
     try:
         d = json.loads(STATE.read_text())
     except Exception:
         d = {}
+    if "urls" not in d:  # 旧形式（url: 時刻 のみ）
+        d = {"urls": d, "bodies": {}}
     cutoff = (datetime.now(timezone.utc) - timedelta(hours=72)).isoformat()
-    return {u: t for u, t in d.items() if t >= cutoff}
+    return {k: {u: t for u, t in d.get(k, {}).items() if t >= cutoff} for k in ("urls", "bodies")}
 
 
 def save_state(d):
@@ -130,6 +139,34 @@ def publish(e):
     })
 
 
+def body_key(e):
+    """C段階の重複判定キー。先頭の【…】を除いた本文＋発表官署。同じ事象の別電文（記録雨の情報と速報など）を1回にする。"""
+    body = re.sub(r"^(【[^】]*】)+", "", e["content"]).strip()
+    body = re.sub(r"\s+", "", body)[:120]
+    return f'{e["author"]}|{body}'
+
+
+def new_special_warnings(url):
+    """気象特別警報・警報・注意報の電文を読み、Status が「発表」の特別警報だけを返す。継続なら空。取得失敗は None。"""
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            root = ET.fromstring(r.read())
+    except Exception as e:
+        print(f"電文取得失敗: {e}", file=sys.stderr)
+        return None
+    found = []
+    for w in root.iter():
+        if not w.tag.endswith("}Warning") or not w.get("type", "").startswith("気象警報・注意報（市町村等"):
+            continue
+        for item in w.findall("{*}Item"):
+            area = item.findtext("{*}Area/{*}Name", "")
+            for k in item.findall("{*}Kind"):
+                name, status = k.findtext("{*}Name", ""), k.findtext("{*}Status", "")
+                if "特別警報" in name and status == "発表":
+                    found.append(f"{area}：{name}")
+    return found
+
+
 def topic_of(e):
     """本文の【福島県気象解説情報（台風第２５号）】から事象名（台風第２５号）を取り出す。"""
     m = re.search(r"【[^（(】]*[（(]([^）)]+)[）)]】", e["content"])
@@ -144,7 +181,7 @@ def region_of(e):
     m = re.match(r"【([^】]{1,4}?[都道府県])", c) or re.match(r"【([^】]*?地方)", c)
     if m:
         return re.sub(r"(都|道|府|県)$", "", m.group(1)) if "地方" not in m.group(1) else m.group(1)
-    return e["author"].replace("地方気象台", "").replace("管区気象台", "").replace("気象台", "")
+    return re.sub(r"(地方気象台|管区気象台|気象台|河川事務所|気象庁)", "", e["author"]).strip() or e["author"]
 
 
 def publish_digest(items, fallback_click):
@@ -176,8 +213,10 @@ def main():
         sys.exit("NTFY_TOPIC が未設定")
     cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESH_HOURS)
     state = load_state()
-    sent = set(state) | (already_sent() if TOPIC else set())
-    new, seen_now = [], set()
+    sent = set(state["urls"]) | (already_sent() if TOPIC else set())
+    body_cutoff = (datetime.now(timezone.utc) - timedelta(hours=12)).isoformat()
+    bodies_seen = {k for k, t in state["bodies"].items() if t >= body_cutoff}
+    new, seen_now, skipped = [], set(), []
     for url in FEEDS.values():
         for e in load_feed(url):
             tier = classify(e["title"], e["content"])
@@ -186,6 +225,21 @@ def main():
             if when(e) < cutoff or e["url"] in sent or e["url"] in seen_now:
                 continue
             seen_now.add(e["url"])
+            if e["title"] == "気象特別警報・警報・注意報":
+                # 特別警報が継続中は同じ見出しの電文が繰り返し流れる。新規「発表」のときだけ通知する
+                fresh = new_special_warnings(e["url"])
+                if fresh == []:
+                    skipped.append(e)
+                    continue
+                if fresh:
+                    e["content"] = "／".join(fresh) + "\n" + e["content"]
+            if tier == "C":
+                k = body_key(e)
+                if k in bodies_seen:
+                    skipped.append(e)
+                    continue
+                bodies_seen.add(k)
+                e["body_key"] = k
             e["tier"] = tier
             new.append(e)
     for e in list(youtube_conferences()) + list(press_releases()):
@@ -211,10 +265,13 @@ def main():
         print("DRY" if dry else publish_digest(digest, click), f"まとめ {len(digest)} 件")
     if not dry:
         now = datetime.now(timezone.utc).isoformat()
+        for e in new + skipped:
+            state["urls"][e["url"]] = now
         for e in new:
-            state[e["url"]] = now
+            if e.get("body_key"):
+                state["bodies"][e["body_key"]] = now
         save_state(state)
-    print(f"即時 {len(single)} 件、まとめ {len(digest)} 件（送信済み {len(sent)} 件を除外）", file=sys.stderr)
+    print(f"即時 {len(single)} 件、まとめ {len(digest)} 件、継続・重複で除外 {len(skipped)} 件（送信済み {len(sent)} 件を除外）", file=sys.stderr)
 
 
 if __name__ == "__main__":
