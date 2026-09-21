@@ -43,6 +43,8 @@
 ## アメダス Record Hunter 2026-09-18 追加
 
 - Phase 1（観測史上1位・月別1位・歴代TOP3・タイ・都道府県クラスター・Sparse Cache・replay/dry-run）を実装。
+- 2026-09-21 の関東大雨で初稼働（24時間降水量の観測史上1位 8 地点など 12 通）。判明した不具合（官署名「*」で訂正通知を誤送信、日付をまたぐ日降水量の記録が未通知）は 09-22 に修正。
+- **要対応**: cron-job.org に record_hunter.yml 用のジョブを追加する（README「アメダス Record Hunter」参照）。
 - 次: 実データで数日 `snapshot` → `replay` し、通知の多寡と閾値（`RH_RANK_THRESHOLD`, `RH_CLUSTER_MIN`, near margin）を調整する（引き継ぎ書 §42）。
 - Phase 2: 3/6/12/24/48/72時間降水量・降雪量、全国歴代ランキング、月途中の月間順位。`record_hunter/metrics.py` に定義を足す。
 - Phase 3: 年間日数・連続日数・最早最晩（derived summary 方式）。

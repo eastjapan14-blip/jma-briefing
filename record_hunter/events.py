@@ -18,6 +18,8 @@ def event_id(metric: str, station: str, obs_date: str) -> str:
 def _normalize_tags(tags) -> list:
     """同じ系統（通年 / 当月）では最も強いタグだけ残す。"""
     s = set(tags)
+    if s & {"ALL_TIME_1ST", "ALL_TIME_1ST_TIE"}:
+        s = {t for t in s if not t.startswith("SINCE_")}
     for fam in _FAMILY:
         present = [t for t in fam if t in s]
         for t in present[1:]:
@@ -66,11 +68,8 @@ def merge(state: dict, cand, now: str, stations=None) -> dict:
         ev["time"] = o.obs_time
     if o.muni:
         ev["muni"] = o.muni
-    if o.source == "csv":
-        ev["quality"] = o.quality.value
-        ev["notifiable"] = cand.notifiable
-    elif ev["quality"] == "NORMAL" and not cand.notifiable:
-        ev["notifiable"] = False
+    ev["quality"] = o.quality.value
+    ev["notifiable"] = cand.notifiable
     if o.short_stats:
         ev["short_stats"] = True
     if o.flag:
@@ -90,9 +89,12 @@ def merge(state: dict, cand, now: str, stations=None) -> dict:
     prev = ev["prev"]
     if prev and prev.get("value") is not None and ev["value"] is not None:
         diff = ev["value"] - prev["value"] if m.comparator == "max" else prev["value"] - ev["value"]
-        ev["margin_abs"] = round(diff, m.decimals)
-        ev["margin_pct"] = round(diff / prev["value"] * 100, 1) if m.percent_meaningful and prev["value"] > 0 else None
-        ev["record_age_years"] = _years_between(ev["date"], prev["date"]) if prev.get("date") else None
+        if diff >= 0:
+            ev["margin_abs"] = round(diff, m.decimals)
+            ev["margin_pct"] = round(diff / prev["value"] * 100, 1) if m.percent_meaningful and prev["value"] > 0 else None
+            ev["record_age_years"] = _years_between(ev["date"], prev["date"]) if prev.get("date") else None
+        else:   # 従来値の方が大きい（統計期間の違い等）: 更新幅は出さない
+            ev["margin_abs"] = ev["margin_pct"] = ev["record_age_years"] = None
     if cand.enrich and (new or value_changed or ev["enriched_at"] is None):
         ev["enrich_pending"] = True
     compute_severity(ev)
@@ -103,10 +105,17 @@ def merge(state: dict, cand, now: str, stations=None) -> dict:
     return ev
 
 
+def _recent(today: str, days: int = 2) -> set:
+    d = date.fromisoformat(today)
+    return {(d - timedelta(days=i)).isoformat() for i in range(days)}
+
+
 def _groups(state: dict, today: str):
+    """今日と前日のイベント。日付をまたいで確定する値（日降水量など）を取りこぼさない。"""
     g = defaultdict(list)
+    recent = _recent(today)
     for ev in state["events"].values():
-        if ev["date"] == today and ev["notifiable"] and ev["severity"] in ("A", "B"):
+        if ev["date"] in recent and ev["notifiable"] and ev["severity"] in ("A", "B"):
             g[(ev["metric"], ev["pref"], ev["date"])].append(ev)
     return g
 
@@ -132,12 +141,17 @@ def plan(state: dict, cfg, today: str) -> list:
     for (metric, pref, d), evs in sorted(groups.items()):
         cid = f"{metric}:{pref}:{d}"
         cluster = state["clusters"].get(cid)
-        for e in evs:
-            if e["severity"] == "A" and "A" in cfg.notify_levels and sev_gt("A", e["notified_severity"]):
+        new_a = [e for e in evs if e["severity"] == "A" and sev_gt("A", e["notified_severity"])]
+        if new_a and "A" not in cfg.notify_levels:
+            for e in new_a:
+                log("notify", "notify_suppressed", id=e["id"], reason="level_disabled")
+        elif len(new_a) >= cfg.a_batch_min:   # 同一気象イベントで大量発生: 1通にまとめる
+            out.append({"kind": "A", "events": [e["id"] for e in new_a], "new": [e["id"] for e in new_a],
+                        "metric": metric, "pref": pref, "date": d, "cluster_n": len(evs) if cluster else 0})
+        else:
+            for e in new_a:
                 out.append({"kind": "A", "events": [e["id"]], "new": [e["id"]], "metric": metric, "pref": pref,
                             "date": d, "cluster_n": len(evs) if cluster else 0})
-            elif e["severity"] == "A" and sev_gt("A", e["notified_severity"]):
-                log("notify", "notify_suppressed", id=e["id"], reason="level_disabled")
         b = [e for e in evs if e["severity"] == "B"]
         new_b = [e["id"] for e in b if sev_gt("B", e["notified_severity"])]
         grow = False
@@ -178,10 +192,13 @@ def confirm(state: dict, ru_obs: list, yday: str) -> list:
             present.setdefault((o.metric, o.station_id), set()).add("alltime" if o.flag == 13 else "monthly")
             if o.muni:
                 present.setdefault(("muni", o.station_id), o.muni)
+    metrics_on_page = {o.metric for o in ru_obs}
     revised = []
     for ev in state["events"].values():
         if ev["date"] != yday or ev["status"] != "PROVISIONAL":
             continue
+        if ev["metric"] not in metrics_on_page:
+            continue   # その要素の表が空 or 読めていない: 判断しない
         secs = present.get((ev["metric"], ev["station"]), set())
         tags = set(ev["tags"])
         want_alltime = bool(tags & {"ALL_TIME_1ST", "ALL_TIME_1ST_TIE"})

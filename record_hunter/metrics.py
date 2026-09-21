@@ -28,15 +28,18 @@ class MetricDef:
     season: Optional[tuple] = None
     percent_meaningful: bool = False
     emoji: str = "📈"
+    poll_minutes: int = 10      # ソースの更新周期（気温 60 分、降水 10 分）。これより短い間隔で再取得しない
 
 
 _WINTER = (10, 11, 12, 1, 2, 3, 4, 5)
 
 METRICS = {m.id: m for m in [
     MetricDef("tmax", "日最高気温", "℃", "mxtemsadext00", f"{MDRR}/tem_rct/alltable/mxtemsadext00_rct.csv",
-              "max", 1, near_abs=1.0, rank_row="日最高気温の高い方から", ru_section="日最高気温の高い方から", emoji="🌡"),
+              "max", 1, near_abs=1.0, rank_row="日最高気温の高い方から", ru_section="日最高気温の高い方から", emoji="🌡",
+              poll_minutes=60),
     MetricDef("tmin", "日最低気温", "℃", "mntemsadext00", f"{MDRR}/tem_rct/alltable/mntemsadext00_rct.csv",
-              "min", 1, near_abs=1.0, rank_row="日最低気温の低い方から", ru_section="日最低気温の低い方から", emoji="❄"),
+              "min", 1, near_abs=1.0, rank_row="日最低気温の低い方から", ru_section="日最低気温の低い方から", emoji="❄",
+              poll_minutes=60),
     MetricDef("pre1h", "1時間降水量", "mm", "pre1h00", f"{MDRR}/pre_rct/alltable/pre1h00_rct.csv",
               "max", 1, near_ratio=0.9, rank_row="日最大1時間降水量", ru_section="1時間降水量の日最大値",
               percent_meaningful=True, emoji="🌧"),
@@ -48,10 +51,10 @@ METRICS = {m.id: m for m in [
               percent_meaningful=True, emoji="🌧"),
     MetricDef("snowdepth", "積雪", "cm", "snc00", f"{MDRR}/snc_rct/alltable/snc00_rct.csv",
               "max", 0, near_ratio=0.9, rank_row="日最深積雪", ru_section="最深積雪", season=_WINTER,
-              percent_meaningful=True, emoji="⛄"),
+              percent_meaningful=True, emoji="⛄", poll_minutes=60),
     MetricDef("snow24h", "24時間降雪量", "cm", "snd24h00", f"{MDRR}/snc_rct/alltable/snd24h00_rct.csv",
               "max", 0, near_ratio=0.9, rank_row=None, ru_section="24時間降雪量", season=_WINTER,
-              percent_meaningful=True, emoji="⛄"),
+              percent_meaningful=True, emoji="⛄", poll_minutes=60),
 ]}
 
 

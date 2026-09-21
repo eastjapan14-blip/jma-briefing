@@ -74,3 +74,18 @@ def test_station_rank_marks_and_errors():
     assert days["entries"][8] == {"rank": 9, "value": 22.0, "date": "2026", "mark": "]"}
     with pytest.raises(ParserError):
         station_rank.parse((FIXTURES / "synthetic" / "rank_a_11_9999.html").read_text(encoding="utf-8"))
+
+
+def test_rank_update_station_asterisk_and_marks():
+    """気象官署は「大島*」と表記される。当日ページの ] は速報扱い、前日ページでは資料不足。"""
+    from record_hunter.models import Quality
+    html = (FIXTURES / "2026-09-21" / "rank_update_d0921.html").read_text(encoding="utf-8")
+    rows = rank_update.parse(html, "2026-09-21")
+    names = {o.name for o in rows}
+    assert "大島" in names and "千葉" in names and not any("*" in n for n in names)
+    sakahata = next(o for o in rows if o.name == "坂畑" and o.metric == "pre24h" and o.flag == 13)
+    assert sakahata.quality == Quality.NORMAL                      # 当日ページ: 記号は速報扱い
+    rows_final = rank_update.parse(html, "2026-09-21", provisional=False)
+    sakahata = next(o for o in rows_final if o.name == "坂畑" and o.metric == "pre24h" and o.flag == 13)
+    assert sakahata.quality == Quality.INSUFFICIENT                # 確定ページ: 記号どおり
+    assert len([o for o in rows if o.metric == "preday" and o.flag == 13]) == 9

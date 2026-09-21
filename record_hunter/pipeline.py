@@ -1,5 +1,5 @@
 """1回の実行: 取得 → 正規化 → 判定 → （候補だけ）Enrich → Event/Dedupe → 通知 → 確認 → State 保存。"""
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
 from . import events as E
 from . import notifier
@@ -34,6 +34,11 @@ def collect_csv(cfg, fetcher, state, today: date) -> list:
             log("fetch", "fetch_skip", metric=mid, reason="off_season")
             continue
         src = state["sources"].setdefault(m.csv_key, {})
+        if src.get("last_success"):
+            age = (datetime.fromisoformat(st.now_iso()) - datetime.fromisoformat(src["last_success"])).total_seconds() / 60
+            if age < m.poll_minutes - 2:
+                log("fetch", "fetch_skip", metric=mid, reason="poll_interval", age_min=int(age))
+                continue
         if src.get("fail_count", 0) >= 3 and state["runs"] % min(2 ** (src["fail_count"] - 2), 8) != 0:
             log("fetch", "fetch_skip", metric=mid, reason="backoff", fail_count=src["fail_count"])
             continue
@@ -56,13 +61,13 @@ def collect_csv(cfg, fetcher, state, today: date) -> list:
     return obs
 
 
-def collect_rank_update(cfg, fetcher, stations, day: date) -> list:
+def collect_rank_update(cfg, fetcher, stations, day: date, provisional: bool = True) -> list:
     url = notifier.rank_update_url(day.isoformat())
     r = fetcher.get(url)
     if not r.ok:
         return []
     try:
-        rows = rank_update.parse(r.body.decode("utf-8", errors="replace"), day.isoformat())
+        rows = rank_update.parse(r.body.decode("utf-8", errors="replace"), day.isoformat(), provisional)
     except ParserError as e:
         log("parse", "parser_warning", source="rank_update", error=str(e))
         return []
@@ -82,10 +87,15 @@ def run(cfg, fetcher, state: dict, today: date, dry: bool, stations: Stations = 
     tod = today.isoformat()
     stations = stations or load_stations(fetcher, cfg)
 
+    yday = today - timedelta(days=1)
     obs = collect_csv(cfg, fetcher, state, today)
     stations.register(obs)
+    ru_yday = []
     if cfg.enable_rank_update:
         obs += collect_rank_update(cfg, fetcher, stations, today)
+        # 前日ページ（確定値）も候補源にする。日降水量など 24 時に確定する記録は当日 CSV に載らない
+        ru_yday = collect_rank_update(cfg, fetcher, stations, yday, provisional=False)
+        obs += ru_yday
 
     cands = detect(obs, cfg)
     evs = [E.merge(state, c, now, stations) for c in cands]
@@ -99,9 +109,7 @@ def run(cfg, fetcher, state: dict, today: date, dry: bool, stations: Stations = 
     sent = 0
     for n in E.plan(state, cfg, tod):
         evs_n = [state["events"][i] for i in n["events"]]
-        if n["kind"] == "A":
-            title, msg, click = notifier.format_single(evs_n[0], cfg, n["cluster_n"], stations)
-        elif len(evs_n) == 1 and not n.get("grow"):
+        if len(evs_n) == 1 and not n.get("grow"):
             title, msg, click = notifier.format_single(evs_n[0], cfg, n["cluster_n"], stations)
         else:
             title, msg, click = notifier.format_group(evs_n, n["new"], cfg)
@@ -109,12 +117,10 @@ def run(cfg, fetcher, state: dict, today: date, dry: bool, stations: Stations = 
             E.mark_notified(state, n, now)
             sent += 1
 
-    yday = today - timedelta(days=1)
-    if cfg.enable_confirm and cfg.enable_rank_update and yday.isoformat() not in state["confirm_checked"] \
+    if cfg.enable_confirm and ru_yday and yday.isoformat() not in state["confirm_checked"] \
             and any(e["date"] == yday.isoformat() for e in state["events"].values()):
-        ru = collect_rank_update(cfg, fetcher, stations, yday)
-        if ru:
-            for ev in E.confirm(state, ru, yday.isoformat()):
+        if True:
+            for ev in E.confirm(state, ru_yday, yday.isoformat()):
                 title, msg, click = notifier.format_revised(ev, cfg)
                 notifier.send(cfg, "R", title, msg, click, dry)
             state["confirm_checked"][yday.isoformat()] = True

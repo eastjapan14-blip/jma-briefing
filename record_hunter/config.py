@@ -34,6 +34,7 @@ class Config:
     enable_confirm: bool = True
     prune_days: int = 7
     max_group_lines: int = 8          # まとめ通知に載せる最大地点数
+    a_batch_min: int = 3              # 同じ県・要素で A がこの数以上同時に出たら1通にまとめる（§21 短時間batch）
 
     @classmethod
     def from_env(cls, env=os.environ):
@@ -54,4 +55,5 @@ class Config:
         c.enable_enrich = _bool(env.get("RH_ENABLE_ENRICH"), True)
         c.enable_rank_update = _bool(env.get("RH_ENABLE_RANK_UPDATE"), True)
         c.enable_confirm = _bool(env.get("RH_ENABLE_CONFIRM"), True)
+        c.a_batch_min = int(env.get("RH_A_BATCH_MIN", c.a_batch_min))
         return c

@@ -50,6 +50,8 @@ GitHub の schedule に頼らず、外部の cron サービスから `workflow_d
 - 気象庁へのアクセスは CSV 数本＋今日の「更新状況」ページ＋候補地点の順位ページだけ。全地点をクロールしない。
 - 通知レベル: A=観測史上1位更新（即時・個別）、B=月別1位・1位タイ・歴代2〜3位・都道府県クラスター（都道府県×要素でまとめ）。同じ格では再通知しない。
 
+実行間隔: GitHub の schedule（20分ごと）は混雑時に数時間遅れる。`watch.yml` と同じく cron-job.org から `workflow_dispatch` を叩くと10分間隔になる（URL は `.../actions/workflows/record_hunter.yml/dispatches`、トークン・ヘッダ・Body は下の「実行間隔を確実に10分にする」と同じ。CSV は要素ごとの更新周期（気温60分・降水10分）より短い間隔では再取得しない）。
+
 ```bash
 python3 -m record_hunter dry-run                       # 通知せず、何を通知するかを表示
 python3 -m record_hunter snapshot --out tests/fixtures  # 今日の CSV・更新状況ページを Fixture 化

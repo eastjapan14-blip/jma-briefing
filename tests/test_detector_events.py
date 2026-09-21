@@ -81,6 +81,17 @@ def test_short_stats_caps_at_b_and_cluster():
     assert E.plan(s, cfg, "2026-09-18") == []
 
 
+def test_a_events_batched_when_many():
+    cfg = Config()
+    s = default_state()
+    for sid in "123":
+        E.merge(s, detect([obs(station_id=sid, flag=13)], cfg)[0], "t")
+    plan = E.plan(s, cfg, "2026-09-18")
+    assert len(plan) == 1 and plan[0]["kind"] == "A" and len(plan[0]["events"]) == 3
+    cfg.a_batch_min = 5
+    assert len(E.plan(s, cfg, "2026-09-18")) == 3
+
+
 def test_rank_against_strict_vs_tie():
     m = METRICS["preday"]
     entries = [{"rank": 1, "value": 260.0, "date": "1965-08-01"}, {"rank": 2, "value": 230.0, "date": "1980-09-02"},
@@ -105,3 +116,34 @@ def test_confirm_marks_revised():
     assert [e["id"] for e in revised] == ["tmax:1:2026-09-17"]
     assert s["events"]["tmax:2:2026-09-17"]["status"] == "CONFIRMED"
     assert s["events"]["tmax:2:2026-09-17"]["muni"] == "Y市"
+
+
+def test_plan_includes_yesterday_and_negative_margin_hidden():
+    cfg = Config()
+    s = default_state()
+    ev = E.merge(s, detect([obs(station_id="1", flag=13, obs_date="2026-09-21")], cfg)[0], "t")
+    assert [p["kind"] for p in E.plan(s, cfg, "2026-09-22")] == ["A"]   # 日付をまたいでも通知する
+    assert E.plan(s, cfg, "2026-09-23") == []
+    # 従来値の方が大きい（更新状況ページ由来の1位 vs CSV の長期統計）: 更新幅を出さない
+    c = detect([obs(station_id="2", flag=13, value=30.0, prev_alltime=None, source="rank_update")], cfg)[0]
+    ev = E.merge(s, c, "t")
+    ev["prev"] = {"value": 35.0, "date": "1950-01-01"}
+    E.merge(s, c, "t2")
+    assert ev["margin_abs"] is None and ev["margin_pct"] is None and ev["tags"] == ["ALL_TIME_1ST", "MONTHLY_1ST"]
+
+
+def test_enrich_recomputes_severity_and_drops_since_on_upgrade():
+    from record_hunter.enricher import enrich
+    from record_hunter.sources.stations import Stations
+    from record_hunter.http import FixtureFetcher
+    from conftest import FIXTURES
+    cfg = Config(); cfg.state_dir = FIXTURES.parent / ".tmp_state"
+    s = default_state()
+    ev = E.merge(s, detect([obs(station_id="11016", value=32.2, flag=None, prev_alltime=Record(32.7, "2021-07-29"),
+                                prev_monthly=Record(40.0, "2000-09-01"))], cfg)[0], "t")
+    assert ev["severity"] == "NONE" and ev["enrich_pending"]
+    enrich([ev], Stations({}, {"11016": {"kind": "s", "prec": "11", "block": "47401"}}),
+           FixtureFetcher(FIXTURES / "synthetic"), cfg)
+    assert ev["local_rank"] == 2 and "ALL_TIME_TOP3" in ev["tags"] and ev["severity"] == "B"
+    assert E._normalize_tags(["ALL_TIME_1ST", "SINCE_2021", "ALL_TIME_TOP3"]) == ["ALL_TIME_1ST"]
+    import shutil; shutil.rmtree(cfg.state_dir, ignore_errors=True)

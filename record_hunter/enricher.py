@@ -8,6 +8,7 @@ from . import state as st
 from .log import log
 from .metrics import METRICS, cmp
 from .models import ParserError
+from .events import compute_severity
 from .sources import station_rank
 
 
@@ -96,6 +97,7 @@ def enrich(events: list, stations, fetcher, cfg, budget=None) -> int:
                 elif r["rank"] and 2 <= r["rank"] <= cfg.rank_threshold:
                     tags.add("MONTHLY_TOP3")
         ev["tags"] = sorted(tags)
+        compute_severity(ev)
         ev["enriched_at"] = st.now_iso()
         log("enrich", "done", station=sid, metric=m.id, local_rank=ev.get("local_rank"),
             monthly_rank=ev.get("monthly_rank"), years_since=ev.get("years_since"))

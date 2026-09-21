@@ -70,8 +70,9 @@ def _iso(s):
     return f"{m.group(1)}-{int(m.group(2)):02d}" if m else None
 
 
-def parse(html: str, obs_date: str) -> list:
-    """obs_date: このページが表す日（"YYYY-MM-DD"）。"""
+def parse(html: str, obs_date: str, provisional: bool = True) -> list:
+    """obs_date: このページが表す日。provisional=True（当日ページ）では値の記号 ")" "]" を速報扱い（NORMAL）にする。
+    当日は日が終わるまで資料不足の記号が付くため。前日以降のページでは記号どおり品質を落とす。"""
     p = _P()
     p.feed(html)
     if not any(k == "h" and "更新状況" in t for k, t in p.items):
@@ -109,13 +110,14 @@ def parse(html: str, obs_date: str) -> list:
         value, mark = _val(val_s)
         if value is None:
             continue
-        name = re.sub(r"[（(].*?[）)]", "", name_raw).strip()
+        name = re.sub(r"[（(].*?[）)]", "", name_raw).replace("*", "").strip()   # 「大島*」= 気象官署
         pv, pmark = _val(prev_s)
         prev = Record(pv, _iso(prev_date_s), quality_from_mark(pmark)) if pv is not None else None
         start = re.sub(r"\D", "", start_s)
         obs = Observation(
             metric=metric.id, station_id=None, name=name, pref="北海道" if pref.startswith("北海道") else pref,
-            pref_full=pref, obs_date=obs_date, value=value, quality=quality_from_mark(mark),
+            pref_full=pref, obs_date=obs_date, value=value,
+            quality=quality_from_mark("" if provisional and mark in (")", "]") else mark),
             obs_time=time_s[:5] if re.match(r"\d\d:\d\d", time_s) else None, muni=muni or None,
             flag=section, stats_start=int(start) if start else None, source="rank_update",
             remark=remark.strip("[]［］ "))
