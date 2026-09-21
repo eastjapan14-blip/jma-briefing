@@ -55,7 +55,9 @@
    "pref": "茨城県"
   }
  },
- "confirm_checked": {},
+ "confirm_checked": {
+  "2026-09-21": true
+ },
  "events": {
   "pre24h:40231:2026-09-21": {
    "date": "2026-09-21",
@@ -76,7 +78,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "筑西市",
    "name": "下館",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -104,7 +106,7 @@
    "station": "40231",
    "stats_period": null,
    "stats_start": 2001,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -134,7 +136,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "下妻市",
    "name": "下妻",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -162,7 +164,7 @@
    "station": "40281",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -192,7 +194,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "稲敷市",
    "name": "江戸崎",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -220,7 +222,7 @@
    "station": "40391",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -250,7 +252,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "龍ケ崎市",
    "name": "龍ケ崎",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -278,7 +280,7 @@
    "station": "40426",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -309,7 +311,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "練馬区",
    "name": "練馬",
    "notifiable": true,
    "notified_at": "2026-09-21T16:11:15+09:00",
@@ -337,7 +339,7 @@
    "station": "44071",
    "stats_period": null,
    "stats_start": 2012,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -367,7 +369,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "江戸川区",
    "name": "江戸川臨海",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -395,7 +397,7 @@
    "station": "44136",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -454,7 +456,7 @@
    "station": "44172",
    "stats_period": null,
    "stats_start": 1991,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -484,7 +486,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "我孫子市",
    "name": "我孫子",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -512,7 +514,7 @@
    "station": "45061",
    "stats_period": null,
    "stats_start": 2010,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -543,7 +545,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "船橋市",
    "name": "船橋",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -571,7 +573,7 @@
    "station": "45106",
    "stats_period": null,
    "stats_start": 1999,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -602,7 +604,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "佐倉市",
    "name": "佐倉",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -630,7 +632,7 @@
    "station": "45116",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -661,7 +663,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "成田市",
    "name": "成田",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -689,7 +691,7 @@
    "station": "45121",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -747,7 +749,7 @@
    "station": "45212",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -777,7 +779,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "木更津市",
    "name": "木更津",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -805,7 +807,7 @@
    "station": "45282",
    "stats_period": null,
    "stats_start": 2006,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -835,7 +837,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "市原市",
    "name": "牛久",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -863,7 +865,7 @@
    "station": "45291",
    "stats_period": null,
    "stats_start": 1978,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -894,7 +896,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "君津市",
    "name": "坂畑",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -922,7 +924,7 @@
    "station": "45326",
    "stats_period": null,
    "stats_start": 1978,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -981,7 +983,7 @@
    "station": "46106",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -1011,7 +1013,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "藤沢市",
    "name": "辻堂",
    "notifiable": true,
    "notified_at": "2026-09-21T16:11:15+09:00",
@@ -1039,7 +1041,7 @@
    "station": "46141",
    "stats_period": null,
    "stats_start": 1992,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -1069,7 +1071,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "三浦市",
    "name": "三浦",
    "notifiable": true,
    "notified_at": "2026-09-21T23:21:11+09:00",
@@ -1097,7 +1099,7 @@
    "station": "46211",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -1156,7 +1158,7 @@
    "station": "50281",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -1384,7 +1386,7 @@
    "station": "40426",
    "stats_period": "1976/32026/9",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -1461,7 +1463,7 @@
    "station": "44172",
    "stats_period": "2013/112013/11",
    "stats_start": 1938,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -1555,7 +1557,7 @@
    "station": "44173",
    "stats_period": "2003/12026/9",
    "stats_start": 2003,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -1649,7 +1651,7 @@
    "station": "45061",
    "stats_period": "2010/32026/9",
    "stats_start": 2010,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -1743,7 +1745,7 @@
    "station": "45106",
    "stats_period": "1999/82026/9",
    "stats_start": 1999,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -1837,7 +1839,7 @@
    "station": "45116",
    "stats_period": "1976/12026/9",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -1931,7 +1933,7 @@
    "station": "45121",
    "stats_period": "1976/12026/9",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -2024,7 +2026,7 @@
    "station": "45212",
    "stats_period": "1966/42026/9",
    "stats_start": 1966,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "ALL_TIME_TOP3",
     "MONTHLY_1ST"
@@ -2118,7 +2120,7 @@
    "station": "45282",
    "stats_period": "2006/92026/9",
    "stats_start": 2006,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -2213,7 +2215,7 @@
    "station": "45291",
    "stats_period": "1978/12026/9",
    "stats_start": 1978,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -2307,7 +2309,7 @@
    "station": "46211",
    "stats_period": "1976/12026/9",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "ALL_TIME_TOP3",
     "MONTHLY_1ST",
@@ -2336,44 +2338,44 @@
    "years_since": 45
   }
  },
- "last_run": "2026-09-21T23:21:11+09:00",
- "runs": 23,
+ "last_run": "2026-09-22T04:35:21+09:00",
+ "runs": 24,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 13:49:49 GMT",
-   "last_success": "2026-09-21T23:21:13+09:00",
-   "source_time": "2026-09-21T22:00"
+   "last_modified": "Mon, 21 Sep 2026 18:45:54 GMT",
+   "last_success": "2026-09-22T04:35:23+09:00",
+   "source_time": "2026-09-22T03:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 13:49:48 GMT",
-   "last_success": "2026-09-21T23:21:11+09:00",
-   "source_time": "2026-09-21T22:00"
+   "last_modified": "Mon, 21 Sep 2026 18:45:53 GMT",
+   "last_success": "2026-09-22T04:35:22+09:00",
+   "source_time": "2026-09-22T03:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 14:10:42 GMT",
-   "last_success": "2026-09-21T23:21:14+09:00",
-   "source_time": "2026-09-21T23:00"
+   "last_modified": "Mon, 21 Sep 2026 19:30:42 GMT",
+   "last_success": "2026-09-22T04:35:25+09:00",
+   "source_time": "2026-09-22T04:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 14:20:39 GMT",
-   "last_success": "2026-09-21T23:21:16+09:00",
-   "source_time": "2026-09-21T23:00"
+   "last_modified": "Mon, 21 Sep 2026 19:30:40 GMT",
+   "last_success": "2026-09-22T04:35:26+09:00",
+   "source_time": "2026-09-22T04:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 14:20:40 GMT",
-   "last_success": "2026-09-21T23:21:17+09:00",
-   "source_time": "2026-09-21T23:00"
+   "last_modified": "Mon, 21 Sep 2026 19:30:41 GMT",
+   "last_success": "2026-09-22T04:35:28+09:00",
+   "source_time": "2026-09-22T04:00"
   }
  }
 }
