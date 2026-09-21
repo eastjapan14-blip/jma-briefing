@@ -3,6 +3,7 @@
 Fetcher        実網。state["sources"][key] に ETag / Last-Modified を保存し、未更新なら 304 で本文を取らない。
 FixtureFetcher replay / テスト用。URL をファイル名に写像して fixtures ディレクトリから読む。
 """
+import http.client
 import re
 import time
 import urllib.error
@@ -88,8 +89,8 @@ class Fetcher:
                 err = f"HTTP {e.code}"
                 if e.code < 500:
                     break
-            except (urllib.error.URLError, TimeoutError, OSError) as e:
-                err = str(e)[:120]
+            except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError) as e:
+                err = f"{type(e).__name__}: {str(e)[:100]}"   # IncompleteRead 等も含めてバックオフ再試行
             if attempt < retries:
                 self._sleep(delay)
                 delay *= 2
