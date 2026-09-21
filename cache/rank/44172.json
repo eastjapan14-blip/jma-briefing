@@ -1,0 +1,462 @@
+{
+ "elements": {
+  "年降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2013",
+     "mark": "]",
+     "rank": 1,
+     "value": 1.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013年2013年"
+  },
+  "年降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013年2013年"
+  },
+  "日最大10分間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2013-11-04",
+     "mark": "]",
+     "rank": 1,
+     "value": 1.0
+    },
+    {
+     "date": "2013-11-21",
+     "mark": "]",
+     "rank": 2,
+     "value": 0.0
+    },
+    {
+     "date": "2013-11-05",
+     "mark": "]",
+     "rank": 3,
+     "value": 0.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013/112013/11"
+  },
+  "日最大1時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2013-11-04",
+     "mark": "]",
+     "rank": 1,
+     "value": 1.5
+    },
+    {
+     "date": "2013-11-21",
+     "mark": "]",
+     "rank": 2,
+     "value": 0.0
+    },
+    {
+     "date": "2013-11-05",
+     "mark": "]",
+     "rank": 3,
+     "value": 0.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013/112013/11"
+  },
+  "日降水量(mm)": {
+   "entries": [
+    {
+     "date": "2013-11-04",
+     "mark": "]",
+     "rank": 1,
+     "value": 1.5
+    },
+    {
+     "date": "2013-11-21",
+     "mark": "]",
+     "rank": 2,
+     "value": 0.0
+    },
+    {
+     "date": "2013-11-05",
+     "mark": "]",
+     "rank": 3,
+     "value": 0.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013/112013/11"
+  },
+  "月降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2013-11",
+     "mark": "]",
+     "rank": 1,
+     "value": 1.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013/112013/11"
+  },
+  "月降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2013/112013/11"
+  }
+ },
+ "fetched_at": "2026-09-21T16:11:24+09:00",
+ "station": "大島臨時（東京都）",
+ "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=44&block_no=1642&year=&month=&day=&view="
+}

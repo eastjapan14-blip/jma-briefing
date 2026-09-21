@@ -4,16 +4,284 @@
    "date": "2026-09-21",
    "members": [
     "45061",
-    "45106"
+    "45106",
+    "45212",
+    "45282"
    ],
    "metric": "pre24h",
-   "notified_at": "2026-09-21T04:20:37+09:00",
-   "notified_members": 2,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_members": 4,
    "pref": "千葉県"
+  },
+  "pre24h:東京都:2026-09-21": {
+   "date": "2026-09-21",
+   "members": [
+    "44071",
+    "44172"
+   ],
+   "metric": "pre24h",
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_members": 2,
+   "pref": "東京都"
+  },
+  "pre24h:神奈川県:2026-09-21": {
+   "date": "2026-09-21",
+   "members": [
+    "46106",
+    "46141",
+    "46211"
+   ],
+   "metric": "pre24h",
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_members": 3,
+   "pref": "神奈川県"
+  },
+  "pre24h:茨城県:2026-09-21": {
+   "date": "2026-09-21",
+   "members": [
+    "40231",
+    "40281"
+   ],
+   "metric": "pre24h",
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_members": 2,
+   "pref": "茨城県"
   }
  },
  "confirm_checked": {},
  "events": {
+  "pre24h:40231:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 24,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:40231:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.2817,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.9883,
+   "margin_abs": -51.0,
+   "margin_pct": -25.4,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "下館",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "茨城県",
+   "pref_full": "茨城県",
+   "prev": {
+    "date": "2008-08-29",
+    "value": 200.5
+   },
+   "prev_monthly": {
+    "date": "2011-09-21",
+    "value": 144.5
+   },
+   "quality": "NORMAL",
+   "record_age_years": 18,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "40231",
+   "stats_period": null,
+   "stats_start": 2001,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 149.5,
+   "years_since": null
+  },
+  "pre24h:40281:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 20,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:40281:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.1683,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.945,
+   "margin_abs": -121.5,
+   "margin_pct": -41.8,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "下妻",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "茨城県",
+   "pref_full": "茨城県",
+   "prev": {
+    "date": "1986-08-05",
+    "value": 291.0
+   },
+   "prev_monthly": {
+    "date": "1996-09-22",
+    "value": 169.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 40,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "40281",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 169.5,
+   "years_since": null
+  },
+  "pre24h:44071:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 51,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:44071:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.7383,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.5917,
+   "margin_abs": -141.5,
+   "margin_pct": -49.7,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "練馬",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "東京都",
+   "pref_full": "東京都",
+   "prev": {
+    "date": "2019-10-12",
+    "value": 284.5
+   },
+   "prev_monthly": {
+    "date": "2015-09-09",
+    "value": 140.5
+   },
+   "quality": "NORMAL",
+   "record_age_years": 7,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "44071",
+   "stats_period": null,
+   "stats_start": 2012,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 143.0,
+   "years_since": null
+  },
+  "pre24h:44172:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 74,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:44172:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 34.7483,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.3617,
+   "margin_abs": -166.5,
+   "margin_pct": -20.2,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "大島",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "東京都",
+   "pref_full": "東京都",
+   "prev": {
+    "date": "2013-10-16",
+    "value": 824.0
+   },
+   "prev_monthly": {
+    "date": "1996-09-22",
+    "value": 346.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 13,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "44172",
+   "stats_period": null,
+   "stats_start": 1991,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 657.5,
+   "years_since": null
+  },
   "pre24h:45061:2026-09-21": {
    "date": "2026-09-21",
    "elevation": 20,
@@ -22,21 +290,21 @@
    "first_seen": "2026-09-21T04:20:37+09:00",
    "flag": 9,
    "id": "pre24h:45061:2026-09-21",
-   "last_seen": "2026-09-21T10:41:14+09:00",
+   "last_seen": "2026-09-21T16:11:15+09:00",
    "last_stricter_date": null,
    "latitude": 35.8633,
    "local_rank": null,
    "local_tie": false,
    "longitude": 140.11,
-   "margin_abs": -70.5,
-   "margin_pct": -28.0,
+   "margin_abs": -51.5,
+   "margin_pct": -20.4,
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
    "muni": null,
    "name": "我孫子",
    "notifiable": true,
-   "notified_at": "2026-09-21T04:20:37+09:00",
+   "notified_at": "2026-09-21T16:11:15+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "千葉県",
@@ -66,10 +334,10 @@
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "07:20",
+   "time": "15:50",
    "top3": [],
    "unit": "mm",
-   "value": 181.5,
+   "value": 200.5,
    "years_since": null
   },
   "pre24h:45106:2026-09-21": {
@@ -80,21 +348,21 @@
    "first_seen": "2026-09-21T04:20:37+09:00",
    "flag": 9,
    "id": "pre24h:45106:2026-09-21",
-   "last_seen": "2026-09-21T10:41:14+09:00",
+   "last_seen": "2026-09-21T16:11:15+09:00",
    "last_stricter_date": null,
    "latitude": 35.7117,
    "local_rank": null,
    "local_tie": false,
    "longitude": 140.0433,
-   "margin_abs": -66.5,
-   "margin_pct": -23.3,
+   "margin_abs": -20.5,
+   "margin_pct": -7.2,
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
    "muni": null,
    "name": "船橋",
    "notifiable": true,
-   "notified_at": "2026-09-21T04:20:37+09:00",
+   "notified_at": "2026-09-21T16:11:15+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "千葉県",
@@ -124,10 +392,357 @@
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "08:40",
+   "time": "15:50",
    "top3": [],
    "unit": "mm",
-   "value": 218.5,
+   "value": 264.5,
+   "years_since": null
+  },
+  "pre24h:45212:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 3,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:45212:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.6017,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 140.1033,
+   "margin_abs": -105.5,
+   "margin_pct": -28.7,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "千葉",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "千葉県",
+   "pref_full": "千葉県",
+   "prev": {
+    "date": "2026-08-14",
+    "value": 367.0
+   },
+   "prev_monthly": {
+    "date": "1996-09-23",
+    "value": 260.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 0,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "45212",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 261.5,
+   "years_since": null
+  },
+  "pre24h:45282:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 60,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:45282:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.3617,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.94,
+   "margin_abs": -64.0,
+   "margin_pct": -19.8,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "木更津",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "千葉県",
+   "pref_full": "千葉県",
+   "prev": {
+    "date": "2013-10-16",
+    "value": 323.5
+   },
+   "prev_monthly": {
+    "date": "2023-09-09",
+    "value": 204.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 13,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "45282",
+   "stats_period": null,
+   "stats_start": 2006,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 259.5,
+   "years_since": null
+  },
+  "pre24h:46106:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 39,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:46106:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.4383,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.6517,
+   "margin_abs": -49.5,
+   "margin_pct": -16.0,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "横浜",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "神奈川県",
+   "pref_full": "神奈川県",
+   "prev": {
+    "date": "2014-10-06",
+    "value": 310.0
+   },
+   "prev_monthly": {
+    "date": "1991-09-19",
+    "value": 237.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 12,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "46106",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 260.5,
+   "years_since": null
+  },
+  "pre24h:46141:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 5,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:46141:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.32,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.45,
+   "margin_abs": -30.5,
+   "margin_pct": -12.7,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "辻堂",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "神奈川県",
+   "pref_full": "神奈川県",
+   "prev": {
+    "date": "2004-10-09",
+    "value": 240.0
+   },
+   "prev_monthly": {
+    "date": "2025-09-06",
+    "value": 171.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 22,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "46141",
+   "stats_period": null,
+   "stats_start": 1992,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 209.5,
+   "years_since": null
+  },
+  "pre24h:46211:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 42,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:46211:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.1783,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.63,
+   "margin_abs": -3.0,
+   "margin_pct": -1.1,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "三浦",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "神奈川県",
+   "pref_full": "神奈川県",
+   "prev": {
+    "date": "1981-10-23",
+    "value": 262.0
+   },
+   "prev_monthly": {
+    "date": "1990-09-30",
+    "value": 208.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 45,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "46211",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 259.0,
+   "years_since": null
+  },
+  "pre24h:50281:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 67,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "pre24h:50281:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 35.045,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.0917,
+   "margin_abs": -151.5,
+   "margin_pct": -40.3,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "網代",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "静岡県",
+   "pref_full": "静岡県",
+   "prev": {
+    "date": "2024-08-30",
+    "value": 375.5
+   },
+   "prev_monthly": {
+    "date": "2025-09-06",
+    "value": 215.5
+   },
+   "quality": "NORMAL",
+   "record_age_years": 2,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "50281",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": "15:50",
+   "top3": [],
+   "unit": "mm",
+   "value": 224.0,
    "years_since": null
   },
   "pre24h:87492:2026-09-19": {
@@ -186,46 +801,217 @@
    "unit": "mm",
    "value": 397.5,
    "years_since": null
+  },
+  "preday:44172:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 74,
+   "enrich_pending": false,
+   "enriched_at": "2026-09-21T16:11:26+09:00",
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "preday:44172:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": null,
+   "latitude": 34.7483,
+   "local_rank": 1,
+   "local_tie": false,
+   "longitude": 139.3617,
+   "margin_abs": -8.0,
+   "margin_pct": -1.5,
+   "metric": "preday",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "monthly_top3": [],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "大島",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "東京都",
+   "pref_full": "東京都",
+   "prev": {
+    "date": "2013-10-16",
+    "value": 525.5
+   },
+   "prev_monthly": {
+    "date": "1982-09-12",
+    "value": 473.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 13,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=44&block_no=1642&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "44172",
+   "stats_period": "2013/112013/11",
+   "stats_start": 1938,
+   "status": "PROVISIONAL",
+   "tags": [
+    "ALL_TIME_1ST",
+    "MONTHLY_1ST"
+   ],
+   "time": null,
+   "top3": [
+    [
+     1,
+     1.5,
+     "2013-11-04"
+    ],
+    [
+     2,
+     0.0,
+     "2013-11-21"
+    ],
+    [
+     3,
+     0.0,
+     "2013-11-05"
+    ]
+   ],
+   "unit": "mm",
+   "value": 517.5,
+   "years_since": null
+  },
+  "preday:45282:2026-09-21": {
+   "date": "2026-09-21",
+   "elevation": 60,
+   "enrich_pending": false,
+   "enriched_at": "2026-09-21T16:11:29+09:00",
+   "first_seen": "2026-09-21T16:11:15+09:00",
+   "flag": 9,
+   "id": "preday:45282:2026-09-21",
+   "last_seen": "2026-09-21T16:11:15+09:00",
+   "last_stricter_date": "2013-10-16",
+   "latitude": 35.3617,
+   "local_rank": 2,
+   "local_tie": false,
+   "longitude": 139.94,
+   "margin_abs": -23.5,
+   "margin_pct": -11.0,
+   "metric": "preday",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     181.0,
+     "2023-09-08"
+    ],
+    [
+     2,
+     156.5,
+     "2025-09-05"
+    ],
+    [
+     3,
+     131.5,
+     "2017-09-28"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "木更津",
+   "notifiable": true,
+   "notified_at": "2026-09-21T16:11:15+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "千葉県",
+   "pref_full": "千葉県",
+   "prev": {
+    "date": "2013-10-16",
+    "value": 213.5
+   },
+   "prev_monthly": {
+    "date": "2023-09-08",
+    "value": 181.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": 13,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=45&block_no=0382&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "45282",
+   "stats_period": "2006/92026/9",
+   "stats_start": 2006,
+   "status": "PROVISIONAL",
+   "tags": [
+    "ALL_TIME_TOP3",
+    "MONTHLY_1ST",
+    "SINCE_2013"
+   ],
+   "time": null,
+   "top3": [
+    [
+     1,
+     213.5,
+     "2013-10-16"
+    ],
+    [
+     2,
+     181.0,
+     "2023-09-08"
+    ],
+    [
+     3,
+     181.0,
+     "2006-12-26"
+    ]
+   ],
+   "unit": "mm",
+   "value": 190.0,
+   "years_since": 13
   }
  },
- "last_run": "2026-09-21T10:41:14+09:00",
- "runs": 21,
+ "last_run": "2026-09-21T16:11:15+09:00",
+ "runs": 22,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 00:48:26 GMT",
-   "last_success": "2026-09-21T10:41:16+09:00",
-   "source_time": "2026-09-21T09:00"
+   "last_modified": "Mon, 21 Sep 2026 06:49:37 GMT",
+   "last_success": "2026-09-21T16:11:17+09:00",
+   "source_time": "2026-09-21T15:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 00:48:25 GMT",
-   "last_success": "2026-09-21T10:41:14+09:00",
-   "source_time": "2026-09-21T09:00"
+   "last_modified": "Mon, 21 Sep 2026 06:49:36 GMT",
+   "last_success": "2026-09-21T16:11:16+09:00",
+   "source_time": "2026-09-21T15:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 01:40:45 GMT",
-   "last_success": "2026-09-21T10:41:17+09:00",
-   "source_time": "2026-09-21T10:20"
+   "last_modified": "Mon, 21 Sep 2026 07:10:43 GMT",
+   "last_success": "2026-09-21T16:11:18+09:00",
+   "source_time": "2026-09-21T15:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 01:40:42 GMT",
-   "last_success": "2026-09-21T10:41:19+09:00",
-   "source_time": "2026-09-21T10:20"
+   "last_modified": "Mon, 21 Sep 2026 07:10:40 GMT",
+   "last_success": "2026-09-21T16:11:20+09:00",
+   "source_time": "2026-09-21T15:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 21 Sep 2026 01:40:42 GMT",
-   "last_success": "2026-09-21T10:41:20+09:00",
-   "source_time": "2026-09-21T10:00"
+   "last_modified": "Mon, 21 Sep 2026 07:10:41 GMT",
+   "last_success": "2026-09-21T16:11:21+09:00",
+   "source_time": "2026-09-21T15:00"
   }
  }
 }
