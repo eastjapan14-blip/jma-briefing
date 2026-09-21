@@ -55,9 +55,7 @@
    "pref": "茨城県"
   }
  },
- "confirm_checked": {
-  "2026-09-21": true
- },
+ "confirm_checked": {},
  "events": {
   "pre24h:40231:2026-09-21": {
    "date": "2026-09-21",
@@ -456,7 +454,7 @@
    "station": "44172",
    "stats_period": null,
    "stats_start": 1991,
-   "status": "REVISED",
+   "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -749,7 +747,7 @@
    "station": "45212",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "REVISED",
+   "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -983,7 +981,7 @@
    "station": "46106",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "REVISED",
+   "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -1158,7 +1156,7 @@
    "station": "50281",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "REVISED",
+   "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -1463,7 +1461,7 @@
    "station": "44172",
    "stats_period": "2013/112013/11",
    "stats_start": 1938,
-   "status": "REVISED",
+   "status": "PROVISIONAL",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST"
@@ -2026,7 +2024,7 @@
    "station": "45212",
    "stats_period": "1966/42026/9",
    "stats_start": 1966,
-   "status": "REVISED",
+   "status": "PROVISIONAL",
    "tags": [
     "ALL_TIME_TOP3",
     "MONTHLY_1ST"
