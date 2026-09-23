@@ -2486,8 +2486,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-09-24T08:00:41+09:00",
- "runs": 326,
+ "last_run": "2026-09-24T08:10:24+09:00",
+ "runs": 327,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2521,7 +2521,7 @@
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 23 Sep 2026 22:50:42 GMT",
+   "last_modified": "Wed, 23 Sep 2026 23:00:43 GMT",
    "last_success": "2026-09-24T07:30:36+09:00",
    "source_time": "2026-09-24T07:00"
   }
