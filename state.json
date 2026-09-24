@@ -2486,8 +2486,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-09-25T05:21:28+09:00",
- "runs": 458,
+ "last_run": "2026-09-25T05:30:37+09:00",
+ "runs": 459,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2514,14 +2514,14 @@
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 24 Sep 2026 20:20:41 GMT",
-   "last_success": "2026-09-25T05:21:30+09:00",
-   "source_time": "2026-09-25T05:00"
+   "last_modified": "Thu, 24 Sep 2026 20:30:37 GMT",
+   "last_success": "2026-09-25T05:30:39+09:00",
+   "source_time": "2026-09-25T05:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 24 Sep 2026 20:20:42 GMT",
+   "last_modified": "Thu, 24 Sep 2026 20:30:37 GMT",
    "last_success": "2026-09-25T05:21:31+09:00",
    "source_time": "2026-09-25T05:00"
   }
