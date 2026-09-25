@@ -16,7 +16,7 @@ URLの種類で素材化の手順が変わる。複数あれば同じ出力フ�
    - 段階A（記者会見）: 報道資料の要点 → 会見での強調点 → 質疑のうち視聴者の行動に関わるもの（transcript.md の [mm:ss] を照合表に残す）→ 行動指針。尺は内容量に合わせる。数値は必ず press.md か source.md で照合し、文字起こしだけを根拠にしない。
    - 段階B: 表紙、結論、発表の要点（図・表）、定義表、行動指針、今後の情報、の8〜12枚。
    - 段階C: 表紙、発表内容（定義表）、行動指針、の3枚。
-   - 段階D（長期予報）: 表紙、結論、確率の読み方、気温の確率表、降水量の確率表、期間ごとの見通し、生活・防災の観点、次回発表、の8〜10枚。図は不要。
+   - 段階D（長期予報）: `python3 scripts/plot_seasonal.py <フォルダ>/source.md --out <フォルダ>/images --periods "<期間の日付をカンマ区切り>" --cards <フォルダ>/figures.json` で図を作る（figures.json の書式はスクリプト冒頭。結論・天気の傾向・生活の観点のカード文言を発表文の範囲で書く）。表紙、結論（conclusion.png）、天気の傾向（weather.png）、地方ごとの見通し（summary.png）、期間ごとの気温（weekly_grid.png、weekly_region.png）、生活の観点（life.png、type: action）、次回発表、の8枚。確率表や補足スライドは置かない。
 5. `python3 scripts/build_pptx.py <フォルダ>/script.md` を実行し、「注意:」が出たら台本を直して再実行する。
 6. YouTube用のタイトル案3つと概要欄の文面を `meta.md` に書く。
 7. `python3 scripts/deliver.py <フォルダ>` で iCloud Drive にコピーする（iPhone の Keynote で開くため）。

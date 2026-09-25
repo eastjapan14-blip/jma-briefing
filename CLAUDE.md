@@ -32,7 +32,7 @@
 | C | 特別警報、気象防災速報、記録的短時間大雨 | 一言動画 |
 | D | 長期予報（全般1か月・3か月・暖候期・寒候期予報） | 定例解説 |
 
-段階Dの型: 表紙 → 結論（気温・降水の傾向を一言）→ 確率表（地域×階級。★の階級を強調し、確率は「%」で表記）→ 期間ごとの見通し（1か月予報は週ごと、3か月予報は月ごと）→ 生活・防災の観点（発表文にある範囲で。熱中症・大雪・渇水など）→ 次回発表。確率の意味（平年の3区分が各33%で、それより高い階級に注目）を最初に一度説明する。
+段階Dの型（8枚）: 表紙 → 結論（地方ごとのカード図 `conclusion.png`。気温・降水量・日照時間の札と天気アイコン）→ 天気の傾向（発表文をアイコンの並びで示す `weather.png`）→ 地方ごとの見通し（気温・降水量・日照時間の帯グラフ `summary.png`）→ 期間ごとの気温（マス目 `weekly_grid.png` と地方別パネル `weekly_region.png`。1か月予報は週ごと、3か月予報は月ごと）→ 生活・防災の観点（アイコン付きカード `life.png`。発表文にある範囲で）→ 次回発表。確率表のスライドは置かない（図に数値が入る）。確率の意味（平年の3区分が各33%で、それより高い階級に注目）は結論のナレーションで一度だけ説明する。図は `scripts/plot_seasonal.py` で生成し、カードの文言は `figures.json` に書く。色は気象庁の平年偏差図に合わせる（気温=橙/青、降水量=青緑/茶、日照=黄/灰）。
 
 ## コマンド
 
@@ -42,6 +42,7 @@ python3 scripts/fetch_report.py <URL>... --slug <名前>   # 素材化
 python3 scripts/fetch_press.py <報道発表URL> --out material/<dir>   # 報道資料（PDF全文）→ press.md
 python3 scripts/transcribe.py <YouTube URL> --out material/<dir>   # 記者会見の文字起こし → transcript.md
 python3 scripts/fetch_images.py --out material/<dir>/images weather_map typhoon radar  # 図の取得
+python3 scripts/plot_seasonal.py material/<dir>/source.md --out material/<dir>/images --periods "9/26〜10/2,..." --cards material/<dir>/figures.json  # 季節予報の図
 python3 scripts/build_pptx.py material/<dir>/script.md   # pptx生成
 python3 -m record_hunter dry-run                # アメダス記録候補の確認（通知しない）
 python3 -m pytest -q tests                      # Record Hunter のテスト
