@@ -7,7 +7,7 @@
   [type: title|jma|action|note] ← 任意。省略時は jma
       title : 表紙 / jma : 気象庁発表の内容（白地） / action : 視聴者の行動指針（橙） / note : 補足（青）
   - 箇条書き（スライドに載る文。28pt固定なので1枚4項目まで）
-  | 列1 | 列2 |               ← 表。2行目の |---| は省略可。1行目が見出し行
+  | 列1 | 列2 |               ← 表。2行目の |---| は省略可。1行目が見出し行。★を含むセルは黄色で強調
   ![出典の表記](images/ファイル名.png)   ← 図。箇条書きがあれば右半分、無ければ中央に大きく
   [ref: rain 30] / [ref: wind 23] / [ref: wave 7] / [ref: typhoon_strength 25] / [ref: typhoon_size 大型]
       ← 気象庁の定義表を出し、該当する行を強調する。1枚に2つまで（横に並ぶ）
@@ -122,10 +122,11 @@ def add_table(slide, x, y, w, rows, accent, fg, hilite_rows=(), size=BODY):
             for p in cell.text_frame.paragraphs:
                 for r in p.runs:
                     r.font.size, r.font.name = Pt(size), FONT
-                    r.font.bold = (i == 0) or (i in hilite_rows)
+                    r.font.bold = (i == 0) or (i in hilite_rows) or ("★" in cell.text)
                     r.font.color.rgb = rgb("FFFFFF" if i == 0 else fg)
             cell.fill.solid()
-            cell.fill.fore_color.rgb = rgb(accent if i == 0 else (HILITE if i in hilite_rows else ("FFFFFF" if i % 2 else "F4F6F8")))
+            # ★を含むセル（季節予報で気象庁が特徴ありとした階級）は行に関係なく強調
+            cell.fill.fore_color.rgb = rgb(accent if i == 0 else (HILITE if (i in hilite_rows or "★" in cell.text) else ("FFFFFF" if i % 2 else "F4F6F8")))
     return shape
 
 
