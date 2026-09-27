@@ -105,7 +105,7 @@
    "first_seen": "2026-09-27T05:40:26+09:00",
    "flag": 9,
    "id": "pre1h:82361:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
+   "last_seen": "2026-09-27T14:30:26+09:00",
    "last_stricter_date": "2022-07-05",
    "latitude": 33.0067,
    "local_rank": 8,
@@ -199,7 +199,7 @@
    "first_seen": "2026-09-27T05:20:24+09:00",
    "flag": 9,
    "id": "pre1h:84371:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
+   "last_seen": "2026-09-27T14:30:26+09:00",
    "last_stricter_date": "2025-08-11",
    "latitude": 32.9167,
    "local_rank": 9,
@@ -293,7 +293,7 @@
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "pre1h:86006:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
+   "last_seen": "2026-09-27T14:30:26+09:00",
    "last_stricter_date": "2026-07-05",
    "latitude": 33.115,
    "local_rank": null,
@@ -387,7 +387,7 @@
    "first_seen": "2026-09-27T07:30:31+09:00",
    "flag": 9,
    "id": "pre1h:86086:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
+   "last_seen": "2026-09-27T14:30:26+09:00",
    "last_stricter_date": "2025-08-11",
    "latitude": 32.915,
    "local_rank": null,
@@ -1608,7 +1608,7 @@
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "pre24h:82361:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
+   "last_seen": "2026-09-27T14:30:26+09:00",
    "last_stricter_date": null,
    "latitude": 33.0067,
    "local_rank": null,
@@ -1652,7 +1652,7 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "13:50",
+   "time": "14:00",
    "top3": [],
    "unit": "mm",
    "value": 281.0,
@@ -2784,15 +2784,15 @@
    "date": "2026-09-27",
    "elevation": 40,
    "enrich_pending": false,
-   "enriched_at": "2026-09-27T12:30:39+09:00",
+   "enriched_at": "2026-09-27T14:30:33+09:00",
    "first_seen": "2026-09-27T10:20:24+09:00",
    "flag": 9,
    "id": "preday:82361:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
-   "last_stricter_date": "2024-08-29",
+   "last_seen": "2026-09-27T14:30:26+09:00",
+   "last_stricter_date": "2021-08-12",
    "latitude": 33.0067,
-   "local_rank": null,
-   "local_tie": false,
+   "local_rank": 10,
+   "local_tie": true,
    "longitude": 130.4667,
    "margin_abs": null,
    "margin_pct": null,
@@ -2849,7 +2849,8 @@
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
-    "MONTHLY_1ST"
+    "MONTHLY_1ST",
+    "SINCE_2021"
    ],
    "time": null,
    "top3": [
@@ -2870,18 +2871,18 @@
     ]
    ],
    "unit": "mm",
-   "value": 255.0,
-   "years_since": 2
+   "value": 257.5,
+   "years_since": 5
   },
   "preday:84371:2026-09-27": {
    "date": "2026-09-27",
    "elevation": 3,
    "enrich_pending": false,
-   "enriched_at": "2026-09-27T12:30:39+09:00",
+   "enriched_at": "2026-09-27T14:30:33+09:00",
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "preday:84371:2026-09-27",
-   "last_seen": "2026-09-27T14:20:23+09:00",
+   "last_seen": "2026-09-27T14:30:26+09:00",
    "last_stricter_date": "2026-06-24",
    "latitude": 32.9167,
    "local_rank": 10,
@@ -2963,7 +2964,7 @@
     ]
    ],
    "unit": "mm",
-   "value": 182.0,
+   "value": 183.0,
    "years_since": 0
   },
   "tmin:71192:2026-09-22": {
@@ -3060,8 +3061,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-09-27T14:20:23+09:00",
- "runs": 814,
+ "last_run": "2026-09-27T14:30:26+09:00",
+ "runs": 815,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -3081,23 +3082,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 27 Sep 2026 05:10:42 GMT",
-   "last_success": "2026-09-27T14:20:23+09:00",
-   "source_time": "2026-09-27T13:50"
+   "last_modified": "Sun, 27 Sep 2026 05:20:48 GMT",
+   "last_success": "2026-09-27T14:30:27+09:00",
+   "source_time": "2026-09-27T14:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 27 Sep 2026 05:10:40 GMT",
-   "last_success": "2026-09-27T14:20:25+09:00",
-   "source_time": "2026-09-27T13:50"
+   "last_modified": "Sun, 27 Sep 2026 05:20:45 GMT",
+   "last_success": "2026-09-27T14:30:29+09:00",
+   "source_time": "2026-09-27T14:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 27 Sep 2026 05:10:40 GMT",
-   "last_success": "2026-09-27T13:30:34+09:00",
-   "source_time": "2026-09-27T13:00"
+   "last_modified": "Sun, 27 Sep 2026 05:20:46 GMT",
+   "last_success": "2026-09-27T14:30:30+09:00",
+   "source_time": "2026-09-27T14:00"
   }
  }
 }
