@@ -105,7 +105,7 @@
    "first_seen": "2026-09-27T05:40:26+09:00",
    "flag": 9,
    "id": "pre1h:82361:2026-09-27",
-   "last_seen": "2026-09-27T09:20:22+09:00",
+   "last_seen": "2026-09-27T09:26:17+09:00",
    "last_stricter_date": "2022-07-05",
    "latitude": 33.0067,
    "local_rank": 8,
@@ -199,7 +199,7 @@
    "first_seen": "2026-09-27T05:20:24+09:00",
    "flag": 9,
    "id": "pre1h:84371:2026-09-27",
-   "last_seen": "2026-09-27T09:20:22+09:00",
+   "last_seen": "2026-09-27T09:26:17+09:00",
    "last_stricter_date": "2025-08-11",
    "latitude": 32.9167,
    "local_rank": 9,
@@ -293,7 +293,7 @@
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "pre1h:86006:2026-09-27",
-   "last_seen": "2026-09-27T09:20:22+09:00",
+   "last_seen": "2026-09-27T09:26:17+09:00",
    "last_stricter_date": null,
    "latitude": 33.115,
    "local_rank": null,
@@ -348,7 +348,7 @@
    "first_seen": "2026-09-27T07:30:31+09:00",
    "flag": 9,
    "id": "pre1h:86086:2026-09-27",
-   "last_seen": "2026-09-27T09:20:22+09:00",
+   "last_seen": "2026-09-27T09:26:17+09:00",
    "last_stricter_date": "2025-08-11",
    "latitude": 32.915,
    "local_rank": null,
@@ -1569,7 +1569,7 @@
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "pre24h:82361:2026-09-27",
-   "last_seen": "2026-09-27T09:20:22+09:00",
+   "last_seen": "2026-09-27T09:26:17+09:00",
    "last_stricter_date": null,
    "latitude": 33.0067,
    "local_rank": null,
@@ -2745,12 +2745,12 @@
    "date": "2026-09-27",
    "elevation": 3,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-09-27T09:26:20+09:00",
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "preday:84371:2026-09-27",
-   "last_seen": "2026-09-27T09:20:22+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-09-27T09:26:17+09:00",
+   "last_stricter_date": "2026-06-25",
    "latitude": 32.9167,
    "local_rank": null,
    "local_tie": false,
@@ -2758,8 +2758,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "preday",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     162.0,
+     "1999-09-11"
+    ],
+    [
+     2,
+     128.0,
+     "1995-09-23"
+    ],
+    [
+     3,
+     125.0,
+     "2004-09-07"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "大村市",
    "name": "大村",
    "notifiable": true,
@@ -2768,7 +2787,10 @@
    "notify_count": 1,
    "pref": "長崎県",
    "pref_full": "長崎県",
-   "prev": null,
+   "prev": {
+    "date": "2020-07-06",
+    "value": 357.0
+   },
    "prev_monthly": {
     "date": "1999-09-11",
     "value": 162.0
@@ -2778,22 +2800,39 @@
    "remark": "",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1084&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "84371",
-   "stats_period": null,
+   "stats_period": "1976/42026/9",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST"
    ],
    "time": null,
-   "top3": [],
+   "top3": [
+    [
+     1,
+     357.0,
+     "2020-07-06"
+    ],
+    [
+     2,
+     296.0,
+     "1982-07-23"
+    ],
+    [
+     3,
+     249.0,
+     "2021-08-12"
+    ]
+   ],
    "unit": "mm",
    "value": 163.5,
-   "years_since": null
+   "years_since": 0
   },
   "tmin:71192:2026-09-22": {
    "date": "2026-09-22",
@@ -2889,8 +2928,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-09-27T09:20:22+09:00",
- "runs": 783,
+ "last_run": "2026-09-27T09:26:17+09:00",
+ "runs": 784,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2924,9 +2963,9 @@
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 27 Sep 2026 00:10:44 GMT",
-   "last_success": "2026-09-27T08:30:32+09:00",
-   "source_time": "2026-09-27T08:00"
+   "last_modified": "Sun, 27 Sep 2026 00:20:41 GMT",
+   "last_success": "2026-09-27T09:26:17+09:00",
+   "source_time": "2026-09-27T09:00"
   }
  }
 }
