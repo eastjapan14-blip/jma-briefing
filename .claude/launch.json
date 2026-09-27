@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "preview",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd /private/tmp/claude-501/-Users-kota-Documents-Claude-jma-briefing/fa439f70-dc7f-492f-b935-a5de6a7306d7/scratchpad/preview && exec python3 -m http.server 8765 --bind 127.0.0.1"],
+      "port": 8765
+    }
+  ]
+}

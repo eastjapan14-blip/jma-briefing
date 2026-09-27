@@ -8,7 +8,7 @@
 
 出力: 1行1候補。段階(A/B/C)、日時、種別、発表官署、見出し、XMLのURL。
 """
-import argparse, json, sys, urllib.request, xml.etree.ElementTree as ET
+import argparse, json, re, sys, urllib.request, xml.etree.ElementTree as ET
 from pathlib import Path
 
 FEEDS = {
@@ -44,6 +44,9 @@ DIGEST_TITLES = ("地方気象情報", "府県気象情報", "土砂災害警戒
 
 def classify(title, content):
     if title in DUPLICATE_TITLES:
+        return None
+    # 府県気象情報として「【福岡県気象防災速報（線状降水帯直前予測）】」の写しが流れる。府県気象防災速報（段階C）と重複するので読まない
+    if title == "府県気象情報" and re.match(r"【[^】]*気象防災速報", content):
         return None
     if title in SEASONAL:
         return "D"

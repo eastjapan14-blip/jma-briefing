@@ -68,19 +68,46 @@ STATE_DIR = Path(os.environ.get("WATCH_STATE_DIR", str(Path(__file__).resolve().
 STATE = STATE_DIR / "watch_seen.json"
 JST = timezone(timedelta(hours=9))
 PRIORITY = {"C": 5, "B": 4, "A": 4, "D": 3}
+# 広域事象（台風など）のまとめ方
+WIDE_REGIONS = int(os.environ.get("WIDE_REGIONS", "4"))      # 3時間以内に同じ事象でこの数の府県・地方が出たら広域扱い
+QUIET_MIN = int(os.environ.get("DIGEST_QUIET_MIN", "20"))    # 最後の追加からこの分数、新着が無ければ送る
+MAX_HOLD_MIN = int(os.environ.get("DIGEST_MAX_HOLD_MIN", "90"))  # 最初の保留からこの分数たったら必ず送る（台風の波は全般→地方→府県で約80分）
+ALWAYS_HOLD = ("土砂災害警戒情報", "指定河川洪水予報")          # 補足情報で繰り返し出るので常に束ねる
+ALWAYS_HOLD_MIN = int(os.environ.get("ALWAYS_HOLD_MIN", "60"))  # それらは最初の保留からこの分数で送る（1時間ごとの束）
 TAGS = {"C": ["rotating_light"], "B": ["warning"], "A": ["studio_microphone"], "D": ["calendar"]}
 
 
+def now_utc():
+    """WATCH_NOW（ISO時刻）でテスト用に現在時刻を差し替えられる。"""
+    v = os.environ.get("WATCH_NOW")
+    return datetime.fromisoformat(v) if v else datetime.now(timezone.utc)
+
+
 def load_state():
-    """{"urls": {url: 送信時刻}, "bodies": {本文キー: 送信時刻}}。72時間より古いものは捨てる。"""
+    """state の構成:
+      urls    {url: 処理時刻}           一度処理した電文（通知済み・保留中・除外を含む）
+      bodies  {本文キー: 送信時刻}      段階Cの同一本文の重複除去
+      pending {url: 電文}               広域事象として保留中の電文（まとめ通知待ち）
+      topics  {事象: {地域: 時刻}}      広域判定用。3時間で捨てる
+    """
     try:
         d = json.loads(STATE.read_text())
     except Exception:
         d = {}
     if "urls" not in d:  # 旧形式（url: 時刻 のみ）
-        d = {"urls": d, "bodies": {}}
-    cutoff = (datetime.now(timezone.utc) - timedelta(hours=72)).isoformat()
-    return {k: {u: t for u, t in d.get(k, {}).items() if t >= cutoff} for k in ("urls", "bodies")}
+        d = {"urls": d}
+    now = now_utc()
+    c72 = (now - timedelta(hours=72)).isoformat()
+    c24 = (now - timedelta(hours=24)).isoformat()
+    c3 = (now - timedelta(hours=3)).isoformat()
+    st = {k: {u: t for u, t in d.get(k, {}).items() if t >= c72} for k in ("urls", "bodies")}
+    st["pending"] = {u: e for u, e in d.get("pending", {}).items() if e.get("held", "") >= c24}
+    st["topics"] = {}
+    for topic, regions in d.get("topics", {}).items():
+        r = {k: t for k, t in regions.items() if t >= c3}
+        if r:
+            st["topics"][topic] = r
+    return st
 
 
 def save_state(d):
@@ -123,7 +150,7 @@ def when(e):
 def stamp(e):
     """発表時刻（JST）。60分以上前なら遅延を明記して、古い情報だと分かるようにする。"""
     t = when(e).astimezone(JST)
-    late = int((datetime.now(timezone.utc) - when(e)).total_seconds() // 60)
+    late = int((now_utc() - when(e)).total_seconds() // 60)
     s = f"{t.month}/{t.day} {t.hour:02d}:{t.minute:02d}発表"
     return s + (f"（{late}分前）" if late >= 60 else "")
 
@@ -168,53 +195,142 @@ def new_special_warnings(url):
 
 
 def topic_of(e):
-    """本文の【福島県気象解説情報（台風第２５号）】から事象名（台風第２５号）を取り出す。"""
-    m = re.search(r"【[^（(】]*[（(]([^）)]+)[）)]】", e["content"])
+    """本文の【福島県気象解説情報（台風第２５号）】から事象名（台風第２５号）を取り出す。
+    【奄美地方（鹿児島県）気象解説情報（台風第２６号）】のような入れ子でも、最後の（…）を採る。"""
+    m = re.match(r"【([^】]*)】", e["content"])
     if m:
-        return m.group(1)
+        inner = re.findall(r"[（(]([^（()）]+)[）)]", m.group(1))
+        if inner and not re.search(r"[都道府県]$|を含む", inner[-1]):
+            return inner[-1]
     return e["title"]
 
 
 def region_of(e):
-    """本文冒頭の【…】から都道府県名か地方名を取り出す。"""
+    """本文冒頭の【…】から府県名（予報区）か地方名を取り出す。"""
     c = e["content"]
-    m = re.match(r"【([^】]{1,4}?[都道府県])", c) or re.match(r"【([^】]*?地方)", c)
+    if e["title"] == "地方気象情報":
+        m = re.match(r"【([^】]*?地方)", c)
+        if m:
+            return m.group(1).replace("地方", "") or m.group(1)
+    m = re.match(r"【(北海道|[^】]{1,3}?[都府県])", c)
     if m:
-        return re.sub(r"(都|道|府|県)$", "", m.group(1)) if "地方" not in m.group(1) else m.group(1)
+        name = m.group(1)
+        return name if name == "北海道" else re.sub(r"[都府県]$", "", name)
+    m = re.match(r"【([^】]*?地方)", c)  # 沖縄本島地方、宗谷地方など
+    if m:
+        return m.group(1).replace("地方", "")
     return re.sub(r"(地方気象台|管区気象台|気象台|河川事務所|気象庁)", "", e["author"]).strip() or e["author"]
 
 
-def publish_digest(items, fallback_click):
-    """まとめ通知: 事象 → 種別ごとに件数と地域を列挙して1通にする。"""
-    groups = {}
+HAZARDS = [("線状降水帯", "線状降水帯"), ("土砂災害", "土砂"), ("浸水", "浸水"), ("氾濫", "河川"), ("増水", "河川"),
+           ("暴風", "暴風"), ("強風", "強風"), ("高潮", "高潮"), ("高波", "高波"), ("大雪", "大雪"),
+           ("竜巻", "竜巻"), ("突風", "突風"), ("落雷", "落雷")]
+LEVELS = [("厳重に警戒", 3), ("警戒", 2), ("注意", 1)]
+MARK = {3: "◎", 2: "○", 1: "△"}
+
+
+def hazards_of(text):
+    """見出し文から「災害の種類 → 呼びかけの強さ（◎厳重に警戒 ○警戒 △注意）」を取り出す。"""
+    text = re.sub(r"^(【[^】]*】)+", "", text)
+    out = {}
+    for clause in re.split(r"。|(?<=警戒し)、|(?<=注意し)、|(?<=警戒して)、", text):
+        if "線状降水帯" in clause:  # 「発生する可能性」のように警戒・注意の語が無くても最上位で示す
+            out["線状降水帯"] = 3
+        lv = next((v for k, v in LEVELS if k in clause), 0)
+        if not lv:
+            continue
+        for key, label in HAZARDS:
+            if key in clause:
+                out[label] = max(out.get(label, 0), lv)
+    return out
+
+
+def hazard_line(es):
+    """同じ地域の電文（最新を優先）から ◎土砂・暴風 ○浸水 の形の1行を作る。"""
+    latest = max(es, key=when)
+    hz = hazards_of(latest["content"].splitlines()[0] if latest["content"] else "")
+    if not hz:
+        return ""
+    parts = []
+    for lv in (3, 2, 1):
+        names = [k for k, v in hz.items() if v == lv]
+        if names:
+            parts.append(MARK[lv] + "・".join(names))
+    return " ".join(parts)
+
+
+def label_of(e):
+    m = re.match(r"【([^】]+)】", e["content"])
+    return m.group(1) if m else e["title"]
+
+
+def publish_digest(topic, items, click):
+    """広域事象のまとめ通知（1事象1通）。地方→府県の順に、地域ごとの呼びかけの強さを1行で示す。"""
+    by_kind = {}
     for e in items:
-        groups.setdefault(topic_of(e), {}).setdefault(e["title"], []).append(e)
+        by_kind.setdefault(e["title"], []).append(e)
     lines = []
-    for topic, kinds in groups.items():
-        parts = []
-        for kind, es in kinds.items():
-            regions = "、".join(dict.fromkeys(region_of(x) for x in es))
-            parts.append(f"{kind.replace('気象情報', '')} {len(es)}件（{regions}）")
-        lines.append(f"■ {topic}: " + "／".join(parts))
+    for kind in ("地方気象情報", "府県気象情報"):
+        es = by_kind.pop(kind, [])
+        if not es:
+            continue
+        regions = {}
+        for e in es:
+            regions.setdefault(region_of(e), []).append(e)
+        def strength(r):
+            hz = hazards_of(max(regions[r], key=when)["content"])
+            return (max(hz.values(), default=0), sum(1 for v in hz.values() if v == 3))
+        order = sorted(regions, key=strength, reverse=True)  # 呼びかけの強い地域を上に
+        lines.append(f"〔{kind.replace('気象情報', '')} {len(regions)}〕")
+        for r in order:
+            hl = hazard_line(regions[r])
+            lines.append(f"{r} {hl}".rstrip())
+    for kind, es in by_kind.items():  # 土砂災害警戒情報・洪水予報など
+        counts = {}
+        for e in es:
+            counts[label_of(e)] = counts.get(label_of(e), 0) + 1
+        lines.append(f"〔{kind} {len(es)}件〕")
+        lines += [f"{k}" + (f" ×{n}" if n > 1 else "") for k, n in counts.items()]
     newest = max(items, key=when)
-    head = f"{len(items)}件 {stamp(newest)}"
+    n_pref = len({region_of(e) for e in items if e["title"] == "府県気象情報"})
+    title_tail = f"（府県{n_pref}）" if n_pref else f"（{len(items)}件）"
+    legend = "◎厳重に警戒 ○警戒 △注意" if any("◎" in l or "○" in l or "△" in l for l in lines) else ""
     return send({
-        "title": f"[B] まとめ {'・'.join(list(groups)[:2])}",
-        "message": head + "\n" + "\n".join(lines) + "\n\n/briefing 候補",
+        "title": f"[B] まとめ {topic}{title_tail}",
+        "message": "\n".join(x for x in [f"{len(items)}件 〜{stamp(newest)}", legend] if x) + "\n" + "\n".join(lines) + "\n\n/briefing 候補",
         "priority": 3,
         "tags": ["page_facing_up"],
-        "click": fallback_click,
+        "click": click,
     })
+
+
+def publish_c_group(title, topic, es):
+    """段階Cが同じ実行で同じ事象に複数（線状降水帯直前予測が3県同時など）→ 待たずに1通で送る。"""
+    regions = "・".join(dict.fromkeys(region_of(e) for e in es))
+    body = "\n".join("・" + re.sub(r"^(【[^】]*】)+", "", e["content"].splitlines()[0])[:90] for e in es)
+    newest = max(es, key=when)
+    return send({
+        "title": f"[C] {topic}／{regions}",
+        "message": f"{len(es)}件 {stamp(newest)}\n{body}\n\n/briefing " + " ".join(e["url"] for e in es),
+        "priority": PRIORITY["C"],
+        "tags": TAGS["C"],
+        "click": newest["url"],
+    })
+
+
+def is_wide(topic, state):
+    return "台風" in topic or len(state["topics"].get(topic, {})) >= WIDE_REGIONS
 
 
 def main():
     dry = "--dry-run" in sys.argv
     if not TOPIC and not dry:
         sys.exit("NTFY_TOPIC が未設定")
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=FRESH_HOURS)
+    now = now_utc()
+    cutoff = now - timedelta(hours=FRESH_HOURS)
     state = load_state()
     sent = set(state["urls"]) | (already_sent() if TOPIC else set())
-    body_cutoff = (datetime.now(timezone.utc) - timedelta(hours=12)).isoformat()
+    body_cutoff = (now - timedelta(hours=12)).isoformat()
     bodies_seen = {k for k, t in state["bodies"].items() if t >= body_cutoff}
     new, seen_now, skipped = [], set(), []
     for url in FEEDS.values():
@@ -250,28 +366,72 @@ def main():
         seen_now.add(e["url"])
         new.append(e)
     new.sort(key=lambda x: x["updated"])
-    # 線状降水帯は地方単位までは即時、府県単位はまとめに入れる（台風時は府県が十数件になるため）
-    single = [e for e in new if e["title"] not in DIGEST_TITLES
-              or (e["title"] == "地方気象情報" and "線状降水帯" in e["content"])]
-    digest = [e for e in new if e not in single]
+    now_s = now.isoformat()
+
+    # 振り分け: 即時（1件1通） / 保留（広域事象としてまとめる）
+    single, held = [], []
+    for e in new:
+        if e["title"] not in DIGEST_TITLES:
+            single.append(e)
+            continue
+        topic = topic_of(e)
+        if e["title"] in ("府県気象情報", "地方気象情報"):
+            state["topics"].setdefault(topic, {})[region_of(e)] = now_s
+        if e["title"] == "地方気象情報" and "線状降水帯" in e["content"] and not is_wide(topic, state):
+            single.append(e)  # 線状降水帯は地方単位なら即時（台風など広域事象のときはまとめに ◎線状降水帯 で入る）
+            continue
+        if e["title"] in ALWAYS_HOLD or is_wide(topic, state):
+            held.append(e)
+        else:
+            single.append(e)  # 局地的な事象の府県情報は個別に届ける
+    for e in held:
+        state["pending"][e["url"]] = {k: e[k] for k in ("url", "title", "author", "content", "updated", "tier")} | {"held": now_s, "topic": topic_of(e)}
+
+    groups_c = {}
     for e in single:
+        if e["tier"] == "C":
+            groups_c.setdefault((e["title"], topic_of(e)), []).append(e)
+    for e in single:
+        if e["tier"] == "C" and len(groups_c[(e["title"], topic_of(e))]) > 1:
+            continue
         line = f'[{e["tier"]}] {e["updated"]} {e["title"]}／{e["author"]} {e["url"]}'
         print("DRY" if dry else publish(e), line)
-    if digest:
-        zenpan = [e for e in single if e["title"] == "全般気象情報"]
-        click = zenpan[-1]["url"] if zenpan else "https://www.jma.go.jp/bosai/information/"
-        for e in digest:
-            print("DRY-digest" if dry else "digest", f'{e["updated"]} {e["title"]}／{e["author"]} {topic_of(e)}')
-        print("DRY" if dry else publish_digest(digest, click), f"まとめ {len(digest)} 件")
+    for (title, topic), es in groups_c.items():
+        if len(es) > 1:
+            print("DRY" if dry else publish_c_group(title, topic, es), f"[C] 同時 {topic} {len(es)} 件")
+
+    # 保留分の送信判定: 事象ごとに、最後の追加から QUIET_MIN 分新着が無いか、最初の保留から MAX_HOLD_MIN 分たったら送る
+    by_topic = {}
+    for e in state["pending"].values():
+        by_topic.setdefault(e["topic"], []).append(e)
+    zenpan = {topic_of(e): e["url"] for e in single if e["title"] == "全般気象情報"}
+    flushed = 0
+    for topic, es in by_topic.items():
+        first = min(datetime.fromisoformat(e["held"]) for e in es)
+        last = max(datetime.fromisoformat(e["held"]) for e in es)
+        if topic in ALWAYS_HOLD:
+            quiet, overdue = False, (now - first) >= timedelta(minutes=ALWAYS_HOLD_MIN)
+        else:
+            quiet = (now - last) >= timedelta(minutes=QUIET_MIN)
+            overdue = (now - first) >= timedelta(minutes=MAX_HOLD_MIN)
+        if not (quiet or overdue):
+            print(f"保留 {topic} {len(es)}件（最初 {int((now-first).total_seconds()//60)}分前 / 最後 {int((now-last).total_seconds()//60)}分前）", file=sys.stderr)
+            continue
+        click = zenpan.get(topic, "https://www.jma.go.jp/bosai/information/")
+        print("DRY" if dry else publish_digest(topic, es, click), f"まとめ {topic} {len(es)} 件（{'静穏' if quiet else '上限'}）")
+        for e in es:
+            state["pending"].pop(e["url"], None)
+        flushed += len(es)
+
     if not dry:
-        now = datetime.now(timezone.utc).isoformat()
         for e in new + skipped:
-            state["urls"][e["url"]] = now
+            state["urls"][e["url"]] = now_s
         for e in new:
             if e.get("body_key"):
-                state["bodies"][e["body_key"]] = now
+                state["bodies"][e["body_key"]] = now_s
         save_state(state)
-    print(f"即時 {len(single)} 件、まとめ {len(digest)} 件、継続・重複で除外 {len(skipped)} 件（送信済み {len(sent)} 件を除外）", file=sys.stderr)
+    print(f"即時 {len(single)} 件、保留追加 {len(held)} 件、まとめ送信 {flushed} 件、保留中 {len(state['pending'])} 件、"
+          f"継続・重複で除外 {len(skipped)} 件（送信済み {len(sent)} 件を除外）", file=sys.stderr)
 
 
 if __name__ == "__main__":
