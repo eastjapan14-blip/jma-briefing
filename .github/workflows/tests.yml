@@ -1,9 +1,9 @@
 name: tests
 on:
   push:
-    paths: ["record_hunter/**", "tests/**", ".github/workflows/tests.yml"]
+    paths: ["record_hunter/**", "scripts/notify.py", "scripts/fetch_feed.py", "tests/**", ".github/workflows/tests.yml"]
   pull_request:
-    paths: ["record_hunter/**", "tests/**"]
+    paths: ["record_hunter/**", "scripts/notify.py", "scripts/fetch_feed.py", "tests/**"]
   workflow_dispatch:
 jobs:
   pytest:

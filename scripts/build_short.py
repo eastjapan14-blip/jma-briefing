@@ -55,13 +55,13 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 @keyframes drift{from{transform:translate(0,0)}to{transform:translate(-60px,40px)}}
 .scene{position:absolute;inset:0;display:none;flex-direction:column;padding:300px 200px 0 80px}
 .scene.active{display:flex}
-/* 安全域: 上 300 / 下 500 / 右 200 は Shorts・TikTok の UI が重なるため空ける */
+/* 安全域: 上 200 / 下 500 / 右 200 は Shorts・TikTok の UI が重なるため空ける。本文は y=300〜1300、注記は 1316〜1400 */
 .top{position:absolute;left:80px;right:200px;top:200px;display:flex;justify-content:space-between;align-items:flex-end;
  font-family:var(--mono);font-size:26px;letter-spacing:.06em;color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line)}
 .top b{color:var(--fg);font-weight:500}
 .top .tone{display:inline-flex;align-items:center;gap:14px}
 .top .tone i{width:12px;height:12px;background:var(--accent)}
-.foot{position:absolute;left:80px;right:200px;bottom:520px;padding-top:16px;border-top:1px solid var(--line);
+.foot{position:absolute;left:80px;right:200px;top:1316px;padding-top:16px;border-top:1px solid var(--line);
  font-family:var(--mono);font-size:26px;line-height:1.6;color:var(--muted);letter-spacing:.02em}
 .foot .src{color:#5E6875}
 .meta{font-family:var(--mono);font-size:28px;color:var(--muted);letter-spacing:.04em;margin-bottom:28px}
@@ -113,7 +113,7 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .line .n{font-family:var(--num);font-size:56px;font-weight:600;color:var(--accent);line-height:1.25}
 .in .line{opacity:1;transform:none}
 /* 結論の一行（音を出さない視聴者向け） */
-.take{position:absolute;left:80px;right:200px;bottom:600px;font-size:64px;font-weight:800;line-height:1.25;letter-spacing:.01em;
+.take{position:absolute;left:80px;right:200px;bottom:632px;font-size:64px;font-weight:800;line-height:1.25;letter-spacing:.01em;
  opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .6s var(--ease)}
 .take:before{content:"";display:block;width:64px;height:4px;background:var(--accent);margin-bottom:18px}
 .in .take{opacity:1;transform:none}
@@ -155,8 +155,10 @@ JS = r"""
 (function(){
   const stage=document.getElementById('stage'),frame=document.getElementById('frame'),pr=document.getElementById('pr');
   const q=new URLSearchParams(location.search),auto=q.get('auto')==='1';
-  if(q.get('prompter')==='0'||auto||innerWidth<innerHeight*0.9)pr.classList.add('hidden');
+  let manual=null;  // P キーで切り替えたら自動判定をやめる
   function fit(){
+    const hide=manual!==null?manual:(q.get('prompter')==='0'||auto||innerWidth<innerHeight*0.9||innerWidth<900);
+    pr.classList.toggle('hidden',hide);
     const prw=pr.classList.contains('hidden')?0:pr.offsetWidth+24;
     const s=Math.min((innerWidth-32-prw)/1080,(innerHeight-32)/1920);
     stage.style.transform=`scale(${s})`;frame.style.width=1080*s+'px';frame.style.height=1920*s+'px';
@@ -181,7 +183,7 @@ JS = r"""
     if(e.code==='Space'||e.key==='ArrowRight'||e.key==='Enter'){e.preventDefault();show(i+1)}
     else if(e.key==='ArrowLeft'){show(i-1)}
     else if(e.key==='r'||e.key==='R'){show(0)}
-    else if(e.key==='p'||e.key==='P'){pr.classList.toggle('hidden');fit()}
+    else if(e.key==='p'||e.key==='P'){manual=!pr.classList.contains('hidden');fit()}
   });
   frame.addEventListener('click',()=>show(i+1));
   document.fonts&&document.fonts.ready.then(()=>show(0))||show(0);
