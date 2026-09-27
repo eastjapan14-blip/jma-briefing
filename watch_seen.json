@@ -46,11 +46,33 @@
 "topic": "台風第２６号",
 "updated": "2026-09-27T19:59:22Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20260927195922_0_VPFJ50_472000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20260927200005_0_VPCJ50_460100.xml": {
+"author": "鹿児島地方気象台",
+"content": "【九州南部・奄美地方気象解説情報（台風第２６号）】台風第２６号は、非常に強い勢力で奄美地方に接近しています。奄美地方では、２８日夜遅くにかけてうねりを伴った高波に注意してください。",
+"held": "2026-09-27T20:10:23.933921+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第２６号",
+"updated": "2026-09-27T20:00:04Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20260927200005_0_VPCJ50_460100.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20260927200513_0_VPFJ50_460040.xml": {
+"author": "名瀬測候所",
+"content": "【奄美地方（鹿児島県）気象解説情報（台風第２６号）】台風第２６号は、非常に強い勢力で奄美地方に接近しています。奄美地方では、２８日夜遅くにかけてうねりを伴った高波に注意してください。",
+"held": "2026-09-27T20:10:23.933921+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第２６号",
+"updated": "2026-09-27T20:05:13Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20260927200513_0_VPFJ50_460040.xml"
 }
 },
 "topics": {
 "台風第２６号": {
+"九州南部・奄美": "2026-09-27T20:10:23.933921+00:00",
 "大東島": "2026-09-27T20:00:37.226070+00:00",
+"奄美": "2026-09-27T20:10:23.933921+00:00",
 "沖縄": "2026-09-27T19:50:24.114933+00:00",
 "沖縄本島": "2026-09-27T19:40:21.576702+00:00"
 },
@@ -129,6 +151,9 @@
 "https://www.data.jma.go.jp/developer/xml/data/20260927194122_0_VPCJ50_471000.xml": "2026-09-27T19:50:24.114933+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927195405_0_VXWW50_410000.xml": "2026-09-27T20:00:37.226070+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927195534_0_VPCJ50_016000.xml": "2026-09-27T20:00:37.226070+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260927195922_0_VPFJ50_472000.xml": "2026-09-27T20:00:37.226070+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20260927195922_0_VPFJ50_472000.xml": "2026-09-27T20:00:37.226070+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260927200005_0_VPCJ50_460100.xml": "2026-09-27T20:10:23.933921+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260927200513_0_VPFJ50_460040.xml": "2026-09-27T20:10:23.933921+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260927200621_0_VPZJ50_010000.xml": "2026-09-27T20:10:23.933921+00:00"
 }
 }
