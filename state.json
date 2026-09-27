@@ -105,7 +105,7 @@
    "first_seen": "2026-09-27T05:40:26+09:00",
    "flag": 9,
    "id": "pre1h:82361:2026-09-27",
-   "last_seen": "2026-09-27T09:26:17+09:00",
+   "last_seen": "2026-09-27T09:31:07+09:00",
    "last_stricter_date": "2022-07-05",
    "latitude": 33.0067,
    "local_rank": 8,
@@ -199,7 +199,7 @@
    "first_seen": "2026-09-27T05:20:24+09:00",
    "flag": 9,
    "id": "pre1h:84371:2026-09-27",
-   "last_seen": "2026-09-27T09:26:17+09:00",
+   "last_seen": "2026-09-27T09:31:07+09:00",
    "last_stricter_date": "2025-08-11",
    "latitude": 32.9167,
    "local_rank": 9,
@@ -289,12 +289,12 @@
    "date": "2026-09-27",
    "elevation": 119,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-09-27T09:31:15+09:00",
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "pre1h:86006:2026-09-27",
-   "last_seen": "2026-09-27T09:26:17+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-09-27T09:31:07+09:00",
+   "last_stricter_date": "2026-07-05",
    "latitude": 33.115,
    "local_rank": null,
    "local_tie": false,
@@ -302,8 +302,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "pre1h",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     51.0,
+     "1979-09-15"
+    ],
+    [
+     2,
+     50.0,
+     "1997-09-07"
+    ],
+    [
+     3,
+     49.5,
+     "2024-09-22"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "山鹿市",
    "name": "鹿北",
    "notifiable": true,
@@ -312,7 +331,10 @@
    "notify_count": 1,
    "pref": "熊本県",
    "pref_full": "熊本県",
-   "prev": null,
+   "prev": {
+    "date": "2017-08-15",
+    "value": 95.5
+   },
    "prev_monthly": {
     "date": "1979-09-15",
     "value": 51.0
@@ -322,12 +344,13 @@
    "remark": "",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=86&block_no=0832&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "86006",
-   "stats_period": null,
+   "stats_period": "1976/12026/9",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
@@ -335,10 +358,26 @@
     "PREFECTURE_CLUSTER"
    ],
    "time": "09:00",
-   "top3": [],
+   "top3": [
+    [
+     1,
+     95.5,
+     "2017-08-15"
+    ],
+    [
+     2,
+     92.0,
+     "2005-07-10"
+    ],
+    [
+     3,
+     87.0,
+     "2022-08-21"
+    ]
+   ],
    "unit": "mm",
    "value": 51.5,
-   "years_since": null
+   "years_since": 0
   },
   "pre1h:86086:2026-09-27": {
    "date": "2026-09-27",
@@ -348,7 +387,7 @@
    "first_seen": "2026-09-27T07:30:31+09:00",
    "flag": 9,
    "id": "pre1h:86086:2026-09-27",
-   "last_seen": "2026-09-27T09:26:17+09:00",
+   "last_seen": "2026-09-27T09:31:07+09:00",
    "last_stricter_date": "2025-08-11",
    "latitude": 32.915,
    "local_rank": null,
@@ -1569,7 +1608,7 @@
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "pre24h:82361:2026-09-27",
-   "last_seen": "2026-09-27T09:26:17+09:00",
+   "last_seen": "2026-09-27T09:31:07+09:00",
    "last_stricter_date": null,
    "latitude": 33.0067,
    "local_rank": null,
@@ -1613,10 +1652,10 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "09:00",
+   "time": "09:10",
    "top3": [],
    "unit": "mm",
-   "value": 227.5,
+   "value": 233.0,
    "years_since": null
   },
   "preday:40391:2026-09-21": {
@@ -2749,7 +2788,7 @@
    "first_seen": "2026-09-27T09:20:22+09:00",
    "flag": 9,
    "id": "preday:84371:2026-09-27",
-   "last_seen": "2026-09-27T09:26:17+09:00",
+   "last_seen": "2026-09-27T09:31:07+09:00",
    "last_stricter_date": "2026-06-25",
    "latitude": 32.9167,
    "local_rank": null,
@@ -2928,8 +2967,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-09-27T09:26:17+09:00",
- "runs": 784,
+ "last_run": "2026-09-27T09:31:07+09:00",
+ "runs": 785,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2949,16 +2988,16 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 27 Sep 2026 00:10:46 GMT",
-   "last_success": "2026-09-27T09:20:22+09:00",
-   "source_time": "2026-09-27T08:50"
+   "last_modified": "Sun, 27 Sep 2026 00:30:45 GMT",
+   "last_success": "2026-09-27T09:31:08+09:00",
+   "source_time": "2026-09-27T09:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 27 Sep 2026 00:10:44 GMT",
-   "last_success": "2026-09-27T09:20:24+09:00",
-   "source_time": "2026-09-27T08:50"
+   "last_modified": "Sun, 27 Sep 2026 00:30:41 GMT",
+   "last_success": "2026-09-27T09:31:09+09:00",
+   "source_time": "2026-09-27T09:10"
   },
   "predaily00": {
    "etag": "",
