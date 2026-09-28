@@ -10,6 +10,8 @@
   → map.png と map.json（投影パラメータ。build_short.py が地点の画素位置と縮尺を計算する）
 
 --center lat,lon --at x,y --km-across N で「この地点をこの画素に、横幅 N km で」描ける（ズーム導入の層に使う）。
+--regions を付けると map.json に気象庁の地方区分（北日本・東日本・西日本・沖縄・奄美）の画素多角形を書く
+（build_short.py の regions 場面が塗り分ける。鹿児島県の北緯 29 度より南の島は 沖縄・奄美 に入れる）。
 --points で与えた地点が --inner の矩形（左,上,右,下 px）に収まるように縮尺を決める。右と下は Shorts の UI と
 見出しの重なりを避けるため余白を大きめにとる。タイルは ~/.cache/jma-briefing/gsi にキャッシュする。
 """
@@ -21,6 +23,16 @@ from PIL import Image, ImageDraw, ImageFilter
 TILE = "https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{x}/{y}.png"
 CACHE = Path.home() / ".cache" / "jma-briefing" / "gsi" / "dem_png"
 PREF = Path(__file__).resolve().parent / "data" / "japan_pref.json"
+
+REGIONS = {  # 気象庁の季節予報の地方区分（都道府県で近似）
+    "北日本": ["北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"],
+    "東日本": ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県", "山梨県", "長野県",
+             "新潟県", "富山県", "石川県", "福井県", "岐阜県", "静岡県", "愛知県", "三重県"],
+    "西日本": ["滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県",
+             "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県"],
+    "沖縄・奄美": ["沖縄県"],
+}
+AMAMI_LAT = 29.0
 
 SEA = np.array([9, 14, 22], float)
 LAND = np.array([30, 38, 48], float)
@@ -115,6 +127,7 @@ def main():
     ap.add_argument("--at", help="x,y px（--center の置き場所。既定は画像中央）")
     ap.add_argument("--km-across", type=float, help="画像の横幅の実距離 km（--center と併用）")
     ap.add_argument("--no-borders", action="store_true", help="県境線を描かない（全国スケール用。--pref の塗りは残る）")
+    ap.add_argument("--regions", action="store_true", help="map.json に地方区分の多角形（画素）を書く")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
 
@@ -211,6 +224,22 @@ def main():
     meta = {"w": W, "h": H, "wx0": wx0, "wy0": wy0, "s": s, "z": z, "lat_c": lat_c,
             "px_per_km": s * 1000 / world_m,
             "credit": "地図: 国土地理院 標高タイルを加工"}
+    if a.regions:
+        regs = {}
+        for reg, names in REGIONS.items():
+            for name in names:
+                for r in prefs.get(name, []):
+                    target = "沖縄・奄美" if name == "鹿児島県" and max(y for x, y in r) < AMAMI_LAT else reg
+                    pp = [to_px(x, y) for x, y in r]
+                    if not any(-50 <= x <= W + 50 and -50 <= y <= H + 50 for x, y in pp):
+                        continue
+                    q = [pp[0]]
+                    for x, y in pp[1:]:          # 1.5px 未満の刻みは落とす（HTML に埋め込むので軽くする）
+                        if abs(x - q[-1][0]) + abs(y - q[-1][1]) >= 1.5:
+                            q.append((x, y))
+                    if len(q) >= 3:
+                        regs.setdefault(target, []).append([[round(x, 1), round(y, 1)] for x, y in q])
+        meta["regions"] = regs
     out.with_suffix(".json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     print(out, out.with_suffix(".json"))
 

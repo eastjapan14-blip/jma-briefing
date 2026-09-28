@@ -6,8 +6,16 @@
     → material/<dir>/short.html          ブラウザで開き、Space/→/クリックで進める。画面収録しながら読む
     → material/<dir>/short_narration.md  ナレーション（場面ごと）＋照合チェック表
 
-操作: Space / → / クリック = 次の場面、← = 前、R = 最初から。
-      URL に ?auto=1 を付けると各場面の dur 秒で自動送り（将来の mp4 自動生成用）。
+操作: Space / → / クリック = 次の拍（beat）。場面の拍を使い切ると次の場面へ。← = 前の場面、R = 最初から。
+      URL に ?auto=1 を付けると各場面の dur 秒で自動送り（拍は ▶ の位置に比例した時刻で自動発火。将来の mp4 自動生成用）。
+
+拍（beat）: 1場面の動きを、ナレーションに合わせて Space で順に出す区切り。
+  narration の中に「▶」を書くと、その位置が次の拍の合図になり、プロンプターが区切りごとに強調する。
+  例 "これまでの1位は67.1ミリ。▶今回はそれを0.9ミリ上回りました。▶100年以上動かなかった1位の入れ替わりです。"
+  場面ごとの拍: intro=地図の寄り→数字 / rank=従来の順位→今回の棒→結論 / map=中心の地点→ほかの地点→結論
+                track=実況→予報円→結論 / synoptic=等圧線と前線→空気の流れ→地点→結論 / scale=数値→帯→結論
+                regions=地図→地方ごと（1つずつ）→結論 / grid=見出し→列ごと→結論 / text,close=見出し→行ごと
+  ▶ の数が拍より少なくても動く（残りは好きな所で押す）。
 
 short.json の書式:
   {
@@ -45,6 +53,12 @@ short.json の書式:
       "stats": [{"k": "中心気圧", "v": "945", "u": "hPa"}, ...], "narration": "..."},
      {"type": "figure", "heading": "...", "image": "images/typhoon_map.png", "caption": "...", "credit": "気象庁 台風経路図"},   ← 気象庁の図をそのまま
      {"type": "cards", "heading": "...", "cards": [{"title": "船橋", "value": "290.0mm", "sub": "1位"}, ...]},   ← 一覧（行＋棒）
+     {"type": "regions", "heading": "...", "map": "images/japan.png",                     ← 地方の塗り分け（長期予報）。map.json は render_map.py --regions で
+      "regions": [{"name": "北日本", "value": "高い 60%", "color": "#F97C00", "alpha": 0.6, "sub": "任意", "at": [lat, lon], "side": "right"}, ...],
+      "takeaway": "...", "narration": "..."},                                           ← 地方が順に点灯。alpha は確率の強さ（70%→.8、40%→.4 の目安）
+     {"type": "grid", "heading": "...", "sub": "...", "cols": [{"label": "1週目", "sub": "9/26〜10/2"}, ...],   ← 期間×地方のマス目（長期予報）
+      "rows": [{"label": "北日本", "cells": [{"text": "高い", "sub": "70%", "color": "#F97C00", "alpha": .8}, [{...}, {...}], ...]}, ...],
+      "legend": [{"label": "低い", "color": "#387DFF"}, ...], "narration": "..."},   ← セルを配列にすると左右に分割（「平年並40%／高い40%」）
      {"type": "text" | "close", "heading": "...", "lines": ["...", "..."], "narration": "..."}
    ],
    "check": [["項目", "動画の値", "原文の値", "確認"], ...],   ← 照合チェック表（任意。無ければ数値から自動生成）
@@ -78,7 +92,21 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 #iso{position:absolute;inset:-10%;width:120%;height:120%;opacity:.55;animation:drift 60s linear infinite alternate}
 @keyframes drift{from{transform:translate(0,0)}to{transform:translate(-60px,40px)}}
 .scene{position:absolute;inset:0;display:none;flex-direction:column;padding:300px 200px 0 80px}
-.scene.active{display:flex}
+.scene.active{display:flex;z-index:1;animation:enter .55s var(--ease) both;will-change:transform,opacity}
+.scene.out{z-index:0;animation:leave .45s cubic-bezier(.4,0,.8,.4) forwards;pointer-events:none}
+@keyframes enter{from{opacity:0;transform:translateX(70px)}to{opacity:1;transform:none}}
+@keyframes leave{from{opacity:1;transform:none}to{opacity:0;transform:translateX(-90px)}}
+#swipe{position:absolute;left:-40px;top:0;bottom:0;width:14px;background:var(--sw,#5EE7FF);z-index:5;opacity:0;pointer-events:none;box-shadow:0 0 40px var(--sw,#5EE7FF)}
+#swipe.go{animation:swipe .55s cubic-bezier(.3,0,.2,1) forwards}
+@keyframes swipe{0%{left:-40px;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:1100px;opacity:0}}
+.bt{display:contents}
+/* 常に何かが動く: 地図はゆっくり寄る（Ken Burns）、見出しはワイプ、結論の帯は左から差し込む */
+.kb{position:absolute;inset:0;transform-origin:50% 55%;animation:kb 26s linear forwards;will-change:transform}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.07)}}
+.heading,.place{clip-path:inset(0 100% 0 0);transition:clip-path .7s var(--ease)}
+.in .heading,.in .place{clip-path:inset(0 -20px 0 0)}
+.sub{opacity:0;transition:opacity .5s var(--ease) .35s}
+.in .sub{opacity:1}
 /* 安全域: 上 200 / 下 500 / 右 200 は Shorts・TikTok の UI が重なるため空ける。本文は y=300〜1300、注記は 1316〜1400 */
 .top{position:absolute;left:80px;right:200px;top:200px;display:flex;justify-content:space-between;align-items:flex-end;
  font-family:var(--mono);font-size:26px;letter-spacing:.06em;color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line)}
@@ -124,7 +152,9 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .row .v{font-family:var(--num);font-size:70px;font-weight:800;text-align:right;letter-spacing:.01em;font-variant-numeric:tabular-nums}
 .row .v small{font-size:36px;color:var(--muted);font-weight:600;margin-left:4px}
 .row.today .rk,.row.today .v{color:var(--accent)}
-.row.today .bar i{background:var(--accent)}
+.row.today .bar i{background:var(--accent);box-shadow:0 0 0 rgba(94,231,255,0)}
+.in .row.today .bar i{animation:glow 2.6s ease-in-out 1.6s infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 0 rgba(255,255,255,0)}50%{box-shadow:0 0 22px var(--accent)}}
 .row.today .nm:after,.row.today .rk:after{content:""}
 .row .new{font-family:var(--num);font-size:26px;letter-spacing:.14em;color:var(--bg);background:var(--accent);padding:4px 10px;margin-left:16px;vertical-align:middle;font-weight:800}
 .note{margin-top:52px;padding:30px 36px;border-left:4px solid var(--accent);background:rgba(255,255,255,.04);font-size:42px;line-height:1.45;font-weight:600;
@@ -138,9 +168,10 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .in .line{opacity:1;transform:none}
 /* 結論の一行（音を出さない視聴者向け） */
 .take{position:absolute;left:80px;right:200px;bottom:632px;font-size:60px;font-weight:800;line-height:1.25;letter-spacing:.01em;
- opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .6s var(--ease)}
-.take:before{content:"";display:block;width:64px;height:4px;background:var(--accent);margin-bottom:18px}
-.in .take{opacity:1;transform:none}
+ opacity:0;transform:translateX(-48px);clip-path:inset(0 100% 0 0);transition:opacity .35s var(--ease),transform .7s var(--ease),clip-path .7s var(--ease)}
+.take:before{content:"";display:block;width:64px;height:4px;background:var(--accent);margin-bottom:18px;transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.in .take{opacity:1;transform:none;clip-path:inset(0 -20px 0 0)}
+.in .take:before{transform:none;transition-delay:.35s}
 /* 順位: 従来1位の位置に破線。今回の棒が遅れて伸びて越える */
 .row .bar .mark{position:absolute;top:-16px;bottom:-16px;left:var(--mk);border-left:3px dashed rgba(255,255,255,.55);opacity:0;transition:opacity .4s var(--ease) .7s}
 .in .row .bar .mark{opacity:1}
@@ -154,6 +185,7 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .in .pt{opacity:1}
 .pt i{position:absolute;left:-11px;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(11,15,20,.85)}
 .pt.hero i{left:-15px;top:-15px;width:30px;height:30px;background:#fff;box-shadow:0 0 0 6px rgba(11,15,20,.85),0 0 24px rgba(255,255,255,.5)}
+.in .pt.hero:after{animation:ping 2.4s var(--ease) infinite;animation-delay:inherit}
 .pt:after{content:"";position:absolute;left:-11px;top:-11px;width:22px;height:22px;border-radius:50%;border:2px solid var(--accent);opacity:0;transform:scale(1)}
 .in .pt:after{animation:ping 1.1s var(--ease) forwards;animation-delay:inherit}
 @keyframes ping{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(4.5)}}
@@ -170,7 +202,8 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 /* ズーム導入: 全面の地図 → 注目点へ寄る → 影を掛けて文字 */
 .s-intro{padding:0}
 .s-intro .top,.s-intro .foot{z-index:3}
-.zoom{position:absolute;inset:0;overflow:hidden}
+.zoom{position:absolute;inset:0;overflow:hidden;transform-origin:50% 60%;animation:kb 22s linear forwards;animation-play-state:paused}
+.in .zoom{animation-play-state:running}
 .zoomw{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0;will-change:transform;animation-timing-function:linear;animation-fill-mode:forwards;animation-play-state:paused}
 .in .zoomw{animation-play-state:running}
 .ly{position:absolute;display:block;animation-timing-function:linear;animation-fill-mode:forwards;animation-play-state:paused}
@@ -190,7 +223,7 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .itext{position:absolute;left:80px;right:80px;top:300px;z-index:2}
 .itext>*{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .7s var(--ease)}
 .in .itext>*{opacity:1;transform:none}
-.itext .place{font-size:84px}
+.itext .place{font-size:84px;clip-path:none}
 .itext .big .num{font-size:260px}
 /* 進路図 */
 .mapwrap svg{position:absolute;left:0;top:0;width:1080px;overflow:visible}
@@ -204,14 +237,36 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .tr-pt{fill:#fff}
 .tr-cur{fill:#fff;stroke:#0B0F14;stroke-width:5}
 .fg{opacity:0;transition:opacity .45s var(--ease) var(--d)}
+/* 地方の塗り分け・マス目（長期予報） */
+.rg path{stroke-width:2;stroke-opacity:.85}
+.rg{opacity:0;transition:opacity .8s var(--ease) var(--d)}
+.in .rg{opacity:1}
+.pt.rlb .lb{font-size:40px;text-shadow:0 2px 12px #000,0 0 6px #000}
+.pt.rlb .lb b{font-family:var(--jp);font-size:46px;font-weight:800;margin-left:14px;letter-spacing:.01em}
+.pt.rlb .lb b span{font-family:var(--num);font-size:52px;margin-left:8px}
+.pt.rlb.left .lb{text-align:right}
+.grid{margin-top:40px;display:grid;gap:14px 14px;align-items:stretch}
+.grid>div{display:contents}
+.ghd{font-size:36px;font-weight:700;text-align:center;line-height:1.2;padding-bottom:8px}
+.ghd small{display:block;font-family:var(--mono);font-size:26px;color:var(--muted);font-weight:500;margin-top:6px}
+.grl{font-size:38px;font-weight:700;display:flex;align-items:center}
+.gcell{display:flex;gap:6px;opacity:0;transform:translateY(14px) scale(.94);transition:opacity .45s var(--ease),transform .55s var(--ease)}
+.in .gcell{opacity:1;transform:none}
+.gc{flex:1;min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--c);
+ opacity:var(--a);color:#fff;font-size:34px;font-weight:700;line-height:1.1;text-align:center}
+.gc small{display:block;font-family:var(--num);font-size:48px;font-weight:800;margin-top:4px;letter-spacing:.01em}
+.gc.dark{color:#0B0F14}
+.glegend{margin-top:34px;display:flex;gap:30px;flex-wrap:wrap;font-family:var(--mono);font-size:28px;color:#C9D1DA}
+.glegend span{display:inline-flex;align-items:center;gap:10px}
+.glegend i{width:28px;height:28px;background:var(--c)}
 /* 天気図 */
 .syn-iso{fill:none;stroke:rgba(255,255,255,.26);stroke-width:2}
 .syn-isolbl{font-family:var(--num);font-size:30px;font-weight:600;fill:rgba(255,255,255,.55)}
 .syn-fr{clip-path:inset(0 100% 0 0);transition:clip-path 2s cubic-bezier(.45,0,.55,1) .5s}
 .in .syn-fr{clip-path:inset(0 0 0 0)}
-.syn-arrow{fill:none;stroke:rgba(255,138,76,.9);stroke-width:18;stroke-linecap:round;stroke-linejoin:round;transition:stroke-dashoffset 1.2s var(--ease) 2.4s}
+.syn-arrow{fill:none;stroke:rgba(255,138,76,.9);stroke-width:18;stroke-linecap:round;stroke-linejoin:round;transition:stroke-dashoffset 1.2s var(--ease) .2s}
 .in .syn-arrow{stroke-dashoffset:0!important}
-.syn-head{fill:rgba(255,138,76,.95);opacity:0;transition:opacity .3s var(--ease) 3.3s}
+.syn-head{fill:rgba(255,138,76,.95);opacity:0;transition:opacity .3s var(--ease) 1.1s}
 .in .syn-head{opacity:1}
 .syn-time{position:absolute;left:80px;top:22px;font-family:var(--mono);font-size:28px;color:#C9D1DA}
 .pt.warm .lb{color:#FFB08A}
@@ -232,7 +287,9 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 .stat .v{font-family:var(--num);font-size:84px;font-weight:800;line-height:1.05;letter-spacing:.01em}
 .stat .v small{font-size:38px;color:var(--muted);margin-left:8px;font-weight:600;font-family:var(--num)}
 .bandlbl{margin-top:44px;font-size:34px;color:var(--muted);font-weight:600}
-.band{position:relative;margin-top:100px;height:112px;display:flex}
+.band{position:relative;margin-top:100px;height:112px;display:flex;opacity:0;transition:opacity .5s var(--ease)}
+.in .band{opacity:1}
+.mk{transition-delay:.2s!important}
 .seg{position:relative;flex:var(--f);border:1px solid var(--line);border-left:none;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;color:var(--muted);white-space:nowrap}
 .seg:first-child{border-left:1px solid var(--line)}
 .seg span{text-align:center;line-height:1.15}
@@ -256,11 +313,20 @@ html,body{height:100%;background:#000;overflow:hidden;font-family:var(--jp);colo
 #pr .cue:empty{display:none}
 #pr .nx{color:#8B95A3}
 #pr .ctl{margin-top:auto;font:12px/1.8 var(--mono);color:#7A8593;border-top:1px solid #2a2f36;padding-top:12px}
+#pr .cur .pseg{color:#5E6875;font-weight:500}
+#pr .cur .pseg.now{color:#fff;font-weight:700}
+#pr .cur .pseg.done{color:#8B95A3;font-weight:500}
+#pr .cur .pmk{display:inline-block;color:#F2B134;margin:0 4px;font-weight:800}
+#pr .beat{font:13px/1.6 var(--mono);color:#F2B134;letter-spacing:.06em}
+#pr .bar{height:6px;background:#2a2f36;position:relative}
+#pr .bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:#5EE7FF}
+#pr .bar i.over{background:#FF7A45}
+#pr .tm{font:12px/1.4 var(--mono);color:#7A8593;display:flex;justify-content:space-between}
 """
 
 JS = r"""
 (function(){
-  const stage=document.getElementById('stage'),frame=document.getElementById('frame'),pr=document.getElementById('pr');
+  const stage=document.getElementById('stage'),frame=document.getElementById('frame'),pr=document.getElementById('pr'),sw=document.getElementById('swipe');
   const q=new URLSearchParams(location.search),auto=q.get('auto')==='1';
   let manual=null;  // P キーで切り替えたら自動判定をやめる
   function fit(){
@@ -271,32 +337,61 @@ JS = r"""
     stage.style.transform=`scale(${s})`;frame.style.width=1080*s+'px';frame.style.height=1920*s+'px';
   }
   addEventListener('resize',fit);fit();
-  const scenes=[...document.querySelectorAll('.scene')];let i=-1,timer=null;
+  const scenes=[...document.querySelectorAll('.scene')];let i=-1,beat=-1,timers=[],t0=0,tick=null;
+  const $=id=>document.getElementById(id);
+  function nbeats(sc){return parseInt(sc.dataset.beats||'1')}
+  function segs(sc){return (sc.dataset.narration||'').split('▶')}
+  function prompter(sc){
+    const ss=segs(sc),n=nbeats(sc);
+    $('pr-cur').innerHTML=ss.map((t,k)=>{const cls=k<beat?'done':(k===beat?'now':'');return (k?'<span class="pmk">▶</span>':'')+`<span class="pseg ${cls}">${t.replace(/</g,'&lt;')}</span>`}).join('');
+    const left=n-1-beat;
+    $('pr-beat').textContent=left>0?`Space ▶ あと ${left} 回でこの場面の動きが出そろう`:'Space → 次の場面';
+  }
+  function release(sc,k){
+    sc.querySelectorAll(`.bt[data-beat="${k}"]`).forEach(w=>{
+      w.classList.add('in');
+      const rd=parseFloat(w.dataset.roll||'0.3');
+      w.querySelectorAll('.dg .strip').forEach((st,j)=>{st.style.transitionDelay=(rd+0.12*j)+'s';st.style.transform=`translateY(-${st.dataset.d}em)`});
+    });
+    beat=k;prompter(sc);
+  }
+  function next(){
+    const sc=scenes[i];
+    if(sc&&beat<nbeats(sc)-1)release(sc,beat+1);else show(i+1);
+  }
   function show(n){
     if(n<0||n>=scenes.length)return;
-    scenes.forEach(s=>{s.classList.remove('active','in');s.querySelectorAll('.dg .strip').forEach(st=>st.style.transform='translateY(0)')});
+    timers.forEach(clearTimeout);timers=[];
+    const prev=scenes[i];
+    scenes.forEach(s=>{if(s!==prev){s.classList.remove('active','in','out');s.querySelectorAll('.bt').forEach(w=>w.classList.remove('in'));s.querySelectorAll('.dg .strip').forEach(st=>st.style.transform='translateY(0)')}});
+    const sc=scenes[n];
+    if(prev&&prev!==sc){prev.classList.add('out');setTimeout(()=>{prev.classList.remove('active','out');prev.querySelectorAll('.bt').forEach(w=>w.classList.remove('in'))},480)}
+    else if(prev===sc){sc.classList.remove('active','in');sc.querySelectorAll('.bt').forEach(w=>w.classList.remove('in'));sc.querySelectorAll('.dg .strip').forEach(st=>st.style.transform='translateY(0)')}
     void document.body.offsetWidth;  // display:none を一度確定させ、遷移とアニメーションを最初から
-    const sc=scenes[n];sc.classList.add('active');void sc.offsetWidth;
+    sc.classList.add('active');void sc.offsetWidth;
     sc.querySelectorAll('.zoomw,.ly').forEach(el=>{const nm=el.style.animationName;el.style.animationName='none';void el.offsetWidth;el.style.animationName=nm});
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{
-      sc.classList.add('in');
-      const rd=parseFloat(sc.dataset.rollDelay||'0');
-      sc.querySelectorAll('.dg .strip').forEach((st,k)=>{st.style.transitionDelay=(rd+0.12*k)+'s';st.style.transform=`translateY(-${st.dataset.d}em)`});
-    }));
-    i=n;
-    document.getElementById('pr-idx').textContent=`${n+1} / ${scenes.length}  ${sc.dataset.title||''}`;
-    document.getElementById('pr-cur').textContent=sc.dataset.narration||'';
-    document.getElementById('pr-cue').textContent=sc.dataset.cue||'';
-    const nx=scenes[n+1];document.getElementById('pr-nx').textContent=nx?('次: '+(nx.dataset.title||'')+' — '+(nx.dataset.narration||'').slice(0,60)+'…'):'（最後の場面）';
-    if(auto){clearTimeout(timer);const d=parseFloat(sc.dataset.dur||'8')*1000;if(n<scenes.length-1)timer=setTimeout(()=>show(n+1),d)}
+    sw.style.setProperty('--sw',getComputedStyle(sc).getPropertyValue('--accent'));sw.classList.remove('go');void sw.offsetWidth;sw.classList.add('go');
+    i=n;beat=0;   // 拍0 は場面の表示と同時（描画確定を待ってから開ける。連打で拍0が二重に数えられないよう先に 0 にしておく）
+    requestAnimationFrame(()=>requestAnimationFrame(()=>release(sc,0)));
+    $('pr-idx').textContent=`${n+1} / ${scenes.length}  ${sc.dataset.title||''}`;
+    $('pr-cue').textContent=sc.dataset.cue||'';
+    const nx=scenes[n+1];$('pr-nx').textContent=nx?('次: '+(nx.dataset.title||'')+' — '+(nx.dataset.narration||'').replace(/▶/g,'').slice(0,60)+'…'):'（最後の場面）';
+    const d=parseFloat(sc.dataset.dur||'8');t0=performance.now();clearInterval(tick);
+    const bar=$('pr-bar');bar.classList.remove('over');bar.style.transition='none';bar.style.width='0';void bar.offsetWidth;
+    tick=setInterval(()=>{const e=(performance.now()-t0)/1000;bar.style.width=Math.min(100,e/d*100)+'%';bar.classList.toggle('over',e>d);$('pr-tm').textContent=`${e.toFixed(0)}s / 目安 ${d}s`},200);
+    if(auto){
+      const nb=nbeats(sc),ss=segs(sc),tot=ss.join('').length||1;let acc=0;
+      for(let k=1;k<nb;k++){acc+=(ss[k-1]||'').length;const t=ss.length>k?d*acc/tot:d*k/nb;timers.push(setTimeout(()=>release(sc,k),t*1000))}
+      if(n<scenes.length-1)timers.push(setTimeout(()=>show(n+1),d*1000));
+    }
   }
   addEventListener('keydown',e=>{
-    if(e.code==='Space'||e.key==='ArrowRight'||e.key==='Enter'){e.preventDefault();show(i+1)}
+    if(e.code==='Space'||e.key==='ArrowRight'||e.key==='Enter'){e.preventDefault();next()}
     else if(e.key==='ArrowLeft'){show(i-1)}
     else if(e.key==='r'||e.key==='R'){show(0)}
     else if(e.key==='p'||e.key==='P'){manual=!pr.classList.contains('hidden');fit()}
   });
-  frame.addEventListener('click',()=>show(i+1));
+  frame.addEventListener('click',next);
   function start(){if(i<0)show(0)}
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(start);else start();
   setTimeout(start,1500);
@@ -306,6 +401,12 @@ JS = r"""
 
 def esc(s):
     return html.escape(str(s))
+
+
+def B(k, html_, roll=None):
+    """拍 k で出す要素をまとめる（display:contents なので配置に影響しない）。"""
+    r = f' data-roll="{roll:.2f}"' if roll is not None else ""
+    return f'<b class="bt" data-beat="{k}"{r}>{html_}</b>'
 
 
 def fmt_val(v, unit=""):
@@ -377,7 +478,8 @@ def track_html(sc, data):
     b64 = base64.b64encode(base.read_bytes()).decode()
     px, pxr = _proj(meta)
     W, H = meta["w"], meta["h"]
-    svg, labels = [], []
+    svg, labels = [], []          # 拍0: 実況        svg2, labels2: 拍1: 予報円
+    svg2, labels2 = [], []
     if sc.get("past"):
         pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in (px(la, lo) for la, lo in sc["past"]))
         svg.append(f'<polyline class="tr-past" points="{pts}"/>')
@@ -388,19 +490,19 @@ def track_html(sc, data):
     # 予報円・暴風警戒域（順に現れる）
     for k, p in enumerate(sc["points"]):
         x, y = px(p["lat"], p["lon"])
-        d = 0.9 + 0.45 * k
+        d = 0.2 + 0.45 * k
         g = []
         if p.get("storm_km"):
             g.append(f'<circle class="tr-warn" cx="{x:.1f}" cy="{y:.1f}" r="{pxr(p["lat"], p["r_km"] + p["storm_km"]):.1f}"/>')
         g.append(f'<circle class="tr-prob" cx="{x:.1f}" cy="{y:.1f}" r="{pxr(p["lat"], p["r_km"]):.1f}"/>')
         g.append(f'<circle class="tr-pt" cx="{x:.1f}" cy="{y:.1f}" r="9"/>')
-        svg.append(f'<g class="fg" style="--d:{d:.2f}s">{"".join(g)}</g>')
+        svg2.append(f'<g class="fg" style="--d:{d:.2f}s">{"".join(g)}</g>')
         if p.get("label"):
             side = p.get("side") or ("left" if x > W * 0.6 else "right")
             sub = f'<em>{esc(p["sub"])}</em>' if p.get("sub") else ""
-            labels.append(f'<div class="pt nodot {side}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:{d+.1:.2f}s"><span class="lb">{esc(p["label"])}{sub}</span></div>')
+            labels2.append(f'<div class="pt nodot {side}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:{d+.1:.2f}s"><span class="lb">{esc(p["label"])}{sub}</span></div>')
     pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in line)
-    svg.append(f'<polyline class="tr-fc" points="{pts}" style="stroke-dasharray:{L:.0f};stroke-dashoffset:{L:.0f}"/>')
+    svg2.append(f'<polyline class="tr-fc" points="{pts}" style="stroke-dasharray:{L:.0f};stroke-dashoffset:{L:.0f}"/>')
     # 実況: 強風域（中心がずれることがある）、暴風域、中心
     g = []
     if cur.get("gale"):
@@ -419,10 +521,12 @@ def track_html(sc, data):
         items = [("#FF5C5C", "rgba(255,92,92,.25)", "暴風域"), ("#F2B134", "rgba(242,177,52,.15)", "強風域"), ("#FFFFFF", "transparent", "予報円")]
         legend = '<div class="legend">' + "".join(f'<span><i style="--c:{c};--bg-c:{b}"></i>{n}</span>' for c, b, n in items) + "</div>"
     sb = f'<div class="scalebar" style="width:{meta["px_per_km"]*sc.get("scale_km", 500):.0f}px"><span>{sc.get("scale_km", 500)} km</span></div>'
-    html_ = (f'<div class="mapwrap" style="height:{H}px;top:{1300-H}px"><img src="data:image/png;base64,{b64}" style="height:{H}px">'
-             f'<svg viewBox="0 0 {W} {H}" style="height:{H}px">{"".join(svg)}</svg>{"".join(labels)}{legend}{sb}<div class="mapfade"></div></div>')
+    html_ = (f'<div class="mapwrap" style="height:{H}px;top:{1300-H}px"><div class="kb"><img src="data:image/png;base64,{b64}" style="height:{H}px">'
+             + B(0, f'<svg viewBox="0 0 {W} {H}" style="height:{H}px">{"".join(svg)}</svg>{"".join(labels)}')
+             + B(1, f'<svg viewBox="0 0 {W} {H}" style="height:{H}px">{"".join(svg2)}</svg>{"".join(labels2)}')
+             + f'</div>{legend}{sb}<div class="mapfade"></div></div>')
     data.setdefault("_credits", []).append(meta.get("credit", ""))
-    return html_, 0.9 + 0.45 * len(sc["points"]) + 0.6
+    return html_, 2
 
 
 FRONT_COLOR = {"red": "#FF5A5A", "blue": "#5B8CFF", "purple": "#C77DFF"}
@@ -501,7 +605,7 @@ def synoptic_html(sc, data):
             x, y = edge[len(edge) // 2]
             lbls.append(f'<text class="syn-isolbl" x="{x:.0f}" y="{y - 8:.0f}" text-anchor="middle" paint-order="stroke" stroke="#0B0F14" stroke-width="6">{ib["hpa"]}</text>')
     fronts = "".join(_front_svg([px(la, lo) for la, lo in f["line"]], f["type"]) for f in sf["fronts"])
-    arrows = []
+    arrows = []   # 拍1
     for k, ar in enumerate(sc.get("arrows", [])):
         pts = [px(la, lo) for la, lo in ar["path"]]
         L = sum(math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1))
@@ -514,30 +618,100 @@ def synoptic_html(sc, data):
                 f'L{x1 - tx*h*0.4 + ty*w:.1f},{y1 - ty*h*0.4 - tx*w:.1f} Z')
         arrows.append(f'<polyline class="syn-arrow" points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" '
                       f'style="stroke-dasharray:{L:.0f};stroke-dashoffset:{L:.0f}"/><path class="syn-head" d="{head}"/>')
-    labels = []
+    labels1, labels2 = [], []
     for k, ar in enumerate(sc.get("arrows", [])):
         if ar.get("label"):
             x, y = px(*ar["path"][0])
             side = ar.get("side", "right")
-            labels.append(f'<div class="pt nodot warm {side}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:2.6s"><span class="lb">{esc(ar["label"])}</span></div>')
+            labels1.append(f'<div class="pt nodot warm {side}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:.4s"><span class="lb">{esc(ar["label"])}</span></div>')
     if sc.get("front_label"):
         fl = sc["front_label"]
         x, y = px(fl["lat"], fl["lon"])
-        labels.append(f'<div class="pt nodot {fl.get("side", "below")}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:2.2s"><span class="lb">{esc(fl["text"])}</span></div>')
+        labels1.append(f'<div class="pt nodot {fl.get("side", "below")}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:.1s"><span class="lb">{esc(fl["text"])}</span></div>')
     if sc.get("focus"):
         fo = sc["focus"]
         x, y = px(fo["lat"], fo["lon"])
         sub = f'<em>{esc(fo["sub"])}</em>' if fo.get("sub") else ""
-        labels.append(f'<div class="pt hero {fo.get("side", "left")}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:3.6s"><i></i><span class="lb">{esc(fo["label"])}{sub}</span></div>')
+        labels2.append(f'<div class="pt hero {fo.get("side", "left")}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:.1s"><i></i><span class="lb">{esc(fo["label"])}{sub}</span></div>')
     tl = f'<div class="syn-time">{esc(sc["time_label"])}</div>' if sc.get("time_label") else ""
-    svg = (f'<svg viewBox="0 0 {W} {H}" style="height:{H}px"><g class="fg" style="--d:.1s">{"".join(iso)}{"".join(lbls)}</g></svg>'
-           f'<svg class="syn-fr" viewBox="0 0 {W} {H}" style="height:{H}px">{fronts}</svg>'
-           f'<svg viewBox="0 0 {W} {H}" style="height:{H}px">{"".join(arrows)}</svg>')
-    html_ = (f'<div class="mapwrap" style="height:{H}px;top:{1300-H}px"><img src="data:image/png;base64,{b64}" style="height:{H}px">'
-             f'{svg}{"".join(labels)}{tl}<div class="mapfade"></div></div>')
+    b0 = (f'<svg viewBox="0 0 {W} {H}" style="height:{H}px"><g class="fg" style="--d:.1s">{"".join(iso)}{"".join(lbls)}</g></svg>'
+          f'<svg class="syn-fr" viewBox="0 0 {W} {H}" style="height:{H}px">{fronts}</svg>')
+    b1 = f'<svg viewBox="0 0 {W} {H}" style="height:{H}px">{"".join(arrows)}</svg>{"".join(labels1)}'
+    html_ = (f'<div class="mapwrap" style="height:{H}px;top:{1300-H}px"><div class="kb"><img src="data:image/png;base64,{b64}" style="height:{H}px">'
+             f'{B(0, b0)}{B(1, b1)}{B(2, "".join(labels2))}</div>{tl}<div class="mapfade"></div></div>')
     data.setdefault("_credits", []).append(meta.get("credit", ""))
     data.setdefault("_credits", []).append("天気図: 気象庁 地上実況図（XML）")
-    return html_, 4.2
+    return html_, 3
+
+
+# 札の既定位置（1080x900 の全国図。北・東は太平洋側に右出し、西は日本海側に左出し、沖縄・奄美は奄美の右）
+REGION_ANCHOR = {"北日本": ((40.3, 141.5), "right"), "東日本": ((35.6, 140.6), "right"), "西日本": ((31.3, 132.5), "right"), "沖縄・奄美": ((28.4, 129.6), "right")}
+
+
+def regions_html(sc, data):
+    """地方の塗り分け: 地形図の上に地方区分の多角形を色で塗り、地方名と値の札を順に出す。"""
+    base = data["_dir"] / sc["map"]
+    meta = json.loads(base.with_suffix(".json").read_text(encoding="utf-8"))
+    if "regions" not in meta:
+        raise SystemExit(f"{base.with_suffix('.json')} に regions が無い。render_map.py --regions で描き直す")
+    b64 = base64.b64encode(base.read_bytes()).decode()
+    px, _ = _proj(meta)
+    W, H = meta["w"], meta["h"]
+    each = sc.get("beats", "each") == "each"        # 地方を1つずつ拍で出す / once: 1拍でまとめて順に
+    beats = []
+    for k, r in enumerate(sc["regions"]):
+        polys = meta["regions"].get(r["name"], [])
+        col, alpha = r.get("color", "#8B95A3"), r.get("alpha", 0.5)
+        d = 0.05 if each else 0.1 + 0.55 * k
+        paths = "".join('<path d="M' + " L".join(f"{x},{y}" for x, y in p) + ' Z"/>' for p in polys)
+        g = f'<g class="rg" style="--d:{d:.2f}s;fill:{col};fill-opacity:{alpha};stroke:{col}">{paths}</g>'
+        (lat, lon), side0 = REGION_ANCHOR.get(r["name"], ((36, 138), "right"))
+        if r.get("at"):
+            lat, lon = r["at"]
+        x, y = px(lat, lon)
+        side = r.get("side", side0)
+        val = ""
+        if r.get("value"):
+            m = re.match(r"(.*?)\s*(\d+%)$", r["value"])
+            val = (f'<b style="color:{col}">{esc(m.group(1))}<span>{m.group(2)}</span></b>' if m
+                   else f'<b style="color:{col}">{esc(r["value"])}</b>')
+        sub = f'<em>{esc(r["sub"])}</em>' if r.get("sub") else ""
+        lb = (f'<div class="pt nodot rlb {side}" style="left:{x:.0f}px;top:{y:.0f}px;transition-delay:{d+.35:.2f}s">'
+              f'<span class="lb">{esc(r["name"])}{val}{sub}</span></div>')
+        beats.append(B(k + 1 if each else 1, f'<svg viewBox="0 0 {W} {H}" style="height:{H}px">{g}</svg>{lb}'))
+    html_ = (f'<div class="mapwrap" style="height:{H}px;top:{1300-H}px"><div class="kb"><img src="data:image/png;base64,{b64}" style="height:{H}px">'
+             f'{"".join(beats)}</div><div class="mapfade"></div></div>')
+    data.setdefault("_credits", []).append(meta.get("credit", ""))
+    return html_, (len(sc["regions"]) if each else 1) + 1
+
+
+def _dark_text(col):
+    h = col.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 170
+
+
+def grid_html(sc):
+    """期間×地方のマス目。列ごとに順に出る。"""
+    cols, rows = sc["cols"], sc["rows"]
+    parts = [f'<div class="grid" style="grid-template-columns:200px repeat({len(cols)},1fr)">']
+    parts.append('<div><div></div>' + "".join(f'<div class="ghd">{esc(c["label"])}<small>{esc(c.get("sub", ""))}</small></div>' for c in cols) + "</div>")
+    for i, r in enumerate(rows):
+        cells = []
+        for j, c in enumerate(r["cells"]):
+            inner = ""
+            for pc in (c if isinstance(c, list) else [c]):
+                col = pc.get("color", "#8B95A3")
+                cls = "gc dark" if _dark_text(col) and pc.get("alpha", 1) > 0.6 else "gc"
+                inner += (f'<div class="{cls}" style="--c:{col};--a:{pc.get("alpha", 0.9)}">{esc(pc.get("text", ""))}'
+                          f'<small>{esc(pc.get("sub", ""))}</small></div>')
+            cells.append(B(j + 1, f'<div class="gcell" style="transition-delay:{0.08*i:.2f}s">{inner}</div>'))
+        parts.append(f'<div><div class="grl">{esc(r["label"])}</div>{"".join(cells)}</div>')
+    parts.append("</div>")
+    if sc.get("legend"):
+        parts.append('<div class="glegend">' + "".join(f'<span><i style="--c:{l["color"]}"></i>{esc(l["label"])}</span>' for l in sc["legend"])
+                     + (f'<span>{esc(sc["legend_note"])}</span>' if sc.get("legend_note") else "") + "</div>")
+    return "".join(parts), len(cols) + 1
 
 
 def scale_html(sc):
@@ -550,7 +724,7 @@ def scale_html(sc):
     if sc.get("stats"):
         tiles = "".join(f'<div class="stat" style="transition-delay:{0.12*k:.2f}s"><div class="k">{esc(s["k"])}</div>'
                         f'<div class="v">{esc(s["v"])}<small>{esc(s.get("u", ""))}</small></div></div>' for k, s in enumerate(sc["stats"]))
-        parts.append(f'<div class="stats">{tiles}</div>')
+        parts.append(B(0, f'<div class="stats">{tiles}</div>'))
     parts.append(f'<div class="bandlbl">気象庁の階級「{esc(title)}」（{esc(what)}）</div>')
     segs = []
     for k, (name, a, b) in enumerate(bands):
@@ -565,7 +739,7 @@ def scale_html(sc):
         x = (k + min((vc - a) / (b - a), 1)) / len(bands) * 100
     else:
         x = (vc - lo) / (hi - lo) * 100
-    parts.append(f'<div class="band">{"".join(segs)}<div class="mk" style="--x:{x:.1f}%"><span>{v:g}<small>{esc(unit)}</small></span></div></div>')
+    parts.append(B(1, f'<div class="band">{"".join(segs)}<div class="mk" style="--x:{x:.1f}%"><span>{v:g}<small>{esc(unit)}</small></span></div></div>'))
     return "".join(parts)
 
 
@@ -638,20 +812,19 @@ def intro_html(sc, data, tone):
                   f'border-color:{r.get("color", "#fff")};background:{r.get("fill", "transparent")};transition-delay:{t_end-0.2:.2f}s"></div>')
     focus = (rings + f'<div class="focus left" style="left:{f1[0]:.0f}px;top:{f1[1]:.0f}px;--t:{t_end-0.2:.2f}s"><i></i>'
              f'<span class="lb">{esc(foc.get("label", ""))}<em>{esc(foc.get("sub", ""))}</em></span></div>')
-    t_text = t_end + 0.4
     v = sc["value"]
     head = sc.get("headline") or sc.get("place", "")
     kicker = sc.get("kicker", "")
-    items = [f'<div class="place" style="transition-delay:{t_text+.1:.2f}s"><small>{esc(kicker)}</small>{esc(head)}</div>',
-             f'<div class="label" style="transition-delay:{t_text+.5:.2f}s">{esc(sc.get("label", ""))}</div>',
-             f'<div class="big" style="transition-delay:{t_text+.6:.2f}s"><span class="num">{digits(fmt_val(v))}</span><span class="unit">{esc(sc.get("unit", ""))}</span></div>']
+    items = [f'<div class="place" style="transition-delay:.1s"><small>{esc(kicker)}</small>{esc(head)}</div>',
+             f'<div class="label" style="transition-delay:.5s">{esc(sc.get("label", ""))}</div>',
+             f'<div class="big" style="transition-delay:.6s"><span class="num">{digits(fmt_val(v))}</span><span class="unit">{esc(sc.get("unit", ""))}</span></div>']
     if sc.get("badge"):
         sub = f'<span>{esc(sc["badge_sub"])}</span>' if sc.get("badge_sub") else ""
-        items.append(f'<div style="transition-delay:{t_text+1.8:.2f}s"><span class="tag"><b>{esc(sc["badge"])}</b>{sub}</span></div>')
-    shade = f'<div class="shade" style="transition-delay:{t_end+.3:.2f}s"></div>'
+        items.append(f'<div style="transition-delay:1.8s"><span class="tag"><b>{esc(sc["badge"])}</b>{sub}</span></div>')
+    shade = '<div class="shade" style="transition-delay:.1s"></div>'
     text = f'<div class="itext">{"".join(items)}</div>'
-    extra = {"roll": t_text + 0.7, "css": "\n".join(css)}
-    return zoom + focus + shade + text, extra
+    extra = {"css": "\n".join(css), "beats": 2}
+    return B(0, zoom + focus) + B(1, shade + text, roll=0.7), extra
 
 
 def scene_html(sc, data, idx):
@@ -660,12 +833,11 @@ def scene_html(sc, data, idx):
     top = (f'<div class="top"><span class="tone"><i></i>{esc(sc.get("band", tone["label"]))}</span>'
            f'<span><b>{esc(data.get("brand", "気象予報士なべ"))}</b>　{esc(data.get("date_label", data.get("date", "")))}</span></div>')
     parts = [top]
-    take_delay = sc.get("takeaway_delay", 0.8)
-    roll_delay = 0.0
+    nb = 1                       # この場面が使う拍の数（結論の一行はその次の拍）
     if t == "intro":
         body, extra = intro_html(sc, data, tone)
         parts.append(body)
-        roll_delay = extra["roll"]
+        nb = extra["beats"]
         data.setdefault("_css", []).append(extra["css"])
         data.setdefault("_credits", []).append(json.loads((data["_dir"] / sc["layers"][0]).with_suffix(".json").read_text(encoding="utf-8")).get("credit", ""))
     elif t == "hook":
@@ -676,16 +848,15 @@ def scene_html(sc, data, idx):
         kicker = sc.get("kicker", "")
         if sc.get("headline") and sc.get("place"):
             kicker = f'{kicker}　{sc["place"]}' if kicker else sc["place"]
-        parts.append(f'<div class="place"><small>{esc(kicker)}</small>{esc(head)}</div>')
-        parts.append(f'<div class="label">{esc(sc.get("label", ""))}</div>')
-        parts.append(f'<div class="big"><span class="num">{digits(fmt_val(v))}</span><span class="unit">{esc(sc.get("unit", ""))}</span></div>')
+        parts.append(B(0, f'<div class="place"><small>{esc(kicker)}</small>{esc(head)}</div><div class="label">{esc(sc.get("label", ""))}</div>'))
+        big = f'<div class="big"><span class="num">{digits(fmt_val(v))}</span><span class="unit">{esc(sc.get("unit", ""))}</span></div>'
         if sc.get("badge"):
             sub = f'<span>{esc(sc["badge_sub"])}</span>' if sc.get("badge_sub") else ""
-            parts.append(f'<div><span class="tag"><b>{esc(sc["badge"])}</b>{sub}</span></div>')
+            big += f'<div><span class="tag"><b>{esc(sc["badge"])}</b>{sub}</span></div>'
+        parts.append(B(1, big, roll=0.5))
+        nb = 2
     elif t == "rank":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
-        if sc.get("sub"):
-            parts.append(f'<div class="sub">{esc(sc["sub"])}</div>')
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>' + (f'<div class="sub">{esc(sc["sub"])}</div>' if sc.get("sub") else "")))
         bars = sc["bars"]
         mx = max(b["value"] for b in bars) or 1
         today = [b for b in bars if b.get("today")]
@@ -693,65 +864,69 @@ def scene_html(sc, data, idx):
         rows, k_other = [], 0
         for b in bars:
             if b.get("today"):
-                row_d, bar_d = 1.0, 1.15
+                row_d, bar_d = 0.0, 0.15
             else:
                 row_d, bar_d = 0.12 * k_other, 0.12 * k_other + 0.2
                 k_other += 1
             cls = "row today" if b.get("today") else "row"
             new = '<span class="new">NEW</span>' if b.get("today") else ""
             mark = f'<span class="mark" style="--mk:{prev/mx*100:.1f}%"></span>' if (today and prev) else ""
-            rows.append(f'<div class="{cls}" style="transition-delay:{row_d:.2f}s"><div class="rk">{b["rank"]}<small>位</small></div>'
-                        f'<div><div class="bar"><i style="--pct:{b["value"]/mx:.3f};transition-delay:{bar_d:.2f}s"></i>{mark}</div>'
-                        f'<div class="d">{esc(b.get("date", ""))}{new}</div></div>'
-                        f'<div class="v">{fmt_val(b["value"])}<small>{esc(sc.get("unit", ""))}</small></div></div>')
+            row = (f'<div class="{cls}" style="transition-delay:{row_d:.2f}s"><div class="rk">{b["rank"]}<small>位</small></div>'
+                   f'<div><div class="bar"><i style="--pct:{b["value"]/mx:.3f};transition-delay:{bar_d:.2f}s"></i>{mark}</div>'
+                   f'<div class="d">{esc(b.get("date", ""))}{new}</div></div>'
+                   f'<div class="v">{fmt_val(b["value"])}<small>{esc(sc.get("unit", ""))}</small></div></div>')
+            rows.append(B(1 if b.get("today") else 0, row))        # 拍1: 今回の棒が従来1位を越える
         parts.append(f'<div class="rows">{"".join(rows)}</div>')
         if sc.get("note"):
-            parts.append(f'<div class="note">{esc(sc["note"])}</div>')
-        take_delay = sc.get("takeaway_delay", 2.6 if today else 0.8)
+            parts.append(B(0, f'<div class="note">{esc(sc["note"])}</div>'))
+        nb = 2 if today else 1
     elif t == "map":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>'))
         base = data["_dir"] / sc["map"]
         meta = json.loads(base.with_suffix(".json").read_text(encoding="utf-8"))
         b64 = base64.b64encode(base.read_bytes()).decode()
-        pts = []
-        for k, pt in enumerate(sc["points"]):
+        pts0, pts1 = [], []          # 拍0: 中心の地点（hero）  拍1: ほかの地点が順に点灯
+        for pt in sc["points"]:
             wx, wy = merc(pt["lat"], pt["lon"])
             px, py = (wx - meta["wx0"]) * meta["s"], (wy - meta["wy0"]) * meta["s"]
             side = pt.get("side") or ("left" if px > meta["w"] * 0.6 else "right")   # left / right / above / below
             cls = "pt " + side + (" hero" if pt.get("hero") else "")
             val = f'<b>{esc(pt["value"])}</b>' if pt.get("value") else ""
             rk = f'<em>{esc(pt["rank"])}</em>' if pt.get("rank") else ""
-            pts.append(f'<div class="{cls}" style="left:{px:.0f}px;top:{py:.0f}px;transition-delay:{0.3+0.45*k:.2f}s">'
+            dst = pts0 if pt.get("hero") else pts1
+            dst.append(f'<div class="{cls}" style="left:{px:.0f}px;top:{py:.0f}px;transition-delay:{0.2+0.45*len(dst):.2f}s">'
                        f'<i></i><span class="lb">{esc(pt["name"])}{val}{rk}</span></div>')
         sb = f'<div class="scalebar" style="width:{meta["px_per_km"]*10:.0f}px"><span>10 km</span></div>'
-        parts.append(f'<div class="mapwrap"><img src="data:image/png;base64,{b64}">{"".join(pts)}{sb}<div class="mapfade"></div></div>')
-        take_delay = sc.get("takeaway_delay", 0.3 + 0.45 * len(sc["points"]) + 0.5)
+        parts.append(f'<div class="mapwrap"><div class="kb"><img src="data:image/png;base64,{b64}">{B(0, "".join(pts0))}{B(1, "".join(pts1))}</div>{sb}<div class="mapfade"></div></div>')
+        nb = 2 if pts1 else 1
         data.setdefault("_credits", []).append(meta.get("credit", ""))
     elif t == "track":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
-        body, td = track_html(sc, data)
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>'))
+        body, nb = track_html(sc, data)
         parts.append(body)
-        take_delay = sc.get("takeaway_delay", td)
     elif t == "synoptic":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
-        body, td = synoptic_html(sc, data)
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>'))
+        body, nb = synoptic_html(sc, data)
         parts.append(body)
-        take_delay = sc.get("takeaway_delay", td)
+    elif t == "regions":
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>'))
+        body, nb = regions_html(sc, data)
+        parts.append(body)
+    elif t == "grid":
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>' + (f'<div class="sub">{esc(sc["sub"])}</div>' if sc.get("sub") else "")))
+        body, nb = grid_html(sc)
+        parts.append(body)
     elif t == "scale":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
-        if sc.get("sub"):
-            parts.append(f'<div class="sub">{esc(sc["sub"])}</div>')
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>' + (f'<div class="sub">{esc(sc["sub"])}</div>' if sc.get("sub") else "")))
         parts.append(scale_html(sc))
-        take_delay = sc.get("takeaway_delay", 2.2)
+        nb = 2
     elif t == "figure":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>'))
         parts.append(figure_html(sc, data))
         if sc.get("credit"):
             data.setdefault("_credits", []).append(sc["credit"])
     elif t == "cards":
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
-        if sc.get("sub"):
-            parts.append(f'<div class="sub">{esc(sc["sub"])}</div>')
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>' + (f'<div class="sub">{esc(sc["sub"])}</div>' if sc.get("sub") else "")))
         vals = [_num(c.get("value", 0)) for c in sc["cards"]]
         mx = max(vals) or 1
         rows = []
@@ -759,32 +934,32 @@ def scene_html(sc, data, idx):
             rows.append(f'<div class="row" style="transition-delay:{0.1*k:.2f}s"><div class="nm">{esc(c["title"])}</div>'
                         f'<div><div class="bar"><i style="--pct:{vals[k]/mx:.3f};transition-delay:{0.1*k+.2:.2f}s"></i></div><div class="d">{esc(c.get("sub", ""))}</div></div>'
                         f'<div class="v">{esc(c.get("value", ""))}</div></div>')
-        parts.append(f'<div class="rows">{"".join(rows)}</div>')
+        parts.append(B(0, f'<div class="rows">{"".join(rows)}</div>'))
         if sc.get("note"):
-            parts.append(f'<div class="note">{esc(sc["note"])}</div>')
+            parts.append(B(0, f'<div class="note">{esc(sc["note"])}</div>'))
     elif t in ("text", "close"):
-        parts.append(f'<div class="heading">{esc(sc["heading"])}</div>')
-        if sc.get("sub"):
-            parts.append(f'<div class="sub">{esc(sc["sub"])}</div>')
-        ls = [f'<div class="line" style="transition-delay:{0.18*k:.2f}s"><div class="n">{k+1:02d}</div><div>{esc(l)}</div></div>'
+        parts.append(B(0, f'<div class="heading">{esc(sc["heading"])}</div>' + (f'<div class="sub">{esc(sc["sub"])}</div>' if sc.get("sub") else "")))
+        ls = [B(k + 1, f'<div class="line"><div class="n">{k+1:02d}</div><div>{esc(l)}</div></div>')
               for k, l in enumerate(sc.get("lines", []))]
         parts.append(f'<div class="lines">{"".join(ls)}</div>')
+        nb = 1 + len(ls)
     else:
         raise SystemExit(f"unknown scene type: {t}")
     if sc.get("takeaway"):
-        parts.append(f'<div class="take" style="transition-delay:{take_delay:.2f}s">{esc(sc["takeaway"])}</div>')
+        parts.append(B(nb, f'<div class="take">{esc(sc["takeaway"])}</div>'))
+        nb += 1
     foot = []
     if data.get("footer"):
         foot.append(esc(data["footer"]))
     src = data.get("source") or {}
-    credits = [src.get("label", "")] + ([c for c in data.get("_credits", []) if c] if t in ("map", "intro", "track", "figure", "synoptic") else [])
+    credits = [src.get("label", "")] + ([c for c in data.get("_credits", []) if c] if t in ("map", "intro", "track", "figure", "synoptic", "regions") else [])
     credits = list(dict.fromkeys(c for c in credits if c))
     if credits:
         foot.append(f'<span class="src">出典: {esc("　".join(credits))}</span>')
     if foot:
         parts.append('<div class="foot">' + "<br>".join(foot) + "</div>")
     title = sc.get("heading") or sc.get("headline") or sc.get("place") or t
-    return (f'<section class="scene s-{t}" data-dur="{sc.get("dur", 8)}" data-title="{esc(title)}" data-roll-delay="{roll_delay:.2f}" '
+    return (f'<section class="scene s-{t}" data-dur="{sc.get("dur", 8)}" data-title="{esc(title)}" data-beats="{nb}" '
             f'data-cue="{esc(sc.get("cue", ""))}" data-narration="{esc(sc.get("narration", ""))}" style="--accent:{tone["accent"]}">{"".join(parts)}</section>')
 
 
@@ -797,12 +972,14 @@ def build_html(data):
     body = "".join(scene_html(sc, data, k) for k, sc in enumerate(data["scenes"]))
     extra_css = "\n".join(data.get("_css", []))
     pr = ('<aside id="pr"><div class="k">Prompter — 収録範囲の外です</div><div id="pr-idx" class="k"></div>'
+          '<div class="bar"><i id="pr-bar"></i></div><div class="tm"><span id="pr-tm"></span><span>▶ = Space を押す位置</span></div>'
+          '<div id="pr-beat" class="beat"></div>'
           '<div id="pr-cue" class="cue"></div><div id="pr-cur" class="cur"></div><div id="pr-nx" class="nx"></div>'
-          '<div class="ctl">Space / → 次　← 前　R 最初から　P この欄を隠す<br>'
+          '<div class="ctl">Space / → 次の拍（出そろったら次の場面）　← 前の場面　R 最初から　P この欄を隠す<br>'
           '収録: Cmd+Shift+5 → 「選択部分を収録」で左の枠を囲む → マイクを選ぶ</div></aside>')
     return (f'<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><title>{esc(data["title"])}</title>'
             f'<meta name="viewport" content="width=device-width,initial-scale=1"><style>{CSS}\n{extra_css}</style></head>'
-            f'<body><div id="wrap"><div id="frame"><div id="stage">{isobars()}{body}</div></div>{pr}</div><script>{JS}</script></body></html>')
+            f'<body><div id="wrap"><div id="frame"><div id="stage">{isobars()}{body}<div id="swipe"></div></div></div>{pr}</div><script>{JS}</script></body></html>')
 
 
 def build_narration(data):
@@ -810,12 +987,12 @@ def build_narration(data):
     total = 0
     for k, sc in enumerate(data["scenes"], 1):
         n = sc.get("narration", "")
-        total += len(n)
+        total += len(n.replace("▶", ""))
         out += [f'## {k}. {sc.get("heading") or sc.get("headline") or sc.get("place") or sc["type"]}（{sc.get("dur", 8)}秒目安・{len(n)}文字）', ""]
         if sc.get("cue"):
             out += [f'〔合図〕{sc["cue"]}', ""]
-        out += [n, ""]
-    out += [f'合計 {total} 文字（話速 6〜7文字/秒で約 {total // 7}〜{total // 6} 秒）', "", "---", "", "## 照合チェック表", ""]
+        out += [n.replace("▶", " ▶ "), ""]
+    out += ["（▶ = Space を押して次の動きを出す位置）", "", f'合計 {total} 文字（話速 6〜7文字/秒で約 {total // 7}〜{total // 6} 秒）', "", "---", "", "## 照合チェック表", ""]
     check = data.get("check")
     if not check:
         check = [["項目", "動画の値", "原文の値"]]
@@ -852,7 +1029,7 @@ def main():
         nar = opt.get("narration_before", "")
         if opt.get("next"):
             lines.append(f'次の発表は {opt["next"]}')
-            nar += f'次の発表は{opt["next"]}です。'
+            nar += f'▶次の発表は{opt["next"]}です。'
         tmpl["lines"] = lines + tmpl["lines"]
         tmpl["narration"] = nar + tmpl["narration"]
         tmpl.update({k: v for k, v in opt.items() if k in ("heading", "tone", "dur")})
