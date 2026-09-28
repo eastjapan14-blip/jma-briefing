@@ -44,6 +44,10 @@ python3 scripts/transcribe.py <YouTube URL> --out material/<dir>   # 記者会�
 python3 scripts/fetch_images.py --out material/<dir>/images weather_map typhoon radar  # 図の取得
 python3 scripts/plot_seasonal.py material/<dir>/source.md --out material/<dir>/images --periods "9/26〜10/2,..." --cards material/<dir>/figures.json  # 季節予報の図
 python3 scripts/build_pptx.py material/<dir>/script.md   # pptx生成
+python3 scripts/render_map.py --points <lat,lon>... --pref <県名> --out material/<dir>/images/map.png   # ショート用の地形図（地理院 標高タイル）
+python3 scripts/build_short.py material/<dir>/short.json   # ショート用の縦型 HTML＋ナレーション台本（書式はスクリプト冒頭）
+python3 scripts/fetch_surface.py --time 2026-09-28T06:00 --out material/<dir>/raw   # 地上実況図 XML → 前線・等圧線の JSON（ショートの天気図場面 synoptic 用。3時間ごと、数日分のみ取得可）
 python3 -m record_hunter dry-run                # アメダス記録候補の確認（通知しない）
+python3 -m record_hunter shorts [--date YYYY-MM-DD]   # Shorts 候補の一覧（◎○×・理由・型。State ブランチを読む）
 python3 -m pytest -q tests                      # Record Hunter のテスト
 ```

@@ -4,8 +4,26 @@
     {
       "name": "preview",
       "runtimeExecutable": "sh",
-      "runtimeArgs": ["-c", "cd /private/tmp/claude-501/-Users-kota-Documents-Claude-jma-briefing/fa439f70-dc7f-492f-b935-a5de6a7306d7/scratchpad/preview && exec python3 -m http.server 8765 --bind 127.0.0.1"],
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-501/-Users-kota-Documents-Claude-jma-briefing/fa439f70-dc7f-492f-b935-a5de6a7306d7/scratchpad/preview && exec python3 -m http.server 8765 --bind 127.0.0.1"
+      ],
       "port": 8765
+    },
+    {
+      "name": "material",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-501/-Users-kota-Documents-Claude-jma-briefing/98a44446-412c-43a1-be10-3303561db938/scratchpad/preview && exec python3 -m http.server 8766 --bind 127.0.0.1"
+      ],
+      "port": 8766
+    },
+    {
+      "name": "xi-jumbo",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/kota/Documents/Claude/xi-jumbo/server.js"],
+      "port": 8931
     }
   ]
 }

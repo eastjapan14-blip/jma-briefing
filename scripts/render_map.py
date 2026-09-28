@@ -9,6 +9,7 @@
       --out material/<dir>/images/map.png [--size 1080x830] [--inner 80,70,860,640] [--exag 2.5]
   → map.png と map.json（投影パラメータ。build_short.py が地点の画素位置と縮尺を計算する）
 
+--center lat,lon --at x,y --km-across N で「この地点をこの画素に、横幅 N km で」描ける（ズーム導入の層に使う）。
 --points で与えた地点が --inner の矩形（左,上,右,下 px）に収まるように縮尺を決める。右と下は Shorts の UI と
 見出しの重なりを避けるため余白を大きめにとる。タイルは ~/.cache/jma-briefing/gsi にキャッシュする。
 """
@@ -110,29 +111,43 @@ def main():
     ap.add_argument("--inner", default="80,70,860,640", help="地点を収める矩形 左,上,右,下（px）")
     ap.add_argument("--exag", type=float, default=3.5, help="陰影の起伏強調")
     ap.add_argument("--min-span-km", type=float, default=40.0)
+    ap.add_argument("--center", help="lat,lon: この地点を --at の画素に置く（--km-across と併用。--points/--bbox の代わり）")
+    ap.add_argument("--at", help="x,y px（--center の置き場所。既定は画像中央）")
+    ap.add_argument("--km-across", type=float, help="画像の横幅の実距離 km（--center と併用）")
+    ap.add_argument("--no-borders", action="store_true", help="県境線を描かない（全国スケール用。--pref の塗りは残る）")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
 
     W, H = (int(v) for v in a.size.lower().split("x"))
     ix0, iy0, ix1, iy1 = (int(v) for v in a.inner.split(","))
-    if a.bbox:
-        s_, w_, n_, e_ = (float(v) for v in a.bbox.split(","))
-        pts = [(s_, w_), (n_, e_)]
+    if a.center:
+        if not a.km_across:
+            sys.exit("--center には --km-across が必要")
+        lat_c, lon_c = (float(v) for v in a.center.split(","))
+        world_m = 40075016.686 * math.cos(math.radians(lat_c))
+        s = W / (a.km_across * 1000 / world_m)
+        ax, ay = (float(v) for v in a.at.split(",")) if a.at else (W / 2, H / 2)
+        mx_c, my_c = merc(lat_c, lon_c)
+        wx0, wy0 = mx_c - ax / s, my_c - ay / s
     else:
-        pts = [tuple(float(v) for v in p.split(",")) for p in a.points]
-    if not pts:
-        sys.exit("--points か --bbox が必要")
-    ws = [merc(lat, lon) for lat, lon in pts]
-    lat_c = sum(p[0] for p in pts) / len(pts)
-    mx0, mx1 = min(w[0] for w in ws), max(w[0] for w in ws)
-    my0, my1 = min(w[1] for w in ws), max(w[1] for w in ws)
-    world_m = 40075016.686 * math.cos(math.radians(lat_c))   # 1 世界単位の実距離（この緯度）
-    min_span = a.min_span_km * 1000 / world_m
-    dmx, dmy = max(mx1 - mx0, min_span), max(my1 - my0, min_span)
-    s = min((ix1 - ix0) / dmx, (iy1 - iy0) / dmy)               # px / 世界単位
-    cx, cy = (mx0 + mx1) / 2, (my0 + my1) / 2
-    wx0 = cx - ((ix0 + ix1) / 2) / s
-    wy0 = cy - ((iy0 + iy1) / 2) / s
+        if a.bbox:
+            s_, w_, n_, e_ = (float(v) for v in a.bbox.split(","))
+            pts = [(s_, w_), (n_, e_)]
+        else:
+            pts = [tuple(float(v) for v in p.split(",")) for p in a.points]
+        if not pts:
+            sys.exit("--points か --bbox か --center が必要")
+        ws = [merc(lat, lon) for lat, lon in pts]
+        lat_c = sum(p[0] for p in pts) / len(pts)
+        mx0, mx1 = min(w[0] for w in ws), max(w[0] for w in ws)
+        my0, my1 = min(w[1] for w in ws), max(w[1] for w in ws)
+        world_m = 40075016.686 * math.cos(math.radians(lat_c))   # 1 世界単位の実距離（この緯度）
+        min_span = a.min_span_km * 1000 / world_m
+        dmx, dmy = max(mx1 - mx0, min_span), max(my1 - my0, min_span)
+        s = min((ix1 - ix0) / dmx, (iy1 - iy0) / dmy)               # px / 世界単位
+        cx, cy = (mx0 + mx1) / 2, (my0 + my1) / 2
+        wx0 = cx - ((ix0 + ix1) / 2) / s
+        wy0 = cy - ((iy0 + iy1) / 2) / s
     wx1, wy1 = wx0 + W / s, wy0 + H / s
     z = int(min(14, max(5, math.ceil(math.log2(s / 256)))))
     n = 2 ** z
@@ -140,9 +155,13 @@ def main():
     ty0, ty1 = int(wy0 * n), int(wy1 * n)
     print(f"zoom {z}, tiles {(tx1-tx0+1)*(ty1-ty0+1)}, scale {s:.0f} px/world, {1000*world_m/(s*1000):.0f} m/px")
     E = np.full(((ty1 - ty0 + 1) * 256, (tx1 - tx0 + 1) * 256), np.nan)
+    done = 0
     for ty in range(ty0, ty1 + 1):
         for tx in range(tx0, tx1 + 1):
             E[(ty - ty0) * 256:(ty - ty0 + 1) * 256, (tx - tx0) * 256:(tx - tx0 + 1) * 256] = fetch_tile(z, tx, ty)
+            done += 1
+            if done % 40 == 0:
+                print(f"  tiles {done}", flush=True)
     cell_m = world_m / (256 * n)
     rgb = shade_rgb(E, cell_m, a.exag)
     img = Image.fromarray(rgb.astype(np.uint8))
@@ -173,7 +192,7 @@ def main():
                 lift = Image.new("RGBA", (W, H), (255, 255, 255, 14))
                 overlay.paste(lift, (0, 0), m)
     lines = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    for name, rings in prefs.items():
+    for name, rings in ({} if a.no_borders else prefs).items():
         for r in rings:
             pp = [to_px(x, y) for x, y in r]
             if not any(-50 <= x <= W + 50 and -50 <= y <= H + 50 for x, y in pp):
