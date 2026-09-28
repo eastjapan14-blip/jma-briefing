@@ -16,11 +16,22 @@
 "topic": "台風第２６号",
 "updated": "2026-09-28T19:08:32Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20260928190833_0_VPFJ50_472000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20260928192422_0_VPCJ50_471000.xml": {
+"author": "沖縄気象台",
+"content": "【沖縄地方気象解説情報（台風第２６号）】大東島地方では、引き続きうねりを伴った高波に注意してください。",
+"held": "2026-09-28T19:31:08.133047+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第２６号",
+"updated": "2026-09-28T19:24:21Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20260928192422_0_VPCJ50_471000.xml"
 }
 },
 "topics": {
 "台風第２６号": {
-"大東島": "2026-09-28T19:10:24.598561+00:00"
+"大東島": "2026-09-28T19:10:24.598561+00:00",
+"沖縄": "2026-09-28T19:31:08.133047+00:00"
 }
 },
 "urls": {
@@ -113,6 +124,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20260928072733_0_VPCJ50_016000.xml": "2026-09-28T07:30:32.117056+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260928073021_0_VPZJ50_010000.xml": "2026-09-28T07:40:25.817572+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260928140027_0_VPCJ50_016000.xml": "2026-09-28T14:10:26.709045+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260928190833_0_VPFJ50_472000.xml": "2026-09-28T19:10:24.598561+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20260928190833_0_VPFJ50_472000.xml": "2026-09-28T19:10:24.598561+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260928192422_0_VPCJ50_471000.xml": "2026-09-28T19:31:08.133047+00:00"
 }
 }
