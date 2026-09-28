@@ -8,6 +8,9 @@
 },
 "pending": {},
 "topics": {
+"大雨": {
+"中国": "2026-09-28T07:10:27.107896+00:00"
+},
 "大雨・落雷・突風": {
 "関東甲信": "2026-09-28T07:00:40.461165+00:00"
 }
@@ -98,6 +101,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20260928014714_0_VPFJ50_460040.xml": "2026-09-28T01:50:22.868789+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260928015333_0_VPZJ50_010000.xml": "2026-09-28T02:00:38.432172+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260928020946_0_VPFJ50_472000.xml": "2026-09-28T02:20:58.094190+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260928065729_0_VPCJ50_130000.xml": "2026-09-28T07:00:40.461165+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20260928065729_0_VPCJ50_130000.xml": "2026-09-28T07:00:40.461165+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260928070716_0_VPCJ50_340000.xml": "2026-09-28T07:10:27.107896+00:00"
 }
 }
