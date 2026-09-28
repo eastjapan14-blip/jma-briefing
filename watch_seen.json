@@ -16,36 +16,6 @@
 "topic": "土砂災害警戒情報",
 "updated": "2026-09-28T01:40:00Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20260928014002_0_VXWW50_430000.xml"
-},
-"https://www.data.jma.go.jp/developer/xml/data/20260928014349_0_VPCJ50_460100.xml": {
-"author": "鹿児島地方気象台",
-"content": "【九州南部・奄美地方気象解説情報（台風第２６号）】奄美地方では、２８日夜遅くにかけてうねりを伴った高波に注意してください。",
-"held": "2026-09-28T01:50:22.868789+00:00",
-"tier": "B",
-"title": "地方気象情報",
-"topic": "台風第２６号",
-"updated": "2026-09-28T01:43:49Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20260928014349_0_VPCJ50_460100.xml"
-},
-"https://www.data.jma.go.jp/developer/xml/data/20260928014523_0_VPCJ50_471000.xml": {
-"author": "沖縄気象台",
-"content": "【沖縄地方気象解説情報（台風第２６号）】大東島地方に暴風警報と波浪警報を発表中です。台風第２６号は、非常に強い勢力で大東島地方に接近しています。２８日は暴風やうねりを伴う高波に警戒してください。沖縄本島地方でも、うねりを伴う高波に注意が必要です。",
-"held": "2026-09-28T01:50:22.868789+00:00",
-"tier": "B",
-"title": "地方気象情報",
-"topic": "台風第２６号",
-"updated": "2026-09-28T01:45:22Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20260928014523_0_VPCJ50_471000.xml"
-},
-"https://www.data.jma.go.jp/developer/xml/data/20260928014714_0_VPFJ50_460040.xml": {
-"author": "名瀬測候所",
-"content": "【奄美地方（鹿児島県）気象解説情報（台風第２６号）】奄美地方では、２８日夜遅くにかけてうねりを伴った高波に注意してください。",
-"held": "2026-09-28T01:50:22.868789+00:00",
-"tier": "B",
-"title": "府県気象情報",
-"topic": "台風第２６号",
-"updated": "2026-09-28T01:47:14Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20260928014714_0_VPFJ50_460040.xml"
 }
 },
 "topics": {
