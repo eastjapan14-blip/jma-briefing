@@ -8,6 +8,7 @@ import urllib.request
 
 from .log import log
 from .metrics import METRICS, fmt
+from . import shorts
 
 RANK_UPDATE = "https://www.data.jma.go.jp/stats/data/mdrr/rank_update"
 PRIORITY = {"A": 4, "B": 3, "R": 3}
@@ -64,7 +65,7 @@ def describe(ev: dict, cfg) -> list:
     return L
 
 
-def format_single(ev: dict, cfg, cluster_n: int = 0, stations=None):
+def format_single(ev: dict, cfg, cluster_n: int = 0, stations=None, state=None):
     m = METRICS[ev["metric"]]
     val = f"{fmt(m, ev['value'])}{m.unit}"
     title = f"[記録] {ev['name']} {val} {m.label}"
@@ -74,13 +75,14 @@ def format_single(ev: dict, cfg, cluster_n: int = 0, stations=None):
     L = [head] + describe(ev, cfg)
     if cluster_n >= 2:
         L.append(f"{ev['pref']}内ではほか{cluster_n - 1}地点も{m.label}が記録級")
+    L.append(shorts.line(shorts.judge(ev, shorts.nearby(state, ev) if state else cluster_n)))
     L.append("※速報値")
     click = ev.get("source_ref") or (stations.rank_url(ev["station"], int(ev["date"][5:7])) if stations else None) \
         or rank_update_url(ev["date"])
     return title, "\n".join(L), click
 
 
-def format_group(events: list, new_ids: list, cfg):
+def format_group(events: list, new_ids: list, cfg, state=None):
     m = METRICS[events[0]["metric"]]
     pref, d = events[0]["pref"], events[0]["date"]
     month = int(d[5:7])
@@ -94,6 +96,8 @@ def format_group(events: list, new_ids: list, cfg):
             L.append(f"   {line}")
     if len(events) > cfg.max_group_lines:
         L.append(f"…ほか{len(events) - cfg.max_group_lines}地点")
+    j, e = shorts.best(events, state or {"events": {x["id"]: x for x in events}})
+    L.append(shorts.line(j) + (f"（{e['name']}）" if len(events) > 1 else ""))
     L.append("※速報値（★=新規）")
     return title, "\n".join(L), rank_update_url(d)
 

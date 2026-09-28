@@ -110,9 +110,9 @@ def run(cfg, fetcher, state: dict, today: date, dry: bool, stations: Stations = 
     for n in E.plan(state, cfg, tod):
         evs_n = [state["events"][i] for i in n["events"]]
         if len(evs_n) == 1 and not n.get("grow"):
-            title, msg, click = notifier.format_single(evs_n[0], cfg, n["cluster_n"], stations)
+            title, msg, click = notifier.format_single(evs_n[0], cfg, n["cluster_n"], stations, state)
         else:
-            title, msg, click = notifier.format_group(evs_n, n["new"], cfg)
+            title, msg, click = notifier.format_group(evs_n, n["new"], cfg, state)
         if notifier.send(cfg, n["kind"], title, msg, click, dry):
             E.mark_notified(state, n, now)
             sent += 1

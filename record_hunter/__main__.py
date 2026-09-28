@@ -7,6 +7,7 @@
   python3 -m record_hunter replay --date YYYY-MM-DD [--fixtures DIR] [--state DIR] [--notify]
                                                                       Fixture から再生（既定は通知しない）
   python3 -m record_hunter snapshot --out DIR [--date YYYY-MM-DD]     今日の CSV・更新状況ページを Fixture 化
+  python3 -m record_hunter shorts [--date YYYY-MM-DD] [--state DIR]   Shorts 候補の一覧（既定は State ブランチを読む）
 環境変数: NTFY_TOPIC NTFY_SERVER RH_STATE_DIR RH_DRY_RUN RH_MAX_ENRICH RH_FETCH_SLEEP RH_CACHE_TTL_DAYS
           RH_CLUSTER_MIN RH_RANK_THRESHOLD RH_NOTIFY_LEVELS RH_METRICS RH_ENABLE_ENRICH RH_ENABLE_RANK_UPDATE
 """
@@ -71,6 +72,43 @@ def cmd_snapshot(args):
     print(f"snapshot → {out}", file=sys.stderr)
 
 
+def _branch_state():
+    """GitHub Actions が State ブランチに保存した state.json を読む（ローカルの State は空のことが多い）。"""
+    import json, subprocess
+    subprocess.run(["git", "fetch", "-q", "origin", "record-hunter-state"], cwd=ROOT, check=False)
+    r = subprocess.run(["git", "show", "origin/record-hunter-state:state.json"], cwd=ROOT, capture_output=True, text=True)
+    if r.returncode:
+        sys.exit("State ブランチを読めません: " + r.stderr.strip())
+    return json.loads(r.stdout)
+
+
+def cmd_shorts(args):
+    from . import shorts
+    from .notifier import rank_update_url
+    state = st.load(Path(args.state)) if args.state else _branch_state()
+    day = _today(args.date)
+    dates = {day.isoformat(), (day - timedelta(days=1)).isoformat()}
+    rows = shorts.candidates(state, dates)
+    if not rows:
+        print(f"{day - timedelta(days=1)}〜{day} の記録級イベントはありません")
+        return
+    print(f"Shorts 候補（{day - timedelta(days=1)}〜{day}、速報値）")
+    for r in rows:
+        j, e = r["judge"], r["event"]
+        print(f"\n{j['grade']} {j['score']:+d}  {e['date']} {e['pref']} {e.get('muni') or ''} {e['name']}  {j['label']} {j['value']}"
+              + (f"（{e['time']}まで）" if e.get("time") else ""))
+        if r["others"]:
+            print(f"   同じ地点のほかの要素: {'・'.join(r['others'])}")
+        if r["near"]:
+            near = "・".join(x["name"] + "（" + x["pref"] + "）" for x in r["near"][:6])
+            near += f" ほか{len(r['near']) - 6}地点" if len(r["near"]) > 6 else ""
+            print(f"   同じ日に周辺で: {near}")
+        print(f"   理由: {'・'.join(j['why'])}")
+        if j["grade"] != "×":
+            print(f"   一言: {j['hook']}　型: {j['plan']}")
+            print(f"   照合: {rank_update_url(e['date'])}")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="record_hunter", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -80,6 +118,7 @@ def main(argv=None):
     a.add_argument("--fixtures", default=str(ROOT / "tests" / "fixtures")); a.add_argument("--state")
     a.add_argument("--notify", action="store_true")
     a = sub.add_parser("snapshot"); a.add_argument("--out", default=str(ROOT / "tests" / "fixtures")); a.add_argument("--date")
+    a = sub.add_parser("shorts"); a.add_argument("--date"); a.add_argument("--state")
     args = p.parse_args(argv)
     if args.cmd == "run":
         cmd_run(args, args.dry_run)
@@ -89,6 +128,8 @@ def main(argv=None):
         cmd_replay(args)
     elif args.cmd == "snapshot":
         cmd_snapshot(args)
+    elif args.cmd == "shorts":
+        cmd_shorts(args)
 
 
 if __name__ == "__main__":
