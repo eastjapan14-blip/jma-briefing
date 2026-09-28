@@ -10,6 +10,9 @@
 "topics": {
 "台風第２６号": {
 "大東島": "2026-09-28T00:10:22.876443+00:00"
+},
+"大雨": {
+"中国": "2026-09-28T01:40:23.037339+00:00"
 }
 },
 "urls": {
@@ -92,6 +95,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20260927210157_0_VXWW50_420000.xml": "2026-09-27T21:10:22.749496+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927211537_0_VPCJ50_400000.xml": "2026-09-27T21:20:22.449592+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927212713_0_VPCJ50_340000.xml": "2026-09-27T21:30:30.788863+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260928000938_0_VPFJ50_472000.xml": "2026-09-28T00:10:22.876443+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20260928000938_0_VPFJ50_472000.xml": "2026-09-28T00:10:22.876443+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260928013517_0_VPCJ50_340000.xml": "2026-09-28T01:40:23.037339+00:00"
 }
 }
