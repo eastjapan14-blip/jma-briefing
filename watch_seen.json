@@ -1,7 +1,22 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20260930073521_0_VPFJ50_130000.xml": {
+"author": "気象庁",
+"content": "【東京都気象解説情報（台風第２６号）】台風第２６号の接近に伴い、伊豆諸島では１０月１日昼前にかけて土砂災害に注意・警戒してください。また、強風やうねりを伴う高波、落雷、竜巻などの激しい突風に注意してください。",
+"held": "2026-09-30T07:40:26.054616+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第２６号",
+"updated": "2026-09-30T07:35:21Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20260930073521_0_VPFJ50_130000.xml"
+}
+},
+"topics": {
+"台風第２６号": {
+"東京": "2026-09-30T07:40:26.054616+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20260927073948_0_VPFJ50_473000.xml": "2026-09-27T07:50:27.787109+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927074545_0_VPCJ50_460100.xml": "2026-09-27T07:50:27.787109+00:00",
@@ -48,6 +63,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20260929004112_0_VPFJ50_012000.xml": "2026-09-29T00:50:24.106117+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260929074211_0_VPFJ50_130000.xml": "2026-09-29T07:50:23.102208+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260929203612_0_VPFJ50_130000.xml": "2026-09-29T20:40:22.829016+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20260930073521_0_VPFJ50_130000.xml": "2026-09-30T07:40:26.054616+00:00",
 "https://www.jma.go.jp/jma/press/2609/30a/tsunami_sagyou_20260930.html": "2026-09-30T05:20:23.274415+00:00"
 }
 }
