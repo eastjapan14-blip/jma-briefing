@@ -3,9 +3,6 @@
 "pending": {},
 "topics": {},
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20260927200005_0_VPCJ50_460100.xml": "2026-09-27T20:10:23.933921+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260927200513_0_VPFJ50_460040.xml": "2026-09-27T20:10:23.933921+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260927200621_0_VPZJ50_010000.xml": "2026-09-27T20:10:23.933921+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927205019_0_VPCJ50_130000.xml": "2026-09-27T21:00:37.847192+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927205114_0_VXWW50_410000.xml": "2026-09-27T21:00:37.847192+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927210157_0_VXWW50_420000.xml": "2026-09-27T21:10:22.749496+00:00",
