@@ -7,8 +7,6 @@
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20260927135429_0_VPFJ50_472000.xml": "2026-09-27T14:00:45.337519+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20260927135810_0_VPZJ50_010000.xml": "2026-09-27T14:00:45.337519+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927193819_0_VPFJ50_471000.xml": "2026-09-27T19:40:21.576702+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927194122_0_VPCJ50_471000.xml": "2026-09-27T19:50:24.114933+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260927195405_0_VXWW50_410000.xml": "2026-09-27T20:00:37.226070+00:00",
