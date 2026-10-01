@@ -36,7 +36,7 @@
    "first_seen": "2026-10-01T08:00:39+09:00",
    "flag": 10,
    "id": "pre1h:24051:2026-10-01",
-   "last_seen": "2026-10-01T14:30:29+09:00",
+   "last_seen": "2026-10-01T14:40:22+09:00",
    "last_stricter_date": "2023-09-12",
    "latitude": 42.4283,
    "local_rank": null,
@@ -1089,7 +1089,7 @@
    "first_seen": "2026-10-01T13:00:36+09:00",
    "flag": 10,
    "id": "tmax:41011:2026-10-01",
-   "last_seen": "2026-10-01T14:30:29+09:00",
+   "last_seen": "2026-10-01T14:40:22+09:00",
    "last_stricter_date": "2026-07-22",
    "latitude": 37.1233,
    "local_rank": null,
@@ -1277,7 +1277,7 @@
    "first_seen": "2026-10-01T14:30:29+09:00",
    "flag": 10,
    "id": "tmax:42266:2026-10-01",
-   "last_seen": "2026-10-01T14:30:29+09:00",
+   "last_seen": "2026-10-01T14:40:22+09:00",
    "last_stricter_date": null,
    "latitude": 36.41,
    "local_rank": null,
@@ -1291,9 +1291,9 @@
    "muni": "桐生市",
    "name": "桐生",
    "notifiable": true,
-   "notified_at": null,
-   "notified_severity": "NONE",
-   "notify_count": 0,
+   "notified_at": "2026-10-01T14:40:22+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
    "pref": "群馬県",
    "pref_full": "群馬県",
    "prev": null,
@@ -1315,17 +1315,17 @@
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
-    "MONTHLY_1ST_TIE"
+    "MONTHLY_1ST"
    ],
-   "time": "14:06",
+   "time": "14:12",
    "top3": [],
    "unit": "℃",
-   "value": 32.9,
+   "value": 33.0,
    "years_since": null
   }
  },
- "last_run": "2026-10-01T14:30:29+09:00",
- "runs": 1410,
+ "last_run": "2026-10-01T14:40:22+09:00",
+ "runs": 1411,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1345,21 +1345,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 01 Oct 2026 05:20:48 GMT",
-   "last_success": "2026-10-01T14:30:30+09:00",
-   "source_time": "2026-10-01T14:00"
+   "last_modified": "Thu, 01 Oct 2026 05:30:47 GMT",
+   "last_success": "2026-10-01T14:40:22+09:00",
+   "source_time": "2026-10-01T14:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 01 Oct 2026 05:20:45 GMT",
-   "last_success": "2026-10-01T14:30:31+09:00",
-   "source_time": "2026-10-01T14:00"
+   "last_modified": "Thu, 01 Oct 2026 05:30:45 GMT",
+   "last_success": "2026-10-01T14:40:24+09:00",
+   "source_time": "2026-10-01T14:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 01 Oct 2026 05:20:45 GMT",
+   "last_modified": "Thu, 01 Oct 2026 05:30:45 GMT",
    "last_success": "2026-10-01T14:30:33+09:00",
    "source_time": "2026-10-01T14:00"
   },
