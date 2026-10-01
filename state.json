@@ -37,7 +37,7 @@
    "first_seen": "2026-10-01T08:00:39+09:00",
    "flag": 10,
    "id": "pre1h:24051:2026-10-01",
-   "last_seen": "2026-10-02T00:30:33+09:00",
+   "last_seen": "2026-10-02T00:40:25+09:00",
    "last_stricter_date": "2023-09-12",
    "latitude": 42.4283,
    "local_rank": null,
@@ -1090,7 +1090,7 @@
    "first_seen": "2026-10-01T13:00:36+09:00",
    "flag": 10,
    "id": "tmax:41011:2026-10-01",
-   "last_seen": "2026-10-02T00:30:33+09:00",
+   "last_seen": "2026-10-02T00:40:25+09:00",
    "last_stricter_date": "2026-07-22",
    "latitude": 37.1233,
    "local_rank": null,
@@ -1278,7 +1278,7 @@
    "first_seen": "2026-10-01T14:30:29+09:00",
    "flag": 10,
    "id": "tmax:42266:2026-10-01",
-   "last_seen": "2026-10-02T00:30:33+09:00",
+   "last_seen": "2026-10-02T00:40:25+09:00",
    "last_stricter_date": "2026-07-22",
    "latitude": 36.41,
    "local_rank": null,
@@ -1364,8 +1364,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-02T00:30:33+09:00",
- "runs": 1469,
+ "last_run": "2026-10-02T00:40:25+09:00",
+ "runs": 1470,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1385,23 +1385,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 01 Oct 2026 15:20:45 GMT",
-   "last_success": "2026-10-02T00:30:34+09:00",
-   "source_time": "2026-10-01T24:00"
+   "last_modified": "Thu, 01 Oct 2026 15:30:42 GMT",
+   "last_success": "2026-10-02T00:40:25+09:00",
+   "source_time": "2026-10-02T00:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 01 Oct 2026 15:20:42 GMT",
-   "last_success": "2026-10-02T00:30:35+09:00",
-   "source_time": "2026-10-01T24:00"
+   "last_modified": "Thu, 01 Oct 2026 15:30:38 GMT",
+   "last_success": "2026-10-02T00:40:27+09:00",
+   "source_time": "2026-10-02T00:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 01 Oct 2026 15:20:43 GMT",
-   "last_success": "2026-10-02T00:22:12+09:00",
-   "source_time": "2026-10-01T24:00"
+   "last_modified": "Thu, 01 Oct 2026 15:30:38 GMT",
+   "last_success": "2026-10-02T00:40:28+09:00",
+   "source_time": "2026-10-02T00:00"
   },
   "snc00": {},
   "snd24h00": {}
