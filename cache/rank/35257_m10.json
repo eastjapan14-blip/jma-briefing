@@ -1,0 +1,332 @@
+{
+ "elements": {
+  "日最大10分間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2026-10-01",
+     "mark": "",
+     "rank": 1,
+     "value": 2.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2026/102026/10"
+  },
+  "日最大1時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2026-10-01",
+     "mark": "",
+     "rank": 1,
+     "value": 4.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2026/102026/10"
+  },
+  "日降水量(mm)": {
+   "entries": [
+    {
+     "date": "2026-10-01",
+     "mark": "",
+     "rank": 1,
+     "value": 4.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2026/102026/10"
+  },
+  "月降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "///"
+  },
+  "月降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "///"
+  }
+ },
+ "fetched_at": "2026-10-02T12:30:42+09:00",
+ "station": "上田沢（山形県）",
+ "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1678&year=&month=10&day=&view=h0"
+}
