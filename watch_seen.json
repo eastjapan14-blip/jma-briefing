@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"台風第２７号": {
-"東京": "2026-10-02T07:50:22.827637+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20260929203612_0_VPFJ50_130000.xml": "2026-09-29T20:40:22.829016+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20260930073521_0_VPFJ50_130000.xml": "2026-09-30T07:40:26.054616+00:00",
