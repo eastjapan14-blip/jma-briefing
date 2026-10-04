@@ -1,16 +1,5 @@
 {
  "clusters": {
-  "pre1h:熊本県:2026-09-27": {
-   "date": "2026-09-27",
-   "members": [
-    "86006",
-    "86086"
-   ],
-   "metric": "pre1h",
-   "notified_at": "2026-09-27T09:20:22+09:00",
-   "notified_members": 2,
-   "pref": "熊本県"
-  },
   "tmax:栃木県:2026-10-01": {
    "date": "2026-10-01",
    "members": [
@@ -24,7 +13,6 @@
   }
  },
  "confirm_checked": {
-  "2026-09-27": true,
   "2026-09-28": true,
   "2026-10-01": true
  },
@@ -310,382 +298,6 @@
    "value": 68.0,
    "years_since": 17
   },
-  "pre1h:82361:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 40,
-   "enrich_pending": false,
-   "enriched_at": "2026-09-27T06:00:45+09:00",
-   "first_seen": "2026-09-27T05:40:26+09:00",
-   "flag": 9,
-   "id": "pre1h:82361:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": "2022-07-05",
-   "latitude": 33.0067,
-   "local_rank": 8,
-   "local_tie": false,
-   "longitude": 130.4667,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     57.0,
-     "1999-09-24"
-    ],
-    [
-     2,
-     50.5,
-     "2015-09-06"
-    ],
-    [
-     3,
-     50.0,
-     "2015-09-17"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "大牟田市",
-   "name": "大牟田",
-   "notifiable": true,
-   "notified_at": "2026-09-27T05:40:26+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "福岡県",
-   "pref_full": "福岡県",
-   "prev": {
-    "date": "1981-06-30",
-    "value": 99.0
-   },
-   "prev_monthly": {
-    "date": "1999-09-24",
-    "value": 57.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=82&block_no=0793&year=&month=&day=&view=",
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "82361",
-   "stats_period": "1976/12026/9",
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SINCE_2022"
-   ],
-   "time": "05:34",
-   "top3": [
-    [
-     1,
-     99.0,
-     "1981-06-30"
-    ],
-    [
-     2,
-     85.0,
-     "2022-07-05"
-    ],
-    [
-     3,
-     76.0,
-     "1990-06-15"
-    ]
-   ],
-   "unit": "mm",
-   "value": 71.0,
-   "years_since": 4
-  },
-  "pre1h:84371:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 3,
-   "enrich_pending": false,
-   "enriched_at": "2026-09-27T06:00:45+09:00",
-   "first_seen": "2026-09-27T05:20:24+09:00",
-   "flag": 9,
-   "id": "pre1h:84371:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": "2025-08-11",
-   "latitude": 32.9167,
-   "local_rank": 9,
-   "local_tie": false,
-   "longitude": 129.9133,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     57.0,
-     "1999-09-11"
-    ],
-    [
-     2,
-     54.5,
-     "2015-09-06"
-    ],
-    [
-     3,
-     52.0,
-     "2004-09-07"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "大村市",
-   "name": "大村",
-   "notifiable": true,
-   "notified_at": "2026-09-27T05:20:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "長崎県",
-   "pref_full": "長崎県",
-   "prev": {
-    "date": "2020-07-06",
-    "value": 94.5
-   },
-   "prev_monthly": {
-    "date": "1999-09-11",
-    "value": 57.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1084&year=&month=&day=&view=",
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "84371",
-   "stats_period": "1976/42026/9",
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SINCE_2025"
-   ],
-   "time": "05:21",
-   "top3": [
-    [
-     1,
-     94.5,
-     "2020-07-06"
-    ],
-    [
-     2,
-     85.0,
-     "1982-07-23"
-    ],
-    [
-     3,
-     81.0,
-     "2005-11-06"
-    ]
-   ],
-   "unit": "mm",
-   "value": 66.5,
-   "years_since": 1
-  },
-  "pre1h:86006:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 119,
-   "enrich_pending": false,
-   "enriched_at": "2026-09-27T09:31:15+09:00",
-   "first_seen": "2026-09-27T09:20:22+09:00",
-   "flag": 9,
-   "id": "pre1h:86006:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": "2026-07-05",
-   "latitude": 33.115,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 130.6917,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     51.0,
-     "1979-09-15"
-    ],
-    [
-     2,
-     50.0,
-     "1997-09-07"
-    ],
-    [
-     3,
-     49.5,
-     "2024-09-22"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "山鹿市",
-   "name": "鹿北",
-   "notifiable": true,
-   "notified_at": "2026-09-27T09:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "熊本県",
-   "pref_full": "熊本県",
-   "prev": {
-    "date": "2017-08-15",
-    "value": 95.5
-   },
-   "prev_monthly": {
-    "date": "1979-09-15",
-    "value": 51.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=86&block_no=0832&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "86006",
-   "stats_period": "1976/12026/9",
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "09:00",
-   "top3": [
-    [
-     1,
-     95.5,
-     "2017-08-15"
-    ],
-    [
-     2,
-     92.0,
-     "2005-07-10"
-    ],
-    [
-     3,
-     87.0,
-     "2022-08-21"
-    ]
-   ],
-   "unit": "mm",
-   "value": 51.5,
-   "years_since": 0
-  },
-  "pre1h:86086:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 15,
-   "enrich_pending": false,
-   "enriched_at": "2026-09-27T07:40:32+09:00",
-   "first_seen": "2026-09-27T07:30:31+09:00",
-   "flag": 9,
-   "id": "pre1h:86086:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": "2025-08-11",
-   "latitude": 32.915,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 130.5117,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     46.0,
-     "1999-09-12"
-    ],
-    [
-     2,
-     44.0,
-     "2004-09-19"
-    ],
-    [
-     3,
-     44.0,
-     "1999-09-11"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "玉名市",
-   "name": "岱明",
-   "notifiable": true,
-   "notified_at": "2026-09-27T09:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "熊本県",
-   "pref_full": "熊本県",
-   "prev": {
-    "date": "2025-08-10",
-    "value": 108.0
-   },
-   "prev_monthly": {
-    "date": "1999-09-12",
-    "value": 46.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=86&block_no=0834&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "86086",
-   "stats_period": "1976/12026/9",
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "07:12",
-   "top3": [
-    [
-     1,
-     108.0,
-     "2025-08-10"
-    ],
-    [
-     2,
-     91.5,
-     "2013-08-04"
-    ],
-    [
-     3,
-     86.0,
-     "2006-06-26"
-    ]
-   ],
-   "unit": "mm",
-   "value": 49.0,
-   "years_since": 1
-  },
   "pre24h:61196:2026-09-29": {
    "date": "2026-09-29",
    "elevation": 87,
@@ -742,64 +354,6 @@
    "top3": [],
    "unit": "mm",
    "value": 63.5,
-   "years_since": null
-  },
-  "pre24h:82361:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 40,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-09-27T09:20:22+09:00",
-   "flag": 9,
-   "id": "pre24h:82361:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": null,
-   "latitude": 33.0067,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 130.4667,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "大牟田市",
-   "name": "大牟田",
-   "notifiable": true,
-   "notified_at": "2026-09-27T09:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "福岡県",
-   "pref_full": "福岡県",
-   "prev": {
-    "date": "2020-07-07",
-    "value": 446.5
-   },
-   "prev_monthly": {
-    "date": "1997-09-07",
-    "value": 222.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "82361",
-   "stats_period": null,
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST"
-   ],
-   "time": "14:20",
-   "top3": [],
-   "unit": "mm",
-   "value": 281.0,
    "years_since": null
   },
   "preday:35257:2026-10-02": {
@@ -976,193 +530,6 @@
    ],
    "unit": "mm",
    "value": 88.5,
-   "years_since": 0
-  },
-  "preday:82361:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 40,
-   "enrich_pending": false,
-   "enriched_at": "2026-09-27T14:30:33+09:00",
-   "first_seen": "2026-09-27T10:20:24+09:00",
-   "flag": 9,
-   "id": "preday:82361:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": "2021-08-12",
-   "latitude": 33.0067,
-   "local_rank": 10,
-   "local_tie": true,
-   "longitude": 130.4667,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     217.0,
-     "1997-09-07"
-    ],
-    [
-     2,
-     151.0,
-     "1995-09-03"
-    ],
-    [
-     3,
-     150.0,
-     "1989-09-02"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "大牟田市",
-   "name": "大牟田",
-   "notifiable": true,
-   "notified_at": "2026-09-27T10:20:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "福岡県",
-   "pref_full": "福岡県",
-   "prev": {
-    "date": "2020-07-06",
-    "value": 388.5
-   },
-   "prev_monthly": {
-    "date": "1997-09-07",
-    "value": 217.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=82&block_no=0793&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "82361",
-   "stats_period": "1976/12026/9",
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SINCE_2021"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     388.5,
-     "2020-07-06"
-    ],
-    [
-     2,
-     311.5,
-     "2021-08-12"
-    ],
-    [
-     3,
-     300.0,
-     "2016-06-22"
-    ]
-   ],
-   "unit": "mm",
-   "value": 257.5,
-   "years_since": 5
-  },
-  "preday:84371:2026-09-27": {
-   "date": "2026-09-27",
-   "elevation": 3,
-   "enrich_pending": false,
-   "enriched_at": "2026-09-28T00:30:39+09:00",
-   "first_seen": "2026-09-27T09:20:22+09:00",
-   "flag": 9,
-   "id": "preday:84371:2026-09-27",
-   "last_seen": "2026-09-28T23:50:24+09:00",
-   "last_stricter_date": "2026-06-24",
-   "latitude": 32.9167,
-   "local_rank": 10,
-   "local_tie": false,
-   "longitude": 129.9133,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     162.0,
-     "1999-09-11"
-    ],
-    [
-     2,
-     128.0,
-     "1995-09-23"
-    ],
-    [
-     3,
-     125.0,
-     "2004-09-07"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "大村市",
-   "name": "大村",
-   "notifiable": true,
-   "notified_at": "2026-09-27T09:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "長崎県",
-   "pref_full": "長崎県",
-   "prev": {
-    "date": "2020-07-06",
-    "value": 357.0
-   },
-   "prev_monthly": {
-    "date": "1999-09-11",
-    "value": 162.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1084&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "84371",
-   "stats_period": "1976/42026/9",
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     357.0,
-     "2020-07-06"
-    ],
-    [
-     2,
-     296.0,
-     "1982-07-23"
-    ],
-    [
-     3,
-     249.0,
-     "2021-08-12"
-    ]
-   ],
-   "unit": "mm",
-   "value": 183.5,
    "years_since": 0
   },
   "tmax:41011:2026-10-01": {
@@ -1447,42 +814,42 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-04T23:50:22+09:00",
- "runs": 1911,
+ "last_run": "2026-10-05T00:00:37+09:00",
+ "runs": 1912,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 04 Oct 2026 13:49:40 GMT",
-   "last_success": "2026-10-04T23:00:39+09:00",
-   "source_time": "2026-10-04T22:00"
+   "last_modified": "Sun, 04 Oct 2026 14:49:41 GMT",
+   "last_success": "2026-10-05T00:00:39+09:00",
+   "source_time": "2026-10-04T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 04 Oct 2026 13:49:39 GMT",
-   "last_success": "2026-10-04T23:00:38+09:00",
-   "source_time": "2026-10-04T22:00"
+   "last_modified": "Sun, 04 Oct 2026 14:49:40 GMT",
+   "last_success": "2026-10-05T00:00:37+09:00",
+   "source_time": "2026-10-04T23:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 04 Oct 2026 14:40:38 GMT",
-   "last_success": "2026-10-04T23:50:22+09:00",
-   "source_time": "2026-10-04T23:20"
+   "last_modified": "Sun, 04 Oct 2026 14:50:38 GMT",
+   "last_success": "2026-10-05T00:00:41+09:00",
+   "source_time": "2026-10-04T23:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 04 Oct 2026 14:40:36 GMT",
-   "last_success": "2026-10-04T23:50:24+09:00",
-   "source_time": "2026-10-04T23:20"
+   "last_modified": "Sun, 04 Oct 2026 15:00:38 GMT",
+   "last_success": "2026-10-05T00:00:42+09:00",
+   "source_time": "2026-10-04T23:40"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 04 Oct 2026 14:40:36 GMT",
+   "last_modified": "Sun, 04 Oct 2026 15:00:39 GMT",
    "last_success": "2026-10-04T23:30:36+09:00",
    "source_time": "2026-10-04T23:00"
   },
