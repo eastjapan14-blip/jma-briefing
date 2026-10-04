@@ -1,12 +1,28 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261004073210_0_VPFJ50_130000.xml": {
+"author": "気象庁",
+"content": "【東京都気象解説情報（台風第２７号）】台風第２７号の影響で、小笠原諸島では、４日夜のはじめ頃から６日にかけて、うねりを伴った高波に警戒し、５日夕方から６日にかけて強風に注意・警戒してください。",
+"held": "2026-10-04T07:40:21.369436+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第２７号",
+"updated": "2026-10-04T07:32:10Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261004073210_0_VPFJ50_130000.xml"
+}
+},
+"topics": {
+"台風第２７号": {
+"東京": "2026-10-04T07:40:21.369436+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261002074119_0_VPFJ50_130000.xml": "2026-10-02T07:50:22.827637+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261003075322_0_VPFJ50_130000.xml": "2026-10-03T07:55:07.819980+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261003075910_0_VPZJ50_010000.xml": "2026-10-03T08:00:46.747341+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261003195142_0_VPZJ50_010000.xml": "2026-10-03T20:00:37.467311+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261003200733_0_VPFJ50_130000.xml": "2026-10-03T20:10:28.220341+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261003200733_0_VPFJ50_130000.xml": "2026-10-03T20:10:28.220341+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261004073210_0_VPFJ50_130000.xml": "2026-10-04T07:40:21.369436+00:00"
 }
 }
