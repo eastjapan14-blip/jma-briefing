@@ -1,7 +1,21 @@
 {
 "bodies": {},
-"pending": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261005073010_0_VPFJ50_130000.xml": {
+"author": "気象庁",
+"content": "【東京都気象解説情報（台風第２７号）】台風第２７号の影響により、小笠原諸島では６日昼前にかけて、伊豆諸島南部では６日昼過ぎから夜遅くにかけて、うねりを伴った高波に警戒してください。",
+"held": "2026-10-05T07:40:23.178256+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第２７号",
+"updated": "2026-10-05T07:30:10Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261005073010_0_VPFJ50_130000.xml"
+}
+},
 "topics": {
+"台風第２７号": {
+"東京": "2026-10-05T07:40:23.178256+00:00"
+},
 "大雨・強風・落雷": {
 "北海道": "2026-10-05T06:50:28.903644+00:00"
 },
@@ -23,6 +37,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261005013521_0_VPZJ50_010000.xml": "2026-10-05T01:40:23.559759+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261005021334_0_VPCJ50_016000.xml": "2026-10-05T02:20:22.053593+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261005064329_0_VPCJ50_016000.xml": "2026-10-05T06:50:28.903644+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261005070112_0_VPCJ50_130000.xml": "2026-10-05T07:10:23.303681+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261005070112_0_VPCJ50_130000.xml": "2026-10-05T07:10:23.303681+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261005073010_0_VPFJ50_130000.xml": "2026-10-05T07:40:23.178256+00:00"
 }
 }
