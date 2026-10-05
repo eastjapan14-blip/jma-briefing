@@ -110,6 +110,60 @@
    "value": 23.5,
    "years_since": 3
   },
+  "pre1h:24101:2026-10-05": {
+   "date": "2026-10-05",
+   "elevation": 5,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-05T19:20:23+09:00",
+   "flag": 10,
+   "id": "pre1h:24101:2026-10-05",
+   "last_seen": "2026-10-05T19:20:23+09:00",
+   "last_stricter_date": null,
+   "latitude": 42.2483,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.5567,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "pre1h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "奥尻郡奥尻町",
+   "name": "奥尻",
+   "notifiable": true,
+   "notified_at": "2026-10-05T19:20:23+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "北海道",
+   "pref_full": "北海道 檜山地方",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2007-10-08",
+    "value": 22.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "タイ記録",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "24101",
+   "stats_period": null,
+   "stats_start": 2000,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST_TIE"
+   ],
+   "time": "18:59",
+   "top3": [],
+   "unit": "mm",
+   "value": 22.0,
+   "years_since": null
+  },
   "pre1h:24236:2026-09-28": {
    "date": "2026-09-28",
    "elevation": 5,
@@ -814,42 +868,42 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-05T19:10:22+09:00",
- "runs": 2030,
+ "last_run": "2026-10-05T19:20:23+09:00",
+ "runs": 2031,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 05 Oct 2026 08:49:54 GMT",
-   "last_success": "2026-10-05T18:20:25+09:00",
-   "source_time": "2026-10-05T17:00"
+   "last_modified": "Mon, 05 Oct 2026 09:49:54 GMT",
+   "last_success": "2026-10-05T19:20:25+09:00",
+   "source_time": "2026-10-05T18:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 05 Oct 2026 08:49:54 GMT",
-   "last_success": "2026-10-05T18:20:23+09:00",
-   "source_time": "2026-10-05T17:00"
+   "last_modified": "Mon, 05 Oct 2026 09:49:54 GMT",
+   "last_success": "2026-10-05T19:20:23+09:00",
+   "source_time": "2026-10-05T18:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 05 Oct 2026 10:00:43 GMT",
-   "last_success": "2026-10-05T19:10:22+09:00",
-   "source_time": "2026-10-05T18:40"
+   "last_modified": "Mon, 05 Oct 2026 10:10:42 GMT",
+   "last_success": "2026-10-05T19:20:27+09:00",
+   "source_time": "2026-10-05T18:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 05 Oct 2026 09:50:35 GMT",
-   "last_success": "2026-10-05T19:00:43+09:00",
-   "source_time": "2026-10-05T18:40"
+   "last_modified": "Mon, 05 Oct 2026 10:10:38 GMT",
+   "last_success": "2026-10-05T19:20:28+09:00",
+   "source_time": "2026-10-05T18:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 05 Oct 2026 10:00:40 GMT",
+   "last_modified": "Mon, 05 Oct 2026 10:10:38 GMT",
    "last_success": "2026-10-05T18:30:36+09:00",
    "source_time": "2026-10-05T18:00"
   },
