@@ -4,6 +4,9 @@
 "topics": {
 "大雨・強風・落雷": {
 "北海道": "2026-10-05T06:50:28.903644+00:00"
+},
+"高波": {
+"関東甲信": "2026-10-05T07:10:23.303681+00:00"
 }
 },
 "urls": {
@@ -19,6 +22,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261005012519_0_VPZJ50_010000.xml": "2026-10-05T01:30:29.334807+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261005013521_0_VPZJ50_010000.xml": "2026-10-05T01:40:23.559759+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261005021334_0_VPCJ50_016000.xml": "2026-10-05T02:20:22.053593+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261005064329_0_VPCJ50_016000.xml": "2026-10-05T06:50:28.903644+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261005064329_0_VPCJ50_016000.xml": "2026-10-05T06:50:28.903644+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261005070112_0_VPCJ50_130000.xml": "2026-10-05T07:10:23.303681+00:00"
 }
 }
