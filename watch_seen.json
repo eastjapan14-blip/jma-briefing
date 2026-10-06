@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"高波": {
-"関東甲信": "2026-10-05T21:10:35.880300+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261003075322_0_VPFJ50_130000.xml": "2026-10-03T07:55:07.819980+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261003075910_0_VPZJ50_010000.xml": "2026-10-03T08:00:46.747341+00:00",
