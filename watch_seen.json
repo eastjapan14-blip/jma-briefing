@@ -1,7 +1,25 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261006200054_0_VPFJ50_030000.xml": {
+"author": "盛岡地方気象台",
+"content": "【岩手県気象解説情報（高波）】岩手県の海上では、台風第２７号の影響により、７日夕方にかけて、うねりを伴った高波に警戒してください。",
+"held": "2026-10-06T20:10:24.233820+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "高波",
+"updated": "2026-10-06T20:00:53Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261006200054_0_VPFJ50_030000.xml"
+}
+},
+"topics": {
+"高波": {
+"宮城": "2026-10-06T20:10:24.233820+00:00",
+"岩手": "2026-10-06T20:10:24.233820+00:00",
+"東北": "2026-10-06T20:10:24.233820+00:00",
+"福島": "2026-10-06T20:10:24.233820+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261003200733_0_VPFJ50_130000.xml": "2026-10-03T20:10:28.220341+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261004073210_0_VPFJ50_130000.xml": "2026-10-04T07:40:21.369436+00:00",
@@ -23,6 +41,10 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261006112553_0_VPCJ50_040000.xml": "2026-10-06T11:30:33.888997+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261006114040_0_VPFJ50_040000.xml": "2026-10-06T11:50:23.720408+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261006114043_0_VPFJ50_070000.xml": "2026-10-06T11:50:23.720408+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261006114046_0_VPFJ50_030000.xml": "2026-10-06T11:50:23.720408+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261006114046_0_VPFJ50_030000.xml": "2026-10-06T11:50:23.720408+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261006200008_0_VPCJ50_040000.xml": "2026-10-06T20:10:24.233820+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261006200049_0_VPFJ50_040000.xml": "2026-10-06T20:10:24.233820+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261006200052_0_VPFJ50_070000.xml": "2026-10-06T20:10:24.233820+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261006200054_0_VPFJ50_030000.xml": "2026-10-06T20:10:24.233820+00:00"
 }
 }
