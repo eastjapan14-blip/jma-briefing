@@ -1,17 +1,6 @@
 {
 "bodies": {},
-"pending": {
-"https://www.data.jma.go.jp/developer/xml/data/20261006203318_0_VPCJ50_130000.xml": {
-"author": "気象庁",
-"content": "【関東甲信地方気象解説情報（高波）】台風第２７号の影響により、関東地方の海上では、７日昼前にかけて、うねりを伴った高波に警戒してください。",
-"held": "2026-10-06T20:40:25.869417+00:00",
-"tier": "B",
-"title": "地方気象情報",
-"topic": "高波",
-"updated": "2026-10-06T20:33:18Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20261006203318_0_VPCJ50_130000.xml"
-}
-},
+"pending": {},
 "topics": {
 "高波": {
 "宮城": "2026-10-06T20:10:24.233820+00:00",
