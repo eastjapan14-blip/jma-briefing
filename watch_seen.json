@@ -1,7 +1,11 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {},
+"topics": {
+"高波": {
+"関東甲信": "2026-10-06T07:10:22.961310+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261003075322_0_VPFJ50_130000.xml": "2026-10-03T07:55:07.819980+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261003075910_0_VPZJ50_010000.xml": "2026-10-03T08:00:46.747341+00:00",
@@ -20,6 +24,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261005074511_0_VPZJ50_010000.xml": "2026-10-05T07:50:21.827169+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261005195529_0_VPCJ50_016000.xml": "2026-10-05T19:56:05.943018+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261005200112_0_VPFJ50_130000.xml": "2026-10-05T20:35:56.193273+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261005203511_0_VPCJ50_130000.xml": "2026-10-05T21:10:35.880300+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261005203511_0_VPCJ50_130000.xml": "2026-10-05T21:10:35.880300+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261006070813_0_VPCJ50_130000.xml": "2026-10-06T07:10:22.961310+00:00"
 }
 }
