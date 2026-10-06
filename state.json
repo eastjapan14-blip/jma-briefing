@@ -36,7 +36,7 @@
    "first_seen": "2026-10-05T23:20:25+09:00",
    "flag": 10,
    "id": "pre1h:21297:2026-10-05",
-   "last_seen": "2026-10-06T22:20:22+09:00",
+   "last_seen": "2026-10-06T22:30:33+09:00",
    "last_stricter_date": "2026-08-27",
    "latitude": 42.475,
    "local_rank": null,
@@ -223,7 +223,7 @@
    "first_seen": "2026-10-05T19:20:23+09:00",
    "flag": 10,
    "id": "pre1h:24101:2026-10-05",
-   "last_seen": "2026-10-06T22:20:22+09:00",
+   "last_seen": "2026-10-06T22:30:33+09:00",
    "last_stricter_date": "2024-08-31",
    "latitude": 42.2483,
    "local_rank": null,
@@ -458,7 +458,7 @@
    "first_seen": "2026-10-06T14:50:59+09:00",
    "flag": 10,
    "id": "tmax:19416:2026-10-06",
-   "last_seen": "2026-10-06T22:20:22+09:00",
+   "last_seen": "2026-10-06T22:30:33+09:00",
    "last_stricter_date": "2025-07-23",
    "latitude": 42.97,
    "local_rank": null,
@@ -825,44 +825,44 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-06T22:20:22+09:00",
- "runs": 2190,
+ "last_run": "2026-10-06T22:30:33+09:00",
+ "runs": 2191,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 11:49:42 GMT",
-   "last_success": "2026-10-06T21:30:37+09:00",
-   "source_time": "2026-10-06T20:00"
+   "last_modified": "Tue, 06 Oct 2026 12:49:57 GMT",
+   "last_success": "2026-10-06T22:30:35+09:00",
+   "source_time": "2026-10-06T21:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 11:49:42 GMT",
-   "last_success": "2026-10-06T21:30:36+09:00",
-   "source_time": "2026-10-06T20:00"
+   "last_modified": "Tue, 06 Oct 2026 12:49:57 GMT",
+   "last_success": "2026-10-06T22:30:33+09:00",
+   "source_time": "2026-10-06T21:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 13:10:47 GMT",
-   "last_success": "2026-10-06T22:20:22+09:00",
-   "source_time": "2026-10-06T21:50"
+   "last_modified": "Tue, 06 Oct 2026 13:20:42 GMT",
+   "last_success": "2026-10-06T22:30:36+09:00",
+   "source_time": "2026-10-06T22:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 13:10:45 GMT",
-   "last_success": "2026-10-06T22:20:24+09:00",
-   "source_time": "2026-10-06T21:50"
+   "last_modified": "Tue, 06 Oct 2026 13:20:40 GMT",
+   "last_success": "2026-10-06T22:30:38+09:00",
+   "source_time": "2026-10-06T22:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 13:10:45 GMT",
-   "last_success": "2026-10-06T21:30:41+09:00",
-   "source_time": "2026-10-06T21:00"
+   "last_modified": "Tue, 06 Oct 2026 13:20:40 GMT",
+   "last_success": "2026-10-06T22:30:39+09:00",
+   "source_time": "2026-10-06T22:00"
   },
   "snc00": {},
   "snd24h00": {}
