@@ -25,7 +25,8 @@
  },
  "confirm_checked": {
   "2026-10-01": true,
-  "2026-10-05": true
+  "2026-10-05": true,
+  "2026-10-06": true
  },
  "events": {
   "pre1h:21297:2026-10-05": {
@@ -309,64 +310,6 @@
    "value": 22.0,
    "years_since": 2
   },
-  "pre24h:61196:2026-09-29": {
-   "date": "2026-09-29",
-   "elevation": 87,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-09-29T06:50:22+09:00",
-   "flag": 9,
-   "id": "pre24h:61196:2026-09-29",
-   "last_seen": "2026-09-30T00:30:34+09:00",
-   "last_stricter_date": null,
-   "latitude": 35.2967,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 135.315,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": null,
-   "name": "綾部山家",
-   "notifiable": true,
-   "notified_at": "2026-09-29T06:50:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "京都府",
-   "pref_full": "京都府",
-   "prev": {
-    "date": "2024-05-29",
-    "value": 127.5
-   },
-   "prev_monthly": {
-    "date": "2022-09-20",
-    "value": 51.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": null,
-   "sources": [
-    "csv"
-   ],
-   "station": "61196",
-   "stats_period": null,
-   "stats_start": 2021,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "09:20",
-   "top3": [],
-   "unit": "mm",
-   "value": 63.5,
-   "years_since": null
-  },
   "preday:35257:2026-10-02": {
    "date": "2026-10-02",
    "elevation": 180,
@@ -458,7 +401,7 @@
    "first_seen": "2026-10-06T14:50:59+09:00",
    "flag": 10,
    "id": "tmax:19416:2026-10-06",
-   "last_seen": "2026-10-06T23:50:25+09:00",
+   "last_seen": "2026-10-07T00:00:43+09:00",
    "last_stricter_date": "2025-07-23",
    "latitude": 42.97,
    "local_rank": null,
@@ -490,7 +433,7 @@
    "monthly_years_since": null,
    "muni": "白糠郡白糠町",
    "name": "白糠",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-06T14:50:59+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -504,7 +447,7 @@
     "date": "2025-10-08",
     "value": 23.6
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -517,7 +460,7 @@
    "station": "19416",
    "stats_period": "1977/102026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST_TIE"
    ],
@@ -825,8 +768,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-06T23:50:25+09:00",
- "runs": 2199,
+ "last_run": "2026-10-07T00:00:43+09:00",
+ "runs": 2200,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -846,21 +789,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 14:40:46 GMT",
-   "last_success": "2026-10-06T23:50:26+09:00",
-   "source_time": "2026-10-06T23:20"
+   "last_modified": "Tue, 06 Oct 2026 14:50:42 GMT",
+   "last_success": "2026-10-07T00:00:43+09:00",
+   "source_time": "2026-10-06T23:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 14:40:44 GMT",
-   "last_success": "2026-10-06T23:50:27+09:00",
-   "source_time": "2026-10-06T23:20"
+   "last_modified": "Tue, 06 Oct 2026 15:00:42 GMT",
+   "last_success": "2026-10-07T00:00:44+09:00",
+   "source_time": "2026-10-06T23:40"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 06 Oct 2026 14:40:44 GMT",
+   "last_modified": "Tue, 06 Oct 2026 15:00:42 GMT",
    "last_success": "2026-10-06T23:30:39+09:00",
    "source_time": "2026-10-06T23:00"
   },
