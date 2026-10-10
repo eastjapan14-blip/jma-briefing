@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"大雨・落雷・突風": {
-"沖縄本島": "2026-10-10T19:20:22.179085+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261008050929_0_VPZK50_010000.xml": "2026-10-08T05:20:21.164626+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261010191922_0_VPFJ50_471000.xml": "2026-10-10T19:20:22.179085+00:00"
