@@ -12,7 +12,7 @@
    "first_seen": "2026-10-16T11:10:21+09:00",
    "flag": 10,
    "id": "pre1h:32626:2026-10-16",
-   "last_seen": "2026-10-17T04:00:40+09:00",
+   "last_seen": "2026-10-17T04:10:25+09:00",
    "last_stricter_date": "2024-09-20",
    "latitude": 39.235,
    "local_rank": null,
@@ -188,7 +188,7 @@
    "first_seen": "2026-10-16T14:10:29+09:00",
    "flag": 10,
    "id": "pre1h:54271:2026-10-16",
-   "last_seen": "2026-10-17T04:00:40+09:00",
+   "last_seen": "2026-10-17T04:10:25+09:00",
    "last_stricter_date": "2025-08-06",
    "latitude": 37.8417,
    "local_rank": null,
@@ -357,8 +357,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-17T04:00:40+09:00",
- "runs": 3708,
+ "last_run": "2026-10-17T04:10:25+09:00",
+ "runs": 3709,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -371,9 +371,9 @@
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 17:45:52 GMT",
-   "last_success": "2026-10-17T03:10:22+09:00",
-   "source_time": "2026-10-17T02:00"
+   "last_modified": "Fri, 16 Oct 2026 18:45:56 GMT",
+   "last_success": "2026-10-17T04:10:25+09:00",
+   "source_time": "2026-10-17T03:00"
   },
   "pre1h00": {
    "etag": "",
