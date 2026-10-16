@@ -1,7 +1,7 @@
 {
  "clusters": {},
  "confirm_checked": {
-  "2026-10-09": true
+  "2026-10-16": true
  },
  "events": {
   "pre1h:32626:2026-10-16": {
@@ -12,7 +12,7 @@
    "first_seen": "2026-10-16T11:10:21+09:00",
    "flag": 10,
    "id": "pre1h:32626:2026-10-16",
-   "last_seen": "2026-10-16T23:50:24+09:00",
+   "last_seen": "2026-10-17T00:00:47+09:00",
    "last_stricter_date": "2024-09-20",
    "latitude": 39.235,
    "local_rank": null,
@@ -44,7 +44,7 @@
    "monthly_years_since": null,
    "muni": "由利本荘市",
    "name": "矢島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-16T11:10:21+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -58,7 +58,7 @@
     "date": "1979-10-01",
     "value": 28.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -71,7 +71,7 @@
    "station": "32626",
    "stats_period": "1976/62026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -188,7 +188,7 @@
    "first_seen": "2026-10-16T14:10:29+09:00",
    "flag": 10,
    "id": "pre1h:54271:2026-10-16",
-   "last_seen": "2026-10-16T23:50:24+09:00",
+   "last_seen": "2026-10-17T00:00:47+09:00",
    "last_stricter_date": "2025-08-06",
    "latitude": 37.8417,
    "local_rank": null,
@@ -220,7 +220,7 @@
    "monthly_years_since": null,
    "muni": "佐渡市",
    "name": "羽茂",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-16T14:10:29+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -234,7 +234,7 @@
     "date": "1985-10-13",
     "value": 21.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -247,7 +247,7 @@
    "station": "54271",
    "stats_period": "1976/32026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -355,111 +355,18 @@
    "unit": "mm",
    "value": 38.5,
    "years_since": 0
-  },
-  "tmax:19416:2026-10-09": {
-   "date": "2026-10-09",
-   "elevation": 9,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-09T14:10:35+09:00",
-   "first_seen": "2026-10-09T13:10:24+09:00",
-   "flag": 10,
-   "id": "tmax:19416:2026-10-09",
-   "last_seen": "2026-10-10T23:50:23+09:00",
-   "last_stricter_date": "2025-07-23",
-   "latitude": 42.97,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 144.0617,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "tmax",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     23.6,
-     "2025-10-08"
-    ],
-    [
-     2,
-     23.2,
-     "2024-10-02"
-    ],
-    [
-     3,
-     23.1,
-     "2018-10-01"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "白糠郡白糠町",
-   "name": "白糠",
-   "notifiable": true,
-   "notified_at": "2026-10-09T13:10:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "北海道",
-   "pref_full": "北海道 釧路地方",
-   "prev": {
-    "date": "2007-08-15",
-    "value": 35.5
-   },
-   "prev_monthly": {
-    "date": "2026-10-06",
-    "value": 23.6
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=19&block_no=0098&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "19416",
-   "stats_period": "1977/102026/10",
-   "stats_start": 1977,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST"
-   ],
-   "time": "13:30",
-   "top3": [
-    [
-     1,
-     35.5,
-     "2007-08-15"
-    ],
-    [
-     2,
-     34.6,
-     "2025-07-23"
-    ],
-    [
-     3,
-     33.9,
-     "2018-08-01"
-    ]
-   ],
-   "unit": "℃",
-   "value": 24.4,
-   "years_since": 1
   }
  },
- "last_run": "2026-10-16T23:50:24+09:00",
- "runs": 3682,
+ "last_run": "2026-10-17T00:00:47+09:00",
+ "runs": 3683,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 13:49:27 GMT",
-   "last_success": "2026-10-16T23:00:44+09:00",
-   "source_time": "2026-10-16T22:00"
+   "last_modified": "Fri, 16 Oct 2026 14:49:25 GMT",
+   "last_success": "2026-10-17T00:00:48+09:00",
+   "source_time": "2026-10-16T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
@@ -471,21 +378,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 14:40:44 GMT",
-   "last_success": "2026-10-16T23:50:24+09:00",
-   "source_time": "2026-10-16T23:20"
+   "last_modified": "Fri, 16 Oct 2026 14:50:45 GMT",
+   "last_success": "2026-10-17T00:00:49+09:00",
+   "source_time": "2026-10-16T23:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 14:40:41 GMT",
-   "last_success": "2026-10-16T23:50:26+09:00",
-   "source_time": "2026-10-16T23:20"
+   "last_modified": "Fri, 16 Oct 2026 15:00:42 GMT",
+   "last_success": "2026-10-17T00:00:50+09:00",
+   "source_time": "2026-10-16T23:40"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 14:40:42 GMT",
+   "last_modified": "Fri, 16 Oct 2026 15:00:43 GMT",
    "last_success": "2026-10-16T23:30:38+09:00",
    "source_time": "2026-10-16T23:00"
   },
