@@ -12,7 +12,7 @@
    "first_seen": "2026-10-16T11:10:21+09:00",
    "flag": 10,
    "id": "pre1h:32626:2026-10-16",
-   "last_seen": "2026-10-17T00:20:25+09:00",
+   "last_seen": "2026-10-17T00:30:33+09:00",
    "last_stricter_date": "2024-09-20",
    "latitude": 39.235,
    "local_rank": null,
@@ -44,7 +44,7 @@
    "monthly_years_since": null,
    "muni": "由利本荘市",
    "name": "矢島",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-10-16T11:10:21+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -58,7 +58,7 @@
     "date": "1979-10-01",
     "value": 28.0
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -188,7 +188,7 @@
    "first_seen": "2026-10-16T14:10:29+09:00",
    "flag": 10,
    "id": "pre1h:54271:2026-10-16",
-   "last_seen": "2026-10-17T00:20:25+09:00",
+   "last_seen": "2026-10-17T00:30:33+09:00",
    "last_stricter_date": "2025-08-06",
    "latitude": 37.8417,
    "local_rank": null,
@@ -220,7 +220,7 @@
    "monthly_years_since": null,
    "muni": "佐渡市",
    "name": "羽茂",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-10-16T14:10:29+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -234,7 +234,7 @@
     "date": "1985-10-13",
     "value": 21.0
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -357,8 +357,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-17T00:20:25+09:00",
- "runs": 3685,
+ "last_run": "2026-10-17T00:30:33+09:00",
+ "runs": 3686,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -378,23 +378,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 15:10:47 GMT",
-   "last_success": "2026-10-17T00:20:25+09:00",
-   "source_time": "2026-10-16T23:50"
+   "last_modified": "Fri, 16 Oct 2026 15:20:43 GMT",
+   "last_success": "2026-10-17T00:30:34+09:00",
+   "source_time": "2026-10-16T24:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 15:10:44 GMT",
-   "last_success": "2026-10-17T00:20:26+09:00",
-   "source_time": "2026-10-16T23:50"
+   "last_modified": "Fri, 16 Oct 2026 15:20:41 GMT",
+   "last_success": "2026-10-17T00:30:35+09:00",
+   "source_time": "2026-10-16T24:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 16 Oct 2026 15:10:45 GMT",
-   "last_success": "2026-10-16T23:30:38+09:00",
-   "source_time": "2026-10-16T23:00"
+   "last_modified": "Fri, 16 Oct 2026 15:20:41 GMT",
+   "last_success": "2026-10-17T00:30:37+09:00",
+   "source_time": "2026-10-16T24:00"
   },
   "snc00": {},
   "snd24h00": {}
