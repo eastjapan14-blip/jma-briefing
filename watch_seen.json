@@ -1,9 +1,13 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {},
+"topics": {
+"大雨・落雷・突風": {
+"北陸": "2026-10-18T07:20:22.458786+00:00"
+}
+},
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261015071719_0_VPZJ50_010000.xml": "2026-10-15T07:20:22.286249+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261018071816_0_VPCJ50_150000.xml": "2026-10-18T07:20:22.458786+00:00",
 "https://www.youtube.com/watch?v=KbD65hdsUYA": "2026-10-16T05:40:21.287413+00:00"
 }
 }
