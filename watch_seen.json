@@ -1,7 +1,21 @@
 {
 "bodies": {},
-"pending": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261019074507_0_VPCJ50_471000.xml": {
+"author": "沖縄気象台",
+"content": "【沖縄地方気象解説情報（台風第３０号）】先島諸島では、２１日からうねりを伴う高波に、２３日頃から暴風に警戒してください。また、２３日頃は、警報級の高潮となるおそれがあります。風が強まる前に早めの台風対策が必要です。沖縄本島地方と大東島地方でも、台風の進路等によっては２１日から大しけとなるおそれがあります。",
+"held": "2026-10-19T07:50:24.910241+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-19T07:45:06Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261019074507_0_VPCJ50_471000.xml"
+}
+},
 "topics": {
+"台風第３０号": {
+"沖縄": "2026-10-19T07:50:24.910241+00:00"
+},
 "大雨": {
 "東北": "2026-10-19T07:00:40.396803+00:00"
 },
@@ -18,6 +32,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261019022342_0_VPFJ50_473000.xml": "2026-10-19T02:30:32.454876+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019024018_0_VPCJ50_471000.xml": "2026-10-19T02:50:22.907122+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019065310_0_VPCJ50_040000.xml": "2026-10-19T07:00:40.396803+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261019070308_0_VPCJ50_150000.xml": "2026-10-19T07:10:23.880645+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261019070308_0_VPCJ50_150000.xml": "2026-10-19T07:10:23.880645+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261019074507_0_VPCJ50_471000.xml": "2026-10-19T07:50:24.910241+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261019074514_0_VPZJ50_010000.xml": "2026-10-19T07:50:24.910241+00:00"
 }
 }
