@@ -281,7 +281,7 @@
    "first_seen": "2026-10-20T07:30:32+09:00",
    "flag": 10,
    "id": "pre1h:55041:2026-10-20",
-   "last_seen": "2026-10-20T08:20:23+09:00",
+   "last_seen": "2026-10-20T08:30:32+09:00",
    "last_stricter_date": "2026-08-28",
    "latitude": 36.825,
    "local_rank": null,
@@ -374,7 +374,7 @@
    "first_seen": "2026-10-20T07:10:24+09:00",
    "flag": 10,
    "id": "pre1h:56186:2026-10-20",
-   "last_seen": "2026-10-20T08:20:23+09:00",
+   "last_seen": "2026-10-20T08:30:32+09:00",
    "last_stricter_date": "2026-08-27",
    "latitude": 36.7117,
    "local_rank": null,
@@ -467,7 +467,7 @@
    "first_seen": "2026-10-20T07:50:22+09:00",
    "flag": 10,
    "id": "pre24h:54341:2026-10-20",
-   "last_seen": "2026-10-20T08:20:23+09:00",
+   "last_seen": "2026-10-20T08:30:32+09:00",
    "last_stricter_date": null,
    "latitude": 37.7683,
    "local_rank": null,
@@ -511,10 +511,10 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "08:00",
+   "time": "08:10",
    "top3": [],
    "unit": "mm",
-   "value": 81.5,
+   "value": 82.5,
    "years_since": null
   },
   "pre24h:68046:2026-10-20": {
@@ -525,7 +525,7 @@
    "first_seen": "2026-10-20T06:50:23+09:00",
    "flag": 10,
    "id": "pre24h:68046:2026-10-20",
-   "last_seen": "2026-10-20T08:20:23+09:00",
+   "last_seen": "2026-10-20T08:30:32+09:00",
    "last_stricter_date": null,
    "latitude": 36.1783,
    "local_rank": null,
@@ -569,10 +569,10 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "08:00",
+   "time": "08:10",
    "top3": [],
    "unit": "mm",
-   "value": 106.5,
+   "value": 107.0,
    "years_since": null
   },
   "preday:35257:2026-10-14": {
@@ -662,12 +662,12 @@
    "date": "2026-10-20",
    "elevation": 2,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-10-20T08:30:44+09:00",
    "first_seen": "2026-10-20T08:20:23+09:00",
    "flag": 10,
    "id": "preday:54341:2026-10-20",
-   "last_seen": "2026-10-20T08:20:23+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-10-20T08:30:32+09:00",
+   "last_stricter_date": "2014-07-09",
    "latitude": 37.7683,
    "local_rank": null,
    "local_tie": false,
@@ -675,8 +675,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "preday",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     66.5,
+     "2019-10-12"
+    ],
+    [
+     2,
+     64.0,
+     "1980-10-27"
+    ],
+    [
+     3,
+     60.0,
+     "2013-10-16"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "新潟市西蒲区",
    "name": "巻",
    "notifiable": true,
@@ -685,7 +704,10 @@
    "notify_count": 1,
    "pref": "新潟県",
    "pref_full": "新潟県",
-   "prev": null,
+   "prev": {
+    "date": "1978-06-26",
+    "value": 157.0
+   },
    "prev_monthly": {
     "date": "2019-10-12",
     "value": 66.5
@@ -695,26 +717,43 @@
    "remark": "",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=54&block_no=0522&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "54341",
-   "stats_period": null,
+   "stats_period": "1976/32026/10",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST"
    ],
    "time": null,
-   "top3": [],
+   "top3": [
+    [
+     1,
+     157.0,
+     "1978-06-26"
+    ],
+    [
+     2,
+     146.5,
+     "2014-07-09"
+    ],
+    [
+     3,
+     128.0,
+     "2000-07-15"
+    ]
+   ],
    "unit": "mm",
    "value": 72.5,
-   "years_since": null
+   "years_since": 12
   }
  },
- "last_run": "2026-10-20T08:20:23+09:00",
- "runs": 4185,
+ "last_run": "2026-10-20T08:30:32+09:00",
+ "runs": 4186,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -734,23 +773,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 19 Oct 2026 23:10:45 GMT",
-   "last_success": "2026-10-20T08:20:26+09:00",
-   "source_time": "2026-10-20T07:50"
+   "last_modified": "Mon, 19 Oct 2026 23:20:43 GMT",
+   "last_success": "2026-10-20T08:30:33+09:00",
+   "source_time": "2026-10-20T08:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 19 Oct 2026 23:10:43 GMT",
-   "last_success": "2026-10-20T08:20:27+09:00",
-   "source_time": "2026-10-20T07:50"
+   "last_modified": "Mon, 19 Oct 2026 23:20:40 GMT",
+   "last_success": "2026-10-20T08:30:34+09:00",
+   "source_time": "2026-10-20T08:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 19 Oct 2026 23:10:43 GMT",
-   "last_success": "2026-10-20T07:30:36+09:00",
-   "source_time": "2026-10-20T07:00"
+   "last_modified": "Mon, 19 Oct 2026 23:20:40 GMT",
+   "last_success": "2026-10-20T08:30:36+09:00",
+   "source_time": "2026-10-20T08:00"
   },
   "snc00": {},
   "snd24h00": {}
