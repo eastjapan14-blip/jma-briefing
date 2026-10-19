@@ -10,10 +10,32 @@
 "topic": "台風第３０号",
 "updated": "2026-10-19T07:45:06Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261019074507_0_VPCJ50_471000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261019074939_0_VPFJ50_472000.xml": {
+"author": "南大東島地方気象台",
+"content": "【大東島地方気象解説情報（台風第３０号）】大東島地方の沿岸の海域では、うねりを伴い波が高く、２０日夜のはじめ頃からしける見込みです。うねりを伴う高波に十分注意してください。また、台風の進路等によっては、２１日から大しけとなるおそれがあります。",
+"held": "2026-10-19T08:00:40.156645+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-19T07:49:39Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261019074939_0_VPFJ50_472000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261019075434_0_VPFJ50_473000.xml": {
+"author": "宮古島地方気象台",
+"content": "【宮古島地方気象解説情報（台風第３０号）】宮古島地方では２１日から２４日頃にかけて、うねりを伴う高波に警戒してください。また、台風の進路等によっては、２２日から２４日頃にかけて暴風となるおそれがあります。",
+"held": "2026-10-19T08:00:40.156645+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-19T07:54:33Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261019075434_0_VPFJ50_473000.xml"
 }
 },
 "topics": {
 "台風第３０号": {
+"大東島": "2026-10-19T08:00:40.156645+00:00",
+"宮古島": "2026-10-19T08:00:40.156645+00:00",
 "沖縄": "2026-10-19T07:50:24.910241+00:00"
 },
 "大雨": {
@@ -34,6 +56,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261019065310_0_VPCJ50_040000.xml": "2026-10-19T07:00:40.396803+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019070308_0_VPCJ50_150000.xml": "2026-10-19T07:10:23.880645+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019074507_0_VPCJ50_471000.xml": "2026-10-19T07:50:24.910241+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261019074514_0_VPZJ50_010000.xml": "2026-10-19T07:50:24.910241+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261019074514_0_VPZJ50_010000.xml": "2026-10-19T07:50:24.910241+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261019074939_0_VPFJ50_472000.xml": "2026-10-19T08:00:40.156645+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261019075434_0_VPFJ50_473000.xml": "2026-10-19T08:00:40.156645+00:00"
 }
 }
