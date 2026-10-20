@@ -15,6 +15,9 @@
 "topics": {
 "台風第３０号": {
 "宮古島": "2026-10-20T01:50:23.394552+00:00"
+},
+"大雨・落雷・突風": {
+"北陸": "2026-10-20T02:10:21.814786+00:00"
 }
 },
 "urls": {
@@ -41,6 +44,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261019202621_0_VPCJ50_040000.xml": "2026-10-19T20:30:35.251825+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019202643_0_VPFJ50_472000.xml": "2026-10-19T20:30:35.251825+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019202740_0_VPFJ50_471000.xml": "2026-10-19T20:30:35.251825+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261020014322_0_VPFJ50_473000.xml": "2026-10-20T01:50:23.394552+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261020014322_0_VPFJ50_473000.xml": "2026-10-20T01:50:23.394552+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261020020016_0_VPCJ50_150000.xml": "2026-10-20T02:10:21.814786+00:00"
 }
 }
