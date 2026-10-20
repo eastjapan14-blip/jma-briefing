@@ -1,7 +1,25 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261020194544_0_VPCJ50_460100.xml": {
+"author": "鹿児島地方気象台",
+"content": "【九州南部・奄美地方気象解説情報（台風第３０号）】大型で猛烈な台風第３０号は、フィリピンの東を西に進む見込みです。奄美地方の沿岸の海域では、２２日夜のはじめ頃から２４日頃にかけてうねりを伴った高波に警戒してください。",
+"held": "2026-10-20T19:50:24.097987+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-20T19:45:44Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261020194544_0_VPCJ50_460100.xml"
+}
+},
+"topics": {
+"台風第３０号": {
+"九州南部・奄美": "2026-10-20T19:50:24.097987+00:00"
+},
+"大雨・落雷・突風": {
+"北陸": "2026-10-20T19:50:24.097987+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261018071816_0_VPCJ50_150000.xml": "2026-10-18T07:20:22.458786+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261018074709_0_VPCJ50_471000.xml": "2026-10-18T07:50:23.120224+00:00",
@@ -37,6 +55,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261020074345_0_VPFJ50_471000.xml": "2026-10-20T07:50:22.980932+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020075011_0_VPFJ50_473000.xml": "2026-10-20T08:00:38.053901+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020075741_0_VPFJ50_472000.xml": "2026-10-20T08:00:38.053901+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261020075928_0_VPFJ50_474000.xml": "2026-10-20T08:00:38.053901+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261020075928_0_VPFJ50_474000.xml": "2026-10-20T08:00:38.053901+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261020194544_0_VPCJ50_460100.xml": "2026-10-20T19:50:24.097987+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261020194624_0_VPCJ50_150000.xml": "2026-10-20T19:50:24.097987+00:00"
 }
 }
