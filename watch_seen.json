@@ -10,10 +10,32 @@
 "topic": "台風第３０号",
 "updated": "2026-10-20T07:26:39Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261020072639_0_VPCJ50_471000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261020073307_0_VPCJ50_460100.xml": {
+"author": "鹿児島地方気象台",
+"content": "【九州南部・奄美地方気象解説情報（台風第３０号）】奄美地方の沿岸の海域では、２２日から２４日頃にかけて大しけとなる見込みです。うねりを伴う高波に警戒してください。",
+"held": "2026-10-20T07:40:24.415562+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-20T07:33:07Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261020073307_0_VPCJ50_460100.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261020073323_0_VPFJ50_460040.xml": {
+"author": "名瀬測候所",
+"content": "【奄美地方（鹿児島県）気象解説情報（台風第３０号）】奄美地方の沿岸の海域では、２２日午後から２４日頃にかけてうねりを伴った高波に警戒してください。",
+"held": "2026-10-20T07:40:24.415562+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-20T07:33:22Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261020073323_0_VPFJ50_460040.xml"
 }
 },
 "topics": {
 "台風第３０号": {
+"九州南部・奄美": "2026-10-20T07:40:24.415562+00:00",
+"奄美": "2026-10-20T07:40:24.415562+00:00",
 "沖縄": "2026-10-20T07:30:31.841215+00:00"
 },
 "大雨・強風・落雷": {
@@ -52,6 +74,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261020043235_0_VPZK50_010000.xml": "2026-10-20T04:40:24.136196+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020065004_0_VPCJ50_040000.xml": "2026-10-20T07:00:39.059358+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020070247_0_VPCJ50_150000.xml": "2026-10-20T07:10:24.521381+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261020072639_0_VPCJ50_471000.xml": "2026-10-20T07:30:31.841215+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261020072639_0_VPCJ50_471000.xml": "2026-10-20T07:30:31.841215+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261020073307_0_VPCJ50_460100.xml": "2026-10-20T07:40:24.415562+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261020073323_0_VPFJ50_460040.xml": "2026-10-20T07:40:24.415562+00:00"
 }
 }
