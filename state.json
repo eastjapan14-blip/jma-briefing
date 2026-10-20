@@ -282,7 +282,7 @@
    "first_seen": "2026-10-20T07:30:32+09:00",
    "flag": 10,
    "id": "pre1h:55041:2026-10-20",
-   "last_seen": "2026-10-21T04:50:22+09:00",
+   "last_seen": "2026-10-21T05:00:39+09:00",
    "last_stricter_date": "2026-08-28",
    "latitude": 36.825,
    "local_rank": null,
@@ -375,7 +375,7 @@
    "first_seen": "2026-10-20T07:10:24+09:00",
    "flag": 10,
    "id": "pre1h:56186:2026-10-20",
-   "last_seen": "2026-10-21T04:50:22+09:00",
+   "last_seen": "2026-10-21T05:00:39+09:00",
    "last_stricter_date": "2026-08-27",
    "latitude": 36.7117,
    "local_rank": null,
@@ -468,7 +468,7 @@
    "first_seen": "2026-10-20T09:20:23+09:00",
    "flag": 10,
    "id": "pre1h:65256:2026-10-20",
-   "last_seen": "2026-10-21T04:50:22+09:00",
+   "last_seen": "2026-10-21T05:00:39+09:00",
    "last_stricter_date": "2025-06-24",
    "latitude": 33.7917,
    "local_rank": null,
@@ -611,6 +611,60 @@
    "value": 94.0,
    "years_since": null
   },
+  "pre24h:56176:2026-10-21": {
+   "date": "2026-10-21",
+   "elevation": 15,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-21T05:00:39+09:00",
+   "flag": 10,
+   "id": "pre24h:56176:2026-10-21",
+   "last_seen": "2026-10-21T05:00:39+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.8933,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 136.7767,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "羽咋市",
+   "name": "羽咋",
+   "notifiable": true,
+   "notified_at": "2026-10-21T05:00:39+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "石川県",
+   "pref_full": "石川県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2017-10-23",
+    "value": 105.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "56176",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": "04:40",
+   "top3": [],
+   "unit": "mm",
+   "value": 105.5,
+   "years_since": null
+  },
   "pre24h:68046:2026-10-20": {
    "date": "2026-10-20",
    "elevation": 80,
@@ -619,7 +673,7 @@
    "first_seen": "2026-10-20T06:50:23+09:00",
    "flag": 10,
    "id": "pre24h:68046:2026-10-20",
-   "last_seen": "2026-10-21T04:50:22+09:00",
+   "last_seen": "2026-10-21T05:00:39+09:00",
    "last_stricter_date": null,
    "latitude": 36.1783,
    "local_rank": null,
@@ -760,7 +814,7 @@
    "first_seen": "2026-10-20T08:20:23+09:00",
    "flag": 10,
    "id": "preday:54341:2026-10-20",
-   "last_seen": "2026-10-21T04:50:22+09:00",
+   "last_seen": "2026-10-21T05:00:39+09:00",
    "last_stricter_date": "2014-07-09",
    "latitude": 37.7683,
    "local_rank": null,
@@ -846,8 +900,8 @@
    "years_since": 12
   }
  },
- "last_run": "2026-10-21T04:50:22+09:00",
- "runs": 4313,
+ "last_run": "2026-10-21T05:00:39+09:00",
+ "runs": 4314,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -867,21 +921,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 20 Oct 2026 19:40:46 GMT",
-   "last_success": "2026-10-21T04:50:22+09:00",
-   "source_time": "2026-10-21T04:20"
+   "last_modified": "Tue, 20 Oct 2026 19:50:46 GMT",
+   "last_success": "2026-10-21T05:00:39+09:00",
+   "source_time": "2026-10-21T04:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 20 Oct 2026 19:40:43 GMT",
-   "last_success": "2026-10-21T04:50:23+09:00",
-   "source_time": "2026-10-21T04:20"
+   "last_modified": "Tue, 20 Oct 2026 19:50:44 GMT",
+   "last_success": "2026-10-21T05:00:41+09:00",
+   "source_time": "2026-10-21T04:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 20 Oct 2026 19:40:43 GMT",
+   "last_modified": "Tue, 20 Oct 2026 19:50:44 GMT",
    "last_success": "2026-10-21T04:30:34+09:00",
    "source_time": "2026-10-21T04:00"
   },
