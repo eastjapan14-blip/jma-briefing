@@ -18,11 +18,12 @@
     "35056",
     "35071",
     "35141",
-    "35201"
+    "35201",
+    "35257"
    ],
    "metric": "pre24h",
-   "notified_at": "2026-10-21T22:50:24+09:00",
-   "notified_members": 5,
+   "notified_at": "2026-10-22T00:00:47+09:00",
+   "notified_members": 6,
    "pref": "山形県"
   },
   "pre24h:岩手県:2026-10-21": {
@@ -66,12 +67,7 @@
   "preday:山形県:2026-10-21": {
    "date": "2026-10-21",
    "members": [
-    "35052",
     "35056",
-    "35071",
-    "35141",
-    "35146",
-    "35201",
     "35257"
    ],
    "metric": "preday",
@@ -154,7 +150,8 @@
  },
  "confirm_checked": {
   "2026-10-16": true,
-  "2026-10-20": true
+  "2026-10-20": true,
+  "2026-10-21": true
  },
  "events": {
   "pre1h:32626:2026-10-16": {
@@ -258,7 +255,7 @@
    "first_seen": "2026-10-21T16:10:26+09:00",
    "flag": 10,
    "id": "pre1h:35056:2026-10-21",
-   "last_seen": "2026-10-21T23:40:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2025-09-03",
    "latitude": 38.965,
    "local_rank": null,
@@ -344,89 +341,6 @@
    "value": 29.0,
    "years_since": 1
   },
-  "pre1h:35257:2026-10-14": {
-   "date": "2026-10-14",
-   "elevation": 180,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-14T12:00:51+09:00",
-   "first_seen": "2026-10-14T11:20:22+09:00",
-   "flag": 10,
-   "id": "pre1h:35257:2026-10-14",
-   "last_seen": "2026-10-15T00:30:36+09:00",
-   "last_stricter_date": "2026-09-14",
-   "latitude": 38.5233,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.7883,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     4.5,
-     "2026-10-01"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "上田沢",
-   "notifiable": true,
-   "notified_at": "2026-10-14T11:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "山形県",
-   "pref_full": "山形県",
-   "prev": {
-    "date": "2026-07-24",
-    "value": 41.0
-   },
-   "prev_monthly": {
-    "date": "2026-10-01",
-    "value": 4.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1678&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "35257",
-   "stats_period": "2026/32026/10",
-   "stats_start": 2026,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "11:29",
-   "top3": [
-    [
-     1,
-     41.0,
-     "2026-07-24"
-    ],
-    [
-     2,
-     30.5,
-     "2026-09-13"
-    ],
-    [
-     3,
-     27.5,
-     "2026-08-09"
-    ]
-   ],
-   "unit": "mm",
-   "value": 9.0,
-   "years_since": 0
-  },
   "pre1h:35257:2026-10-21": {
    "date": "2026-10-21",
    "elevation": 180,
@@ -435,7 +349,7 @@
    "first_seen": "2026-10-21T16:30:31+09:00",
    "flag": 10,
    "id": "pre1h:35257:2026-10-21",
-   "last_seen": "2026-10-21T23:40:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-09-14",
    "latitude": 38.5233,
    "local_rank": 9,
@@ -891,7 +805,7 @@
    "first_seen": "2026-10-21T19:10:27+09:00",
    "flag": 10,
    "id": "pre24h:32466:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.6033,
    "local_rank": null,
@@ -931,12 +845,12 @@
    "station": "32466",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 99.5,
@@ -950,7 +864,7 @@
    "first_seen": "2026-10-21T20:50:25+09:00",
    "flag": 10,
    "id": "pre24h:32476:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.6983,
    "local_rank": null,
@@ -990,12 +904,12 @@
    "station": "32476",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 119.0,
@@ -1009,7 +923,7 @@
    "first_seen": "2026-10-21T14:10:22+09:00",
    "flag": 10,
    "id": "pre24h:32551:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.49,
    "local_rank": null,
@@ -1049,12 +963,12 @@
    "station": "32551",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 95.5,
@@ -1068,7 +982,7 @@
    "first_seen": "2026-10-21T18:40:22+09:00",
    "flag": 10,
    "id": "pre24h:32596:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.32,
    "local_rank": null,
@@ -1108,12 +1022,12 @@
    "station": "32596",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 96.0,
@@ -1127,7 +1041,7 @@
    "first_seen": "2026-10-21T18:20:25+09:00",
    "flag": 10,
    "id": "pre24h:32626:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.235,
    "local_rank": null,
@@ -1167,12 +1081,12 @@
    "station": "32626",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 137.0,
@@ -1186,7 +1100,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "pre24h:32681:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.1017,
    "local_rank": null,
@@ -1226,15 +1140,15 @@
    "station": "32681",
    "stats_period": null,
    "stats_start": 1983,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
-   "value": 129.5,
+   "value": 130.0,
    "years_since": null
   },
   "pre24h:33421:2026-10-21": {
@@ -1245,7 +1159,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "pre24h:33421:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.6967,
    "local_rank": null,
@@ -1285,12 +1199,12 @@
    "station": "33421",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 109.5,
@@ -1304,7 +1218,7 @@
    "first_seen": "2026-10-21T15:30:31+09:00",
    "flag": 10,
    "id": "pre24h:33486:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.5483,
    "local_rank": null,
@@ -1344,15 +1258,15 @@
    "station": "33486",
    "stats_period": null,
    "stats_start": 2017,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
-   "value": 153.5,
+   "value": 154.0,
    "years_since": null
   },
   "pre24h:33631:2026-10-21": {
@@ -1363,7 +1277,7 @@
    "first_seen": "2026-10-21T19:40:24+09:00",
    "flag": 10,
    "id": "pre24h:33631:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 39.31,
    "local_rank": null,
@@ -1403,12 +1317,12 @@
    "station": "33631",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 119.5,
@@ -1422,7 +1336,7 @@
    "first_seen": "2026-10-21T16:00:40+09:00",
    "flag": 10,
    "id": "pre24h:35052:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 38.9083,
    "local_rank": null,
@@ -1436,7 +1350,7 @@
    "muni": "酒田市",
    "name": "酒田",
    "notifiable": true,
-   "notified_at": "2026-10-21T22:50:24+09:00",
+   "notified_at": "2026-10-22T00:00:47+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -1462,12 +1376,12 @@
    "station": "35052",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 129.0,
@@ -1481,7 +1395,7 @@
    "first_seen": "2026-10-21T16:00:40+09:00",
    "flag": 10,
    "id": "pre24h:35056:2026-10-21",
-   "last_seen": "2026-10-21T23:40:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 38.965,
    "local_rank": null,
@@ -1495,7 +1409,7 @@
    "muni": null,
    "name": "酒田大沢",
    "notifiable": true,
-   "notified_at": "2026-10-21T22:50:24+09:00",
+   "notified_at": "2026-10-22T00:00:47+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -1520,7 +1434,7 @@
    "station": "35056",
    "stats_period": null,
    "stats_start": 2017,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER",
@@ -1540,7 +1454,7 @@
    "first_seen": "2026-10-21T18:00:40+09:00",
    "flag": 10,
    "id": "pre24h:35071:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 38.9183,
    "local_rank": null,
@@ -1554,7 +1468,7 @@
    "muni": "最上郡真室川町",
    "name": "差首鍋",
    "notifiable": true,
-   "notified_at": "2026-10-21T22:50:24+09:00",
+   "notified_at": "2026-10-22T00:00:47+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -1579,13 +1493,13 @@
    ],
    "station": "35071",
    "stats_period": null,
-   "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "stats_start": 1976,
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 138.0,
@@ -1599,7 +1513,7 @@
    "first_seen": "2026-10-21T19:10:27+09:00",
    "flag": 10,
    "id": "pre24h:35141:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 38.735,
    "local_rank": null,
@@ -1613,7 +1527,7 @@
    "muni": "鶴岡市",
    "name": "鶴岡",
    "notifiable": true,
-   "notified_at": "2026-10-21T22:50:24+09:00",
+   "notified_at": "2026-10-22T00:00:47+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -1639,12 +1553,12 @@
    "station": "35141",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 101.5,
@@ -1658,7 +1572,7 @@
    "first_seen": "2026-10-21T22:50:24+09:00",
    "flag": 10,
    "id": "pre24h:35201:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 38.6717,
    "local_rank": null,
@@ -1672,7 +1586,7 @@
    "muni": "鶴岡市",
    "name": "櫛引",
    "notifiable": true,
-   "notified_at": "2026-10-21T22:50:24+09:00",
+   "notified_at": "2026-10-22T00:00:47+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -1698,15 +1612,72 @@
    "station": "35201",
    "stats_period": null,
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "23:20",
+   "time": "23:40",
    "top3": [],
    "unit": "mm",
    "value": 92.0,
+   "years_since": null
+  },
+  "pre24h:35257:2026-10-21": {
+   "date": "2026-10-21",
+   "elevation": 180,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-22T00:00:47+09:00",
+   "flag": 13,
+   "id": "pre24h:35257:2026-10-21",
+   "last_seen": "2026-10-22T00:00:47+09:00",
+   "last_stricter_date": null,
+   "latitude": 38.5233,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.7883,
+   "margin_abs": 1.0,
+   "margin_pct": 1.1,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": null,
+   "name": "上田沢",
+   "notifiable": true,
+   "notified_at": "2026-10-22T00:00:47+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "山形県",
+   "pref_full": "山形県",
+   "prev": {
+    "date": "2026-07-25",
+    "value": 93.0
+   },
+   "prev_monthly": null,
+   "quality": "NORMAL",
+   "record_age_years": 0,
+   "remark": "",
+   "severity": "B",
+   "short_stats": true,
+   "source_ref": null,
+   "sources": [
+    "csv"
+   ],
+   "station": "35257",
+   "stats_period": null,
+   "stats_start": 2026,
+   "status": "REVISED",
+   "tags": [
+    "ALL_TIME_1ST",
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER",
+    "SHORT_STATS"
+   ],
+   "time": "23:40",
+   "top3": [],
+   "unit": "mm",
+   "value": 94.0,
    "years_since": null
   },
   "pre24h:54041:2026-10-21": {
@@ -1717,7 +1688,7 @@
    "first_seen": "2026-10-21T16:50:24+09:00",
    "flag": 10,
    "id": "pre24h:54041:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 38.33,
    "local_rank": null,
@@ -1756,12 +1727,12 @@
    ],
    "station": "54041",
    "stats_period": null,
-   "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "stats_start": 1978,
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "23:20",
+   "time": "23:30",
    "top3": [],
    "unit": "mm",
    "value": 123.5,
@@ -1833,7 +1804,7 @@
    "first_seen": "2026-10-21T05:50:22+09:00",
    "flag": 10,
    "id": "pre24h:56146:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 37.03,
    "local_rank": null,
@@ -1873,7 +1844,7 @@
    "station": "56146",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -1892,7 +1863,7 @@
    "first_seen": "2026-10-21T05:00:39+09:00",
    "flag": 10,
    "id": "pre24h:56176:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": null,
    "latitude": 36.8933,
    "local_rank": null,
@@ -1932,7 +1903,7 @@
    "station": "56176",
    "stats_period": null,
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2009,7 +1980,7 @@
    "first_seen": "2026-10-21T18:20:25+09:00",
    "flag": 10,
    "id": "preday:32311:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2025-09-02",
    "latitude": 39.9933,
    "local_rank": null,
@@ -2041,7 +2012,7 @@
    "monthly_years_since": null,
    "muni": "北秋田市",
    "name": "阿仁合",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2055,7 +2026,7 @@
     "date": "2007-10-08",
     "value": 79.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2068,7 +2039,7 @@
    "station": "32311",
    "stats_period": "1976/122026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2103,7 +2074,7 @@
    "first_seen": "2026-10-21T19:40:24+09:00",
    "flag": 10,
    "id": "preday:32466:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-07-12",
    "latitude": 39.6033,
    "local_rank": null,
@@ -2135,7 +2106,7 @@
    "monthly_years_since": null,
    "muni": "仙北市",
    "name": "角館",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2149,7 +2120,7 @@
     "date": "2005-10-01",
     "value": 94.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2162,7 +2133,7 @@
    "station": "32466",
    "stats_period": "1976/52026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2197,7 +2168,7 @@
    "first_seen": "2026-10-21T15:20:23+09:00",
    "flag": 10,
    "id": "preday:32476:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2023-07-15",
    "latitude": 39.6983,
    "local_rank": null,
@@ -2229,7 +2200,7 @@
    "monthly_years_since": null,
    "muni": "仙北市",
    "name": "田沢湖",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2243,7 +2214,7 @@
     "date": "2016-10-08",
     "value": 94.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2256,7 +2227,7 @@
    "station": "32476",
    "stats_period": "1976/52026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2291,7 +2262,7 @@
    "first_seen": "2026-10-21T21:20:24+09:00",
    "flag": 10,
    "id": "preday:32496:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-09",
    "latitude": 39.5267,
    "local_rank": null,
@@ -2323,7 +2294,7 @@
    "monthly_years_since": null,
    "muni": "秋田市",
    "name": "大正寺",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2337,7 +2308,7 @@
     "date": "2005-10-01",
     "value": 79.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2350,7 +2321,7 @@
    "station": "32496",
    "stats_period": "1976/52026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2385,7 +2356,7 @@
    "first_seen": "2026-10-21T13:20:22+09:00",
    "flag": 10,
    "id": "preday:32551:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-09",
    "latitude": 39.49,
    "local_rank": null,
@@ -2417,7 +2388,7 @@
    "monthly_years_since": null,
    "muni": "大仙市",
    "name": "大曲",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2431,7 +2402,7 @@
     "date": "2013-10-16",
     "value": 54.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2444,7 +2415,7 @@
    "station": "32551",
    "stats_period": "1976/52026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2479,7 +2450,7 @@
    "first_seen": "2026-10-21T18:20:25+09:00",
    "flag": 10,
    "id": "preday:32571:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-09-03",
    "latitude": 39.36,
    "local_rank": null,
@@ -2511,7 +2482,7 @@
    "monthly_years_since": null,
    "muni": "由利本荘市",
    "name": "本荘",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2525,7 +2496,7 @@
     "date": "2013-10-16",
     "value": 73.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2538,7 +2509,7 @@
    "station": "32571",
    "stats_period": "1976/62026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2573,7 +2544,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "preday:32581:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-07-12",
    "latitude": 39.305,
    "local_rank": null,
@@ -2605,7 +2576,7 @@
    "monthly_years_since": null,
    "muni": "由利本荘市",
    "name": "東由利",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2619,7 +2590,7 @@
     "date": "2013-10-16",
     "value": 79.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -2632,7 +2603,7 @@
    "station": "32581",
    "stats_period": "1976/112026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2667,7 +2638,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "preday:32596:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-01",
    "latitude": 39.32,
    "local_rank": null,
@@ -2699,7 +2670,7 @@
    "monthly_years_since": null,
    "muni": "横手市",
    "name": "横手",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2713,7 +2684,7 @@
     "date": "2013-10-16",
     "value": 80.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2726,7 +2697,7 @@
    "station": "32596",
    "stats_period": "1976/12026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -2761,7 +2732,7 @@
    "first_seen": "2026-10-21T16:30:31+09:00",
    "flag": 10,
    "id": "preday:32626:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-25",
    "latitude": 39.235,
    "local_rank": 7,
@@ -2793,7 +2764,7 @@
    "monthly_years_since": null,
    "muni": "由利本荘市",
    "name": "矢島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2807,7 +2778,7 @@
     "date": "2013-10-16",
     "value": 85.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2820,7 +2791,7 @@
    "station": "32626",
    "stats_period": "1976/62026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER",
@@ -2856,7 +2827,7 @@
    "first_seen": "2026-10-21T15:20:23+09:00",
    "flag": 10,
    "id": "preday:32681:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-09-21",
    "latitude": 39.1017,
    "local_rank": 10,
@@ -2888,7 +2859,7 @@
    "monthly_years_since": null,
    "muni": "由利本荘市",
    "name": "笹子",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2902,7 +2873,7 @@
     "date": "2013-10-16",
     "value": 84.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2915,7 +2886,7 @@
    "station": "32681",
    "stats_period": "1983/92026/10",
    "stats_start": 1983,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER",
@@ -2951,7 +2922,7 @@
    "first_seen": "2026-10-21T22:20:25+09:00",
    "flag": 10,
    "id": "preday:32691:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-09-21",
    "latitude": 39.1867,
    "local_rank": null,
@@ -2983,7 +2954,7 @@
    "monthly_years_since": null,
    "muni": "湯沢市",
    "name": "湯沢",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T22:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -2997,7 +2968,7 @@
     "date": "2013-10-16",
     "value": 75.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -3010,7 +2981,7 @@
    "station": "32691",
    "stats_period": "1976/52026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3045,7 +3016,7 @@
    "first_seen": "2026-10-21T15:20:23+09:00",
    "flag": 10,
    "id": "preday:33351:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2023-07-15",
    "latitude": 39.7767,
    "local_rank": null,
@@ -3077,7 +3048,7 @@
    "monthly_years_since": null,
    "muni": "岩手郡雫石町",
    "name": "葛根田",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3091,7 +3062,7 @@
     "date": "2016-10-08",
     "value": 87.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3104,7 +3075,7 @@
    "station": "33351",
    "stats_period": "1977/72026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3139,7 +3110,7 @@
    "first_seen": "2026-10-21T14:20:47+09:00",
    "flag": 10,
    "id": "preday:33361:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2023-09-21",
    "latitude": 39.78,
    "local_rank": 6,
@@ -3171,7 +3142,7 @@
    "monthly_years_since": null,
    "muni": "滝沢市",
    "name": "滝沢",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3185,7 +3156,7 @@
     "date": "2006-10-07",
     "value": 75.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3198,7 +3169,7 @@
    "station": "33361",
    "stats_period": "2005/102026/10",
    "stats_start": 2005,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER",
@@ -3235,7 +3206,7 @@
    "first_seen": "2026-10-21T13:20:22+09:00",
    "flag": 10,
    "id": "preday:33421:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2018-05-18",
    "latitude": 39.6967,
    "local_rank": null,
@@ -3267,7 +3238,7 @@
    "monthly_years_since": null,
    "muni": "岩手郡雫石町",
    "name": "雫石",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3281,7 +3252,7 @@
     "date": "1979-10-19",
     "value": 68.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3294,7 +3265,7 @@
    "station": "33421",
    "stats_period": "1976/12026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3329,7 +3300,7 @@
    "first_seen": "2026-10-21T12:20:22+09:00",
    "flag": 10,
    "id": "preday:33486:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-01",
    "latitude": 39.5483,
    "local_rank": 5,
@@ -3361,7 +3332,7 @@
    "monthly_years_since": null,
    "muni": "和賀郡西和賀町",
    "name": "沢内",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3375,7 +3346,7 @@
     "date": "2019-10-12",
     "value": 77.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3388,7 +3359,7 @@
    "station": "33486",
    "stats_period": "2017/72026/10",
    "stats_start": 2017,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3423,7 +3394,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "preday:33501:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2021-06-04",
    "latitude": 39.5467,
    "local_rank": null,
@@ -3455,7 +3426,7 @@
    "monthly_years_since": null,
    "muni": "紫波郡紫波町",
    "name": "紫波",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3469,7 +3440,7 @@
     "date": "1979-10-19",
     "value": 68.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3482,7 +3453,7 @@
    "station": "33501",
    "stats_period": "1976/112026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3517,7 +3488,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "preday:33566:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-01",
    "latitude": 39.48,
    "local_rank": null,
@@ -3549,7 +3520,7 @@
    "monthly_years_since": null,
    "muni": "花巻市",
    "name": "豊沢",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3563,7 +3534,7 @@
     "date": "2012-10-01",
     "value": 92.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3576,7 +3547,7 @@
    "station": "33566",
    "stats_period": "1976/52026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3611,7 +3582,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "preday:33631:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-01",
    "latitude": 39.31,
    "local_rank": null,
@@ -3643,7 +3614,7 @@
    "monthly_years_since": null,
    "muni": "和賀郡西和賀町",
    "name": "湯田",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T17:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3657,7 +3628,7 @@
     "date": "2012-10-01",
     "value": 87.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3670,7 +3641,7 @@
    "station": "33631",
    "stats_period": "1976/22026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3705,7 +3676,7 @@
    "first_seen": "2026-10-21T17:40:24+09:00",
    "flag": 10,
    "id": "preday:35052:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-25",
    "latitude": 38.9083,
    "local_rank": null,
@@ -3737,7 +3708,7 @@
    "monthly_years_since": null,
    "muni": "酒田市",
    "name": "酒田",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3751,7 +3722,7 @@
     "date": "1948-10-05",
     "value": 107.1
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3764,7 +3735,7 @@
    "station": "35052",
    "stats_period": "1937/12026/10",
    "stats_start": 1937,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3857,7 +3828,7 @@
    "station": "35056",
    "stats_period": "2017/122026/10",
    "stats_start": 2017,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "ALL_TIME_TOP3",
     "MONTHLY_1ST",
@@ -3895,7 +3866,7 @@
    "first_seen": "2026-10-21T15:20:23+09:00",
    "flag": 10,
    "id": "preday:35071:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-25",
    "latitude": 38.9183,
    "local_rank": null,
@@ -3927,7 +3898,7 @@
    "monthly_years_since": null,
    "muni": "最上郡真室川町",
    "name": "差首鍋",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -3941,7 +3912,7 @@
     "date": "2025-10-12",
     "value": 85.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -3954,7 +3925,7 @@
    "station": "35071",
    "stats_period": "1976/112026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -3989,7 +3960,7 @@
    "first_seen": "2026-10-21T18:20:25+09:00",
    "flag": 10,
    "id": "preday:35141:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-25",
    "latitude": 38.735,
    "local_rank": null,
@@ -4021,7 +3992,7 @@
    "monthly_years_since": null,
    "muni": "鶴岡市",
    "name": "鶴岡",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4035,7 +4006,7 @@
     "date": "1996-10-15",
     "value": 77.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4048,7 +4019,7 @@
    "station": "35141",
    "stats_period": "1976/12026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -4083,7 +4054,7 @@
    "first_seen": "2026-10-21T20:20:24+09:00",
    "flag": 10,
    "id": "preday:35146:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-25",
    "latitude": 38.8,
    "local_rank": null,
@@ -4115,7 +4086,7 @@
    "monthly_years_since": null,
    "muni": "東田川郡庄内町",
    "name": "狩川",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4129,7 +4100,7 @@
     "date": "2019-10-04",
     "value": 77.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4142,7 +4113,7 @@
    "station": "35146",
    "stats_period": "1976/42026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -4177,7 +4148,7 @@
    "first_seen": "2026-10-21T21:20:24+09:00",
    "flag": 10,
    "id": "preday:35201:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-25",
    "latitude": 38.6717,
    "local_rank": null,
@@ -4209,7 +4180,7 @@
    "monthly_years_since": null,
    "muni": "鶴岡市",
    "name": "櫛引",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4223,7 +4194,7 @@
     "date": "2005-10-02",
     "value": 80.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4236,7 +4207,7 @@
    "station": "35201",
    "stats_period": "1977/42026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -4262,89 +4233,6 @@
    "unit": "mm",
    "value": 88.5,
    "years_since": 2
-  },
-  "preday:35257:2026-10-14": {
-   "date": "2026-10-14",
-   "elevation": 180,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-14T15:30:41+09:00",
-   "first_seen": "2026-10-14T08:30:30+09:00",
-   "flag": 10,
-   "id": "preday:35257:2026-10-14",
-   "last_seen": "2026-10-15T00:30:36+09:00",
-   "last_stricter_date": "2026-09-13",
-   "latitude": 38.5233,
-   "local_rank": 8,
-   "local_tie": false,
-   "longitude": 139.7883,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     4.5,
-     "2026-10-01"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "上田沢",
-   "notifiable": true,
-   "notified_at": "2026-10-14T08:30:30+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "山形県",
-   "pref_full": "山形県",
-   "prev": {
-    "date": "2026-07-24",
-    "value": 83.5
-   },
-   "prev_monthly": {
-    "date": "2026-10-02",
-    "value": 5.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1678&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "35257",
-   "stats_period": "2026/32026/10",
-   "stats_start": 2026,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     83.5,
-     "2026-07-24"
-    ],
-    [
-     2,
-     76.5,
-     "2026-06-21"
-    ],
-    [
-     3,
-     63.5,
-     "2026-07-12"
-    ]
-   ],
-   "unit": "mm",
-   "value": 38.5,
-   "years_since": 0
   },
   "preday:35257:2026-10-21": {
    "date": "2026-10-21",
@@ -4402,7 +4290,7 @@
    "station": "35257",
    "stats_period": "2026/32026/10",
    "stats_start": 2026,
-   "status": "PROVISIONAL",
+   "status": "REVISED",
    "tags": [
     "ALL_TIME_1ST",
     "MONTHLY_1ST",
@@ -4439,7 +4327,7 @@
    "first_seen": "2026-10-21T21:20:24+09:00",
    "flag": 10,
    "id": "preday:54012:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2022-08-03",
    "latitude": 38.465,
    "local_rank": null,
@@ -4471,7 +4359,7 @@
    "monthly_years_since": null,
    "muni": "岩船郡粟島浦村",
    "name": "粟島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4485,7 +4373,7 @@
     "date": "2019-10-12",
     "value": 77.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4498,7 +4386,7 @@
    "station": "54012",
    "stats_period": "1976/52026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -4533,7 +4421,7 @@
    "first_seen": "2026-10-21T17:50:24+09:00",
    "flag": 10,
    "id": "preday:54041:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2018-08-16",
    "latitude": 38.33,
    "local_rank": null,
@@ -4565,7 +4453,7 @@
    "monthly_years_since": null,
    "muni": "佐渡市",
    "name": "弾崎",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T21:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4579,7 +4467,7 @@
     "date": "2019-10-12",
     "value": 106.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4592,7 +4480,7 @@
    "station": "54041",
    "stats_period": "1978/112026/10",
    "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -4720,7 +4608,7 @@
    "first_seen": "2026-10-21T18:20:25+09:00",
    "flag": 10,
    "id": "preday:56146:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2018-08-31",
    "latitude": 37.03,
    "local_rank": null,
@@ -4752,7 +4640,7 @@
    "monthly_years_since": null,
    "muni": "七尾市",
    "name": "七尾",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T18:20:25+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4766,7 +4654,7 @@
     "date": "2019-10-12",
     "value": 88.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4779,7 +4667,7 @@
    "station": "56146",
    "stats_period": "1976/32026/10",
    "stats_start": 1976,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -4813,7 +4701,7 @@
    "first_seen": "2026-10-21T13:30:31+09:00",
    "flag": 10,
    "id": "tmax:36641:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2025-08-04",
    "latitude": 37.2067,
    "local_rank": null,
@@ -4845,7 +4733,7 @@
    "monthly_years_since": null,
    "muni": "南会津郡南会津町",
    "name": "田島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T13:30:31+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4859,7 +4747,7 @@
     "date": "2018-10-06",
     "value": 27.7
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4872,7 +4760,7 @@
    "station": "36641",
    "stats_period": "1976/112026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -4906,7 +4794,7 @@
    "first_seen": "2026-10-21T12:00:42+09:00",
    "flag": 10,
    "id": "tmax:48141:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-07",
    "latitude": 36.6983,
    "local_rank": null,
@@ -4938,7 +4826,7 @@
    "monthly_years_since": null,
    "muni": "北安曇郡白馬村",
    "name": "白馬",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:10:22+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -4952,7 +4840,7 @@
     "date": "2016-10-05",
     "value": 27.7
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -4965,7 +4853,7 @@
    "station": "48141",
    "stats_period": "1978/112026/10",
    "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5000,7 +4888,7 @@
    "first_seen": "2026-10-21T14:10:22+09:00",
    "flag": 10,
    "id": "tmax:48191:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-06",
    "latitude": 36.5233,
    "local_rank": null,
@@ -5032,7 +4920,7 @@
    "monthly_years_since": null,
    "muni": "大町市",
    "name": "大町",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:10:22+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5046,7 +4934,7 @@
     "date": "1999-10-02",
     "value": 28.2
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -5059,7 +4947,7 @@
    "station": "48191",
    "stats_period": "1978/112026/10",
    "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5094,7 +4982,7 @@
    "first_seen": "2026-10-21T12:20:22+09:00",
    "flag": 10,
    "id": "tmax:48296:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-07",
    "latitude": 36.3433,
    "local_rank": null,
@@ -5126,7 +5014,7 @@
    "monthly_years_since": null,
    "muni": "安曇野市",
    "name": "穂高",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:10:22+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5140,7 +5028,7 @@
     "date": "2024-10-02",
     "value": 29.8
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5153,7 +5041,7 @@
    "station": "48296",
    "stats_period": "1978/112026/10",
    "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5188,7 +5076,7 @@
    "first_seen": "2026-10-21T13:50:24+09:00",
    "flag": 10,
    "id": "tmax:49086:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-07-25",
    "latitude": 35.6933,
    "local_rank": null,
@@ -5220,7 +5108,7 @@
    "monthly_years_since": null,
    "muni": "韮崎市",
    "name": "韮崎",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T13:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5234,7 +5122,7 @@
     "date": "2018-10-07",
     "value": 32.2
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5247,7 +5135,7 @@
    "station": "49086",
    "stats_period": "1977/122026/10",
    "stats_start": 1978,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -5281,7 +5169,7 @@
    "first_seen": "2026-10-21T14:00:40+09:00",
    "flag": 10,
    "id": "tmax:53257:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-26",
    "latitude": 34.4817,
    "local_rank": null,
@@ -5313,7 +5201,7 @@
    "monthly_years_since": null,
    "muni": "鳥羽市",
    "name": "鳥羽",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:00:40+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5327,7 +5215,7 @@
     "date": "1984-10-03",
     "value": 30.4
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -5340,7 +5228,7 @@
    "station": "53257",
    "stats_period": "1977/122026/10",
    "stats_start": 1978,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5375,7 +5263,7 @@
    "first_seen": "2026-10-21T13:20:22+09:00",
    "flag": 10,
    "id": "tmax:53326:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-02",
    "latitude": 34.2083,
    "local_rank": null,
@@ -5407,7 +5295,7 @@
    "monthly_years_since": null,
    "muni": "北牟婁郡紀北町",
    "name": "紀伊長島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:00:40+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5421,7 +5309,7 @@
     "date": "2025-10-06",
     "value": 32.2
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -5434,7 +5322,7 @@
    "station": "53326",
    "stats_period": "1979/12026/10",
    "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5469,7 +5357,7 @@
    "first_seen": "2026-10-21T12:00:42+09:00",
    "flag": 10,
    "id": "tmax:53378:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-07-25",
    "latitude": 34.0683,
    "local_rank": null,
@@ -5501,7 +5389,7 @@
    "monthly_years_since": null,
    "muni": "尾鷲市",
    "name": "尾鷲",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:00:40+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5515,7 +5403,7 @@
     "date": "2021-10-06",
     "value": 31.9
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5528,7 +5416,7 @@
    "station": "53378",
    "stats_period": "1938/102026/10",
    "stats_start": 1938,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5563,7 +5451,7 @@
    "first_seen": "2026-10-21T12:00:42+09:00",
    "flag": 10,
    "id": "tmax:53401:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-07-31",
    "latitude": 33.9317,
    "local_rank": null,
@@ -5595,7 +5483,7 @@
    "monthly_years_since": null,
    "muni": "熊野市",
    "name": "熊野新鹿",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:00:40+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5609,7 +5497,7 @@
     "date": "2025-10-09",
     "value": 31.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5622,7 +5510,7 @@
    "station": "53401",
    "stats_period": "2001/122026/10",
    "stats_start": 2002,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
@@ -5657,7 +5545,7 @@
    "first_seen": "2026-10-21T14:10:22+09:00",
    "flag": 10,
    "id": "tmax:57082:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2024-08-23",
    "latitude": 36.0383,
    "local_rank": null,
@@ -5689,7 +5577,7 @@
    "monthly_years_since": null,
    "muni": "勝山市",
    "name": "勝山",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:10:22+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5703,7 +5591,7 @@
     "date": "2019-10-01",
     "value": 29.7
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5716,7 +5604,7 @@
    "station": "57082",
    "stats_period": "1993/102026/10",
    "stats_start": 1993,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -5750,7 +5638,7 @@
    "first_seen": "2026-10-21T10:40:23+09:00",
    "flag": 10,
    "id": "tmax:63551:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-03",
    "latitude": 34.4667,
    "local_rank": null,
@@ -5782,7 +5670,7 @@
    "monthly_years_since": null,
    "muni": "淡路市",
    "name": "郡家",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T10:40:23+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5796,7 +5684,7 @@
     "date": "2024-10-23",
     "value": 31.1
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -5809,7 +5697,7 @@
    "station": "63551",
    "stats_period": "1978/122026/10",
    "stats_start": 1979,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST_TIE"
    ],
@@ -5843,7 +5731,7 @@
    "first_seen": "2026-10-21T12:40:22+09:00",
    "flag": 10,
    "id": "tmax:71087:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-26",
    "latitude": 34.04,
    "local_rank": null,
@@ -5875,7 +5763,7 @@
    "monthly_years_since": null,
    "muni": "美馬市",
    "name": "穴吹",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T12:40:22+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5889,7 +5777,7 @@
     "date": "2022-10-04",
     "value": 32.1
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5902,7 +5790,7 @@
    "station": "71087",
    "stats_period": "2001/32026/10",
    "stats_start": 2001,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -5936,7 +5824,7 @@
    "first_seen": "2026-10-21T13:50:24+09:00",
    "flag": 10,
    "id": "tmax:73141:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-08-30",
    "latitude": 33.9367,
    "local_rank": null,
@@ -5968,7 +5856,7 @@
    "monthly_years_since": null,
    "muni": "新居浜市",
    "name": "新居浜",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T13:50:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5982,7 +5870,7 @@
     "date": "2016-10-05",
     "value": 32.7
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -5995,7 +5883,7 @@
    "station": "73141",
    "stats_period": "2016/82026/10",
    "stats_start": 2016,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST_TIE"
    ],
@@ -6029,7 +5917,7 @@
    "first_seen": "2026-10-21T14:10:22+09:00",
    "flag": 10,
    "id": "tmax:87181:2026-10-21",
-   "last_seen": "2026-10-21T23:50:24+09:00",
+   "last_seen": "2026-10-22T00:00:47+09:00",
    "last_stricter_date": "2026-07-29",
    "latitude": 32.4083,
    "local_rank": null,
@@ -6061,7 +5949,7 @@
    "monthly_years_since": null,
    "muni": "日向市",
    "name": "日向",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-10-21T14:10:22+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -6075,7 +5963,7 @@
     "date": "2022-10-04",
     "value": 33.4
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -6088,7 +5976,7 @@
    "station": "87181",
    "stats_period": "1977/22026/10",
    "stats_start": 1977,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -6115,42 +6003,42 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-21T23:50:24+09:00",
- "runs": 4429,
+ "last_run": "2026-10-22T00:00:47+09:00",
+ "runs": 4430,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 21 Oct 2026 13:50:17 GMT",
-   "last_success": "2026-10-21T23:00:47+09:00",
-   "source_time": "2026-10-21T22:00"
+   "last_modified": "Wed, 21 Oct 2026 14:50:10 GMT",
+   "last_success": "2026-10-22T00:00:48+09:00",
+   "source_time": "2026-10-21T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 21 Oct 2026 13:50:16 GMT",
-   "last_success": "2026-10-21T23:00:46+09:00",
-   "source_time": "2026-10-21T22:00"
+   "last_modified": "Wed, 21 Oct 2026 14:50:09 GMT",
+   "last_success": "2026-10-22T00:00:47+09:00",
+   "source_time": "2026-10-21T23:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 21 Oct 2026 14:30:44 GMT",
-   "last_success": "2026-10-21T23:40:25+09:00",
-   "source_time": "2026-10-21T23:10"
+   "last_modified": "Wed, 21 Oct 2026 15:00:44 GMT",
+   "last_success": "2026-10-22T00:00:53+09:00",
+   "source_time": "2026-10-21T23:40"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 21 Oct 2026 14:30:42 GMT",
-   "last_success": "2026-10-21T23:40:27+09:00",
-   "source_time": "2026-10-21T23:10"
+   "last_modified": "Wed, 21 Oct 2026 14:50:39 GMT",
+   "last_success": "2026-10-22T00:00:54+09:00",
+   "source_time": "2026-10-21T23:40"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 21 Oct 2026 14:30:43 GMT",
+   "last_modified": "Wed, 21 Oct 2026 15:00:40 GMT",
    "last_success": "2026-10-21T23:30:41+09:00",
    "source_time": "2026-10-21T23:00"
   },
