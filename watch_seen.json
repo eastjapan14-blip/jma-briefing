@@ -10,13 +10,19 @@
 "topic": "指定河川洪水予報",
 "updated": "2026-10-21T10:45:06Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261021104512_0_VXKO55_050000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261021111514_0_VXKO55_050000.xml": {
+"author": "秋田河川国道事務所 秋田地方気象台",
+"content": "【子吉川レベル５氾濫特別警報】【警戒レベル５相当情報［洪水］】〔継続〕《氾濫発生》子吉川では、越水による氾濫が発生　氾濫発生箇所：子吉川秋田県由利本荘市森子　地先（左岸）",
+"held": "2026-10-21T11:20:25.985993+00:00",
+"tier": "B",
+"title": "指定河川洪水予報",
+"topic": "指定河川洪水予報",
+"updated": "2026-10-21T11:15:08Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261021111514_0_VXKO55_050000.xml"
 }
 },
 "topics": {
-"台風第３０号": {
-"沖縄": "2026-10-21T08:20:23.469291+00:00",
-"沖縄本島": "2026-10-21T08:20:23.469291+00:00"
-},
 "大雨・氾濫・強風": {
 "東北": "2026-10-21T11:10:24.168863+00:00"
 }
@@ -93,6 +99,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261021104512_0_VXKO55_050000.xml": "2026-10-21T10:50:23.250289+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021104530_0_VPWW53_050000.xml": "2026-10-21T10:50:23.250289+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021110806_0_VPCJ50_040000.xml": "2026-10-21T11:10:24.168863+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021111514_0_VXKO55_050000.xml": "2026-10-21T11:20:25.985993+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021111533_0_VPWW53_050000.xml": "2026-10-21T11:20:25.985993+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
