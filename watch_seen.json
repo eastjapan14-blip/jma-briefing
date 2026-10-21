@@ -30,11 +30,22 @@
 "topic": "台風第３０号",
 "updated": "2026-10-21T07:44:25Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261021074425_0_VPFJ50_473000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261021075456_0_VPFJ50_474000.xml": {
+"author": "石垣島地方気象台",
+"content": "【八重山地方気象解説情報（台風第３０号）】台風第３０号は、２３日から２４日にかけて非常に強い勢力で八重山地方に接近する見込みです。八重山地方では暴風や高波、土砂災害に厳重に警戒し、低い土地の浸水、河川の増水や氾濫に警戒してください。台風の進路等によっては、警報級の高潮となるおそれがあります。",
+"held": "2026-10-21T08:00:38.737400+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-21T07:54:56Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261021075456_0_VPFJ50_474000.xml"
 }
 },
 "topics": {
 "台風第３０号": {
 "九州南部・奄美": "2026-10-21T07:20:24.929287+00:00",
+"八重山": "2026-10-21T08:00:38.737400+00:00",
 "奄美": "2026-10-21T07:20:24.929287+00:00",
 "宮古島": "2026-10-21T07:50:23.109564+00:00"
 },
@@ -54,7 +65,6 @@
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261018074709_0_VPCJ50_471000.xml": "2026-10-18T07:50:23.120224+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261018080008_0_VPZJ50_010000.xml": "2026-10-18T08:10:22.940679+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261018194617_0_VPCJ50_150000.xml": "2026-10-18T19:50:21.639674+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261018200047_0_VPZJ50_010000.xml": "2026-10-18T20:10:23.815598+00:00",
@@ -116,6 +126,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261021072326_0_VPFJ50_015000.xml": "2026-10-21T07:30:31.263555+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021072526_0_VPFJ50_017000.xml": "2026-10-21T07:30:31.263555+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021073106_0_VPCJ50_040000.xml": "2026-10-21T07:40:25.155433+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261021074425_0_VPFJ50_473000.xml": "2026-10-21T07:50:23.109564+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261021074425_0_VPFJ50_473000.xml": "2026-10-21T07:50:23.109564+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021075017_0_VPZJ50_010000.xml": "2026-10-21T08:00:38.737400+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021075456_0_VPFJ50_474000.xml": "2026-10-21T08:00:38.737400+00:00"
 }
 }
