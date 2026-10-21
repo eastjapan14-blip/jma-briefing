@@ -1,7 +1,22 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261021065519_0_VXKO55_050000.xml": {
+"author": "秋田河川国道事務所 秋田地方気象台",
+"content": "【子吉川レベル３氾濫警報】【警戒レベル３相当情報［洪水］】〔警戒レベル２から３相当に切替〕子吉川では、今後、氾濫危険水位に到達する見込み",
+"held": "2026-10-21T07:00:41.417735+00:00",
+"tier": "B",
+"title": "指定河川洪水予報",
+"topic": "指定河川洪水予報",
+"updated": "2026-10-21T06:55:13Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261021065519_0_VXKO55_050000.xml"
+}
+},
+"topics": {
+"暴風・高波": {
+"北海道": "2026-10-21T07:00:41.417735+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261018071816_0_VPCJ50_150000.xml": "2026-10-18T07:20:22.458786+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261018074709_0_VPCJ50_471000.xml": "2026-10-18T07:50:23.120224+00:00",
@@ -55,6 +70,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261021021227_0_VPFJ50_015000.xml": "2026-10-21T02:20:24.928117+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021021544_0_VPFJ50_473000.xml": "2026-10-21T02:20:24.928117+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021022930_0_VPFJ50_474000.xml": "2026-10-21T02:40:22.667764+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261021024630_0_VXKO55_050000.xml": "2026-10-21T02:50:24.089709+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261021024630_0_VXKO55_050000.xml": "2026-10-21T02:50:24.089709+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021065119_0_VPCJ50_016000.xml": "2026-10-21T07:00:41.417735+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021065519_0_VXKO55_050000.xml": "2026-10-21T07:00:41.417735+00:00"
 }
 }
