@@ -1,9 +1,33 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261021194520_0_VXKO55_050000.xml": {
+"author": "秋田河川国道事務所 秋田地方気象台",
+"content": "【子吉川レベル２氾濫注意報】【警戒レベル２情報［洪水］】〔継続〕子吉川では、当分の間、氾濫注意水位付近の水位が続く見込み",
+"held": "2026-10-21T19:50:23.025807+00:00",
+"tier": "B",
+"title": "指定河川洪水予報",
+"topic": "指定河川洪水予報",
+"updated": "2026-10-21T19:45:14Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261021194520_0_VXKO55_050000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261021194612_0_VPFJ50_472000.xml": {
+"author": "南大東島地方気象台",
+"content": "【大東島地方気象解説情報（台風第３０号）】大東島地方に波浪警報を発表しました。２３日にかけてうねりを伴う高波に警戒してください。また、２２日夜遅くから強風に注意し、２３日にかけて落雷や竜巻などの激しい突風、急な強い雨に十分注意してください。",
+"held": "2026-10-21T19:50:23.025807+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-21T19:46:12Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261021194612_0_VPFJ50_472000.xml"
+}
+},
+"topics": {
+"台風第３０号": {
+"大東島": "2026-10-21T19:50:23.025807+00:00"
+}
+},
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261018194617_0_VPCJ50_150000.xml": "2026-10-18T19:50:21.639674+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261018200047_0_VPZJ50_010000.xml": "2026-10-18T20:10:23.815598+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019022342_0_VPFJ50_473000.xml": "2026-10-19T02:30:32.454876+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019024018_0_VPCJ50_471000.xml": "2026-10-19T02:50:22.907122+00:00",
@@ -82,6 +106,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261021134447_0_VPFJ50_474000.xml": "2026-10-21T13:50:24.215295+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021135729_0_VPWW53_050000.xml": "2026-10-21T14:00:46.204970+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021143548_0_VPWW53_050000.xml": "2026-10-21T14:40:23.516011+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021194520_0_VXKO55_050000.xml": "2026-10-21T19:50:23.025807+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261021194612_0_VPFJ50_472000.xml": "2026-10-21T19:50:23.025807+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
