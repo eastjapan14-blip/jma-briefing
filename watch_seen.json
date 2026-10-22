@@ -1,7 +1,22 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261022020242_0_VPFJ50_471000.xml": {
+"author": "沖縄気象台",
+"content": "【沖縄本島地方気象解説情報（台風第３０号）】沖縄本島地方の沿岸の海域では、２４日にかけてうねりを伴う高波に警戒してください。また、本島中南部と本島北部では土砂災害や低い土地の浸水、河川の増水に十分注意してください。雨雲の発達の程度によっては警報級の大雨となるおそれがあります。",
+"held": "2026-10-22T02:10:25.316222+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-22T02:02:42Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261022020242_0_VPFJ50_471000.xml"
+}
+},
+"topics": {
+"台風第３０号": {
+"沖縄本島": "2026-10-22T02:10:25.316222+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261019022342_0_VPFJ50_473000.xml": "2026-10-19T02:30:32.454876+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019024018_0_VPCJ50_471000.xml": "2026-10-19T02:50:22.907122+00:00",
@@ -94,6 +109,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261021203053_0_VPCJ50_471000.xml": "2026-10-21T20:40:25.965826+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021203455_0_VPFJ50_014100.xml": "2026-10-21T20:40:25.965826+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021221436_0_VPFJ50_017000.xml": "2026-10-21T22:20:24.972751+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261022020242_0_VPFJ50_471000.xml": "2026-10-22T02:10:25.316222+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
