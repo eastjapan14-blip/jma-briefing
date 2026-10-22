@@ -1,7 +1,22 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261022074335_0_VPFJ50_472000.xml": {
+"author": "南大東島地方気象台",
+"content": "【大東島地方気象解説情報（台風第３０号）】大東島地方の沿岸の海域では、２３日にかけてうねりを伴う高波に警戒してください。また、２２日夜遅くから強風に注意し、２３日にかけて落雷や竜巻などの激しい突風、急な強い雨に十分注意してください。",
+"held": "2026-10-22T07:50:22.919349+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-22T07:43:35Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261022074335_0_VPFJ50_472000.xml"
+}
+},
+"topics": {
+"台風第３０号": {
+"大東島": "2026-10-22T07:50:22.919349+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261019074507_0_VPCJ50_471000.xml": "2026-10-19T07:50:24.910241+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019074514_0_VPZJ50_010000.xml": "2026-10-19T07:50:24.910241+00:00",
@@ -96,6 +111,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261022022631_0_VPFJ50_474000.xml": "2026-10-22T02:30:31.398727+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022034310_0_VPFJ50_017000.xml": "2026-10-22T03:50:23.418424+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022051004_0_VPZK50_010000.xml": "2026-10-22T05:20:24.613108+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261022074335_0_VPFJ50_472000.xml": "2026-10-22T07:50:22.919349+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
