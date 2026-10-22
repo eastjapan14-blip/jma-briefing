@@ -20,11 +20,33 @@
 "topic": "台風第３０号",
 "updated": "2026-10-22T19:55:05Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261022195505_0_VPFJ50_471000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261022200328_0_VPCJ50_460100.xml": {
+"author": "鹿児島地方気象台",
+"content": "【九州南部・奄美地方気象解説情報（台風第３０号）】奄美地方の沿岸の海域では、２３日昼過ぎから２４日夕方にかけてうねりを伴った高波に警戒してください。また、鹿児島県では２３日夜遅くにかけて落雷や竜巻などの激しい突風に注意してください。",
+"held": "2026-10-22T20:10:23.179449+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-22T20:03:27Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261022200328_0_VPCJ50_460100.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261022200921_0_VPCJ50_471000.xml": {
+"author": "沖縄気象台",
+"content": "【沖縄地方気象解説情報（台風第３０号）】先島諸島では暴風やうねりを伴う高波、高潮、土砂災害に厳重に警戒し、低い土地の浸水、河川の増水や氾濫に警戒してください。沖縄本島地方と大東島地方ではうねりを伴う高波に警戒してください。先島諸島では、線状降水帯が発生して大雨災害発生の危険度が急激に高まる可能性があります。",
+"held": "2026-10-22T20:10:23.179449+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-22T20:09:20Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261022200921_0_VPCJ50_471000.xml"
 }
 },
 "topics": {
 "台風第３０号": {
+"九州南部・奄美": "2026-10-22T20:10:23.179449+00:00",
 "大東島": "2026-10-22T19:50:24.642816+00:00",
+"沖縄": "2026-10-22T20:10:23.179449+00:00",
 "沖縄本島": "2026-10-22T19:58:24.096412+00:00"
 },
 "線状降水帯半日前予測": {
@@ -34,8 +56,6 @@
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261019195521_0_VPCJ50_150000.xml": "2026-10-19T20:00:41.923891+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261019200010_0_VPZJ50_010000.xml": "2026-10-19T20:00:41.923891+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019200536_0_VPCJ50_471000.xml": "2026-10-19T20:10:24.053678+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019200707_0_VPFJ50_473000.xml": "2026-10-19T20:10:24.053678+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261019200922_0_VPFJ50_474000.xml": "2026-10-19T20:10:24.053678+00:00",
@@ -142,6 +162,9 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261022194009_0_VPFJ50_473000.xml": "2026-10-22T19:50:24.642816+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022194739_0_VPFJ50_472000.xml": "2026-10-22T19:50:24.642816+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022195505_0_VPFJ50_471000.xml": "2026-10-22T19:58:24.096412+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261022200136_0_VPZJ50_010000.xml": "2026-10-22T20:10:23.179449+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261022200328_0_VPCJ50_460100.xml": "2026-10-22T20:10:23.179449+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261022200921_0_VPCJ50_471000.xml": "2026-10-22T20:10:23.179449+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
