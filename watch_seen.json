@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"台風第３０号": {
-"八重山": "2026-10-23T14:10:22.571667+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261020194544_0_VPCJ50_460100.xml": "2026-10-20T19:50:24.097987+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020194624_0_VPCJ50_150000.xml": "2026-10-20T19:50:24.097987+00:00",
