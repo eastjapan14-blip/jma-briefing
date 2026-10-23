@@ -1,0 +1,332 @@
+{
+ "elements": {
+  "日最大10分間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2024-10-03",
+     "mark": "",
+     "rank": 1,
+     "value": 8.5
+    },
+    {
+     "date": "2024-10-28",
+     "mark": "",
+     "rank": 2,
+     "value": 5.0
+    },
+    {
+     "date": "2024-10-09",
+     "mark": "",
+     "rank": 3,
+     "value": 5.0
+    },
+    {
+     "date": "2025-10-15",
+     "mark": "",
+     "rank": 4,
+     "value": 4.5
+    },
+    {
+     "date": "2024-10-18",
+     "mark": "",
+     "rank": 5,
+     "value": 4.5
+    },
+    {
+     "date": "2024-10-04",
+     "mark": "",
+     "rank": 6,
+     "value": 4.5
+    },
+    {
+     "date": "2022-10-07",
+     "mark": "",
+     "rank": 7,
+     "value": 4.5
+    },
+    {
+     "date": "2024-10-05",
+     "mark": "",
+     "rank": 8,
+     "value": 4.0
+    },
+    {
+     "date": "2026-10-21",
+     "mark": "",
+     "rank": 9,
+     "value": 3.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最大1時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2024-10-03",
+     "mark": "",
+     "rank": 1,
+     "value": 21.0
+    },
+    {
+     "date": "2024-10-18",
+     "mark": "",
+     "rank": 2,
+     "value": 14.5
+    },
+    {
+     "date": "2024-10-09",
+     "mark": "",
+     "rank": 3,
+     "value": 13.0
+    },
+    {
+     "date": "2025-10-31",
+     "mark": "",
+     "rank": 4,
+     "value": 11.5
+    },
+    {
+     "date": "2023-10-04",
+     "mark": "",
+     "rank": 5,
+     "value": 11.5
+    },
+    {
+     "date": "2023-10-03",
+     "mark": "",
+     "rank": 6,
+     "value": 11.0
+    },
+    {
+     "date": "2022-10-07",
+     "mark": "",
+     "rank": 7,
+     "value": 10.5
+    },
+    {
+     "date": "2024-10-05",
+     "mark": "",
+     "rank": 8,
+     "value": 9.5
+    },
+    {
+     "date": "2024-10-23",
+     "mark": "",
+     "rank": 9,
+     "value": 8.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日降水量(mm)": {
+   "entries": [
+    {
+     "date": "2024-10-18",
+     "mark": "",
+     "rank": 1,
+     "value": 65.0
+    },
+    {
+     "date": "2025-10-31",
+     "mark": "",
+     "rank": 2,
+     "value": 54.5
+    },
+    {
+     "date": "2021-10-25",
+     "mark": "",
+     "rank": 3,
+     "value": 52.0
+    },
+    {
+     "date": "2024-10-03",
+     "mark": "",
+     "rank": 4,
+     "value": 48.5
+    },
+    {
+     "date": "2024-10-04",
+     "mark": "",
+     "rank": 5,
+     "value": 36.5
+    },
+    {
+     "date": "2024-10-09",
+     "mark": "",
+     "rank": 6,
+     "value": 34.0
+    },
+    {
+     "date": "2022-10-09",
+     "mark": "",
+     "rank": 7,
+     "value": 30.0
+    },
+    {
+     "date": "2022-10-07",
+     "mark": "",
+     "rank": 8,
+     "value": 30.0
+    },
+    {
+     "date": "2024-10-29",
+     "mark": "",
+     "rank": 9,
+     "value": 27.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "月降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 1,
+     "value": 308.5
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 2,
+     "value": 159.5
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 3,
+     "value": 115.5
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 4,
+     "value": 97.5
+    },
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 5,
+     "value": 64.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  },
+  "月降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 1,
+     "value": 64.5
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 2,
+     "value": 97.5
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 3,
+     "value": 115.5
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 4,
+     "value": 159.5
+    },
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 5,
+     "value": 308.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  }
+ },
+ "fetched_at": "2026-10-24T03:20:36+09:00",
+ "station": "葛川（奈良県）",
+ "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=64&block_no=1669&year=&month=10&day=&view=h0"
+}
