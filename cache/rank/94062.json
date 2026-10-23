@@ -1,0 +1,2412 @@
+{
+ "elements": {
+  "年平均気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "1963",
+     "mark": "",
+     "rank": 1,
+     "value": 22.6
+    },
+    {
+     "date": "1986",
+     "mark": "",
+     "rank": 2,
+     "value": 22.7
+    },
+    {
+     "date": "1968",
+     "mark": "",
+     "rank": 3,
+     "value": 22.8
+    },
+    {
+     "date": "1984",
+     "mark": "",
+     "rank": 4,
+     "value": 23.0
+    },
+    {
+     "date": "1981",
+     "mark": "",
+     "rank": 5,
+     "value": 23.0
+    },
+    {
+     "date": "1962",
+     "mark": "",
+     "rank": 6,
+     "value": 23.0
+    },
+    {
+     "date": "1995",
+     "mark": "",
+     "rank": 7,
+     "value": 23.1
+    },
+    {
+     "date": "1989",
+     "mark": "",
+     "rank": 8,
+     "value": 23.1
+    },
+    {
+     "date": "1985",
+     "mark": "",
+     "rank": 9,
+     "value": 23.1
+    },
+    {
+     "date": "1971",
+     "mark": "",
+     "rank": 10,
+     "value": 23.1
+    }
+   ],
+   "period": "1955年2026年"
+  },
+  "年平均気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 1,
+     "value": 24.9
+    },
+    {
+     "date": "2016",
+     "mark": "",
+     "rank": 2,
+     "value": 24.8
+    },
+    {
+     "date": "2019",
+     "mark": "",
+     "rank": 3,
+     "value": 24.6
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 4,
+     "value": 24.5
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 5,
+     "value": 24.5
+    },
+    {
+     "date": "1998",
+     "mark": "",
+     "rank": 6,
+     "value": 24.5
+    },
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 7,
+     "value": 24.4
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 8,
+     "value": 24.4
+    },
+    {
+     "date": "2015",
+     "mark": "",
+     "rank": 9,
+     "value": 24.4
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 10,
+     "value": 24.3
+    }
+   ],
+   "period": "1955年2026年"
+  },
+  "年間日照時間の多い方から(時間)": {
+   "entries": [
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 1,
+     "value": 2002.6
+    },
+    {
+     "date": "2018",
+     "mark": "",
+     "rank": 2,
+     "value": 1894.7
+    },
+    {
+     "date": "2009",
+     "mark": "",
+     "rank": 3,
+     "value": 1864.5
+    },
+    {
+     "date": "2014",
+     "mark": "",
+     "rank": 4,
+     "value": 1833.7
+    },
+    {
+     "date": "1963",
+     "mark": "",
+     "rank": 5,
+     "value": 1823.3
+    },
+    {
+     "date": "2003",
+     "mark": "",
+     "rank": 6,
+     "value": 1812.7
+    },
+    {
+     "date": "2004",
+     "mark": "",
+     "rank": 7,
+     "value": 1801.2
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 8,
+     "value": 1790.2
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 9,
+     "value": 1783.5
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 10,
+     "value": 1777.7
+    }
+   ],
+   "period": "1958年2026年"
+  },
+  "年間日照時間の少ない方から(時間)": {
+   "entries": [
+    {
+     "date": "1974",
+     "mark": "",
+     "rank": 1,
+     "value": 1174.5
+    },
+    {
+     "date": "1975",
+     "mark": "",
+     "rank": 2,
+     "value": 1262.1
+    },
+    {
+     "date": "1972",
+     "mark": "",
+     "rank": 3,
+     "value": 1330.8
+    },
+    {
+     "date": "1973",
+     "mark": "",
+     "rank": 4,
+     "value": 1332.6
+    },
+    {
+     "date": "1968",
+     "mark": "",
+     "rank": 5,
+     "value": 1339.2
+    },
+    {
+     "date": "1995",
+     "mark": "",
+     "rank": 6,
+     "value": 1375.0
+    },
+    {
+     "date": "1962",
+     "mark": "",
+     "rank": 7,
+     "value": 1408.1
+    },
+    {
+     "date": "1999",
+     "mark": "",
+     "rank": 8,
+     "value": 1420.5
+    },
+    {
+     "date": "1967",
+     "mark": "",
+     "rank": 9,
+     "value": 1440.6
+    },
+    {
+     "date": "1961",
+     "mark": "",
+     "rank": 10,
+     "value": 1462.6
+    }
+   ],
+   "period": "1958年2026年"
+  },
+  "年降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 1,
+     "value": 3642.0
+    },
+    {
+     "date": "1998",
+     "mark": "",
+     "rank": 2,
+     "value": 3634.5
+    },
+    {
+     "date": "1985",
+     "mark": "",
+     "rank": 3,
+     "value": 3409.5
+    },
+    {
+     "date": "1967",
+     "mark": "",
+     "rank": 4,
+     "value": 3273.9
+    },
+    {
+     "date": "1956",
+     "mark": "",
+     "rank": 5,
+     "value": 3181.1
+    },
+    {
+     "date": "1970",
+     "mark": "",
+     "rank": 6,
+     "value": 3141.0
+    },
+    {
+     "date": "1966",
+     "mark": "",
+     "rank": 7,
+     "value": 2960.7
+    },
+    {
+     "date": "1974",
+     "mark": "",
+     "rank": 8,
+     "value": 2941.0
+    },
+    {
+     "date": "2005",
+     "mark": "",
+     "rank": 9,
+     "value": 2913.0
+    },
+    {
+     "date": "1980",
+     "mark": "",
+     "rank": 10,
+     "value": 2884.0
+    }
+   ],
+   "period": "1954年2026年"
+  },
+  "年降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": "2014",
+     "mark": "",
+     "rank": 1,
+     "value": 979.0
+    },
+    {
+     "date": "2003",
+     "mark": "",
+     "rank": 2,
+     "value": 1328.5
+    },
+    {
+     "date": "1993",
+     "mark": "",
+     "rank": 3,
+     "value": 1393.5
+    },
+    {
+     "date": "1963",
+     "mark": "",
+     "rank": 4,
+     "value": 1404.1
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 5,
+     "value": 1609.5
+    },
+    {
+     "date": "1971",
+     "mark": "",
+     "rank": 6,
+     "value": 1636.0
+    },
+    {
+     "date": "2002",
+     "mark": "",
+     "rank": 7,
+     "value": 1727.0
+    },
+    {
+     "date": "1964",
+     "mark": "",
+     "rank": 8,
+     "value": 1729.9
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 9,
+     "value": 1762.0
+    },
+    {
+     "date": "1976",
+     "mark": "",
+     "rank": 10,
+     "value": 1885.0
+    }
+   ],
+   "period": "1954年2026年"
+  },
+  "日平均気温0℃未満寒候年間日数(日)": {
+   "entries": [
+    {
+     "date": "2026",
+     "mark": "",
+     "rank": 1,
+     "value": 0.0
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 2,
+     "value": 0.0
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 3,
+     "value": 0.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 4,
+     "value": 0.0
+    },
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 5,
+     "value": 0.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 6,
+     "value": 0.0
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2019",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2018",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 10,
+     "value": 0.0
+    }
+   ],
+   "period": "1957寒候年2026寒候年"
+  },
+  "日平均気温25℃以上年間日数(日)": {
+   "entries": [
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 1,
+     "value": 209.0
+    },
+    {
+     "date": "2016",
+     "mark": "",
+     "rank": 2,
+     "value": 198.0
+    },
+    {
+     "date": "1998",
+     "mark": "",
+     "rank": 3,
+     "value": 198.0
+    },
+    {
+     "date": "2015",
+     "mark": "",
+     "rank": 4,
+     "value": 196.0
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 5,
+     "value": 189.0
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 6,
+     "value": 189.0
+    },
+    {
+     "date": "1964",
+     "mark": "",
+     "rank": 7,
+     "value": 186.0
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 8,
+     "value": 182.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 9,
+     "value": 181.0
+    },
+    {
+     "date": "2019",
+     "mark": "",
+     "rank": 10,
+     "value": 181.0
+    }
+   ],
+   "period": "1957年2026年"
+  },
+  "日最低気温0℃未満寒候年間日数(日)": {
+   "entries": [
+    {
+     "date": "2026",
+     "mark": "",
+     "rank": 1,
+     "value": 0.0
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 2,
+     "value": 0.0
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 3,
+     "value": 0.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 4,
+     "value": 0.0
+    },
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 5,
+     "value": 0.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 6,
+     "value": 0.0
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2019",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2018",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 10,
+     "value": 0.0
+    }
+   ],
+   "period": "1957寒候年2026寒候年"
+  },
+  "日最低気温25℃以上年間日数(日)": {
+   "entries": [
+    {
+     "date": "2016",
+     "mark": "",
+     "rank": 1,
+     "value": 147.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 2,
+     "value": 145.0
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 3,
+     "value": 140.0
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 4,
+     "value": 139.0
+    },
+    {
+     "date": "2026",
+     "mark": "]",
+     "rank": 5,
+     "value": 136.0
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 6,
+     "value": 135.0
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 7,
+     "value": 130.0
+    },
+    {
+     "date": "2015",
+     "mark": "",
+     "rank": 8,
+     "value": 129.0
+    },
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 9,
+     "value": 122.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 10,
+     "value": 121.0
+    }
+   ],
+   "period": "1957年2026年"
+  },
+  "日最低気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "1963-01-28",
+     "mark": "",
+     "rank": 1,
+     "value": 6.7
+    },
+    {
+     "date": "1965-01-10",
+     "mark": "",
+     "rank": 2,
+     "value": 6.9
+    },
+    {
+     "date": "1967-01-16",
+     "mark": "",
+     "rank": 3,
+     "value": 7.0
+    },
+    {
+     "date": "1963-01-29",
+     "mark": "",
+     "rank": 4,
+     "value": 7.0
+    },
+    {
+     "date": "1968-03-04",
+     "mark": "",
+     "rank": 5,
+     "value": 7.5
+    },
+    {
+     "date": "1987-03-01",
+     "mark": "",
+     "rank": 6,
+     "value": 7.6
+    },
+    {
+     "date": "1962-01-29",
+     "mark": "",
+     "rank": 7,
+     "value": 7.6
+    },
+    {
+     "date": "1963-01-24",
+     "mark": "",
+     "rank": 8,
+     "value": 7.9
+    },
+    {
+     "date": "1986-03-04",
+     "mark": "",
+     "rank": 9,
+     "value": 8.0
+    },
+    {
+     "date": "1963-03-01",
+     "mark": "",
+     "rank": 10,
+     "value": 8.0
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "日最低気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2024-06-30",
+     "mark": "",
+     "rank": 1,
+     "value": 29.5
+    },
+    {
+     "date": "2024-06-23",
+     "mark": "",
+     "rank": 2,
+     "value": 29.5
+    },
+    {
+     "date": "2024-07-12",
+     "mark": "",
+     "rank": 3,
+     "value": 29.4
+    },
+    {
+     "date": "2022-07-18",
+     "mark": "",
+     "rank": 4,
+     "value": 29.4
+    },
+    {
+     "date": "2020-07-16",
+     "mark": "",
+     "rank": 5,
+     "value": 29.4
+    },
+    {
+     "date": "2015-06-30",
+     "mark": "",
+     "rank": 6,
+     "value": 29.4
+    },
+    {
+     "date": "2015-06-27",
+     "mark": "",
+     "rank": 7,
+     "value": 29.4
+    },
+    {
+     "date": "2015-06-26",
+     "mark": "",
+     "rank": 8,
+     "value": 29.4
+    },
+    {
+     "date": "2020-06-30",
+     "mark": "",
+     "rank": 9,
+     "value": 29.3
+    },
+    {
+     "date": "2019-08-10",
+     "mark": "",
+     "rank": 10,
+     "value": 29.3
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "日最低海面気圧(hPa)": {
+   "entries": [
+    {
+     "date": "2006-09-16",
+     "mark": "",
+     "rank": 1,
+     "value": 923.8
+    },
+    {
+     "date": "2007-09-18",
+     "mark": "",
+     "rank": 2,
+     "value": 926.8
+    },
+    {
+     "date": "1996-07-31",
+     "mark": "",
+     "rank": 3,
+     "value": 927.1
+    },
+    {
+     "date": "1982-08-09",
+     "mark": "",
+     "rank": 4,
+     "value": 933.2
+    },
+    {
+     "date": "1963-09-11",
+     "mark": "",
+     "rank": 5,
+     "value": 935.5
+    },
+    {
+     "date": "1963-09-10",
+     "mark": "",
+     "rank": 6,
+     "value": 936.5
+    },
+    {
+     "date": "1969-09-26",
+     "mark": "",
+     "rank": 7,
+     "value": 936.9
+    },
+    {
+     "date": "1977-07-31",
+     "mark": "",
+     "rank": 8,
+     "value": 940.0
+    },
+    {
+     "date": "2015-08-23",
+     "mark": "",
+     "rank": 9,
+     "value": 943.9
+    },
+    {
+     "date": "1994-10-09",
+     "mark": "",
+     "rank": 10,
+     "value": 949.0
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "日最大10分間降水量(mm)": {
+   "entries": [
+    {
+     "date": "1993-04-25",
+     "mark": "",
+     "rank": 1,
+     "value": 36.0
+    },
+    {
+     "date": "1967-03-21",
+     "mark": "",
+     "rank": 2,
+     "value": 32.0
+    },
+    {
+     "date": "1995-02-18",
+     "mark": "",
+     "rank": 3,
+     "value": 28.0
+    },
+    {
+     "date": "2013-03-29",
+     "mark": "",
+     "rank": 4,
+     "value": 27.0
+    },
+    {
+     "date": "2004-10-25",
+     "mark": "",
+     "rank": 5,
+     "value": 26.5
+    },
+    {
+     "date": "2005-03-23",
+     "mark": "",
+     "rank": 6,
+     "value": 26.0
+    },
+    {
+     "date": "1969-05-16",
+     "mark": "",
+     "rank": 7,
+     "value": 26.0
+    },
+    {
+     "date": "2017-04-26",
+     "mark": "",
+     "rank": 8,
+     "value": 25.5
+    },
+    {
+     "date": "1974-03-26",
+     "mark": "",
+     "rank": 9,
+     "value": 25.5
+    },
+    {
+     "date": "1995-06-28",
+     "mark": "",
+     "rank": 10,
+     "value": 25.0
+    }
+   ],
+   "period": "1955/92026/10"
+  },
+  "日最大1時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2011-10-03",
+     "mark": "",
+     "rank": 1,
+     "value": 100.0
+    },
+    {
+     "date": "1967-03-21",
+     "mark": "",
+     "rank": 2,
+     "value": 91.6
+    },
+    {
+     "date": "1980-04-13",
+     "mark": "",
+     "rank": 3,
+     "value": 90.5
+    },
+    {
+     "date": "1959-07-15",
+     "mark": "",
+     "rank": 4,
+     "value": 84.5
+    },
+    {
+     "date": "2013-03-18",
+     "mark": "",
+     "rank": 5,
+     "value": 81.5
+    },
+    {
+     "date": "2026-08-22",
+     "mark": "",
+     "rank": 6,
+     "value": 78.5
+    },
+    {
+     "date": "1977-07-31",
+     "mark": "",
+     "rank": 7,
+     "value": 77.0
+    },
+    {
+     "date": "1966-06-08",
+     "mark": "",
+     "rank": 8,
+     "value": 76.5
+    },
+    {
+     "date": "2005-03-23",
+     "mark": "",
+     "rank": 9,
+     "value": 75.5
+    },
+    {
+     "date": "2004-10-25",
+     "mark": "",
+     "rank": 10,
+     "value": 75.0
+    }
+   ],
+   "period": "1955/92026/10"
+  },
+  "日最大瞬間風速・風向(m/s)": {
+   "entries": [
+    {
+     "date": "2006-09-16",
+     "mark": "",
+     "rank": 1,
+     "value": 69.9
+    },
+    {
+     "date": "2007-09-18",
+     "mark": "",
+     "rank": 2,
+     "value": 65.9
+    },
+    {
+     "date": "1994-10-09",
+     "mark": "",
+     "rank": 3,
+     "value": 64.9
+    },
+    {
+     "date": "1994-10-10",
+     "mark": "]",
+     "rank": 4,
+     "value": 64.3
+    },
+    {
+     "date": "1996-07-31",
+     "mark": "",
+     "rank": 5,
+     "value": 61.3
+    },
+    {
+     "date": "1982-08-09",
+     "mark": "",
+     "rank": 6,
+     "value": 60.6
+    },
+    {
+     "date": "1985-10-04",
+     "mark": "",
+     "rank": 7,
+     "value": 57.0
+    },
+    {
+     "date": "2003-06-18",
+     "mark": "",
+     "rank": 8,
+     "value": 56.6
+    },
+    {
+     "date": "2007-10-06",
+     "mark": "",
+     "rank": 9,
+     "value": 56.5
+    },
+    {
+     "date": "2005-08-31",
+     "mark": "",
+     "rank": 10,
+     "value": 54.6
+    }
+   ],
+   "period": "1972/12026/10"
+  },
+  "日最大風速・風向(m/s)": {
+   "entries": [
+    {
+     "date": "1982-08-09",
+     "mark": "",
+     "rank": 1,
+     "value": 42.0
+    },
+    {
+     "date": "1994-10-10",
+     "mark": "]",
+     "rank": 2,
+     "value": 40.2
+    },
+    {
+     "date": "1994-10-09",
+     "mark": "",
+     "rank": 3,
+     "value": 39.2
+    },
+    {
+     "date": "1976-08-09",
+     "mark": "",
+     "rank": 4,
+     "value": 39.2
+    },
+    {
+     "date": "2006-09-16",
+     "mark": "",
+     "rank": 5,
+     "value": 39.1
+    },
+    {
+     "date": "2007-09-18",
+     "mark": "",
+     "rank": 6,
+     "value": 37.4
+    },
+    {
+     "date": "1963-09-10",
+     "mark": "",
+     "rank": 7,
+     "value": 35.8
+    },
+    {
+     "date": "1985-10-04",
+     "mark": "",
+     "rank": 8,
+     "value": 35.6
+    },
+    {
+     "date": "1985-08-22",
+     "mark": "",
+     "rank": 9,
+     "value": 34.7
+    },
+    {
+     "date": "2010-09-19",
+     "mark": "]",
+     "rank": 10,
+     "value": 33.9
+    }
+   ],
+   "period": "1957/12026/10"
+  },
+  "日最小相対湿度(%)": {
+   "entries": [
+    {
+     "date": "1999-04-06",
+     "mark": "",
+     "rank": 1,
+     "value": 27.0
+    },
+    {
+     "date": "1998-03-31",
+     "mark": "",
+     "rank": 2,
+     "value": 30.0
+    },
+    {
+     "date": "2000-05-12",
+     "mark": "",
+     "rank": 3,
+     "value": 31.0
+    },
+    {
+     "date": "2017-03-27",
+     "mark": "",
+     "rank": 4,
+     "value": 36.0
+    },
+    {
+     "date": "2017-02-13",
+     "mark": "",
+     "rank": 5,
+     "value": 36.0
+    },
+    {
+     "date": "2013-01-19",
+     "mark": "",
+     "rank": 6,
+     "value": 36.0
+    },
+    {
+     "date": "2006-11-12",
+     "mark": "",
+     "rank": 7,
+     "value": 36.0
+    },
+    {
+     "date": "2001-03-04",
+     "mark": "",
+     "rank": 8,
+     "value": 36.0
+    },
+    {
+     "date": "1994-03-24",
+     "mark": "",
+     "rank": 9,
+     "value": 36.0
+    },
+    {
+     "date": "2017-04-02",
+     "mark": "",
+     "rank": 10,
+     "value": 37.0
+    }
+   ],
+   "period": "1957/72026/10"
+  },
+  "日最高気温0℃未満寒候年間日数(日)": {
+   "entries": [
+    {
+     "date": "2026",
+     "mark": "",
+     "rank": 1,
+     "value": 0.0
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 2,
+     "value": 0.0
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 3,
+     "value": 0.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 4,
+     "value": 0.0
+    },
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 5,
+     "value": 0.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 6,
+     "value": 0.0
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2019",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2018",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 10,
+     "value": 0.0
+    }
+   ],
+   "period": "1957寒候年2026寒候年"
+  },
+  "日最高気温25℃以上年間日数(日)": {
+   "entries": [
+    {
+     "date": "1998",
+     "mark": "",
+     "rank": 1,
+     "value": 265.0
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 2,
+     "value": 262.0
+    },
+    {
+     "date": "2019",
+     "mark": "",
+     "rank": 3,
+     "value": 262.0
+    },
+    {
+     "date": "2016",
+     "mark": "",
+     "rank": 4,
+     "value": 262.0
+    },
+    {
+     "date": "2002",
+     "mark": "",
+     "rank": 5,
+     "value": 259.0
+    },
+    {
+     "date": "1994",
+     "mark": "",
+     "rank": 6,
+     "value": 258.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 7,
+     "value": 257.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 8,
+     "value": 256.0
+    },
+    {
+     "date": "2015",
+     "mark": "",
+     "rank": 9,
+     "value": 255.0
+    },
+    {
+     "date": "2018",
+     "mark": "",
+     "rank": 10,
+     "value": 254.0
+    }
+   ],
+   "period": "1957年2026年"
+  },
+  "日最高気温30℃以上年間日数(日)": {
+   "entries": [
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 1,
+     "value": 146.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 2,
+     "value": 146.0
+    },
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 3,
+     "value": 142.0
+    },
+    {
+     "date": "2016",
+     "mark": "",
+     "rank": 4,
+     "value": 141.0
+    },
+    {
+     "date": "2017",
+     "mark": "",
+     "rank": 5,
+     "value": 132.0
+    },
+    {
+     "date": "2026",
+     "mark": "]",
+     "rank": 6,
+     "value": 130.0
+    },
+    {
+     "date": "2015",
+     "mark": "",
+     "rank": 7,
+     "value": 130.0
+    },
+    {
+     "date": "2014",
+     "mark": "",
+     "rank": 8,
+     "value": 129.0
+    },
+    {
+     "date": "2020",
+     "mark": "",
+     "rank": 9,
+     "value": 127.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 10,
+     "value": 124.0
+    }
+   ],
+   "period": "1957年2026年"
+  },
+  "日最高気温35℃以上年間日数(日)": {
+   "entries": [
+    {
+     "date": "2024",
+     "mark": "",
+     "rank": 1,
+     "value": 6.0
+    },
+    {
+     "date": "2023",
+     "mark": "",
+     "rank": 2,
+     "value": 1.0
+    },
+    {
+     "date": "2014",
+     "mark": "",
+     "rank": 3,
+     "value": 1.0
+    },
+    {
+     "date": "2010",
+     "mark": "",
+     "rank": 4,
+     "value": 1.0
+    },
+    {
+     "date": "1991",
+     "mark": "",
+     "rank": 5,
+     "value": 1.0
+    },
+    {
+     "date": "1983",
+     "mark": "",
+     "rank": 6,
+     "value": 1.0
+    },
+    {
+     "date": "2026",
+     "mark": "]",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2025",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2022",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": "2021",
+     "mark": "",
+     "rank": 10,
+     "value": 0.0
+    }
+   ],
+   "period": "1957年2026年"
+  },
+  "日最高気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "1974-02-26",
+     "mark": "",
+     "rank": 1,
+     "value": 11.9
+    },
+    {
+     "date": "1963-01-07",
+     "mark": "",
+     "rank": 2,
+     "value": 12.1
+    },
+    {
+     "date": "1986-03-02",
+     "mark": "",
+     "rank": 3,
+     "value": 12.2
+    },
+    {
+     "date": "1984-02-07",
+     "mark": "",
+     "rank": 4,
+     "value": 12.3
+    },
+    {
+     "date": "2016-01-24",
+     "mark": "",
+     "rank": 5,
+     "value": 12.4
+    },
+    {
+     "date": "1967-12-29",
+     "mark": "",
+     "rank": 6,
+     "value": 12.4
+    },
+    {
+     "date": "2021-01-09",
+     "mark": "",
+     "rank": 7,
+     "value": 12.7
+    },
+    {
+     "date": "2021-01-08",
+     "mark": "",
+     "rank": 8,
+     "value": 12.7
+    },
+    {
+     "date": "2018-02-05",
+     "mark": "",
+     "rank": 9,
+     "value": 12.7
+    },
+    {
+     "date": "1967-01-16",
+     "mark": "",
+     "rank": 10,
+     "value": 12.7
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "日最高気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2024-07-20",
+     "mark": "",
+     "rank": 1,
+     "value": 35.9
+    },
+    {
+     "date": "2024-07-19",
+     "mark": "",
+     "rank": 2,
+     "value": 35.9
+    },
+    {
+     "date": "2014-07-06",
+     "mark": "",
+     "rank": 3,
+     "value": 35.7
+    },
+    {
+     "date": "2024-07-16",
+     "mark": "",
+     "rank": 4,
+     "value": 35.5
+    },
+    {
+     "date": "2023-07-13",
+     "mark": "",
+     "rank": 5,
+     "value": 35.2
+    },
+    {
+     "date": "2010-07-14",
+     "mark": "",
+     "rank": 6,
+     "value": 35.2
+    },
+    {
+     "date": "2024-07-22",
+     "mark": "",
+     "rank": 7,
+     "value": 35.1
+    },
+    {
+     "date": "2024-07-04",
+     "mark": "",
+     "rank": 8,
+     "value": 35.1
+    },
+    {
+     "date": "2024-07-21",
+     "mark": "",
+     "rank": 9,
+     "value": 35.0
+    },
+    {
+     "date": "1991-08-14",
+     "mark": "",
+     "rank": 10,
+     "value": 35.0
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "日降水量(mm)": {
+   "entries": [
+    {
+     "date": "2005-07-18",
+     "mark": "",
+     "rank": 1,
+     "value": 335.0
+    },
+    {
+     "date": "2011-10-03",
+     "mark": "",
+     "rank": 2,
+     "value": 319.5
+    },
+    {
+     "date": "1994-10-09",
+     "mark": "",
+     "rank": 3,
+     "value": 291.5
+    },
+    {
+     "date": "2013-03-18",
+     "mark": "",
+     "rank": 4,
+     "value": 283.0
+    },
+    {
+     "date": "2019-09-30",
+     "mark": "",
+     "rank": 5,
+     "value": 269.5
+    },
+    {
+     "date": "2007-10-06",
+     "mark": "",
+     "rank": 6,
+     "value": 269.0
+    },
+    {
+     "date": "2006-09-16",
+     "mark": "",
+     "rank": 7,
+     "value": 265.5
+    },
+    {
+     "date": "1967-11-18",
+     "mark": "",
+     "rank": 8,
+     "value": 264.2
+    },
+    {
+     "date": "1967-11-17",
+     "mark": "",
+     "rank": 9,
+     "value": 262.5
+    },
+    {
+     "date": "1995-06-09",
+     "mark": "",
+     "rank": 10,
+     "value": 255.0
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "月平均気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "1963-01",
+     "mark": "",
+     "rank": 1,
+     "value": 13.8
+    },
+    {
+     "date": "1968-02",
+     "mark": "",
+     "rank": 2,
+     "value": 15.1
+    },
+    {
+     "date": "1963-02",
+     "mark": "",
+     "rank": 3,
+     "value": 15.3
+    },
+    {
+     "date": "1962-01",
+     "mark": "",
+     "rank": 4,
+     "value": 15.9
+    },
+    {
+     "date": "1986-02",
+     "mark": "",
+     "rank": 5,
+     "value": 16.0
+    },
+    {
+     "date": "1971-01",
+     "mark": "",
+     "rank": 6,
+     "value": 16.0
+    },
+    {
+     "date": "1986-01",
+     "mark": "",
+     "rank": 7,
+     "value": 16.4
+    },
+    {
+     "date": "1967-12",
+     "mark": "",
+     "rank": 8,
+     "value": 16.4
+    },
+    {
+     "date": "2011-01",
+     "mark": "",
+     "rank": 9,
+     "value": 16.5
+    },
+    {
+     "date": "1956-01",
+     "mark": "",
+     "rank": 10,
+     "value": 16.5
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "月平均気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2024-07",
+     "mark": "",
+     "rank": 1,
+     "value": 30.0
+    },
+    {
+     "date": "2016-07",
+     "mark": "",
+     "rank": 2,
+     "value": 29.7
+    },
+    {
+     "date": "2007-07",
+     "mark": "",
+     "rank": 3,
+     "value": 29.7
+    },
+    {
+     "date": "2022-07",
+     "mark": "",
+     "rank": 4,
+     "value": 29.6
+    },
+    {
+     "date": "2020-07",
+     "mark": "",
+     "rank": 5,
+     "value": 29.6
+    },
+    {
+     "date": "2017-08",
+     "mark": "",
+     "rank": 6,
+     "value": 29.6
+    },
+    {
+     "date": "2014-07",
+     "mark": "",
+     "rank": 7,
+     "value": 29.5
+    },
+    {
+     "date": "2003-07",
+     "mark": "",
+     "rank": 8,
+     "value": 29.5
+    },
+    {
+     "date": "1956-07",
+     "mark": "",
+     "rank": 9,
+     "value": 29.5
+    },
+    {
+     "date": "2015-06",
+     "mark": "",
+     "rank": 10,
+     "value": 29.4
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "月最大24時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "1967-11-18",
+     "mark": "",
+     "rank": 1,
+     "value": 392.6
+    },
+    {
+     "date": "2005-07-18",
+     "mark": "",
+     "rank": 2,
+     "value": 362.5
+    },
+    {
+     "date": "2001-09-06",
+     "mark": "",
+     "rank": 3,
+     "value": 347.0
+    },
+    {
+     "date": "1968-07-26",
+     "mark": "",
+     "rank": 4,
+     "value": 345.0
+    },
+    {
+     "date": "2015-08-08",
+     "mark": "",
+     "rank": 5,
+     "value": 340.5
+    },
+    {
+     "date": "1967-10-17",
+     "mark": "",
+     "rank": 6,
+     "value": 335.0
+    },
+    {
+     "date": "2025-10-22",
+     "mark": "",
+     "rank": 7,
+     "value": 326.5
+    },
+    {
+     "date": "2011-10-03",
+     "mark": "",
+     "rank": 8,
+     "value": 319.5
+    },
+    {
+     "date": "1994-10-09",
+     "mark": "",
+     "rank": 9,
+     "value": 311.5
+    },
+    {
+     "date": "2006-09-16",
+     "mark": "",
+     "rank": 10,
+     "value": 305.0
+    }
+   ],
+   "period": "1957/12026/10"
+  },
+  "月最深積雪の大きい方から(cm)": {
+   "entries": [
+    {
+     "date": "2002-02",
+     "mark": "",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": "2002-01",
+     "mark": "",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": "2001-12",
+     "mark": "",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": "2001-11",
+     "mark": "",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": "2001-10",
+     "mark": "",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": "2001-09",
+     "mark": "",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": "2001-08",
+     "mark": "",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": "2001-07",
+     "mark": "",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": "2001-06",
+     "mark": "",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": "2001-05",
+     "mark": "",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "1954/22002/2"
+  },
+  "月最深積雪の小さい方から(cm)": {
+   "entries": [
+    {
+     "date": "2002-02",
+     "mark": "",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": "2002-01",
+     "mark": "",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": "2001-12",
+     "mark": "",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": "2001-11",
+     "mark": "",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": "2001-10",
+     "mark": "",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": "2001-09",
+     "mark": "",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": "2001-08",
+     "mark": "",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": "2001-07",
+     "mark": "",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": "2001-06",
+     "mark": "",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": "2001-05",
+     "mark": "",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "1957/12002/2"
+  },
+  "月間日照時間の多い方から(時間)": {
+   "entries": [
+    {
+     "date": "2003-07",
+     "mark": "",
+     "rank": 1,
+     "value": 337.9
+    },
+    {
+     "date": "2016-07",
+     "mark": "",
+     "rank": 2,
+     "value": 295.8
+    },
+    {
+     "date": "1988-07",
+     "mark": "",
+     "rank": 3,
+     "value": 295.5
+    },
+    {
+     "date": "2007-07",
+     "mark": "",
+     "rank": 4,
+     "value": 289.8
+    },
+    {
+     "date": "1980-06",
+     "mark": "",
+     "rank": 5,
+     "value": 288.6
+    },
+    {
+     "date": "1978-07",
+     "mark": "",
+     "rank": 6,
+     "value": 286.6
+    },
+    {
+     "date": "1980-07",
+     "mark": "",
+     "rank": 7,
+     "value": 283.8
+    },
+    {
+     "date": "2022-07",
+     "mark": "",
+     "rank": 8,
+     "value": 283.2
+    },
+    {
+     "date": "2017-08",
+     "mark": "",
+     "rank": 9,
+     "value": 280.7
+    },
+    {
+     "date": "1984-07",
+     "mark": "",
+     "rank": 10,
+     "value": 280.6
+    }
+   ],
+   "period": "1958/82026/10"
+  },
+  "月間日照時間の少ない方から(時間)": {
+   "entries": [
+    {
+     "date": "1968-02",
+     "mark": "",
+     "rank": 1,
+     "value": 14.3
+    },
+    {
+     "date": "2011-01",
+     "mark": "",
+     "rank": 2,
+     "value": 19.5
+    },
+    {
+     "date": "2008-02",
+     "mark": "",
+     "rank": 3,
+     "value": 19.6
+    },
+    {
+     "date": "1970-03",
+     "mark": "",
+     "rank": 4,
+     "value": 25.8
+    },
+    {
+     "date": "2022-02",
+     "mark": "",
+     "rank": 5,
+     "value": 28.5
+    },
+    {
+     "date": "2011-12",
+     "mark": "",
+     "rank": 6,
+     "value": 29.3
+    },
+    {
+     "date": "1983-02",
+     "mark": "",
+     "rank": 7,
+     "value": 29.4
+    },
+    {
+     "date": "2000-02",
+     "mark": "",
+     "rank": 8,
+     "value": 30.6
+    },
+    {
+     "date": "1967-01",
+     "mark": "",
+     "rank": 9,
+     "value": 31.4
+    },
+    {
+     "date": "1998-01",
+     "mark": "",
+     "rank": 10,
+     "value": 32.0
+    }
+   ],
+   "period": "1958/82026/10"
+  },
+  "月降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2001-09",
+     "mark": "",
+     "rank": 1,
+     "value": 892.0
+    },
+    {
+     "date": "1967-11",
+     "mark": "",
+     "rank": 2,
+     "value": 778.1
+    },
+    {
+     "date": "2016-09",
+     "mark": "",
+     "rank": 3,
+     "value": 715.0
+    },
+    {
+     "date": "2015-08",
+     "mark": "",
+     "rank": 4,
+     "value": 702.0
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 5,
+     "value": 697.0
+    },
+    {
+     "date": "1985-08",
+     "mark": "",
+     "rank": 6,
+     "value": 654.5
+    },
+    {
+     "date": "1960-08",
+     "mark": "",
+     "rank": 7,
+     "value": 652.6
+    },
+    {
+     "date": "2022-11",
+     "mark": "",
+     "rank": 8,
+     "value": 626.0
+    },
+    {
+     "date": "2005-06",
+     "mark": "",
+     "rank": 9,
+     "value": 625.0
+    },
+    {
+     "date": "1970-10",
+     "mark": "",
+     "rank": 10,
+     "value": 624.0
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "月降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": "1963-05",
+     "mark": "",
+     "rank": 1,
+     "value": 0.8
+    },
+    {
+     "date": "1957-07",
+     "mark": "",
+     "rank": 2,
+     "value": 4.8
+    },
+    {
+     "date": "2003-07",
+     "mark": "",
+     "rank": 3,
+     "value": 5.5
+    },
+    {
+     "date": "1992-07",
+     "mark": "",
+     "rank": 4,
+     "value": 7.5
+    },
+    {
+     "date": "1988-12",
+     "mark": "",
+     "rank": 5,
+     "value": 9.0
+    },
+    {
+     "date": "2004-11",
+     "mark": "",
+     "rank": 6,
+     "value": 10.5
+    },
+    {
+     "date": "2014-10",
+     "mark": "",
+     "rank": 7,
+     "value": 12.5
+    },
+    {
+     "date": "1958-04",
+     "mark": "",
+     "rank": 8,
+     "value": 14.2
+    },
+    {
+     "date": "1976-04",
+     "mark": "",
+     "rank": 9,
+     "value": 20.5
+    },
+    {
+     "date": "2000-05",
+     "mark": "",
+     "rank": 10,
+     "value": 22.5
+    }
+   ],
+   "period": "1954/22026/10"
+  },
+  "降雪の深さ寒候年合計(cm)": {
+   "entries": [
+    {
+     "date": "2001",
+     "mark": "",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": "2000",
+     "mark": "",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": "1999",
+     "mark": "",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": "1998",
+     "mark": "",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": "1997",
+     "mark": "",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": "1996",
+     "mark": "",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": "1995",
+     "mark": "",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": "1994",
+     "mark": "",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": "1993",
+     "mark": "",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": "1992",
+     "mark": "",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "1955寒候年2002寒候年"
+  },
+  "降雪の深さ日合計(cm)": {
+   "entries": [
+    {
+     "date": "2002-02-28",
+     "mark": "",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": "2002-02-27",
+     "mark": "",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": "2002-02-26",
+     "mark": "",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": "2002-02-25",
+     "mark": "",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": "2002-02-24",
+     "mark": "",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": "2002-02-23",
+     "mark": "",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": "2002-02-22",
+     "mark": "",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": "2002-02-21",
+     "mark": "",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": "2002-02-20",
+     "mark": "",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": "2002-02-19",
+     "mark": "",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "1954/22002/2"
+  },
+  "降雪の深さ月合計(cm)": {
+   "entries": [
+    {
+     "date": "2002-02",
+     "mark": "",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": "2002-01",
+     "mark": "",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": "2001-12",
+     "mark": "",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": "2001-11",
+     "mark": "",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": "2001-10",
+     "mark": "",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": "2001-09",
+     "mark": "",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": "2001-08",
+     "mark": "",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": "2001-07",
+     "mark": "",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": "2001-06",
+     "mark": "",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": "2001-05",
+     "mark": "",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "1954/22002/2"
+  }
+ },
+ "fetched_at": "2026-10-23T22:30:56+09:00",
+ "station": "西表島（沖縄県）",
+ "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=91&block_no=47917&year=&month=&day=&view="
+}
