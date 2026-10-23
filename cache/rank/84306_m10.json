@@ -1,0 +1,1047 @@
+{
+ "elements": {
+  "日最低気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-10-29",
+     "mark": "",
+     "rank": 1,
+     "value": 8.9
+    },
+    {
+     "date": "2025-10-28",
+     "mark": "",
+     "rank": 2,
+     "value": 9.8
+    },
+    {
+     "date": "2021-10-24",
+     "mark": "",
+     "rank": 3,
+     "value": 10.2
+    },
+    {
+     "date": "2023-10-30",
+     "mark": "",
+     "rank": 4,
+     "value": 10.4
+    },
+    {
+     "date": "2023-10-31",
+     "mark": "",
+     "rank": 5,
+     "value": 10.6
+    },
+    {
+     "date": "2021-10-23",
+     "mark": "",
+     "rank": 6,
+     "value": 10.6
+    },
+    {
+     "date": "2022-10-20",
+     "mark": "",
+     "rank": 7,
+     "value": 10.7
+    },
+    {
+     "date": "2021-10-29",
+     "mark": "",
+     "rank": 8,
+     "value": 10.9
+    },
+    {
+     "date": "2022-10-28",
+     "mark": "",
+     "rank": 9,
+     "value": 11.0
+    },
+    {
+     "date": "2022-10-27",
+     "mark": "",
+     "rank": 10,
+     "value": 11.2
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最低気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-10-04",
+     "mark": "",
+     "rank": 1,
+     "value": 24.0
+    },
+    {
+     "date": "2025-10-05",
+     "mark": "",
+     "rank": 2,
+     "value": 22.8
+    },
+    {
+     "date": "2021-10-13",
+     "mark": "",
+     "rank": 3,
+     "value": 22.7
+    },
+    {
+     "date": "2025-10-18",
+     "mark": "",
+     "rank": 4,
+     "value": 22.4
+    },
+    {
+     "date": "2025-10-08",
+     "mark": "",
+     "rank": 5,
+     "value": 22.3
+    },
+    {
+     "date": "2026-10-19",
+     "mark": "",
+     "rank": 6,
+     "value": 22.2
+    },
+    {
+     "date": "2025-10-16",
+     "mark": "",
+     "rank": 7,
+     "value": 22.2
+    },
+    {
+     "date": "2021-10-12",
+     "mark": "",
+     "rank": 8,
+     "value": 22.1
+    },
+    {
+     "date": "2025-10-14",
+     "mark": "",
+     "rank": 9,
+     "value": 21.9
+    },
+    {
+     "date": "2024-10-22",
+     "mark": "",
+     "rank": 10,
+     "value": 21.8
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最大10分間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2024-10-22",
+     "mark": "",
+     "rank": 1,
+     "value": 8.5
+    },
+    {
+     "date": "2024-10-19",
+     "mark": "",
+     "rank": 2,
+     "value": 8.0
+    },
+    {
+     "date": "2025-10-14",
+     "mark": "",
+     "rank": 3,
+     "value": 7.5
+    },
+    {
+     "date": "2024-10-02",
+     "mark": "",
+     "rank": 4,
+     "value": 4.0
+    },
+    {
+     "date": "2026-10-13",
+     "mark": "",
+     "rank": 5,
+     "value": 3.5
+    },
+    {
+     "date": "2023-10-27",
+     "mark": "",
+     "rank": 6,
+     "value": 3.5
+    },
+    {
+     "date": "2026-10-21",
+     "mark": "",
+     "rank": 7,
+     "value": 3.0
+    },
+    {
+     "date": "2024-10-23",
+     "mark": "",
+     "rank": 8,
+     "value": 2.0
+    },
+    {
+     "date": "2024-10-06",
+     "mark": "",
+     "rank": 9,
+     "value": 2.0
+    },
+    {
+     "date": "2025-10-18",
+     "mark": "",
+     "rank": 10,
+     "value": 1.5
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最大1時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2024-10-22",
+     "mark": "",
+     "rank": 1,
+     "value": 28.5
+    },
+    {
+     "date": "2024-10-19",
+     "mark": "",
+     "rank": 2,
+     "value": 12.0
+    },
+    {
+     "date": "2024-10-02",
+     "mark": "",
+     "rank": 3,
+     "value": 9.5
+    },
+    {
+     "date": "2026-10-21",
+     "mark": "",
+     "rank": 4,
+     "value": 9.0
+    },
+    {
+     "date": "2025-10-14",
+     "mark": "",
+     "rank": 5,
+     "value": 7.5
+    },
+    {
+     "date": "2026-10-13",
+     "mark": "",
+     "rank": 6,
+     "value": 5.5
+    },
+    {
+     "date": "2022-10-09",
+     "mark": "",
+     "rank": 7,
+     "value": 5.5
+    },
+    {
+     "date": "2022-10-17",
+     "mark": "",
+     "rank": 8,
+     "value": 4.5
+    },
+    {
+     "date": "2024-10-06",
+     "mark": "",
+     "rank": 9,
+     "value": 4.0
+    },
+    {
+     "date": "2023-10-08",
+     "mark": "",
+     "rank": 10,
+     "value": 4.0
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最大瞬間風速・風向(m/s)": {
+   "entries": [
+    {
+     "date": "2024-10-02",
+     "mark": "",
+     "rank": 1,
+     "value": 14.0
+    },
+    {
+     "date": "2022-10-10",
+     "mark": "",
+     "rank": 2,
+     "value": 13.4
+    },
+    {
+     "date": "2024-10-22",
+     "mark": "",
+     "rank": 3,
+     "value": 13.3
+    },
+    {
+     "date": "2021-10-16",
+     "mark": "",
+     "rank": 4,
+     "value": 13.2
+    },
+    {
+     "date": "2024-10-19",
+     "mark": "",
+     "rank": 5,
+     "value": 12.9
+    },
+    {
+     "date": "2024-10-20",
+     "mark": "",
+     "rank": 6,
+     "value": 12.6
+    },
+    {
+     "date": "2022-10-25",
+     "mark": "",
+     "rank": 7,
+     "value": 12.4
+    },
+    {
+     "date": "2021-10-17",
+     "mark": "",
+     "rank": 8,
+     "value": 12.2
+    },
+    {
+     "date": "2025-10-04",
+     "mark": "",
+     "rank": 9,
+     "value": 12.1
+    },
+    {
+     "date": "2024-10-18",
+     "mark": "",
+     "rank": 10,
+     "value": 12.0
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最大風速・風向(m/s)": {
+   "entries": [
+    {
+     "date": "2024-10-25",
+     "mark": "",
+     "rank": 1,
+     "value": 6.8
+    },
+    {
+     "date": "2023-10-27",
+     "mark": "",
+     "rank": 2,
+     "value": 6.6
+    },
+    {
+     "date": "2025-10-04",
+     "mark": "",
+     "rank": 3,
+     "value": 6.4
+    },
+    {
+     "date": "2025-10-03",
+     "mark": "",
+     "rank": 4,
+     "value": 6.4
+    },
+    {
+     "date": "2022-10-10",
+     "mark": "",
+     "rank": 5,
+     "value": 6.3
+    },
+    {
+     "date": "2024-10-20",
+     "mark": "",
+     "rank": 6,
+     "value": 6.2
+    },
+    {
+     "date": "2024-10-31",
+     "mark": "",
+     "rank": 7,
+     "value": 6.1
+    },
+    {
+     "date": "2021-10-17",
+     "mark": "",
+     "rank": 8,
+     "value": 6.0
+    },
+    {
+     "date": "2024-10-18",
+     "mark": "",
+     "rank": 9,
+     "value": 5.9
+    },
+    {
+     "date": "2023-10-20",
+     "mark": "",
+     "rank": 10,
+     "value": 5.9
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最小相対湿度(％)": {
+   "entries": [
+    {
+     "date": "2026-10-17",
+     "mark": "",
+     "rank": 1,
+     "value": 26.0
+    },
+    {
+     "date": "2024-10-13",
+     "mark": "",
+     "rank": 2,
+     "value": 26.0
+    },
+    {
+     "date": "2026-10-03",
+     "mark": "",
+     "rank": 3,
+     "value": 30.0
+    },
+    {
+     "date": "2023-10-21",
+     "mark": "",
+     "rank": 4,
+     "value": 30.0
+    },
+    {
+     "date": "2026-10-16",
+     "mark": "",
+     "rank": 5,
+     "value": 33.0
+    },
+    {
+     "date": "2026-10-08",
+     "mark": "",
+     "rank": 6,
+     "value": 34.0
+    },
+    {
+     "date": "2025-10-29",
+     "mark": "",
+     "rank": 7,
+     "value": 34.0
+    },
+    {
+     "date": "2024-10-12",
+     "mark": "",
+     "rank": 8,
+     "value": 34.0
+    },
+    {
+     "date": "2026-10-14",
+     "mark": "",
+     "rank": 9,
+     "value": 35.0
+    },
+    {
+     "date": "2025-10-27",
+     "mark": "",
+     "rank": 10,
+     "value": 37.0
+    }
+   ],
+   "period": "2023/102026/10"
+  },
+  "日最高気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "2021-10-21",
+     "mark": "",
+     "rank": 1,
+     "value": 17.3
+    },
+    {
+     "date": "2025-10-28",
+     "mark": "",
+     "rank": 2,
+     "value": 17.9
+    },
+    {
+     "date": "2025-10-22",
+     "mark": "",
+     "rank": 3,
+     "value": 18.9
+    },
+    {
+     "date": "2022-10-27",
+     "mark": "",
+     "rank": 4,
+     "value": 18.9
+    },
+    {
+     "date": "2022-10-11",
+     "mark": "",
+     "rank": 5,
+     "value": 19.4
+    },
+    {
+     "date": "2023-10-21",
+     "mark": "",
+     "rank": 6,
+     "value": 19.6
+    },
+    {
+     "date": "2022-10-25",
+     "mark": "",
+     "rank": 7,
+     "value": 19.7
+    },
+    {
+     "date": "2022-10-24",
+     "mark": "",
+     "rank": 8,
+     "value": 19.9
+    },
+    {
+     "date": "2021-10-24",
+     "mark": "",
+     "rank": 9,
+     "value": 20.0
+    },
+    {
+     "date": "2021-10-22",
+     "mark": "",
+     "rank": 10,
+     "value": 20.2
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日最高気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-10-11",
+     "mark": "",
+     "rank": 1,
+     "value": 31.2
+    },
+    {
+     "date": "2024-10-18",
+     "mark": "",
+     "rank": 2,
+     "value": 30.8
+    },
+    {
+     "date": "2025-10-06",
+     "mark": "",
+     "rank": 3,
+     "value": 30.7
+    },
+    {
+     "date": "2021-10-05",
+     "mark": "",
+     "rank": 4,
+     "value": 30.7
+    },
+    {
+     "date": "2021-10-09",
+     "mark": "",
+     "rank": 5,
+     "value": 30.6
+    },
+    {
+     "date": "2025-10-08",
+     "mark": "",
+     "rank": 6,
+     "value": 30.5
+    },
+    {
+     "date": "2021-10-11",
+     "mark": "",
+     "rank": 7,
+     "value": 30.4
+    },
+    {
+     "date": "2021-10-10",
+     "mark": "",
+     "rank": 8,
+     "value": 30.4
+    },
+    {
+     "date": "2025-10-17",
+     "mark": "",
+     "rank": 9,
+     "value": 30.3
+    },
+    {
+     "date": "2025-10-12",
+     "mark": "",
+     "rank": 10,
+     "value": 30.2
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "日降水量(mm)": {
+   "entries": [
+    {
+     "date": "2024-10-22",
+     "mark": "",
+     "rank": 1,
+     "value": 41.5
+    },
+    {
+     "date": "2024-10-19",
+     "mark": "",
+     "rank": 2,
+     "value": 25.5
+    },
+    {
+     "date": "2023-10-08",
+     "mark": "",
+     "rank": 3,
+     "value": 25.5
+    },
+    {
+     "date": "2024-10-02",
+     "mark": "",
+     "rank": 4,
+     "value": 24.0
+    },
+    {
+     "date": "2026-10-21",
+     "mark": "",
+     "rank": 5,
+     "value": 17.5
+    },
+    {
+     "date": "2022-10-09",
+     "mark": "",
+     "rank": 6,
+     "value": 17.5
+    },
+    {
+     "date": "2025-10-03",
+     "mark": "",
+     "rank": 7,
+     "value": 12.0
+    },
+    {
+     "date": "2025-10-14",
+     "mark": "",
+     "rank": 8,
+     "value": 7.5
+    },
+    {
+     "date": "2026-10-13",
+     "mark": "",
+     "rank": 9,
+     "value": 6.5
+    },
+    {
+     "date": "2024-10-15",
+     "mark": "",
+     "rank": 10,
+     "value": 6.5
+    }
+   ],
+   "period": "2021/102026/10"
+  },
+  "月平均気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 1,
+     "value": 19.0
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 2,
+     "value": 19.2
+    },
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 3,
+     "value": 20.2
+    },
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 4,
+     "value": 21.9
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 5,
+     "value": 22.1
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  },
+  "月平均気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 1,
+     "value": 22.1
+    },
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 2,
+     "value": 21.9
+    },
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 3,
+     "value": 20.2
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 4,
+     "value": 19.2
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 5,
+     "value": 19.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  },
+  "月間日照時間の多い方から(h)": {
+   "entries": [
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 1,
+     "value": 235.1
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 2,
+     "value": 225.7
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 3,
+     "value": 219.5
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 4,
+     "value": 187.3
+    },
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 5,
+     "value": 133.9
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  },
+  "月間日照時間の少ない方から(h)": {
+   "entries": [
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 1,
+     "value": 133.9
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 2,
+     "value": 219.5
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 3,
+     "value": 225.7
+    },
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 4,
+     "value": 235.1
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  },
+  "月降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 1,
+     "value": 116.0
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 2,
+     "value": 33.5
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 3,
+     "value": 32.5
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 4,
+     "value": 32.0
+    },
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 5,
+     "value": 7.5
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  },
+  "月降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": "2021-10",
+     "mark": "",
+     "rank": 1,
+     "value": 7.5
+    },
+    {
+     "date": "2025-10",
+     "mark": "",
+     "rank": 2,
+     "value": 32.0
+    },
+    {
+     "date": "2023-10",
+     "mark": "",
+     "rank": 3,
+     "value": 32.5
+    },
+    {
+     "date": "2022-10",
+     "mark": "",
+     "rank": 4,
+     "value": 33.5
+    },
+    {
+     "date": "2024-10",
+     "mark": "",
+     "rank": 5,
+     "value": 116.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2021/102025/10"
+  }
+ },
+ "fetched_at": "2026-10-23T19:30:48+09:00",
+ "station": "西海（長崎県）",
+ "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1672&year=&month=10&day=&view=h0"
+}
