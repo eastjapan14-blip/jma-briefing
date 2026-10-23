@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"大雨・落雷・突風": {
-"近畿": "2026-10-23T02:20:23.551440+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261020065004_0_VPCJ50_040000.xml": "2026-10-20T07:00:39.059358+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020070247_0_VPCJ50_150000.xml": "2026-10-20T07:10:24.521381+00:00",
