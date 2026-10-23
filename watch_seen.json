@@ -1,9 +1,23 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261023015646_0_VPFJ50_473000.xml": {
+"author": "宮古島地方気象台",
+"content": "【宮古島地方気象解説情報（台風第３０号）】宮古島地方では暴風やうねりを伴う高波、土砂災害に厳重に警戒し、低い土地の浸水に警戒してください。特に、２３日昼過ぎから２４日明け方にかけて、線状降水帯が発生して大雨災害発生の危険度が急激に高まる可能性があります。",
+"held": "2026-10-23T02:00:42.125601+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-23T01:56:46Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261023015646_0_VPFJ50_473000.xml"
+}
+},
+"topics": {
+"台風第３０号": {
+"宮古島": "2026-10-23T02:00:42.125601+00:00"
+}
+},
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261020014322_0_VPFJ50_473000.xml": "2026-10-20T01:50:23.394552+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020020016_0_VPCJ50_150000.xml": "2026-10-20T02:10:21.814786+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020043235_0_VPZK50_010000.xml": "2026-10-20T04:40:24.136196+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261020065004_0_VPCJ50_040000.xml": "2026-10-20T07:00:39.059358+00:00",
@@ -109,6 +123,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261022201619_0_VPFJ50_474000.xml": "2026-10-22T20:20:23.111884+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022202023_0_VPFJ50_460040.xml": "2026-10-22T20:30:32.884108+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022202909_0_VPFJ50_473000.xml": "2026-10-22T20:30:32.884108+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261023015646_0_VPFJ50_473000.xml": "2026-10-23T02:00:42.125601+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
