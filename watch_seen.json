@@ -12,20 +12,30 @@
 "topic": "台風第３０号",
 "updated": "2026-10-24T19:40:43Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261024194043_0_VPFJ50_471000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261024200716_0_VPCJ50_460100.xml": {
+"author": "鹿児島地方気象台",
+"content": "【九州南部・奄美地方気象解説情報（台風第３０号）】台風第３０号は２６日に九州に接近する見込みです。九州南部では、強風やうねりを伴った高波、土砂災害、低い土地の浸水、河川の増水に十分注意してください。",
+"held": "2026-10-24T20:10:22.715375+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-24T20:07:16Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261024200716_0_VPCJ50_460100.xml"
 }
 },
 "topics": {
 "台風第３０号": {
+"九州南部・奄美": "2026-10-24T20:10:22.715375+00:00",
 "沖縄本島": "2026-10-24T19:49:03.829593+00:00"
 },
 "大雨": {
-"北陸": "2026-10-24T19:49:03.829593+00:00"
+"中国": "2026-10-24T20:10:22.715375+00:00",
+"北陸": "2026-10-24T19:49:03.829593+00:00",
+"東海": "2026-10-24T20:10:22.715375+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261021195338_0_VPCJ50_471000.xml": "2026-10-21T20:00:43.531371+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261021195535_0_VPCJ50_016000.xml": "2026-10-21T20:00:43.531371+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261021195709_0_VPFJ50_473000.xml": "2026-10-21T20:00:43.531371+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021200038_0_VPFJ50_471000.xml": "2026-10-21T20:10:25.790296+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021200526_0_VPCJ50_460100.xml": "2026-10-21T20:10:25.790296+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021200825_0_VPFJ50_460040.xml": "2026-10-21T20:10:25.790296+00:00",
@@ -161,6 +171,9 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261024141151_0_VPFJ50_474000.xml": "2026-10-24T14:20:22.625688+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024194043_0_VPFJ50_471000.xml": "2026-10-24T19:49:03.829593+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024194049_0_VPCJ50_150000.xml": "2026-10-24T19:49:03.829593+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261024195121_0_VPZJ50_010000.xml": "2026-10-24T20:00:36.201565+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261024195121_0_VPZJ50_010000.xml": "2026-10-24T20:00:36.201565+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261024200134_0_VPCJ50_340000.xml": "2026-10-24T20:10:22.715375+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261024200548_0_VPCJ50_230000.xml": "2026-10-24T20:10:22.715375+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261024200716_0_VPCJ50_460100.xml": "2026-10-24T20:10:22.715375+00:00"
 }
 }
