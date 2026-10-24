@@ -62,6 +62,16 @@
 "topic": "台風第３０号",
 "updated": "2026-10-24T02:28:24Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261024022825_0_VPFJ50_474000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261024023006_0_VPFJ50_473000.xml": {
+"author": "宮古島地方気象台",
+"content": "【宮古島地方気象解説情報（台風第３０号）】宮古島地方では、暴風警報から強風注意報に切り替えましたが、非常に強い風が続く見込みです。引き続きうねりを伴う高波や土砂災害に厳重に警戒し、強風に十分注意してください。",
+"held": "2026-10-24T02:40:22.972977+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-24T02:30:05Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261024023006_0_VPFJ50_473000.xml"
 }
 },
 "topics": {
@@ -70,12 +80,12 @@
 "佐賀": "2026-10-24T02:10:24.244634+00:00",
 "八重山": "2026-10-24T02:30:30.034076+00:00",
 "奄美": "2026-10-24T02:10:24.244634+00:00",
+"宮古島": "2026-10-24T02:40:22.972977+00:00",
 "沖縄": "2026-10-24T02:10:24.244634+00:00",
 "長崎": "2026-10-24T02:10:24.244634+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261021022930_0_VPFJ50_474000.xml": "2026-10-21T02:40:22.667764+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021024630_0_VXKO55_050000.xml": "2026-10-21T02:50:24.089709+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021065119_0_VPCJ50_016000.xml": "2026-10-21T07:00:41.417735+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021065519_0_VXKO55_050000.xml": "2026-10-21T07:00:41.417735+00:00",
@@ -214,6 +224,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261024020703_0_VPCJ50_471000.xml": "2026-10-24T02:10:24.244634+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024021626_0_VPZJ50_010000.xml": "2026-10-24T02:20:21.462260+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024022825_0_VPFJ50_474000.xml": "2026-10-24T02:30:30.034076+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261024023006_0_VPFJ50_473000.xml": "2026-10-24T02:40:22.972977+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
