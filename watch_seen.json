@@ -12,16 +12,25 @@
 "topic": "土砂災害警戒情報",
 "updated": "2026-10-24T01:17:27Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261024011729_0_VXWW50_474000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261024015600_0_VPCJ50_460100.xml": {
+"author": "鹿児島地方気象台",
+"content": "【九州南部・奄美地方気象解説情報（台風第３０号）】奄美地方の沿岸の海域では、２４日夕方にかけてうねりを伴った高波に警戒してください。",
+"held": "2026-10-24T02:00:38.291223+00:00",
+"tier": "B",
+"title": "地方気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-24T01:56:00Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261024015600_0_VPCJ50_460100.xml"
 }
 },
 "topics": {
 "台風第３０号": {
+"九州南部・奄美": "2026-10-24T02:00:38.291223+00:00",
 "熊本": "2026-10-23T23:08:23.244995+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261021014536_0_VPCJ50_016000.xml": "2026-10-21T01:50:22.617871+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261021015923_0_VPFJ50_014100.xml": "2026-10-21T02:00:37.816074+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021020526_0_VPFJ50_017000.xml": "2026-10-21T02:10:25.967379+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021021139_0_VPCJ50_471000.xml": "2026-10-21T02:20:24.928117+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261021021227_0_VPFJ50_015000.xml": "2026-10-21T02:20:24.928117+00:00",
@@ -158,6 +167,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261023230033_0_VPFJ50_430000.xml": "2026-10-23T23:08:23.244995+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024011729_0_VXWW50_474000.xml": "2026-10-24T01:20:22.293819+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024012850_0_VPBS50_474000.xml": "2026-10-24T01:30:31.618342+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261024015600_0_VPCJ50_460100.xml": "2026-10-24T02:00:38.291223+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
