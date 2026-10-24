@@ -1,5 +1,7 @@
 {
-"bodies": {},
+"bodies": {
+"気象庁|沖縄県石垣島地方では、今後３時間以内に線状降水帯が発生し、非常に激しい雨が同じ場所で降り続く可能性が高まっています。命に危険が及ぶ災害発生の危険度が急激に高まるおそれがあります。": "2026-10-24T01:30:31.618342+00:00"
+},
 "pending": {
 "https://www.data.jma.go.jp/developer/xml/data/20261024011729_0_VXWW50_474000.xml": {
 "author": "石垣島地方気象台",
@@ -155,6 +157,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261023215218_0_VPFJ50_430000.xml": "2026-10-23T22:00:39.347841+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261023230033_0_VPFJ50_430000.xml": "2026-10-23T23:08:23.244995+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024011729_0_VXWW50_474000.xml": "2026-10-24T01:20:22.293819+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261024012850_0_VPBS50_474000.xml": "2026-10-24T01:30:31.618342+00:00",
 "https://www.youtube.com/watch?v=8tIkSjJqngw": "2026-10-21T11:00:44.553035+00:00"
 }
 }
