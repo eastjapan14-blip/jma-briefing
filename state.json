@@ -485,7 +485,7 @@
    "first_seen": "2026-10-24T06:40:24+09:00",
    "flag": 10,
    "id": "pre1h:53326:2026-10-24",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2021-09-26",
    "latitude": 34.2083,
    "local_rank": 2,
@@ -859,7 +859,7 @@
    "first_seen": "2026-10-25T10:00:38+09:00",
    "flag": 10,
    "id": "pre1h:65042:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2009-11-11",
    "latitude": 34.2283,
    "local_rank": 4,
@@ -954,7 +954,7 @@
    "first_seen": "2026-10-25T12:20:22+09:00",
    "flag": 10,
    "id": "pre1h:65106:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2025-07-17",
    "latitude": 34.035,
    "local_rank": null,
@@ -1018,7 +1018,7 @@
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "12:00",
+   "time": "12:05",
    "top3": [
     [
      1,
@@ -1037,19 +1037,19 @@
     ]
    ],
    "unit": "mm",
-   "value": 64.0,
+   "value": 68.0,
    "years_since": 1
   },
   "pre1h:65121:2026-10-25": {
    "date": "2026-10-25",
    "elevation": 240,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-10-25T12:30:46+09:00",
    "first_seen": "2026-10-25T12:20:22+09:00",
    "flag": 10,
    "id": "pre1h:65121:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-10-25T12:30:30+09:00",
+   "last_stricter_date": "2024-11-02",
    "latitude": 34.0867,
    "local_rank": null,
    "local_tie": false,
@@ -1057,8 +1057,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "pre1h",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     38.0,
+     "2004-10-20"
+    ],
+    [
+     2,
+     35.0,
+     "2011-10-15"
+    ],
+    [
+     3,
+     33.0,
+     "2012-10-17"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "有田郡有田川町",
    "name": "清水",
    "notifiable": true,
@@ -1067,7 +1086,10 @@
    "notify_count": 1,
    "pref": "和歌山県",
    "pref_full": "和歌山県",
-   "prev": null,
+   "prev": {
+    "date": "2023-06-02",
+    "value": 70.0
+   },
    "prev_monthly": {
     "date": "2004-10-20",
     "value": 38.0
@@ -1077,23 +1099,40 @@
    "remark": "タイ記録",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=65&block_no=1063&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "65121",
-   "stats_period": null,
+   "stats_period": "1976/12026/10",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
-    "MONTHLY_1ST_TIE",
+    "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "12:00",
-   "top3": [],
+   "time": "12:10",
+   "top3": [
+    [
+     1,
+     70.0,
+     "2023-06-02"
+    ],
+    [
+     2,
+     69.0,
+     "2016-09-28"
+    ],
+    [
+     3,
+     67.0,
+     "2007-08-23"
+    ]
+   ],
    "unit": "mm",
-   "value": 38.0,
-   "years_since": null
+   "value": 41.0,
+   "years_since": 2
   },
   "pre1h:65256:2026-10-20": {
    "date": "2026-10-20",
@@ -1196,7 +1235,7 @@
    "first_seen": "2026-10-25T06:40:22+09:00",
    "flag": 10,
    "id": "pre1h:71192:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2026-09-08",
    "latitude": 33.87,
    "local_rank": 5,
@@ -3726,7 +3765,7 @@
    "first_seen": "2026-10-25T02:50:22+09:00",
    "flag": 10,
    "id": "pre24h:56401:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": null,
    "latitude": 37.85,
    "local_rank": null,
@@ -3770,10 +3809,10 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "12:00",
+   "time": "12:10",
    "top3": [],
    "unit": "mm",
-   "value": 140.5,
+   "value": 141.0,
    "years_since": null
   },
   "pre24h:64262:2026-10-24": {
@@ -3958,7 +3997,7 @@
    "first_seen": "2026-10-25T02:20:24+09:00",
    "flag": 10,
    "id": "pre24h:84012:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": null,
    "latitude": 34.6983,
    "local_rank": null,
@@ -4017,7 +4056,7 @@
    "first_seen": "2026-10-24T15:50:23+09:00",
    "flag": 10,
    "id": "pre24h:84076:2026-10-24",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": null,
    "latitude": 34.285,
    "local_rank": null,
@@ -4076,7 +4115,7 @@
    "first_seen": "2026-10-25T00:30:30+09:00",
    "flag": 10,
    "id": "pre24h:84076:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": null,
    "latitude": 34.285,
    "local_rank": null,
@@ -4605,7 +4644,7 @@
    "first_seen": "2026-10-24T09:50:24+09:00",
    "flag": 13,
    "id": "pre24h:94062:2026-10-24",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": null,
    "latitude": 24.4267,
    "local_rank": null,
@@ -7385,7 +7424,7 @@
    "first_seen": "2026-10-25T05:20:24+09:00",
    "flag": 10,
    "id": "preday:56401:2026-10-25",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2025-08-06",
    "latitude": 37.85,
    "local_rank": 8,
@@ -7572,7 +7611,7 @@
    "first_seen": "2026-10-25T00:20:22+09:00",
    "flag": 10,
    "id": "preday:84012:2026-10-24",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2023-08-31",
    "latitude": 34.6983,
    "local_rank": null,
@@ -7666,7 +7705,7 @@
    "first_seen": "2026-10-24T16:20:22+09:00",
    "flag": 10,
    "id": "preday:84076:2026-10-24",
-   "last_seen": "2026-10-25T12:20:22+09:00",
+   "last_seen": "2026-10-25T12:30:30+09:00",
    "last_stricter_date": "2022-07-18",
    "latitude": 34.285,
    "local_rank": 6,
@@ -7844,6 +7883,99 @@
    ],
    "unit": "mm",
    "value": 64.5,
+   "years_since": 0
+  },
+  "preday:84306:2026-10-25": {
+   "date": "2026-10-25",
+   "elevation": 18,
+   "enrich_pending": false,
+   "enriched_at": "2026-10-25T12:30:46+09:00",
+   "first_seen": "2026-10-25T12:30:30+09:00",
+   "flag": 10,
+   "id": "preday:84306:2026-10-25",
+   "last_seen": "2026-10-25T12:30:30+09:00",
+   "last_stricter_date": "2026-07-05",
+   "latitude": 33.0133,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 129.6517,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "preday",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     41.5,
+     "2024-10-22"
+    ],
+    [
+     2,
+     25.5,
+     "2024-10-19"
+    ],
+    [
+     3,
+     25.5,
+     "2023-10-08"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "西海",
+   "notifiable": true,
+   "notified_at": "2026-10-25T12:30:30+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "長崎県",
+   "pref_full": "長崎県",
+   "prev": {
+    "date": "2021-08-14",
+    "value": 261.0
+   },
+   "prev_monthly": {
+    "date": "2026-10-23",
+    "value": 65.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": true,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1672&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "84306",
+   "stats_period": "2021/32026/10",
+   "stats_start": 2021,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "SHORT_STATS"
+   ],
+   "time": null,
+   "top3": [
+    [
+     1,
+     261.0,
+     "2021-08-14"
+    ],
+    [
+     2,
+     195.5,
+     "2026-06-25"
+    ],
+    [
+     3,
+     192.0,
+     "2021-08-13"
+    ]
+   ],
+   "unit": "mm",
+   "value": 66.0,
    "years_since": 0
   },
   "preday:93012:2026-10-22": {
@@ -9646,44 +9778,44 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-25T12:20:22+09:00",
- "runs": 4957,
+ "last_run": "2026-10-25T12:30:30+09:00",
+ "runs": 4958,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 25 Oct 2026 01:48:29 GMT",
-   "last_success": "2026-10-25T11:30:31+09:00",
-   "source_time": "2026-10-25T10:00"
+   "last_modified": "Sun, 25 Oct 2026 02:48:28 GMT",
+   "last_success": "2026-10-25T12:30:32+09:00",
+   "source_time": "2026-10-25T11:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 25 Oct 2026 01:48:29 GMT",
-   "last_success": "2026-10-25T11:30:30+09:00",
-   "source_time": "2026-10-25T10:00"
+   "last_modified": "Sun, 25 Oct 2026 02:48:28 GMT",
+   "last_success": "2026-10-25T12:30:31+09:00",
+   "source_time": "2026-10-25T11:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 25 Oct 2026 03:10:48 GMT",
-   "last_success": "2026-10-25T12:20:23+09:00",
-   "source_time": "2026-10-25T11:50"
+   "last_modified": "Sun, 25 Oct 2026 03:20:43 GMT",
+   "last_success": "2026-10-25T12:30:34+09:00",
+   "source_time": "2026-10-25T12:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 25 Oct 2026 03:10:44 GMT",
-   "last_success": "2026-10-25T12:20:24+09:00",
-   "source_time": "2026-10-25T11:50"
+   "last_modified": "Sun, 25 Oct 2026 03:20:40 GMT",
+   "last_success": "2026-10-25T12:30:35+09:00",
+   "source_time": "2026-10-25T12:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 25 Oct 2026 03:10:45 GMT",
-   "last_success": "2026-10-25T11:30:36+09:00",
-   "source_time": "2026-10-25T11:00"
+   "last_modified": "Sun, 25 Oct 2026 03:20:40 GMT",
+   "last_success": "2026-10-25T12:30:37+09:00",
+   "source_time": "2026-10-25T12:00"
   },
   "snc00": {},
   "snd24h00": {}
