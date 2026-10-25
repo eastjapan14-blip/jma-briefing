@@ -33,7 +33,7 @@
 },
 "大雨": {
 "和歌山": "2026-10-25T02:50:22.694328+00:00",
-"近畿": "2026-10-25T02:40:22.591994+00:00"
+"近畿": "2026-10-25T03:10:21.066956+00:00"
 }
 },
 "urls": {
@@ -188,6 +188,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261025023306_0_VXWW50_300000.xml": "2026-10-25T02:40:22.591994+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025023532_0_VPFJ50_400000.xml": "2026-10-25T02:40:22.591994+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025023940_0_VPCJ50_270000.xml": "2026-10-25T02:40:22.591994+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025024832_0_VPFJ50_300000.xml": "2026-10-25T02:50:22.694328+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261025024832_0_VPFJ50_300000.xml": "2026-10-25T02:50:22.694328+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261025030425_0_VPCJ50_270000.xml": "2026-10-25T03:10:21.066956+00:00"
 }
 }
