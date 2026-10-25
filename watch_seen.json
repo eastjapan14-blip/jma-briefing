@@ -23,16 +23,25 @@
 "topic": "土砂災害警戒情報",
 "updated": "2026-10-25T02:06:58Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261025020700_0_VXWW50_300000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261025022705_0_VPFJ50_350000.xml": {
+"author": "下関地方気象台",
+"content": "【山口県気象解説情報（台風第３０号）】山口県では、２６日未明から夕方にかけて土砂災害、低い土地の浸水、河川の増水に注意・警戒してください。日本海側の海上では、２６日明け方から朝にかけて暴風に注意・警戒してください。また、２６日夕方にかけて落雷や竜巻などの激しい突風に注意してください。",
+"held": "2026-10-25T02:30:30.346875+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３０号",
+"updated": "2026-10-25T02:27:05Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261025022705_0_VPFJ50_350000.xml"
 }
 },
 "topics": {
 "台風第３０号": {
+"山口": "2026-10-25T02:30:30.346875+00:00",
 "鹿児島": "2026-10-25T02:00:37.354703+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261022021628_0_VPCJ50_471000.xml": "2026-10-22T02:20:23.566322+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261022021649_0_VPFJ50_473000.xml": "2026-10-22T02:20:23.566322+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022022631_0_VPFJ50_474000.xml": "2026-10-22T02:30:31.398727+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022034310_0_VPFJ50_017000.xml": "2026-10-22T03:50:23.418424+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261022051004_0_VPZK50_010000.xml": "2026-10-22T05:20:24.613108+00:00",
@@ -180,6 +189,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261024211927_0_VPFJ50_400000.xml": "2026-10-24T21:20:22.138359+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025015312_0_VPFJ50_460100.xml": "2026-10-25T02:00:37.354703+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025015853_0_VPBS50_300000.xml": "2026-10-25T02:00:37.354703+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025020700_0_VXWW50_300000.xml": "2026-10-25T02:10:21.595770+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261025020700_0_VXWW50_300000.xml": "2026-10-25T02:10:21.595770+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261025022705_0_VPFJ50_350000.xml": "2026-10-25T02:30:30.346875+00:00"
 }
 }
