@@ -4,7 +4,11 @@
 "気象庁|沖縄県石垣島地方では、今後３時間以内に線状降水帯が発生し、非常に激しい雨が同じ場所で降り続く可能性が高まっています。命に危険が及ぶ災害発生の危険度が急激に高まるおそれがあります。": "2026-10-24T01:30:31.618342+00:00"
 },
 "pending": {},
-"topics": {},
+"topics": {
+"大雨": {
+"近畿": "2026-10-26T07:00:39.931160+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261023065930_0_VPCJ50_270000.xml": "2026-10-23T07:00:42.656196+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261023070138_0_VPCJ50_150000.xml": "2026-10-23T07:10:23.624565+00:00",
@@ -161,6 +165,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261026021233_0_VPZJ50_010000.xml": "2026-10-26T02:20:22.200790+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261026022026_0_VPCJ50_400000.xml": "2026-10-26T02:30:29.594793+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261026022511_0_VPFJ50_400000.xml": "2026-10-26T02:30:29.594793+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261026023942_0_VPFJ50_420000.xml": "2026-10-26T02:40:22.206263+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261026023942_0_VPFJ50_420000.xml": "2026-10-26T02:40:22.206263+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261026065123_0_VPCJ50_270000.xml": "2026-10-26T07:00:39.931160+00:00"
 }
 }
