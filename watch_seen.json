@@ -6,6 +6,7 @@
 "pending": {},
 "topics": {
 "大雨": {
+"東海": "2026-10-26T07:30:31.437381+00:00",
 "近畿": "2026-10-26T07:00:39.931160+00:00",
 "関東甲信": "2026-10-26T07:10:22.085404+00:00"
 },
@@ -170,6 +171,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261026023942_0_VPFJ50_420000.xml": "2026-10-26T02:40:22.206263+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261026065123_0_VPCJ50_270000.xml": "2026-10-26T07:00:39.931160+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261026070134_0_VPCJ50_130000.xml": "2026-10-26T07:10:22.085404+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261026070626_0_VPCJ50_016000.xml": "2026-10-26T07:10:22.085404+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261026070626_0_VPCJ50_016000.xml": "2026-10-26T07:10:22.085404+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261026072340_0_VPCJ50_230000.xml": "2026-10-26T07:30:31.437381+00:00"
 }
 }
