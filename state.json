@@ -4358,7 +4358,7 @@
    "first_seen": "2026-10-26T01:50:23+09:00",
    "flag": 10,
    "id": "pre24h:82036:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.8633,
    "local_rank": null,
@@ -4417,7 +4417,7 @@
    "first_seen": "2026-10-26T01:10:23+09:00",
    "flag": 10,
    "id": "pre24h:82171:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.56,
    "local_rank": null,
@@ -4771,7 +4771,7 @@
    "first_seen": "2026-10-26T00:40:22+09:00",
    "flag": 10,
    "id": "pre24h:84171:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.36,
    "local_rank": null,
@@ -4889,7 +4889,7 @@
    "first_seen": "2026-10-26T00:40:22+09:00",
    "flag": 10,
    "id": "pre24h:84183:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.3417,
    "local_rank": null,
@@ -5242,7 +5242,7 @@
    "first_seen": "2026-10-26T00:40:22+09:00",
    "flag": 10,
    "id": "pre24h:84536:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 32.6933,
    "local_rank": null,
@@ -5360,7 +5360,7 @@
    "first_seen": "2026-10-26T00:40:22+09:00",
    "flag": 10,
    "id": "pre24h:84537:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 32.665,
    "local_rank": null,
@@ -5419,7 +5419,7 @@
    "first_seen": "2026-10-26T02:00:39+09:00",
    "flag": 10,
    "id": "pre24h:85033:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.4583,
    "local_rank": null,
@@ -5478,7 +5478,7 @@
    "first_seen": "2026-10-26T05:30:30+09:00",
    "flag": 10,
    "id": "pre24h:85046:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.4133,
    "local_rank": null,
@@ -5537,7 +5537,7 @@
    "first_seen": "2026-10-26T02:00:39+09:00",
    "flag": 10,
    "id": "pre24h:85116:2026-10-26",
-   "last_seen": "2026-10-27T23:20:25+09:00",
+   "last_seen": "2026-10-27T23:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 33.2667,
    "local_rank": null,
@@ -11647,8 +11647,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-10-27T23:20:25+09:00",
- "runs": 5323,
+ "last_run": "2026-10-27T23:30:35+09:00",
+ "runs": 5324,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -11668,23 +11668,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 27 Oct 2026 14:00:45 GMT",
-   "last_success": "2026-10-27T23:10:31+09:00",
-   "source_time": "2026-10-27T22:40"
+   "last_modified": "Tue, 27 Oct 2026 14:20:44 GMT",
+   "last_success": "2026-10-27T23:30:36+09:00",
+   "source_time": "2026-10-27T23:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 27 Oct 2026 14:00:43 GMT",
-   "last_success": "2026-10-27T23:10:32+09:00",
-   "source_time": "2026-10-27T22:40"
+   "last_modified": "Tue, 27 Oct 2026 14:20:42 GMT",
+   "last_success": "2026-10-27T23:30:37+09:00",
+   "source_time": "2026-10-27T23:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 27 Oct 2026 14:00:43 GMT",
-   "last_success": "2026-10-27T22:30:36+09:00",
-   "source_time": "2026-10-27T22:00"
+   "last_modified": "Tue, 27 Oct 2026 14:20:43 GMT",
+   "last_success": "2026-10-27T23:30:39+09:00",
+   "source_time": "2026-10-27T23:00"
   },
   "snc00": {},
   "snd24h00": {}
