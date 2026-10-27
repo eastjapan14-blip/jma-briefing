@@ -6,13 +6,11 @@
 "topics": {
 "暴風・高波・落雷": {
 "北海道": "2026-10-27T20:10:22.718380+00:00",
+"宗谷": "2026-10-27T20:30:31.681177+00:00",
 "東北": "2026-10-27T20:10:22.718380+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261024201528_0_VPZJ50_010000.xml": "2026-10-24T20:20:25.938052+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261024201853_0_VPFJ50_460040.xml": "2026-10-24T20:20:25.938052+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261024202055_0_VPCJ50_400000.xml": "2026-10-24T20:30:30.985789+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024203404_0_VPCJ50_370000.xml": "2026-10-24T20:40:24.262377+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024203419_0_VPFJ50_350000.xml": "2026-10-24T20:40:24.262377+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024203910_0_VPFJ50_430000.xml": "2026-10-24T20:40:24.262377+00:00",
@@ -101,6 +99,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261027074441_0_VPFJ50_015000.xml": "2026-10-27T07:50:23.572751+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261027074824_0_VPFJ50_017000.xml": "2026-10-27T07:50:23.572751+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261027200016_0_VPCJ50_040000.xml": "2026-10-27T20:10:22.718380+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261027200021_0_VPCJ50_016000.xml": "2026-10-27T20:10:22.718380+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261027200021_0_VPCJ50_016000.xml": "2026-10-27T20:10:22.718380+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261027202721_0_VPFJ50_011000.xml": "2026-10-27T20:30:31.681177+00:00"
 }
 }
