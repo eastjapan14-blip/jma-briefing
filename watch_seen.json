@@ -3,9 +3,12 @@
 "気象庁|和歌山県北部では、今後３時間以内に線状降水帯が発生し、非常に激しい雨が同じ場所で降り続く可能性が高まっています。命に危険が及ぶ災害発生の危険度が急激に高まるおそれがあります。": "2026-10-25T02:00:37.354703+00:00"
 },
 "pending": {},
-"topics": {},
+"topics": {
+"暴風・高波": {
+"胆振・日高": "2026-10-27T02:30:31.829188+00:00"
+}
+},
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261024022825_0_VPFJ50_474000.xml": "2026-10-24T02:30:30.034076+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024023006_0_VPFJ50_473000.xml": "2026-10-24T02:40:22.972977+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024045940_0_VPFJ50_474000.xml": "2026-10-24T05:10:22.722770+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261024070014_0_VPCJ50_340000.xml": "2026-10-24T07:10:24.325655+00:00",
@@ -121,6 +124,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261026203934_0_VPFJ50_050000.xml": "2026-10-26T20:40:23.631910+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261026203938_0_VPFJ50_060000.xml": "2026-10-26T20:40:23.631910+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261026215215_0_VPFJ50_012000.xml": "2026-10-26T22:00:36.477804+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261026224917_0_VPFJ50_017000.xml": "2026-10-26T22:50:22.667217+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261026224917_0_VPFJ50_017000.xml": "2026-10-26T22:50:22.667217+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261027022346_0_VPFJ50_015000.xml": "2026-10-27T02:30:31.829188+00:00"
 }
 }
