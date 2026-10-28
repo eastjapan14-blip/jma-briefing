@@ -5851,7 +5851,7 @@
    "first_seen": "2026-10-28T09:00:41+09:00",
    "flag": 10,
    "id": "tmin:23376:2026-10-28",
-   "last_seen": "2026-10-29T02:30:33+09:00",
+   "last_seen": "2026-10-29T02:40:26+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 41.4233,
    "local_rank": null,
@@ -5945,7 +5945,7 @@
    "first_seen": "2026-10-28T07:00:39+09:00",
    "flag": 10,
    "id": "tmin:24101:2026-10-28",
-   "last_seen": "2026-10-29T02:30:33+09:00",
+   "last_seen": "2026-10-29T02:40:26+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.2483,
    "local_rank": null,
@@ -6039,7 +6039,7 @@
    "first_seen": "2026-10-28T06:20:23+09:00",
    "flag": 10,
    "id": "tmin:24156:2026-10-28",
-   "last_seen": "2026-10-29T02:30:33+09:00",
+   "last_seen": "2026-10-29T02:40:26+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.0717,
    "local_rank": null,
@@ -6217,25 +6217,118 @@
    "unit": "℃",
    "value": 2.6,
    "years_since": 0
+  },
+  "tmin:41172:2026-10-29": {
+   "date": "2026-10-29",
+   "elevation": 561,
+   "enrich_pending": false,
+   "enriched_at": "2026-10-29T02:40:38+09:00",
+   "first_seen": "2026-10-29T02:40:26+09:00",
+   "flag": 10,
+   "id": "tmin:41172:2026-10-29",
+   "last_seen": "2026-10-29T02:40:26+09:00",
+   "last_stricter_date": "2026-02-09",
+   "latitude": 36.75,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.615,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "tmin",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     3.5,
+     "2025-10-29"
+    ],
+    [
+     2,
+     3.9,
+     "2025-10-30"
+    ],
+    [
+     3,
+     4.5,
+     "2025-10-24"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "日光東町",
+   "notifiable": true,
+   "notified_at": "2026-10-29T02:40:26+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "栃木県",
+   "pref_full": "栃木県",
+   "prev": {
+    "date": "2023-01-26",
+    "value": -10.0
+   },
+   "prev_monthly": {
+    "date": "2026-10-28",
+    "value": 2.6
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": true,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=41&block_no=1675&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "41172",
+   "stats_period": "2022/112026/10",
+   "stats_start": 2022,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "SHORT_STATS"
+   ],
+   "time": "01:00",
+   "top3": [
+    [
+     1,
+     -10.0,
+     "2023-01-26"
+    ],
+    [
+     2,
+     -10.0,
+     "2023-01-25"
+    ],
+    [
+     3,
+     -8.4,
+     "2026-02-08"
+    ]
+   ],
+   "unit": "℃",
+   "value": 2.5,
+   "years_since": 0
   }
  },
- "last_run": "2026-10-29T02:30:33+09:00",
- "runs": 5491,
+ "last_run": "2026-10-29T02:40:26+09:00",
+ "runs": 5492,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 15:49:58 GMT",
-   "last_success": "2026-10-29T01:40:28+09:00",
-   "source_time": "2026-10-28T24:00"
+   "last_modified": "Wed, 28 Oct 2026 16:46:02 GMT",
+   "last_success": "2026-10-29T02:40:27+09:00",
+   "source_time": "2026-10-29T01:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 15:49:57 GMT",
-   "last_success": "2026-10-29T01:40:27+09:00",
-   "source_time": "2026-10-28T24:00"
+   "last_modified": "Wed, 28 Oct 2026 16:46:01 GMT",
+   "last_success": "2026-10-29T02:40:26+09:00",
+   "source_time": "2026-10-29T01:00"
   },
   "pre1h00": {
    "etag": "",
