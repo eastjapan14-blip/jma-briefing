@@ -1,20 +1,12 @@
 {
 "bodies": {},
-"pending": {
-"https://www.data.jma.go.jp/developer/xml/data/20261028073349_0_VPFJ50_016000.xml": {
-"author": "札幌管区気象台",
-"content": "【石狩・空知・後志地方気象解説情報（暴風・高波・落雷）】石狩・空知・後志地方では、２９日明け方にかけて強風に、２９日朝にかけて高波に注意してください。",
-"held": "2026-10-28T07:40:23.896263+00:00",
-"tier": "B",
-"title": "府県気象情報",
-"topic": "暴風・高波・落雷",
-"updated": "2026-10-28T07:33:48Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20261028073349_0_VPFJ50_016000.xml"
-}
-},
+"pending": {},
 "topics": {
 "暴風": {
 "胆振・日高": "2026-10-28T07:40:23.896263+00:00"
+},
+"暴風・高波・大雪": {
+"上川・留萌": "2026-10-28T08:00:43.011150+00:00"
 },
 "暴風・高波・落雷": {
 "北海道": "2026-10-28T07:10:24.583282+00:00",
@@ -24,10 +16,6 @@
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261025074836_0_VPZJ50_010000.xml": "2026-10-25T07:50:22.588173+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025075137_0_VPCJ50_460100.xml": "2026-10-25T08:00:38.545387+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025075149_0_VPCJ50_370000.xml": "2026-10-25T08:00:38.545387+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025075222_0_VPFJ50_460100.xml": "2026-10-25T08:00:38.545387+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025080049_0_VPCJ50_400000.xml": "2026-10-25T08:10:21.717802+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025080148_0_VPFJ50_350000.xml": "2026-10-25T08:10:21.717802+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025080150_0_VPFJ50_420000.xml": "2026-10-25T08:10:21.717802+00:00",
@@ -96,6 +84,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261028071342_0_VPCJ50_040000.xml": "2026-10-28T07:20:25.158053+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261028073019_0_VPFJ50_050000.xml": "2026-10-28T07:40:23.896263+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261028073123_0_VPFJ50_015000.xml": "2026-10-28T07:40:23.896263+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261028073349_0_VPFJ50_016000.xml": "2026-10-28T07:40:23.896263+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261028073349_0_VPFJ50_016000.xml": "2026-10-28T07:40:23.896263+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261028075152_0_VPFJ50_012000.xml": "2026-10-28T08:00:43.011150+00:00"
 }
 }
