@@ -350,12 +350,13 @@
   "tmin:北海道:2026-10-28": {
    "date": "2026-10-28",
    "members": [
+    "23376",
     "24101",
     "24156"
    ],
    "metric": "tmin",
-   "notified_at": "2026-10-28T07:00:39+09:00",
-   "notified_members": 2,
+   "notified_at": "2026-10-28T09:00:41+09:00",
+   "notified_members": 3,
    "pref": "北海道"
   }
  },
@@ -11168,6 +11169,61 @@
    "value": 33.6,
    "years_since": 0
   },
+  "tmin:23376:2026-10-28": {
+   "date": "2026-10-28",
+   "elevation": 30,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-28T09:00:41+09:00",
+   "flag": 10,
+   "id": "tmin:23376:2026-10-28",
+   "last_seen": "2026-10-28T09:00:41+09:00",
+   "last_stricter_date": null,
+   "latitude": 41.4233,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 140.0867,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "tmin",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "松前郡松前町",
+   "name": "松前",
+   "notifiable": true,
+   "notified_at": "2026-10-28T09:00:41+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "北海道",
+   "pref_full": "北海道 渡島地方",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2004-10-26",
+    "value": 2.7
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "23376",
+   "stats_period": null,
+   "stats_start": 1977,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "08:24",
+   "top3": [],
+   "unit": "℃",
+   "value": 2.0,
+   "years_since": null
+  },
   "tmin:24101:2026-10-28": {
    "date": "2026-10-28",
    "elevation": 5,
@@ -11176,7 +11232,7 @@
    "first_seen": "2026-10-28T07:00:39+09:00",
    "flag": 10,
    "id": "tmin:24101:2026-10-28",
-   "last_seen": "2026-10-28T08:50:22+09:00",
+   "last_seen": "2026-10-28T09:00:41+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.2483,
    "local_rank": null,
@@ -11209,7 +11265,7 @@
    "muni": "奥尻郡奥尻町",
    "name": "奥尻",
    "notifiable": true,
-   "notified_at": "2026-10-28T07:00:39+09:00",
+   "notified_at": "2026-10-28T09:00:41+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "北海道",
@@ -11270,7 +11326,7 @@
    "first_seen": "2026-10-28T06:20:23+09:00",
    "flag": 10,
    "id": "tmin:24156:2026-10-28",
-   "last_seen": "2026-10-28T08:50:22+09:00",
+   "last_seen": "2026-10-28T09:00:41+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.0717,
    "local_rank": null,
@@ -11303,7 +11359,7 @@
    "muni": "奥尻郡奥尻町",
    "name": "米岡",
    "notifiable": true,
-   "notified_at": "2026-10-28T07:00:39+09:00",
+   "notified_at": "2026-10-28T09:00:41+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "北海道",
@@ -11357,8 +11413,8 @@
    "years_since": 3
   }
  },
- "last_run": "2026-10-28T08:50:22+09:00",
- "runs": 5382,
+ "last_run": "2026-10-28T09:00:41+09:00",
+ "runs": 5383,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -11378,21 +11434,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 27 Oct 2026 23:40:47 GMT",
-   "last_success": "2026-10-28T08:50:22+09:00",
-   "source_time": "2026-10-28T08:20"
+   "last_modified": "Tue, 27 Oct 2026 23:50:40 GMT",
+   "last_success": "2026-10-28T09:00:41+09:00",
+   "source_time": "2026-10-28T08:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 27 Oct 2026 23:40:45 GMT",
-   "last_success": "2026-10-28T08:50:24+09:00",
-   "source_time": "2026-10-28T08:20"
+   "last_modified": "Tue, 27 Oct 2026 23:50:37 GMT",
+   "last_success": "2026-10-28T09:00:42+09:00",
+   "source_time": "2026-10-28T08:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 27 Oct 2026 23:40:45 GMT",
+   "last_modified": "Tue, 27 Oct 2026 23:50:37 GMT",
    "last_success": "2026-10-28T08:30:35+09:00",
    "source_time": "2026-10-28T08:00"
   },
