@@ -5851,7 +5851,7 @@
    "first_seen": "2026-10-28T09:00:41+09:00",
    "flag": 10,
    "id": "tmin:23376:2026-10-28",
-   "last_seen": "2026-10-29T04:30:34+09:00",
+   "last_seen": "2026-10-29T04:40:25+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 41.4233,
    "local_rank": null,
@@ -5945,7 +5945,7 @@
    "first_seen": "2026-10-28T07:00:39+09:00",
    "flag": 10,
    "id": "tmin:24101:2026-10-28",
-   "last_seen": "2026-10-29T04:30:34+09:00",
+   "last_seen": "2026-10-29T04:40:25+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.2483,
    "local_rank": null,
@@ -6039,7 +6039,7 @@
    "first_seen": "2026-10-28T06:20:23+09:00",
    "flag": 10,
    "id": "tmin:24156:2026-10-28",
-   "last_seen": "2026-10-29T04:30:34+09:00",
+   "last_seen": "2026-10-29T04:40:25+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.0717,
    "local_rank": null,
@@ -6222,11 +6222,11 @@
    "date": "2026-10-29",
    "elevation": 561,
    "enrich_pending": false,
-   "enriched_at": "2026-10-29T03:40:36+09:00",
+   "enriched_at": "2026-10-29T04:40:37+09:00",
    "first_seen": "2026-10-29T02:40:26+09:00",
    "flag": 10,
    "id": "tmin:41172:2026-10-29",
-   "last_seen": "2026-10-29T03:40:24+09:00",
+   "last_seen": "2026-10-29T04:40:25+09:00",
    "last_stricter_date": "2026-02-09",
    "latitude": 36.75,
    "local_rank": null,
@@ -6289,7 +6289,7 @@
     "MONTHLY_1ST",
     "SHORT_STATS"
    ],
-   "time": "01:48",
+   "time": "03:00",
    "top3": [
     [
      1,
@@ -6308,7 +6308,7 @@
     ]
    ],
    "unit": "℃",
-   "value": 2.4,
+   "value": 2.3,
    "years_since": 0
   },
   "tmin:55151:2026-10-29": {
@@ -6319,7 +6319,7 @@
    "first_seen": "2026-10-29T03:40:24+09:00",
    "flag": 10,
    "id": "tmin:55151:2026-10-29",
-   "last_seen": "2026-10-29T04:30:34+09:00",
+   "last_seen": "2026-10-29T04:40:25+09:00",
    "last_stricter_date": null,
    "latitude": 36.6483,
    "local_rank": null,
@@ -6369,12 +6369,12 @@
    "date": "2026-10-29",
    "elevation": 219,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-10-29T04:40:40+09:00",
    "first_seen": "2026-10-29T03:20:24+09:00",
    "flag": 10,
    "id": "tmin:56093:2026-10-29",
-   "last_seen": "2026-10-29T04:30:34+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-10-29T04:40:25+09:00",
+   "last_stricter_date": "2022-01-18",
    "latitude": 37.2933,
    "local_rank": null,
    "local_tie": false,
@@ -6382,8 +6382,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "tmin",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     2.4,
+     "2015-10-31"
+    ],
+    [
+     2,
+     2.7,
+     "2014-10-29"
+    ],
+    [
+     3,
+     2.9,
+     "2016-10-30"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "輪島市",
    "name": "三井",
    "notifiable": true,
@@ -6392,7 +6411,10 @@
    "notify_count": 1,
    "pref": "石川県",
    "pref_full": "石川県",
-   "prev": null,
+   "prev": {
+    "date": "2012-02-18",
+    "value": -11.6
+   },
    "prev_monthly": {
     "date": "2015-10-31",
     "value": 2.4
@@ -6402,60 +6424,77 @@
    "remark": "タイ記録",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=56&block_no=1544&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "56093",
-   "stats_period": null,
+   "stats_period": "2003/72026/10",
    "stats_start": 2003,
    "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST"
    ],
    "time": "03:57",
-   "top3": [],
+   "top3": [
+    [
+     1,
+     -11.6,
+     "2012-02-18"
+    ],
+    [
+     2,
+     -10.8,
+     "2020-02-07"
+    ],
+    [
+     3,
+     -10.8,
+     "2012-12-27"
+    ]
+   ],
    "unit": "℃",
    "value": 1.8,
-   "years_since": null
+   "years_since": 4
   }
  },
- "last_run": "2026-10-29T04:30:34+09:00",
- "runs": 5503,
+ "last_run": "2026-10-29T04:40:25+09:00",
+ "runs": 5504,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 17:46:00 GMT",
-   "last_success": "2026-10-29T03:40:26+09:00",
-   "source_time": "2026-10-29T02:00"
+   "last_modified": "Wed, 28 Oct 2026 18:45:55 GMT",
+   "last_success": "2026-10-29T04:40:27+09:00",
+   "source_time": "2026-10-29T03:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 17:45:59 GMT",
-   "last_success": "2026-10-29T03:40:25+09:00",
-   "source_time": "2026-10-29T02:00"
+   "last_modified": "Wed, 28 Oct 2026 18:45:54 GMT",
+   "last_success": "2026-10-29T04:40:25+09:00",
+   "source_time": "2026-10-29T03:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 19:20:43 GMT",
-   "last_success": "2026-10-29T04:30:35+09:00",
-   "source_time": "2026-10-29T04:00"
+   "last_modified": "Wed, 28 Oct 2026 19:30:43 GMT",
+   "last_success": "2026-10-29T04:40:28+09:00",
+   "source_time": "2026-10-29T04:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 19:20:39 GMT",
-   "last_success": "2026-10-29T04:30:36+09:00",
-   "source_time": "2026-10-29T04:00"
+   "last_modified": "Wed, 28 Oct 2026 19:30:41 GMT",
+   "last_success": "2026-10-29T04:40:29+09:00",
+   "source_time": "2026-10-29T04:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 19:20:40 GMT",
+   "last_modified": "Wed, 28 Oct 2026 19:30:41 GMT",
    "last_success": "2026-10-29T04:30:37+09:00",
    "source_time": "2026-10-29T04:00"
   },
