@@ -5,6 +5,9 @@
 "暴風": {
 "胆振・日高": "2026-10-28T07:40:23.896263+00:00"
 },
+"暴風・高波": {
+"渡島・檜山": "2026-10-28T08:10:23.659256+00:00"
+},
 "暴風・高波・大雪": {
 "上川・留萌": "2026-10-28T08:00:43.011150+00:00"
 },
@@ -16,13 +19,6 @@
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261025080049_0_VPCJ50_400000.xml": "2026-10-25T08:10:21.717802+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025080148_0_VPFJ50_350000.xml": "2026-10-25T08:10:21.717802+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025080150_0_VPFJ50_420000.xml": "2026-10-25T08:10:21.717802+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025080318_0_VPFJ50_440000.xml": "2026-10-25T08:10:21.717802+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025080341_0_VPFJ50_370000.xml": "2026-10-25T08:10:21.717802+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025080425_0_VPFJ50_450000.xml": "2026-10-25T08:10:21.717802+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261025080709_0_VPFJ50_400000.xml": "2026-10-25T08:10:21.717802+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025081339_0_VPFJ50_390000.xml": "2026-10-25T08:20:22.159373+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025081349_0_VPFJ50_360000.xml": "2026-10-25T08:20:22.159373+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261025081404_0_VPFJ50_430000.xml": "2026-10-25T08:20:22.159373+00:00",
@@ -85,6 +81,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261028073019_0_VPFJ50_050000.xml": "2026-10-28T07:40:23.896263+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261028073123_0_VPFJ50_015000.xml": "2026-10-28T07:40:23.896263+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261028073349_0_VPFJ50_016000.xml": "2026-10-28T07:40:23.896263+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261028075152_0_VPFJ50_012000.xml": "2026-10-28T08:00:43.011150+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261028075152_0_VPFJ50_012000.xml": "2026-10-28T08:00:43.011150+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261028080010_0_VPFJ50_017000.xml": "2026-10-28T08:10:23.659256+00:00"
 }
 }
