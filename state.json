@@ -5851,7 +5851,7 @@
    "first_seen": "2026-10-28T09:00:41+09:00",
    "flag": 10,
    "id": "tmin:23376:2026-10-28",
-   "last_seen": "2026-10-29T00:10:23+09:00",
+   "last_seen": "2026-10-29T00:20:24+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 41.4233,
    "local_rank": null,
@@ -5883,7 +5883,7 @@
    "monthly_years_since": null,
    "muni": "松前郡松前町",
    "name": "松前",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-10-28T09:00:41+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5897,7 +5897,7 @@
     "date": "2004-10-26",
     "value": 2.7
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -5945,7 +5945,7 @@
    "first_seen": "2026-10-28T07:00:39+09:00",
    "flag": 10,
    "id": "tmin:24101:2026-10-28",
-   "last_seen": "2026-10-29T00:10:23+09:00",
+   "last_seen": "2026-10-29T00:20:24+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.2483,
    "local_rank": null,
@@ -5977,7 +5977,7 @@
    "monthly_years_since": null,
    "muni": "奥尻郡奥尻町",
    "name": "奥尻",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-10-28T09:00:41+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -5991,7 +5991,7 @@
     "date": "2016-10-30",
     "value": 4.1
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -6039,7 +6039,7 @@
    "first_seen": "2026-10-28T06:20:23+09:00",
    "flag": 10,
    "id": "tmin:24156:2026-10-28",
-   "last_seen": "2026-10-29T00:10:23+09:00",
+   "last_seen": "2026-10-29T00:20:24+09:00",
    "last_stricter_date": "2023-01-25",
    "latitude": 42.0717,
    "local_rank": null,
@@ -6071,7 +6071,7 @@
    "monthly_years_since": null,
    "muni": "奥尻郡奥尻町",
    "name": "米岡",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-10-28T09:00:41+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -6085,7 +6085,7 @@
     "date": "2025-10-28",
     "value": 2.2
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -6126,8 +6126,8 @@
    "years_since": 3
   }
  },
- "last_run": "2026-10-29T00:10:23+09:00",
- "runs": 5476,
+ "last_run": "2026-10-29T00:20:24+09:00",
+ "runs": 5477,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -6147,21 +6147,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 15:00:48 GMT",
-   "last_success": "2026-10-29T00:10:24+09:00",
-   "source_time": "2026-10-28T23:40"
+   "last_modified": "Wed, 28 Oct 2026 15:10:42 GMT",
+   "last_success": "2026-10-29T00:20:25+09:00",
+   "source_time": "2026-10-28T23:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 15:00:45 GMT",
-   "last_success": "2026-10-29T00:00:55+09:00",
-   "source_time": "2026-10-28T23:40"
+   "last_modified": "Wed, 28 Oct 2026 15:10:39 GMT",
+   "last_success": "2026-10-29T00:20:26+09:00",
+   "source_time": "2026-10-28T23:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 28 Oct 2026 15:00:45 GMT",
+   "last_modified": "Wed, 28 Oct 2026 15:10:39 GMT",
    "last_success": "2026-10-28T23:30:36+09:00",
    "source_time": "2026-10-28T23:00"
   },
