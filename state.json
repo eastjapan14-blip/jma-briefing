@@ -128,6 +128,17 @@
    "notified_members": 5,
    "pref": "長崎県"
   },
+  "snow24h:北海道:2026-10-29": {
+   "date": "2026-10-29",
+   "members": [
+    "12301",
+    "21312"
+   ],
+   "metric": "snow24h",
+   "notified_at": "2026-10-30T12:50:26+09:00",
+   "notified_members": 2,
+   "pref": "北海道"
+  },
   "tmin:北海道:2026-10-28": {
    "date": "2026-10-28",
    "members": [
@@ -4194,6 +4205,170 @@
    "value": 215.5,
    "years_since": 6
   },
+  "snow24h:12301:2026-10-29": {
+   "date": "2026-10-29",
+   "elevation": 150,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-30T12:50:26+09:00",
+   "flag": 10,
+   "id": "snow24h:12301:2026-10-29",
+   "last_seen": "2026-10-30T12:50:26+09:00",
+   "last_stricter_date": null,
+   "latitude": 44.0283,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 142.41,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "snow24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "上川郡和寒町",
+   "name": "和寒",
+   "notifiable": true,
+   "notified_at": "2026-10-30T12:50:26+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "北海道",
+   "pref_full": "北海道 上川地方",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2016-10-24",
+    "value": 11.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "12301",
+   "stats_period": null,
+   "stats_start": 1982,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "06:00",
+   "top3": [],
+   "unit": "cm",
+   "value": 15.0,
+   "years_since": null
+  },
+  "snow24h:21312:2026-10-29": {
+   "date": "2026-10-29",
+   "elevation": 197,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-30T12:50:26+09:00",
+   "flag": 10,
+   "id": "snow24h:21312:2026-10-29",
+   "last_seen": "2026-10-30T12:50:26+09:00",
+   "last_stricter_date": null,
+   "latitude": 42.4583,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 141.1183,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "snow24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "登別市",
+   "name": "登別",
+   "notifiable": true,
+   "notified_at": "2026-10-30T12:50:26+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "北海道",
+   "pref_full": "北海道 胆振地方",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2016-10-24",
+    "value": 2.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "21312",
+   "stats_period": null,
+   "stats_start": 1988,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "07:00",
+   "top3": [],
+   "unit": "cm",
+   "value": 6.0,
+   "years_since": null
+  },
+  "snowdepth:12301:2026-10-29": {
+   "date": "2026-10-29",
+   "elevation": 150,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-30T12:50:26+09:00",
+   "flag": 10,
+   "id": "snowdepth:12301:2026-10-29",
+   "last_seen": "2026-10-30T12:50:26+09:00",
+   "last_stricter_date": null,
+   "latitude": 44.0283,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 142.41,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "snowdepth",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "上川郡和寒町",
+   "name": "和寒",
+   "notifiable": true,
+   "notified_at": "2026-10-30T12:50:26+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "北海道",
+   "pref_full": "北海道 上川地方",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2016-10-24",
+    "value": 9.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "12301",
+   "stats_period": null,
+   "stats_start": 1982,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": "05:00",
+   "top3": [],
+   "unit": "cm",
+   "value": 11.0,
+   "years_since": null
+  },
   "tmin:23376:2026-10-28": {
    "date": "2026-10-28",
    "elevation": 30,
@@ -4670,7 +4845,7 @@
    "first_seen": "2026-10-29T03:40:24+09:00",
    "flag": 10,
    "id": "tmin:55151:2026-10-29",
-   "last_seen": "2026-10-30T12:40:22+09:00",
+   "last_seen": "2026-10-30T12:50:26+09:00",
    "last_stricter_date": "2026-02-08",
    "latitude": 36.6483,
    "local_rank": null,
@@ -4763,7 +4938,7 @@
    "first_seen": "2026-10-29T03:20:24+09:00",
    "flag": 10,
    "id": "tmin:56093:2026-10-29",
-   "last_seen": "2026-10-30T12:40:22+09:00",
+   "last_seen": "2026-10-30T12:50:26+09:00",
    "last_stricter_date": "2022-01-18",
    "latitude": 37.2933,
    "local_rank": null,
@@ -4849,8 +5024,8 @@
    "years_since": 4
   }
  },
- "last_run": "2026-10-30T12:40:22+09:00",
- "runs": 5702,
+ "last_run": "2026-10-30T12:50:26+09:00",
+ "runs": 5703,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -4870,21 +5045,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 30 Oct 2026 03:30:49 GMT",
-   "last_success": "2026-10-30T12:40:26+09:00",
-   "source_time": "2026-10-30T12:10"
+   "last_modified": "Fri, 30 Oct 2026 03:40:45 GMT",
+   "last_success": "2026-10-30T12:50:26+09:00",
+   "source_time": "2026-10-30T12:20"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 30 Oct 2026 03:30:45 GMT",
-   "last_success": "2026-10-30T12:40:27+09:00",
-   "source_time": "2026-10-30T12:10"
+   "last_modified": "Fri, 30 Oct 2026 03:40:42 GMT",
+   "last_success": "2026-10-30T12:50:27+09:00",
+   "source_time": "2026-10-30T12:20"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 30 Oct 2026 03:30:45 GMT",
+   "last_modified": "Fri, 30 Oct 2026 03:40:43 GMT",
    "last_success": "2026-10-30T12:30:36+09:00",
    "source_time": "2026-10-30T12:00"
   },
