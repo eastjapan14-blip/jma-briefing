@@ -250,7 +250,7 @@
    "first_seen": "2026-10-30T17:20:24+09:00",
    "flag": 10,
    "id": "pre1h:63517:2026-10-30",
-   "last_seen": "2026-10-31T10:50:23+09:00",
+   "last_seen": "2026-10-31T11:00:40+09:00",
    "last_stricter_date": "2023-08-23",
    "latitude": 34.6317,
    "local_rank": null,
@@ -3778,7 +3778,7 @@
    "first_seen": "2026-10-31T10:20:24+09:00",
    "flag": 10,
    "id": "snowdepth:54296:2026-10-31",
-   "last_seen": "2026-10-31T10:50:23+09:00",
+   "last_seen": "2026-10-31T11:00:40+09:00",
    "last_stricter_date": null,
    "latitude": 37.7917,
    "local_rank": null,
@@ -3888,7 +3888,7 @@
    "first_seen": "2026-10-31T10:20:24+09:00",
    "flag": 10,
    "id": "snowdepth:54836:2026-10-31",
-   "last_seen": "2026-10-31T10:50:23+09:00",
+   "last_seen": "2026-10-31T11:00:40+09:00",
    "last_stricter_date": null,
    "latitude": 36.9967,
    "local_rank": null,
@@ -4590,8 +4590,8 @@
    "years_since": 4
   }
  },
- "last_run": "2026-10-31T10:50:23+09:00",
- "runs": 5839,
+ "last_run": "2026-10-31T11:00:40+09:00",
+ "runs": 5840,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -4611,33 +4611,33 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 01:30:45 GMT",
-   "last_success": "2026-10-31T10:40:26+09:00",
-   "source_time": "2026-10-31T10:10"
+   "last_modified": "Sat, 31 Oct 2026 01:50:45 GMT",
+   "last_success": "2026-10-31T11:00:41+09:00",
+   "source_time": "2026-10-31T10:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 01:30:41 GMT",
-   "last_success": "2026-10-31T10:40:27+09:00",
-   "source_time": "2026-10-31T10:10"
+   "last_modified": "Sat, 31 Oct 2026 01:50:42 GMT",
+   "last_success": "2026-10-31T11:00:42+09:00",
+   "source_time": "2026-10-31T10:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 01:30:41 GMT",
+   "last_modified": "Sat, 31 Oct 2026 01:50:42 GMT",
    "last_success": "2026-10-31T10:30:35+09:00",
    "source_time": "2026-10-31T10:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 00:50:20 GMT"
+   "last_modified": "Sat, 31 Oct 2026 01:50:18 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 00:50:44 GMT"
+   "last_modified": "Sat, 31 Oct 2026 01:50:43 GMT"
   }
  }
 }
