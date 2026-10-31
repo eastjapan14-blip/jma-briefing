@@ -35,17 +35,6 @@
    "notified_members": 2,
    "pref": "福岡県"
   },
-  "pre24h:長崎県:2026-10-24": {
-   "date": "2026-10-24",
-   "members": [
-    "84076",
-    "84306"
-   ],
-   "metric": "pre24h",
-   "notified_at": "2026-10-24T15:50:23+09:00",
-   "notified_members": 2,
-   "pref": "長崎県"
-  },
   "pre24h:長崎県:2026-10-25": {
    "date": "2026-10-25",
    "members": [
@@ -75,17 +64,6 @@
    "metric": "pre24h",
    "notified_at": "2026-10-26T00:50:22+09:00",
    "notified_members": 5,
-   "pref": "長崎県"
-  },
-  "preday:長崎県:2026-10-24": {
-   "date": "2026-10-24",
-   "members": [
-    "84012",
-    "84076"
-   ],
-   "metric": "preday",
-   "notified_at": "2026-10-25T00:20:22+09:00",
-   "notified_members": 2,
    "pref": "長崎県"
   },
   "preday:長崎県:2026-10-25": {
@@ -139,7 +117,6 @@
   }
  },
  "confirm_checked": {
-  "2026-10-24": true,
   "2026-10-25": true,
   "2026-10-26": true,
   "2026-10-28": true,
@@ -147,101 +124,6 @@
   "2026-10-30": true
  },
  "events": {
-  "pre1h:53326:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 3,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-24T06:50:32+09:00",
-   "first_seen": "2026-10-24T06:40:24+09:00",
-   "flag": 10,
-   "id": "pre1h:53326:2026-10-24",
-   "last_seen": "2026-10-25T23:50:24+09:00",
-   "last_stricter_date": "2021-09-26",
-   "latitude": 34.2083,
-   "local_rank": 2,
-   "local_tie": false,
-   "longitude": 136.3267,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     75.0,
-     "2001-10-10"
-    ],
-    [
-     2,
-     74.0,
-     "1995-10-01"
-    ],
-    [
-     3,
-     68.5,
-     "2024-10-03"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "北牟婁郡紀北町",
-   "name": "紀伊長島",
-   "notifiable": true,
-   "notified_at": "2026-10-24T06:40:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "三重県",
-   "pref_full": "三重県",
-   "prev": {
-    "date": "2021-09-26",
-    "value": 96.0
-   },
-   "prev_monthly": {
-    "date": "2001-10-10",
-    "value": 75.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=53&block_no=1349&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "53326",
-   "stats_period": "1979/12026/10",
-   "stats_start": 1979,
-   "status": "CONFIRMED",
-   "tags": [
-    "ALL_TIME_TOP3",
-    "MONTHLY_1ST",
-    "SINCE_2021"
-   ],
-   "time": "06:39",
-   "top3": [
-    [
-     1,
-     96.0,
-     "2021-09-26"
-    ],
-    [
-     2,
-     85.0,
-     "2004-09-05"
-    ],
-    [
-     3,
-     83.0,
-     "1984-07-24"
-    ]
-   ],
-   "unit": "mm",
-   "value": 89.5,
-   "years_since": 5
-  },
   "pre1h:63517:2026-10-30": {
    "date": "2026-10-30",
    "elevation": 5,
@@ -334,99 +216,6 @@
    "unit": "mm",
    "value": 22.5,
    "years_since": 3
-  },
-  "pre1h:64262:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 396,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-24T06:20:31+09:00",
-   "first_seen": "2026-10-24T03:20:23+09:00",
-   "flag": 10,
-   "id": "pre1h:64262:2026-10-24",
-   "last_seen": "2026-10-25T00:30:30+09:00",
-   "last_stricter_date": "2026-06-25",
-   "latitude": 33.9533,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 135.8567,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     21.0,
-     "2024-10-03"
-    ],
-    [
-     2,
-     14.5,
-     "2024-10-18"
-    ],
-    [
-     3,
-     13.0,
-     "2024-10-09"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "葛川",
-   "notifiable": true,
-   "notified_at": "2026-10-24T03:20:23+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "奈良県",
-   "pref_full": "奈良県",
-   "prev": {
-    "date": "2026-06-25",
-    "value": 69.5
-   },
-   "prev_monthly": {
-    "date": "2024-10-03",
-    "value": 21.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=64&block_no=1669&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "64262",
-   "stats_period": "2021/12026/10",
-   "stats_start": 2021,
-   "status": "REVISED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "05:48",
-   "top3": [
-    [
-     1,
-     69.5,
-     "2026-06-25"
-    ],
-    [
-     2,
-     56.5,
-     "2025-07-17"
-    ],
-    [
-     3,
-     53.0,
-     "2023-08-23"
-    ]
-   ],
-   "unit": "mm",
-   "value": 27.5,
-   "years_since": 0
   },
   "pre1h:64262:2026-10-25": {
    "date": "2026-10-25",
@@ -1048,64 +837,6 @@
    "value": 142.0,
    "years_since": null
   },
-  "pre24h:64262:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 396,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-24T03:20:23+09:00",
-   "flag": 10,
-   "id": "pre24h:64262:2026-10-24",
-   "last_seen": "2026-10-25T00:30:30+09:00",
-   "last_stricter_date": null,
-   "latitude": 33.9533,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 135.8567,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": null,
-   "name": "葛川",
-   "notifiable": true,
-   "notified_at": "2026-10-24T03:20:23+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "奈良県",
-   "pref_full": "奈良県",
-   "prev": {
-    "date": "2023-08-15",
-    "value": 455.5
-   },
-   "prev_monthly": {
-    "date": "2024-10-04",
-    "value": 68.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": null,
-   "sources": [
-    "csv"
-   ],
-   "station": "64262",
-   "stats_period": null,
-   "stats_start": 2021,
-   "status": "REVISED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "18:00",
-   "top3": [],
-   "unit": "mm",
-   "value": 141.0,
-   "years_since": null
-  },
   "pre24h:64262:2026-10-25": {
    "date": "2026-10-25",
    "elevation": 396,
@@ -1455,65 +1186,6 @@
    "top3": [],
    "unit": "mm",
    "value": 134.0,
-   "years_since": null
-  },
-  "pre24h:84076:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 63,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-24T15:50:23+09:00",
-   "flag": 10,
-   "id": "pre24h:84076:2026-10-24",
-   "last_seen": "2026-10-25T23:50:24+09:00",
-   "last_stricter_date": null,
-   "latitude": 34.285,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 129.33,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "対馬市",
-   "name": "美津島",
-   "notifiable": true,
-   "notified_at": "2026-10-24T15:50:23+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "長崎県",
-   "pref_full": "長崎県",
-   "prev": {
-    "date": "2007-08-30",
-    "value": 321.0
-   },
-   "prev_monthly": {
-    "date": "2014-10-13",
-    "value": 126.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "84076",
-   "stats_period": null,
-   "stats_start": 2003,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "24:00",
-   "top3": [],
-   "unit": "mm",
-   "value": 217.5,
    "years_since": null
   },
   "pre24h:84076:2026-10-25": {
@@ -1868,65 +1540,6 @@
    "top3": [],
    "unit": "mm",
    "value": 191.5,
-   "years_since": null
-  },
-  "pre24h:84306:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 18,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-24T00:30:36+09:00",
-   "flag": 10,
-   "id": "pre24h:84306:2026-10-24",
-   "last_seen": "2026-10-25T00:30:30+09:00",
-   "last_stricter_date": null,
-   "latitude": 33.0133,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 129.6517,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": null,
-   "name": "西海",
-   "notifiable": true,
-   "notified_at": "2026-10-24T15:50:23+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "長崎県",
-   "pref_full": "長崎県",
-   "prev": {
-    "date": "2021-08-14",
-    "value": 401.5
-   },
-   "prev_monthly": {
-    "date": "2024-10-23",
-    "value": 44.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": null,
-   "sources": [
-    "csv"
-   ],
-   "station": "84306",
-   "stats_period": null,
-   "stats_start": 2021,
-   "status": "REVISED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER",
-    "SHORT_STATS"
-   ],
-   "time": "09:20",
-   "top3": [],
-   "unit": "mm",
-   "value": 67.0,
    "years_since": null
   },
   "pre24h:84306:2026-10-25": {
@@ -2460,65 +2073,6 @@
    "value": 160.5,
    "years_since": null
   },
-  "pre24h:94062:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 10,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-24T09:50:24+09:00",
-   "flag": 13,
-   "id": "pre24h:94062:2026-10-24",
-   "last_seen": "2026-10-25T23:50:24+09:00",
-   "last_stricter_date": null,
-   "latitude": 24.4267,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 123.765,
-   "margin_abs": 40.0,
-   "margin_pct": 11.0,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "八重山郡竹富町",
-   "name": "西表島",
-   "notifiable": true,
-   "notified_at": "2026-10-24T10:40:21+09:00",
-   "notified_severity": "A",
-   "notify_count": 2,
-   "pref": "沖縄県",
-   "pref_full": "沖縄県",
-   "prev": {
-    "date": "2005-07-18",
-    "value": 362.0
-   },
-   "prev_monthly": {
-    "date": "2025-10-22",
-    "value": 326.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": 21,
-   "remark": "",
-   "severity": "A",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "94062",
-   "stats_period": null,
-   "stats_start": 2003,
-   "status": "CONFIRMED",
-   "tags": [
-    "ALL_TIME_1ST",
-    "MONTHLY_1ST"
-   ],
-   "time": "12:40",
-   "top3": [],
-   "unit": "mm",
-   "value": 402.0,
-   "years_since": null
-  },
   "preday:56401:2026-10-25": {
    "date": "2026-10-25",
    "elevation": 8,
@@ -2613,99 +2167,6 @@
    "unit": "mm",
    "value": 100.0,
    "years_since": 2
-  },
-  "preday:64262:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 396,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-24T11:30:42+09:00",
-   "first_seen": "2026-10-24T05:30:33+09:00",
-   "flag": 10,
-   "id": "preday:64262:2026-10-24",
-   "last_seen": "2026-10-25T03:10:24+09:00",
-   "last_stricter_date": "2026-06-02",
-   "latitude": 33.9533,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 135.8567,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     65.0,
-     "2024-10-18"
-    ],
-    [
-     2,
-     54.5,
-     "2025-10-31"
-    ],
-    [
-     3,
-     52.0,
-     "2021-10-25"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "葛川",
-   "notifiable": true,
-   "notified_at": "2026-10-24T05:30:33+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "奈良県",
-   "pref_full": "奈良県",
-   "prev": {
-    "date": "2023-08-15",
-    "value": 394.5
-   },
-   "prev_monthly": {
-    "date": "2024-10-18",
-    "value": 65.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=64&block_no=1669&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "64262",
-   "stats_period": "2021/12026/10",
-   "stats_start": 2021,
-   "status": "REVISED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     394.5,
-     "2023-08-15"
-    ],
-    [
-     2,
-     348.5,
-     "2023-06-02"
-    ],
-    [
-     3,
-     197.5,
-     "2022-09-19"
-    ]
-   ],
-   "unit": "mm",
-   "value": 117.5,
-   "years_since": 0
   },
   "preday:81146:2026-10-26": {
    "date": "2026-10-26",
@@ -2892,195 +2353,6 @@
    "unit": "mm",
    "value": 107.0,
    "years_since": 5
-  },
-  "preday:84012:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 63,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-25T00:30:45+09:00",
-   "first_seen": "2026-10-25T00:20:22+09:00",
-   "flag": 10,
-   "id": "preday:84012:2026-10-24",
-   "last_seen": "2026-10-25T23:50:24+09:00",
-   "last_stricter_date": "2023-08-31",
-   "latitude": 34.6983,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 129.445,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     113.0,
-     "2000-10-08"
-    ],
-    [
-     2,
-     97.5,
-     "2024-10-22"
-    ],
-    [
-     3,
-     71.0,
-     "2001-10-09"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "対馬市",
-   "name": "鰐浦",
-   "notifiable": true,
-   "notified_at": "2026-10-25T00:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "長崎県",
-   "pref_full": "長崎県",
-   "prev": {
-    "date": "1998-08-02",
-    "value": 343.0
-   },
-   "prev_monthly": {
-    "date": "2000-10-08",
-    "value": 113.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1453&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "84012",
-   "stats_period": "1995/82026/10",
-   "stats_start": 1995,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     343.0,
-     "1998-08-02"
-    ],
-    [
-     2,
-     278.0,
-     "2001-06-18"
-    ],
-    [
-     3,
-     262.0,
-     "2015-09-17"
-    ]
-   ],
-   "unit": "mm",
-   "value": 115.0,
-   "years_since": 3
-  },
-  "preday:84076:2026-10-24": {
-   "date": "2026-10-24",
-   "elevation": 63,
-   "enrich_pending": false,
-   "enriched_at": "2026-10-25T03:10:33+09:00",
-   "first_seen": "2026-10-24T16:20:22+09:00",
-   "flag": 10,
-   "id": "preday:84076:2026-10-24",
-   "last_seen": "2026-10-25T23:50:24+09:00",
-   "last_stricter_date": "2022-07-18",
-   "latitude": 34.285,
-   "local_rank": 6,
-   "local_tie": false,
-   "longitude": 129.33,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     104.0,
-     "2014-10-13"
-    ],
-    [
-     2,
-     102.5,
-     "2015-10-01"
-    ],
-    [
-     3,
-     101.0,
-     "2025-10-03"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "対馬市",
-   "name": "美津島",
-   "notifiable": true,
-   "notified_at": "2026-10-25T00:20:22+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "長崎県",
-   "pref_full": "長崎県",
-   "prev": {
-    "date": "2019-09-22",
-    "value": 289.0
-   },
-   "prev_monthly": {
-    "date": "2014-10-13",
-    "value": 104.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1538&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "84076",
-   "stats_period": "2003/12026/10",
-   "stats_start": 2003,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER",
-    "SINCE_2022"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     289.0,
-     "2019-09-22"
-    ],
-    [
-     2,
-     264.0,
-     "2019-07-20"
-    ],
-    [
-     3,
-     251.0,
-     "2022-07-18"
-    ]
-   ],
-   "unit": "mm",
-   "value": 217.5,
-   "years_since": 4
   },
   "preday:84171:2026-10-25": {
    "date": "2026-10-25",
@@ -4644,8 +3916,8 @@
    "years_since": 4
   }
  },
- "last_run": "2026-10-31T23:50:25+09:00",
- "runs": 5919,
+ "last_run": "2026-11-01T00:00:41+09:00",
+ "runs": 5920,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -4665,33 +3937,33 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 14:30:54 GMT",
-   "last_success": "2026-10-31T23:40:27+09:00",
-   "source_time": "2026-10-31T23:10"
+   "last_modified": "Sat, 31 Oct 2026 14:50:45 GMT",
+   "last_success": "2026-11-01T00:00:41+09:00",
+   "source_time": "2026-10-31T23:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 14:30:49 GMT",
-   "last_success": "2026-10-31T23:40:29+09:00",
-   "source_time": "2026-10-31T23:10"
+   "last_modified": "Sat, 31 Oct 2026 14:50:42 GMT",
+   "last_success": "2026-11-01T00:00:43+09:00",
+   "source_time": "2026-10-31T23:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 14:30:49 GMT",
+   "last_modified": "Sat, 31 Oct 2026 14:50:42 GMT",
    "last_success": "2026-10-31T23:30:34+09:00",
    "source_time": "2026-10-31T23:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 13:51:32 GMT"
+   "last_modified": "Sat, 31 Oct 2026 14:51:53 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 13:51:57 GMT"
+   "last_modified": "Sat, 31 Oct 2026 14:52:17 GMT"
   }
  }
 }
