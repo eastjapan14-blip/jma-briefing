@@ -238,7 +238,7 @@
    "first_seen": "2026-10-30T17:20:24+09:00",
    "flag": 10,
    "id": "pre1h:63517:2026-10-30",
-   "last_seen": "2026-10-31T09:20:23+09:00",
+   "last_seen": "2026-10-31T09:30:32+09:00",
    "last_stricter_date": "2023-08-23",
    "latitude": 34.6317,
    "local_rank": null,
@@ -3650,6 +3650,60 @@
    "value": 6.0,
    "years_since": null
   },
+  "snow24h:54816:2026-10-31": {
+   "date": "2026-10-31",
+   "elevation": 350,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-31T09:30:32+09:00",
+   "flag": 10,
+   "id": "snow24h:54816:2026-10-31",
+   "last_seen": "2026-10-31T09:30:32+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.9333,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 138.2217,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "snow24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "妙高市",
+   "name": "関山",
+   "notifiable": true,
+   "notified_at": "2026-10-31T09:30:32+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "新潟県",
+   "pref_full": "新潟県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "1992-10-31",
+    "value": 1.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "タイ記録",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "54816",
+   "stats_period": null,
+   "stats_start": 1980,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST_TIE"
+   ],
+   "time": "09:00",
+   "top3": [],
+   "unit": "cm",
+   "value": 1.0,
+   "years_since": null
+  },
   "snowdepth:12301:2026-10-29": {
    "date": "2026-10-29",
    "elevation": 150,
@@ -3702,6 +3756,60 @@
    "top3": [],
    "unit": "cm",
    "value": 11.0,
+   "years_since": null
+  },
+  "snowdepth:54816:2026-10-31": {
+   "date": "2026-10-31",
+   "elevation": 350,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-10-31T09:30:32+09:00",
+   "flag": 10,
+   "id": "snowdepth:54816:2026-10-31",
+   "last_seen": "2026-10-31T09:30:32+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.9333,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 138.2217,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "snowdepth",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "妙高市",
+   "name": "関山",
+   "notifiable": true,
+   "notified_at": "2026-10-31T09:30:32+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "新潟県",
+   "pref_full": "新潟県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "1992-10-30",
+    "value": 1.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "タイ記録",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "54816",
+   "stats_period": null,
+   "stats_start": 1982,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST_TIE"
+   ],
+   "time": "09:00",
+   "top3": [],
+   "unit": "cm",
+   "value": 1.0,
    "years_since": null
   },
   "tmin:23376:2026-10-28": {
@@ -4359,8 +4467,8 @@
    "years_since": 4
   }
  },
- "last_run": "2026-10-31T09:20:23+09:00",
- "runs": 5830,
+ "last_run": "2026-10-31T09:30:32+09:00",
+ "runs": 5831,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -4380,23 +4488,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 00:10:46 GMT",
-   "last_success": "2026-10-31T09:20:23+09:00",
-   "source_time": "2026-10-31T08:50"
+   "last_modified": "Sat, 31 Oct 2026 00:20:49 GMT",
+   "last_success": "2026-10-31T09:30:33+09:00",
+   "source_time": "2026-10-31T09:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 00:10:43 GMT",
-   "last_success": "2026-10-31T09:20:25+09:00",
-   "source_time": "2026-10-31T08:50"
+   "last_modified": "Sat, 31 Oct 2026 00:20:46 GMT",
+   "last_success": "2026-10-31T09:30:34+09:00",
+   "source_time": "2026-10-31T09:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 31 Oct 2026 00:10:43 GMT",
-   "last_success": "2026-10-31T08:30:47+09:00",
-   "source_time": "2026-10-31T08:00"
+   "last_modified": "Sat, 31 Oct 2026 00:20:46 GMT",
+   "last_success": "2026-10-31T09:30:36+09:00",
+   "source_time": "2026-10-31T09:00"
   },
   "snc00": {
    "etag": "",
