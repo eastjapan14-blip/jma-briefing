@@ -1,0 +1,1047 @@
+{
+ "elements": {
+  "日最低気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-11-29",
+     "mark": "",
+     "rank": 1,
+     "value": -2.4
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 2,
+     "value": -1.5
+    },
+    {
+     "date": "2025-11-23",
+     "mark": "",
+     "rank": 3,
+     "value": -1.1
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 4,
+     "value": -0.7
+    },
+    {
+     "date": "2025-11-11",
+     "mark": "",
+     "rank": 5,
+     "value": -0.7
+    },
+    {
+     "date": "2025-11-21",
+     "mark": "",
+     "rank": 6,
+     "value": -0.6
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 7,
+     "value": -0.3
+    },
+    {
+     "date": "2025-11-20",
+     "mark": "",
+     "rank": 8,
+     "value": -0.3
+    },
+    {
+     "date": "2025-11-22",
+     "mark": "",
+     "rank": 9,
+     "value": 0.2
+    },
+    {
+     "date": "2025-11-24",
+     "mark": "",
+     "rank": 10,
+     "value": 0.3
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最低気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-11-09",
+     "mark": "",
+     "rank": 1,
+     "value": 10.4
+    },
+    {
+     "date": "2025-11-06",
+     "mark": "",
+     "rank": 2,
+     "value": 8.4
+    },
+    {
+     "date": "2025-11-13",
+     "mark": "",
+     "rank": 3,
+     "value": 7.0
+    },
+    {
+     "date": "2025-11-01",
+     "mark": "",
+     "rank": 4,
+     "value": 6.8
+    },
+    {
+     "date": "2025-11-07",
+     "mark": "",
+     "rank": 5,
+     "value": 6.0
+    },
+    {
+     "date": "2025-11-05",
+     "mark": "",
+     "rank": 6,
+     "value": 5.8
+    },
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 7,
+     "value": 5.2
+    },
+    {
+     "date": "2025-11-17",
+     "mark": "",
+     "rank": 8,
+     "value": 5.1
+    },
+    {
+     "date": "2025-11-02",
+     "mark": "",
+     "rank": 9,
+     "value": 4.6
+    },
+    {
+     "date": "2025-11-12",
+     "mark": "",
+     "rank": 10,
+     "value": 4.0
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最大10分間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2025-11-26",
+     "mark": "",
+     "rank": 1,
+     "value": 1.0
+    },
+    {
+     "date": "2025-11-06",
+     "mark": "",
+     "rank": 2,
+     "value": 1.0
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 3,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 4,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-09",
+     "mark": "",
+     "rank": 5,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-03",
+     "mark": "",
+     "rank": 6,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2025-11-29",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最大1時間降水量(mm)": {
+   "entries": [
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 1,
+     "value": 2.5
+    },
+    {
+     "date": "2025-11-09",
+     "mark": "",
+     "rank": 2,
+     "value": 2.5
+    },
+    {
+     "date": "2025-11-06",
+     "mark": "",
+     "rank": 3,
+     "value": 2.0
+    },
+    {
+     "date": "2025-11-26",
+     "mark": "",
+     "rank": 4,
+     "value": 1.5
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 5,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-03",
+     "mark": "",
+     "rank": 6,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2025-11-29",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最大瞬間風速・風向(m/s)": {
+   "entries": [
+    {
+     "date": "2025-11-18",
+     "mark": "",
+     "rank": 1,
+     "value": 15.3
+    },
+    {
+     "date": "2025-11-10",
+     "mark": "",
+     "rank": 2,
+     "value": 13.1
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 3,
+     "value": 12.8
+    },
+    {
+     "date": "2025-11-03",
+     "mark": "",
+     "rank": 4,
+     "value": 12.5
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 5,
+     "value": 12.0
+    },
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 6,
+     "value": 11.1
+    },
+    {
+     "date": "2025-11-26",
+     "mark": "",
+     "rank": 7,
+     "value": 10.8
+    },
+    {
+     "date": "2025-11-02",
+     "mark": "",
+     "rank": 8,
+     "value": 9.6
+    },
+    {
+     "date": "2025-11-17",
+     "mark": "",
+     "rank": 9,
+     "value": 9.3
+    },
+    {
+     "date": "2025-11-21",
+     "mark": "",
+     "rank": 10,
+     "value": 8.9
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最大風速・風向(m/s)": {
+   "entries": [
+    {
+     "date": "2025-11-18",
+     "mark": "",
+     "rank": 1,
+     "value": 6.1
+    },
+    {
+     "date": "2025-11-10",
+     "mark": "",
+     "rank": 2,
+     "value": 5.7
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 3,
+     "value": 5.3
+    },
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 4,
+     "value": 4.7
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 5,
+     "value": 4.6
+    },
+    {
+     "date": "2025-11-03",
+     "mark": "",
+     "rank": 6,
+     "value": 4.5
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 7,
+     "value": 4.3
+    },
+    {
+     "date": "2025-11-21",
+     "mark": "",
+     "rank": 8,
+     "value": 4.3
+    },
+    {
+     "date": "2025-11-26",
+     "mark": "",
+     "rank": 9,
+     "value": 4.2
+    },
+    {
+     "date": "2025-11-19",
+     "mark": "",
+     "rank": 10,
+     "value": 4.2
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最小相対湿度(％)": {
+   "entries": [
+    {
+     "date": "2025-11-17",
+     "mark": "",
+     "rank": 1,
+     "value": 21.0
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 2,
+     "value": 26.0
+    },
+    {
+     "date": "2025-11-23",
+     "mark": "",
+     "rank": 3,
+     "value": 37.0
+    },
+    {
+     "date": "2025-11-29",
+     "mark": "",
+     "rank": 4,
+     "value": 39.0
+    },
+    {
+     "date": "2025-11-11",
+     "mark": "",
+     "rank": 5,
+     "value": 40.0
+    },
+    {
+     "date": "2025-11-22",
+     "mark": "",
+     "rank": 6,
+     "value": 42.0
+    },
+    {
+     "date": "2025-11-24",
+     "mark": "",
+     "rank": 7,
+     "value": 43.0
+    },
+    {
+     "date": "2025-11-10",
+     "mark": "",
+     "rank": 8,
+     "value": 43.0
+    },
+    {
+     "date": "2025-11-20",
+     "mark": "",
+     "rank": 9,
+     "value": 45.0
+    },
+    {
+     "date": "2025-11-15",
+     "mark": "",
+     "rank": 10,
+     "value": 45.0
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最高気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-11-18",
+     "mark": "",
+     "rank": 1,
+     "value": 9.2
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 2,
+     "value": 9.8
+    },
+    {
+     "date": "2025-11-19",
+     "mark": "",
+     "rank": 3,
+     "value": 10.4
+    },
+    {
+     "date": "2025-11-26",
+     "mark": "",
+     "rank": 4,
+     "value": 10.6
+    },
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 5,
+     "value": 11.5
+    },
+    {
+     "date": "2025-11-03",
+     "mark": "",
+     "rank": 6,
+     "value": 11.6
+    },
+    {
+     "date": "2025-11-20",
+     "mark": "",
+     "rank": 7,
+     "value": 12.2
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 8,
+     "value": 12.6
+    },
+    {
+     "date": "2025-11-10",
+     "mark": "",
+     "rank": 9,
+     "value": 13.1
+    },
+    {
+     "date": "2025-11-21",
+     "mark": "",
+     "rank": 10,
+     "value": 13.2
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日最高気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-11-16",
+     "mark": "",
+     "rank": 1,
+     "value": 18.1
+    },
+    {
+     "date": "2025-11-08",
+     "mark": "",
+     "rank": 2,
+     "value": 18.1
+    },
+    {
+     "date": "2025-11-09",
+     "mark": "",
+     "rank": 3,
+     "value": 17.7
+    },
+    {
+     "date": "2025-11-07",
+     "mark": "",
+     "rank": 4,
+     "value": 17.4
+    },
+    {
+     "date": "2025-11-06",
+     "mark": "",
+     "rank": 5,
+     "value": 17.4
+    },
+    {
+     "date": "2025-11-17",
+     "mark": "",
+     "rank": 6,
+     "value": 17.3
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 7,
+     "value": 16.6
+    },
+    {
+     "date": "2025-11-24",
+     "mark": "",
+     "rank": 8,
+     "value": 16.5
+    },
+    {
+     "date": "2025-11-14",
+     "mark": "",
+     "rank": 9,
+     "value": 16.4
+    },
+    {
+     "date": "2025-11-23",
+     "mark": "",
+     "rank": 10,
+     "value": 16.2
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "日降水量(mm)": {
+   "entries": [
+    {
+     "date": "2025-11-25",
+     "mark": "",
+     "rank": 1,
+     "value": 7.0
+    },
+    {
+     "date": "2025-11-09",
+     "mark": "",
+     "rank": 2,
+     "value": 7.0
+    },
+    {
+     "date": "2025-11-06",
+     "mark": "",
+     "rank": 3,
+     "value": 4.5
+    },
+    {
+     "date": "2025-11-26",
+     "mark": "",
+     "rank": 4,
+     "value": 2.5
+    },
+    {
+     "date": "2025-11-27",
+     "mark": "",
+     "rank": 5,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-03",
+     "mark": "",
+     "rank": 6,
+     "value": 0.5
+    },
+    {
+     "date": "2025-11-30",
+     "mark": "",
+     "rank": 7,
+     "value": 0.0
+    },
+    {
+     "date": "2025-11-29",
+     "mark": "",
+     "rank": 8,
+     "value": 0.0
+    },
+    {
+     "date": "2025-11-28",
+     "mark": "",
+     "rank": 9,
+     "value": 0.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112026/11"
+  },
+  "月平均気温の低い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-11",
+     "mark": "",
+     "rank": 1,
+     "value": 7.6
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112025/11"
+  },
+  "月平均気温の高い方から(℃)": {
+   "entries": [
+    {
+     "date": "2025-11",
+     "mark": "",
+     "rank": 1,
+     "value": 7.6
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112025/11"
+  },
+  "月間日照時間の多い方から(h)": {
+   "entries": [
+    {
+     "date": "2025-11",
+     "mark": "",
+     "rank": 1,
+     "value": 129.6
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112025/11"
+  },
+  "月間日照時間の少ない方から(h)": {
+   "entries": [
+    {
+     "date": "2025-11",
+     "mark": "",
+     "rank": 1,
+     "value": 129.6
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112025/11"
+  },
+  "月降水量の多い方から(mm)": {
+   "entries": [
+    {
+     "date": "2025-11",
+     "mark": "",
+     "rank": 1,
+     "value": 22.0
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112025/11"
+  },
+  "月降水量の少ない方から(mm)": {
+   "entries": [
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 1,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 2,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 3,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 4,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 5,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 6,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 7,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 8,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 9,
+     "value": null
+    },
+    {
+     "date": null,
+     "mark": "?",
+     "rank": 10,
+     "value": null
+    }
+   ],
+   "period": "2025/112025/11"
+  }
+ },
+ "fetched_at": "2026-11-01T13:40:37+09:00",
+ "station": "東祖谷（徳島県）",
+ "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=71&block_no=1677&year=&month=11&day=&view=h0"
+}
