@@ -89,7 +89,7 @@
    "first_seen": "2026-11-01T22:30:32+09:00",
    "flag": 11,
    "id": "pre1h:54041:2026-11-01",
-   "last_seen": "2026-11-02T00:10:25+09:00",
+   "last_seen": "2026-11-02T00:20:24+09:00",
    "last_stricter_date": "2026-07-24",
    "latitude": 38.33,
    "local_rank": null,
@@ -121,7 +121,7 @@
    "monthly_years_since": null,
    "muni": "佐渡市",
    "name": "弾崎",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-11-01T22:30:32+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -135,7 +135,7 @@
     "date": "2009-11-14",
     "value": 23.5
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "タイ記録",
    "severity": "B",
@@ -1604,7 +1604,7 @@
    "first_seen": "2026-11-01T13:40:23+09:00",
    "flag": 11,
    "id": "tmax:94011:2026-11-01",
-   "last_seen": "2026-11-02T00:10:25+09:00",
+   "last_seen": "2026-11-02T00:20:24+09:00",
    "last_stricter_date": "2024-07-22",
    "latitude": 24.4667,
    "local_rank": null,
@@ -1636,7 +1636,7 @@
    "monthly_years_since": null,
    "muni": "八重山郡与那国町",
    "name": "所野",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-11-01T13:40:23+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -1650,7 +1650,7 @@
     "date": "2016-11-19",
     "value": 30.2
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -2344,8 +2344,8 @@
    "years_since": 4
   }
  },
- "last_run": "2026-11-02T00:10:25+09:00",
- "runs": 6070,
+ "last_run": "2026-11-02T00:20:24+09:00",
+ "runs": 6071,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2365,21 +2365,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 01 Nov 2026 15:00:44 GMT",
-   "last_success": "2026-11-02T00:10:25+09:00",
-   "source_time": "2026-11-01T23:40"
+   "last_modified": "Sun, 01 Nov 2026 15:10:40 GMT",
+   "last_success": "2026-11-02T00:20:25+09:00",
+   "source_time": "2026-11-01T23:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 01 Nov 2026 15:00:39 GMT",
-   "last_success": "2026-11-02T00:10:27+09:00",
-   "source_time": "2026-11-01T23:40"
+   "last_modified": "Sun, 01 Nov 2026 15:10:37 GMT",
+   "last_success": "2026-11-02T00:20:26+09:00",
+   "source_time": "2026-11-01T23:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 01 Nov 2026 15:00:40 GMT",
+   "last_modified": "Sun, 01 Nov 2026 15:10:37 GMT",
    "last_success": "2026-11-01T23:30:36+09:00",
    "source_time": "2026-11-01T23:00"
   },
