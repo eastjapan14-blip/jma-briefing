@@ -181,19 +181,19 @@
      "value": 7.0
     },
     {
-     "date": "2026-07-29",
+     "date": "2026-10-31",
      "mark": "",
      "rank": 9,
      "value": 5.0
     },
     {
-     "date": "2026-07-12",
+     "date": "2026-07-29",
      "mark": "",
      "rank": 10,
      "value": 5.0
     }
    ],
-   "period": "2026/32026/10"
+   "period": "2026/32026/11"
   },
   "日最大1時間降水量(mm)": {
    "entries": [
@@ -246,84 +246,84 @@
      "value": 15.0
     },
     {
-     "date": "2026-07-30",
+     "date": "2026-10-21",
      "mark": "",
      "rank": 9,
-     "value": 12.0
+     "value": 12.5
     },
     {
-     "date": "2026-07-12",
+     "date": "2026-07-30",
      "mark": "",
      "rank": 10,
-     "value": 11.5
+     "value": 12.0
     }
    ],
-   "period": "2026/32026/10"
+   "period": "2026/32026/11"
   },
   "日降水量(mm)": {
    "entries": [
     {
-     "date": "2026-07-24",
+     "date": "2026-10-21",
      "mark": "",
      "rank": 1,
+     "value": 94.0
+    },
+    {
+     "date": "2026-07-24",
+     "mark": "",
+     "rank": 2,
      "value": 83.5
     },
     {
      "date": "2026-06-21",
      "mark": "",
-     "rank": 2,
+     "rank": 3,
      "value": 76.5
     },
     {
      "date": "2026-07-12",
      "mark": "",
-     "rank": 3,
+     "rank": 4,
      "value": 63.5
     },
     {
      "date": "2026-07-30",
      "mark": "",
-     "rank": 4,
+     "rank": 5,
      "value": 57.0
     },
     {
      "date": "2026-07-29",
      "mark": "",
-     "rank": 5,
+     "rank": 6,
      "value": 44.0
     },
     {
      "date": "2026-05-21",
      "mark": "",
-     "rank": 6,
+     "rank": 7,
      "value": 42.5
     },
     {
      "date": "2026-09-13",
      "mark": "",
-     "rank": 7,
+     "rank": 8,
      "value": 39.0
+    },
+    {
+     "date": "2026-10-14",
+     "mark": "",
+     "rank": 9,
+     "value": 38.5
     },
     {
      "date": "2026-05-04",
      "mark": "",
-     "rank": 8,
-     "value": 37.5
-    },
-    {
-     "date": "2026-09-14",
-     "mark": "",
-     "rank": 9,
-     "value": 29.5
-    },
-    {
-     "date": "2026-08-28",
-     "mark": "",
      "rank": 10,
-     "value": 29.0
+     "value": 37.5
     }
    ],
-   "period": "2026/32026/10"
+   "period": "2026/32026/11"
   },
   "月降水量の多い方から(mm)": {
    "entries": [
@@ -334,46 +334,46 @@
      "value": 372.0
     },
     {
-     "date": "2026-05",
+     "date": "2026-10",
      "mark": "",
      "rank": 2,
+     "value": 301.0
+    },
+    {
+     "date": "2026-05",
+     "mark": "",
+     "rank": 3,
      "value": 233.5
     },
     {
      "date": "2026-09",
      "mark": "",
-     "rank": 3,
+     "rank": 4,
      "value": 230.5
     },
     {
      "date": "2026-04",
      "mark": "",
-     "rank": 4,
+     "rank": 5,
      "value": 148.0
     },
     {
      "date": "2026-06",
      "mark": "",
-     "rank": 5,
+     "rank": 6,
      "value": 130.0
     },
     {
      "date": "2026-08",
      "mark": "",
-     "rank": 6,
+     "rank": 7,
      "value": 112.0
     },
     {
      "date": "2026-03",
      "mark": "]",
-     "rank": 7,
-     "value": 30.5
-    },
-    {
-     "date": null,
-     "mark": "?",
      "rank": 8,
-     "value": null
+     "value": 30.5
     },
     {
      "date": null,
@@ -388,7 +388,7 @@
      "value": null
     }
    ],
-   "period": "2026/32026/9"
+   "period": "2026/32026/10"
   },
   "月降水量の少ない方から(mm)": {
    "entries": [
@@ -417,10 +417,10 @@
      "value": 233.5
     },
     {
-     "date": null,
-     "mark": "?",
+     "date": "2026-10",
+     "mark": "",
      "rank": 5,
-     "value": null
+     "value": 301.0
     },
     {
      "date": null,
@@ -453,10 +453,10 @@
      "value": null
     }
    ],
-   "period": "2026/32026/9"
+   "period": "2026/32026/10"
   }
  },
- "fetched_at": "2026-10-02T12:30:41+09:00",
+ "fetched_at": "2026-11-02T00:40:38+09:00",
  "station": "上田沢（山形県）",
  "url": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1678&year=&month=&day=&view="
 }
