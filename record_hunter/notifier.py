@@ -8,7 +8,7 @@ import urllib.request
 
 from .log import log
 from .metrics import METRICS, fmt
-from . import shorts
+from . import rarity
 
 RANK_UPDATE = "https://www.data.jma.go.jp/stats/data/mdrr/rank_update"
 PRIORITY = {"A": 4, "B": 3, "R": 3}
@@ -60,8 +60,6 @@ def describe(ev: dict, cfg) -> list:
                 L.append(f" {r}位 {v(val)}（{_d(d)}）")
         if ev.get("years_since"):
             L.append(f"→ これを上回る値は{ev['last_stricter_date'][:4]}年以来{ev['years_since']}年ぶり")
-    if ev.get("stats_start"):
-        L.append(f"統計開始 {ev['stats_start']}年" + ("（10年未満）" if ev.get("short_stats") else ""))
     return L
 
 
@@ -75,7 +73,7 @@ def format_single(ev: dict, cfg, cluster_n: int = 0, stations=None, state=None):
     L = [head] + describe(ev, cfg)
     if cluster_n >= 2:
         L.append(f"{ev['pref']}内ではほか{cluster_n - 1}地点も{m.label}が記録級")
-    L.append(shorts.line(shorts.judge(ev, shorts.nearby(state, ev) if state else cluster_n)))
+    L += rarity.explain(ev, state)
     L.append("※速報値")
     click = ev.get("source_ref") or (stations.rank_url(ev["station"], int(ev["date"][5:7])) if stations else None) \
         or rank_update_url(ev["date"])
@@ -89,24 +87,25 @@ def format_group(events: list, new_ids: list, cfg, state=None):
     kind = "観測史上1位級" if any("ALL_TIME" in t for e in events for t in e["tags"]) else f"{month}月1位級"
     title = f"[記録] {pref} {m.label} {len(events)}地点が{kind}"
     L = [f"{m.emoji} {pref} {m.label}（{_d(d)}）"]
-    for e in sorted(events, key=lambda e: (e["id"] not in new_ids, e["name"]))[:cfg.max_group_lines]:
+    for e in sorted(events, key=lambda e: (e["id"] not in new_ids, -rarity.score(e), e["name"]))[:cfg.max_group_lines]:
         tag = ("★" if e["id"] in new_ids else "・")
-        L.append(f"{tag}{e['name']} {fmt(m, e['value'])}{m.unit}")
+        L.append(f"{tag}{e['name']} {fmt(m, e['value'])}{m.unit}　{rarity.short(e)}")
         for line in describe(e, cfg)[:2]:
             L.append(f"   {line}")
     if len(events) > cfg.max_group_lines:
         L.append(f"…ほか{len(events) - cfg.max_group_lines}地点")
-    j, e = shorts.best(events, state or {"events": {x["id"]: x for x in events}})
-    L.append(shorts.line(j) + (f"（{e['name']}）" if len(events) > 1 else ""))
-    L.append("※速報値（★=新規）")
+    top = max(events, key=rarity.score)
+    L.append(f"いちばん珍しいのは {top['name']}")
+    L += rarity.explain(top, state)[1:]
+    L.append("※速報値（★=新規、●が多いほど珍しい）")
     return title, "\n".join(L), rank_update_url(d)
 
 
 def format_revised(ev: dict, cfg):
     m = METRICS[ev["metric"]]
     title = f"[記録・訂正] {ev['name']} {m.label}"
-    msg = (f"{_d(ev['date'])} の {ev['name']} {fmt(m, ev['value'])}{m.unit} は、翌日の気象庁「更新状況」に"
-           f"1位更新として載っていません。値が修正された可能性があります。")
+    msg = (f"{_d(ev['date'])} の {ev['name']} {fmt(m, ev['value'])}{m.unit} は、確定した気象庁「更新状況」"
+           f"（{_d(ev['date'])}分）に1位更新として載っていません。値が修正された可能性があります。")
     return title, msg, rank_update_url(ev["date"])
 
 

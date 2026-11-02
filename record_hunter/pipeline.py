@@ -61,16 +61,20 @@ def collect_csv(cfg, fetcher, state, today: date) -> list:
     return obs
 
 
-def collect_rank_update(cfg, fetcher, stations, day: date, provisional: bool = True) -> list:
+def collect_rank_update(cfg, fetcher, stations, day: date, provisional: bool = True, status: dict = None) -> list:
+    """status を渡すと status["final"] にページが確定版かどうかを書く。"""
     url = notifier.rank_update_url(day.isoformat())
     r = fetcher.get(url)
     if not r.ok:
         return []
+    html = r.body.decode("utf-8", errors="replace")
     try:
-        rows = rank_update.parse(r.body.decode("utf-8", errors="replace"), day.isoformat(), provisional)
+        rows = rank_update.parse(html, day.isoformat(), provisional)
     except ParserError as e:
         log("parse", "parser_warning", source="rank_update", error=str(e))
         return []
+    if status is not None:
+        status["final"] = rank_update.is_final(html)
     out = []
     for o in rows:
         o.station_id = stations.find_id(o.name, o.pref)
@@ -90,11 +94,11 @@ def run(cfg, fetcher, state: dict, today: date, dry: bool, stations: Stations = 
     yday = today - timedelta(days=1)
     obs = collect_csv(cfg, fetcher, state, today)
     stations.register(obs)
-    ru_yday = []
+    ru_yday, yday_page = [], {"final": False}
     if cfg.enable_rank_update:
         obs += collect_rank_update(cfg, fetcher, stations, today)
         # 前日ページ（確定値）も候補源にする。日降水量など 24 時に確定する記録は当日 CSV に載らない
-        ru_yday = collect_rank_update(cfg, fetcher, stations, yday, provisional=False)
+        ru_yday = collect_rank_update(cfg, fetcher, stations, yday, provisional=False, status=yday_page)
         obs += ru_yday
 
     cands = detect(obs, cfg)
@@ -117,9 +121,13 @@ def run(cfg, fetcher, state: dict, today: date, dry: bool, stations: Stations = 
             E.mark_notified(state, n, now)
             sent += 1
 
+    # 前日分の照合は、前日ページが確定版（「◯時◯分現在」が消えた）になってから1回だけ行う。
+    # 日付が変わった直後はまだ途中版で、載るべき地点が欠けていることがある
     if cfg.enable_confirm and ru_yday and yday.isoformat() not in state["confirm_checked"] \
             and any(e["date"] == yday.isoformat() for e in state["events"].values()):
-        if True:
+        if not yday_page["final"]:
+            log("confirm", "confirm_wait", date=yday.isoformat(), reason="page_not_final")
+        else:
             for ev in E.confirm(state, ru_yday, yday.isoformat()):
                 title, msg, click = notifier.format_revised(ev, cfg)
                 notifier.send(cfg, "R", title, msg, click, dry)

@@ -185,7 +185,9 @@ def mark_notified(state: dict, n: dict, now: str):
 
 
 def confirm(state: dict, ru_obs: list, yday: str) -> list:
-    """前日の更新状況ページと突き合わせ。載っていれば CONFIRMED、1位のはずが無ければ REVISED。"""
+    """前日の更新状況ページと突き合わせ。載っていれば CONFIRMED、1位のはずが無ければ REVISED。
+    更新状況ページは「観測開始または移転等から10年目以降の地点」だけが対象。統計10年未満の地点は
+    載らないのが正常なので UNLISTED とし、訂正扱いにしない。"""
     present = {}
     for o in ru_obs:
         if o.station_id:
@@ -196,6 +198,10 @@ def confirm(state: dict, ru_obs: list, yday: str) -> list:
     revised = []
     for ev in state["events"].values():
         if ev["date"] != yday or ev["status"] != "PROVISIONAL":
+            continue
+        if ev.get("short_stats") or "SHORT_STATS" in ev.get("tags", []):
+            ev["status"] = "UNLISTED"
+            log("confirm", "unlisted", id=ev["id"], reason="short_stats")
             continue
         if ev["metric"] not in metrics_on_page:
             continue   # その要素の表が空 or 読めていない: 判断しない

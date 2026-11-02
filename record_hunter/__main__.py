@@ -7,7 +7,7 @@
   python3 -m record_hunter replay --date YYYY-MM-DD [--fixtures DIR] [--state DIR] [--notify]
                                                                       Fixture から再生（既定は通知しない）
   python3 -m record_hunter snapshot --out DIR [--date YYYY-MM-DD]     今日の CSV・更新状況ページを Fixture 化
-  python3 -m record_hunter shorts [--date YYYY-MM-DD] [--state DIR]   Shorts 候補の一覧（既定は State ブランチを読む）
+  python3 -m record_hunter recent [--days N] [--state DIR]            最近の記録を珍しさの順に一覧（既定は State ブランチ）
 環境変数: NTFY_TOPIC NTFY_SERVER RH_STATE_DIR RH_DRY_RUN RH_MAX_ENRICH RH_FETCH_SLEEP RH_CACHE_TTL_DAYS
           RH_CLUSTER_MIN RH_RANK_THRESHOLD RH_NOTIFY_LEVELS RH_METRICS RH_ENABLE_ENRICH RH_ENABLE_RANK_UPDATE
 """
@@ -82,31 +82,22 @@ def _branch_state():
     return json.loads(r.stdout)
 
 
-def cmd_shorts(args):
-    from . import shorts
-    from .notifier import rank_update_url
+def cmd_recent(args):
+    from . import rarity
+    from .metrics import fmt
     state = st.load(Path(args.state)) if args.state else _branch_state()
-    day = _today(args.date)
-    dates = {day.isoformat(), (day - timedelta(days=1)).isoformat()}
-    rows = shorts.candidates(state, dates)
-    if not rows:
-        print(f"{day - timedelta(days=1)}〜{day} の記録級イベントはありません")
+    day = _today(None)
+    dates = {(day - timedelta(days=i)).isoformat() for i in range(args.days)}
+    evs = [e for e in state.get("events", {}).values()
+           if e["date"] in dates and e.get("severity") in ("A", "B") and e.get("status") != "REVISED"]
+    if not evs:
+        print(f"直近{args.days}日の記録級イベントはありません")
         return
-    print(f"Shorts 候補（{day - timedelta(days=1)}〜{day}、速報値）")
-    for r in rows:
-        j, e = r["judge"], r["event"]
-        print(f"\n{j['grade']} {j['score']:+d}  {e['date']} {e['pref']} {e.get('muni') or ''} {e['name']}  {j['label']} {j['value']}"
-              + (f"（{e['time']}まで）" if e.get("time") else ""))
-        if r["others"]:
-            print(f"   同じ地点のほかの要素: {'・'.join(r['others'])}")
-        if r["near"]:
-            near = "・".join(x["name"] + "（" + x["pref"] + "）" for x in r["near"][:6])
-            near += f" ほか{len(r['near']) - 6}地点" if len(r["near"]) > 6 else ""
-            print(f"   同じ日に周辺で: {near}")
-        print(f"   理由: {'・'.join(j['why'])}")
-        if j["grade"] != "×":
-            print(f"   一言: {j['hook']}　型: {j['plan']}")
-            print(f"   照合: {rank_update_url(e['date'])}")
+    for e in sorted(evs, key=lambda e: (-rarity.score(e), e["date"], e["pref"], e["name"])):
+        m = METRICS[e["metric"]]
+        print(f"\n{e['date']} {e['pref']} {e['name']} {m.label} {fmt(m, e['value'])}{m.unit}  [{e.get('status')}]")
+        for line in rarity.explain(e, state):
+            print("  " + line)
 
 
 def main(argv=None):
@@ -118,7 +109,7 @@ def main(argv=None):
     a.add_argument("--fixtures", default=str(ROOT / "tests" / "fixtures")); a.add_argument("--state")
     a.add_argument("--notify", action="store_true")
     a = sub.add_parser("snapshot"); a.add_argument("--out", default=str(ROOT / "tests" / "fixtures")); a.add_argument("--date")
-    a = sub.add_parser("shorts"); a.add_argument("--date"); a.add_argument("--state")
+    a = sub.add_parser("recent"); a.add_argument("--days", type=int, default=3); a.add_argument("--state")
     args = p.parse_args(argv)
     if args.cmd == "run":
         cmd_run(args, args.dry_run)
@@ -128,8 +119,8 @@ def main(argv=None):
         cmd_replay(args)
     elif args.cmd == "snapshot":
         cmd_snapshot(args)
-    elif args.cmd == "shorts":
-        cmd_shorts(args)
+    elif args.cmd == "recent":
+        cmd_recent(args)
 
 
 if __name__ == "__main__":

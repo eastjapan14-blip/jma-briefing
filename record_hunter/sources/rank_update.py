@@ -70,6 +70,15 @@ def _iso(s):
     return f"{m.group(1)}-{int(m.group(2)):02d}" if m else None
 
 
+_ASOF = re.compile(r"\d{1,2}時\d{1,2}分現在")
+
+
+def is_final(html: str) -> bool:
+    """その日のページが確定版か。途中のあいだは見出しに「13時20分現在」が付く（日付が変わった直後の前日ページも）。"""
+    head = html.split("地点の一覧", 1)[0]
+    return not _ASOF.search(re.sub(r"<[^>]+>", " ", head))
+
+
 def parse(html: str, obs_date: str, provisional: bool = True) -> list:
     """obs_date: このページが表す日。provisional=True（当日ページ）では値の記号 ")" "]" を速報扱い（NORMAL）にする。
     当日は日が終わるまで資料不足の記号が付くため。前日以降のページでは記号どおり品質を落とす。"""

@@ -50,6 +50,6 @@ python3 scripts/fetch_surface.py --time 2026-09-28T06:00 --out material/<dir>/ra
 python3 scripts/render_map.py --bbox 24.0,122.9,45.6,146.2 --size 1080x900 --inner 60,40,900,860 --no-borders --regions --out material/<dir>/images/japan.png   # 長期予報ショート用の全国図（地方区分入り）
 python3 scripts/seasonal_short.py material/<dir>/source.md --out material/<dir_short>/short.json --periods "9/26〜10/2,..."   # 長期予報ショートの short.json 骨組み（TODO を埋める）
 python3 -m record_hunter dry-run                # アメダス記録候補の確認（通知しない）
-python3 -m record_hunter shorts [--date YYYY-MM-DD]   # Shorts 候補の一覧（◎○×・理由・型。State ブランチを読む）
+python3 -m record_hunter recent [--days 3]      # 最近の記録を珍しさの順に一覧（●●●〜○○○と理由。State ブランチを読む）
 python3 -m pytest -q tests                      # Record Hunter のテスト
 ```
