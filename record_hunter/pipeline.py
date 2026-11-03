@@ -50,6 +50,9 @@ def collect_csv(cfg, fetcher, state, today: date) -> list:
         except ParserError as e:
             log("parse", "parser_warning", metric=mid, error=str(e), action="halt_metric")
             continue
+        except Exception as e:  # 想定外の形でも、この要素だけ飛ばして他の要素の処理は続ける
+            log("parse", "parser_error", metric=mid, error=f"{type(e).__name__}: {e}"[:200], action="halt_metric")
+            continue
         if rows:
             t = rows[0].source_time
             if t and t == src.get("source_time"):

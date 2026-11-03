@@ -110,10 +110,13 @@ def parse(metric, data: bytes) -> list:
     if not rows:
         raise ParserError("CSV が空です")
     c = find_columns(rows[0])
+    # 使う列のうち最も右の列まで必要（"month" "day" は列番号ではなく値なので除く）
+    need = max(v for k, v in c.items() if k not in ("month", "day") and isinstance(v, int)) + 1
     out = []
     bad = 0
-    for r in rows[1:]:
-        if len(r) < len(rows[0]) - 1:
+    body = [r for r in rows[1:] if any(x.strip() for x in r)]
+    for r in body:
+        if len(r) < need:   # 気象庁が CSV を書き換えている最中に取ると、最後の行が途中で切れる
             bad += 1
             continue
         try:
@@ -137,13 +140,21 @@ def parse(metric, data: bytes) -> list:
         mo = Record(_num(r[c["mo_v"]]), _ymd(r[c["mo_y"]], r[c["mo_m"]], r[c["mo_d"]]),
                     quality_from_code(r[c["mo_q"]])) if _num(r[c["mo_v"]]) is not None else None
         start = r[c["start"]].strip()
+        try:
+            src_time = f'{cur.isoformat()}T{int(r[c["cur_h"]]):02d}:{int(r[c["cur_mi"]]):02d}'
+        except ValueError:
+            bad += 1
+            continue
         out.append(Observation(
             metric=metric.id, station_id=r[c["station"]].strip(), name=name, pref=pref, pref_full=pref_full,
             obs_date=obs_date.isoformat(), obs_time=t, value=_num(r[c["value"]]),
             quality=today_quality_from_code(r[c["quality"]]), flag=flag,
             short_stats=(r[c["short"]].strip() == "1"), prev_alltime=at, prev_monthly=mo,
             stats_start=int(start) if start.isdigit() else None, source="csv",
-            source_time=f'{cur.isoformat()}T{int(r[c["cur_h"]]):02d}:{int(r[c["cur_mi"]]):02d}'))
+            source_time=src_time))
+    if body and bad > max(5, len(body) * 0.05):
+        # 読めない行が多いのはファイルが書きかけのとき。この回は使わず、次の回で取り直す
+        raise ParserError(f"読めない行が多すぎます（{bad}/{len(body)} 行）。書き換え中の CSV の可能性")
     if bad:
         log("parse", "parser_warning", metric=metric.id, skipped_rows=bad)
     log("parse", "parse_n", metric=metric.id, n=len(out), month=c["month"], day=c["day"])

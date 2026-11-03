@@ -89,3 +89,32 @@ def test_rank_update_station_asterisk_and_marks():
     sakahata = next(o for o in rows_final if o.name == "坂畑" and o.metric == "pre24h" and o.flag == 13)
     assert sakahata.quality == Quality.INSUFFICIENT                # 確定ページ: 記号どおり
     assert len([o for o in rows if o.metric == "preday" and o.flag == 13]) == 9
+
+
+def _csv_rows(path):
+    import csv, io
+    from record_hunter.sources import latest_csv
+    return list(csv.reader(io.StringIO(latest_csv.decode(path.read_bytes()))))
+
+
+def _to_bytes(rows):
+    import csv, io
+    buf = io.StringIO()
+    csv.writer(buf, lineterminator="\r\n").writerows(rows)
+    return buf.getvalue().encode("cp932")
+
+
+def test_truncated_last_row_is_skipped():
+    """2026-11-02 21:00: 書き換え中の CSV を取り、最後の行で統計開始年の列が欠けて IndexError で止まった。"""
+    import pytest
+    from pathlib import Path
+    from record_hunter.metrics import METRICS
+    from record_hunter.models import ParserError
+    from record_hunter.sources import latest_csv
+    rows = _csv_rows(Path(__file__).parent / "fixtures" / "2026-09-18" / "pre24h00.csv")
+    n = len(rows) - 1
+    cut = rows[:-1] + [rows[-1][:-1]]                                   # 最後の行だけ最後の列が欠ける
+    assert len(latest_csv.parse(METRICS["pre24h"], _to_bytes(cut))) == n - 1
+    half = rows[: 1 + n // 2] + [r[:5] for r in rows[1 + n // 2:]]      # 半分が壊れている＝書きかけ
+    with pytest.raises(ParserError):
+        latest_csv.parse(METRICS["pre24h"], _to_bytes(half))
