@@ -227,7 +227,7 @@
    "first_seen": "2026-11-04T21:30:34+09:00",
    "flag": 11,
    "id": "pre1h:44216:2026-11-04",
-   "last_seen": "2026-11-05T00:30:38+09:00",
+   "last_seen": "2026-11-05T00:40:25+09:00",
    "last_stricter_date": "2023-09-08",
    "latitude": 34.1883,
    "local_rank": null,
@@ -506,7 +506,7 @@
    "first_seen": "2026-11-04T22:30:35+09:00",
    "flag": 11,
    "id": "pre24h:44207:2026-11-04",
-   "last_seen": "2026-11-05T00:30:38+09:00",
+   "last_seen": "2026-11-05T00:40:25+09:00",
    "last_stricter_date": null,
    "latitude": 34.3683,
    "local_rank": null,
@@ -564,7 +564,7 @@
    "first_seen": "2026-11-05T00:30:38+09:00",
    "flag": 11,
    "id": "pre24h:44207:2026-11-05",
-   "last_seen": "2026-11-05T00:30:38+09:00",
+   "last_seen": "2026-11-05T00:40:25+09:00",
    "last_stricter_date": null,
    "latitude": 34.3683,
    "local_rank": null,
@@ -575,7 +575,7 @@
    "metric": "pre24h",
    "monthly_rank": null,
    "monthly_tie": false,
-   "muni": null,
+   "muni": "新島村",
    "name": "新島",
    "notifiable": true,
    "notified_at": "2026-11-05T00:30:38+09:00",
@@ -598,7 +598,8 @@
    "short_stats": false,
    "source_ref": null,
    "sources": [
-    "csv"
+    "csv",
+    "rank_update"
    ],
    "station": "44207",
    "stats_period": null,
@@ -704,7 +705,7 @@
    "first_seen": "2026-11-04T22:20:30+09:00",
    "flag": 11,
    "id": "preday:44207:2026-11-04",
-   "last_seen": "2026-11-05T00:30:38+09:00",
+   "last_seen": "2026-11-05T00:40:25+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 34.3683,
    "local_rank": null,
@@ -1692,30 +1693,30 @@
    "years_since": 4
   }
  },
- "last_run": "2026-11-05T00:30:38+09:00",
- "runs": 6512,
+ "last_run": "2026-11-05T00:40:25+09:00",
+ "runs": 6513,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 04 Nov 2026 13:49:33 GMT",
-   "last_success": "2026-11-04T23:40:27+09:00",
-   "source_time": "2026-11-04T22:00"
+   "last_modified": "Wed, 04 Nov 2026 14:49:56 GMT",
+   "last_success": "2026-11-05T00:40:26+09:00",
+   "source_time": "2026-11-04T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 04 Nov 2026 13:49:33 GMT",
-   "last_success": "2026-11-04T23:40:25+09:00",
-   "source_time": "2026-11-04T22:00"
+   "last_modified": "Wed, 04 Nov 2026 14:49:56 GMT",
+   "last_success": "2026-11-05T00:40:25+09:00",
+   "source_time": "2026-11-04T23:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 04 Nov 2026 15:20:49 GMT",
-   "last_success": "2026-11-05T00:30:39+09:00",
-   "source_time": "2026-11-04T24:00"
+   "last_modified": "Wed, 04 Nov 2026 15:30:42 GMT",
+   "last_success": "2026-11-05T00:40:28+09:00",
+   "source_time": "2026-11-05T00:10"
   },
   "pre24h00": {
    "etag": "",
