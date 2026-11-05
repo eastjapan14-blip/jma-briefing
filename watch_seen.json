@@ -1,47 +1,6 @@
 {
 "bodies": {},
-"pending": {
-"https://www.data.jma.go.jp/developer/xml/data/20261105073406_0_VPFJ50_050000.xml": {
-"author": "秋田地方気象台",
-"content": "【秋田県気象解説情報（暴風・高波）】秋田県では、西高東低の気圧配置が強まるため、海上を中心に西よりの非常に強い風が吹き、大しけとなるでしょう。７日は、暴風や高波に警戒してください。",
-"held": "2026-11-05T07:40:27.094318+00:00",
-"tier": "B",
-"title": "府県気象情報",
-"topic": "暴風・高波",
-"updated": "2026-11-05T07:34:06Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20261105073406_0_VPFJ50_050000.xml"
-},
-"https://www.data.jma.go.jp/developer/xml/data/20261105073408_0_VPFJ50_060000.xml": {
-"author": "山形地方気象台",
-"content": "【山形県気象解説情報（暴風・高波）】庄内の海上では、西高東低の気圧配置が強まるため、西よりの非常に強い風が吹き、大しけとなるでしょう。７日は、暴風や高波に警戒してください。",
-"held": "2026-11-05T07:40:27.094318+00:00",
-"tier": "B",
-"title": "府県気象情報",
-"topic": "暴風・高波",
-"updated": "2026-11-05T07:34:07Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20261105073408_0_VPFJ50_060000.xml"
-},
-"https://www.data.jma.go.jp/developer/xml/data/20261105074941_0_VPFJ50_015000.xml": {
-"author": "室蘭地方気象台",
-"content": "【胆振・日高地方気象解説情報（暴風・高波）】日高東部では７日は暴風に警戒し、高波に十分注意してください。また、胆振中部では６日夜から７日にかけて強風に十分注意してください。",
-"held": "2026-11-05T08:00:50.183533+00:00",
-"tier": "B",
-"title": "府県気象情報",
-"topic": "暴風・高波",
-"updated": "2026-11-05T07:49:41Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20261105074941_0_VPFJ50_015000.xml"
-},
-"https://www.data.jma.go.jp/developer/xml/data/20261105080627_0_VPFJ50_017000.xml": {
-"author": "函館地方気象台",
-"content": "【渡島・檜山地方気象解説情報（暴風・高波）】檜山南部・奥尻島では、６日夜のはじめ頃から７日にかけて、暴風に警戒してください。また、渡島西部と檜山地方では、７日は高波に警戒してください。",
-"held": "2026-11-05T08:10:23.664920+00:00",
-"tier": "B",
-"title": "府県気象情報",
-"topic": "暴風・高波",
-"updated": "2026-11-05T08:06:27Z",
-"url": "https://www.data.jma.go.jp/developer/xml/data/20261105080627_0_VPFJ50_017000.xml"
-}
-},
+"pending": {},
 "topics": {
 "暴風・高波": {
 "北海道": "2026-11-05T07:30:40.998288+00:00",
