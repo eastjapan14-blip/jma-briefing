@@ -1,17 +1,29 @@
 {
 "bodies": {},
-"pending": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261106072813_0_VPFJ50_020000.xml": {
+"author": "青森地方気象台",
+"content": "【青森県気象解説情報（暴風・高波）】冬型の気圧配置が強まるため、三八上北の陸上では７日昼前から夕方にかけて、暴風に警戒してください。また、津軽の外海では、７日未明から８日午前中にかけて、陸奥湾では、７日昼前から夕方にかけて、高波に警戒してください。",
+"held": "2026-11-06T07:30:35.297416+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "暴風・高波",
+"updated": "2026-11-06T07:28:13Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261106072813_0_VPFJ50_020000.xml"
+}
+},
 "topics": {
 "暴風・高波": {
 "宗谷": "2026-11-06T07:20:24.087321+00:00",
-"東北": "2026-11-06T07:00:42.948597+00:00"
+"東北": "2026-11-06T07:00:42.948597+00:00",
+"胆振・日高": "2026-11-06T07:30:35.297416+00:00",
+"青森": "2026-11-06T07:30:35.297416+00:00"
 },
 "暴風・高波・大雪": {
 "北海道": "2026-11-06T06:50:25.216882+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261103071053_0_VPCJ50_130000.xml": "2026-11-03T07:20:24.785029+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261103203626_0_VPCJ50_130000.xml": "2026-11-03T20:40:42.388501+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261104065943_0_VPCJ50_130000.xml": "2026-11-04T07:10:24.020517+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261104120441_0_VXWW50_130000.xml": "2026-11-04T12:10:24.819614+00:00",
@@ -41,6 +53,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261106024045_0_VPFJ50_015000.xml": "2026-11-06T02:50:25.907293+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106064101_0_VPCJ50_016000.xml": "2026-11-06T06:50:25.216882+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106065008_0_VPCJ50_040000.xml": "2026-11-06T07:00:42.948597+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106071431_0_VPFJ50_011000.xml": "2026-11-06T07:20:24.087321+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261106071431_0_VPFJ50_011000.xml": "2026-11-06T07:20:24.087321+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261106072705_0_VPFJ50_015000.xml": "2026-11-06T07:30:35.297416+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261106072813_0_VPFJ50_020000.xml": "2026-11-06T07:30:35.297416+00:00"
 }
 }
