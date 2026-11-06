@@ -2,6 +2,9 @@
 "bodies": {},
 "pending": {},
 "topics": {
+"暴風・高波": {
+"宗谷": "2026-11-06T02:20:24.123411+00:00"
+},
 "暴風・高波・大雪": {
 "北海道": "2026-11-06T02:10:27.781979+00:00"
 }
@@ -32,6 +35,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261105211216_0_VPFJ50_016000.xml": "2026-11-05T21:20:26.080407+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261105215122_0_VPFJ50_012000.xml": "2026-11-05T22:00:41.416320+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261105222945_0_VPFJ50_017000.xml": "2026-11-05T22:40:26.009865+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106020209_0_VPCJ50_016000.xml": "2026-11-06T02:10:27.781979+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261106020209_0_VPCJ50_016000.xml": "2026-11-06T02:10:27.781979+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261106021941_0_VPFJ50_011000.xml": "2026-11-06T02:20:24.123411+00:00"
 }
 }
