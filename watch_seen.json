@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"暴風・高波": {
-"青森": "2026-11-06T08:30:34.931569+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261103203626_0_VPCJ50_130000.xml": "2026-11-03T20:40:42.388501+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261104065943_0_VPCJ50_130000.xml": "2026-11-04T07:10:24.020517+00:00",
