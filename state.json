@@ -33,6 +33,18 @@
    "notified_at": "2026-10-31T10:20:24+09:00",
    "notified_members": 3,
    "pref": "新潟県"
+  },
+  "tmax:茨城県:2026-11-06": {
+   "date": "2026-11-06",
+   "members": [
+    "40091",
+    "40231",
+    "40341"
+   ],
+   "metric": "tmax",
+   "notified_at": "2026-11-06T13:20:24+09:00",
+   "notified_members": 3,
+   "pref": "茨城県"
   }
  },
  "confirm_checked": {
@@ -311,7 +323,7 @@
    "first_seen": "2026-11-06T04:30:40+09:00",
    "flag": 11,
    "id": "pre1h:35257:2026-11-06",
-   "last_seen": "2026-11-06T13:10:22+09:00",
+   "last_seen": "2026-11-06T13:20:24+09:00",
    "last_stricter_date": "2026-10-21",
    "latitude": 38.5233,
    "local_rank": null,
@@ -487,7 +499,7 @@
    "first_seen": "2026-11-05T01:50:28+09:00",
    "flag": 11,
    "id": "pre1h:44216:2026-11-05",
-   "last_seen": "2026-11-06T13:10:22+09:00",
+   "last_seen": "2026-11-06T13:20:24+09:00",
    "last_stricter_date": "2023-09-08",
    "latitude": 34.1883,
    "local_rank": null,
@@ -824,7 +836,7 @@
    "first_seen": "2026-11-05T00:30:38+09:00",
    "flag": 11,
    "id": "pre24h:44207:2026-11-05",
-   "last_seen": "2026-11-06T13:10:22+09:00",
+   "last_seen": "2026-11-06T13:20:24+09:00",
    "last_stricter_date": null,
    "latitude": 34.3683,
    "local_rank": null,
@@ -883,7 +895,7 @@
    "first_seen": "2026-11-05T01:40:37+09:00",
    "flag": 11,
    "id": "pre24h:44216:2026-11-05",
-   "last_seen": "2026-11-06T13:10:22+09:00",
+   "last_seen": "2026-11-06T13:20:24+09:00",
    "last_stricter_date": null,
    "latitude": 34.1883,
    "local_rank": null,
@@ -1383,6 +1395,116 @@
    "value": 1.0,
    "years_since": null
   },
+  "tmax:40091:2026-11-06": {
+   "date": "2026-11-06",
+   "elevation": 95,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-11-06T13:20:24+09:00",
+   "flag": 11,
+   "id": "tmax:40091:2026-11-06",
+   "last_seen": "2026-11-06T13:20:24+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.6067,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 140.325,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "tmax",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "常陸大宮市",
+   "name": "常陸大宮",
+   "notifiable": true,
+   "notified_at": "2026-11-06T13:20:24+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "茨城県",
+   "pref_full": "茨城県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2023-11-03",
+    "value": 25.1
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "40091",
+   "stats_period": null,
+   "stats_start": 1979,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "12:46",
+   "top3": [],
+   "unit": "℃",
+   "value": 25.4,
+   "years_since": null
+  },
+  "tmax:40231:2026-11-06": {
+   "date": "2026-11-06",
+   "elevation": 24,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-11-06T13:20:24+09:00",
+   "flag": 11,
+   "id": "tmax:40231:2026-11-06",
+   "last_seen": "2026-11-06T13:20:24+09:00",
+   "last_stricter_date": null,
+   "latitude": 36.2817,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.9883,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "tmax",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "筑西市",
+   "name": "下館",
+   "notifiable": true,
+   "notified_at": "2026-11-06T13:20:24+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "茨城県",
+   "pref_full": "茨城県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2023-11-06",
+    "value": 25.1
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "40231",
+   "stats_period": null,
+   "stats_start": 2002,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
+   ],
+   "time": "12:55",
+   "top3": [],
+   "unit": "℃",
+   "value": 25.3,
+   "years_since": null
+  },
   "tmax:40341:2026-11-06": {
    "date": "2026-11-06",
    "elevation": 26,
@@ -1391,7 +1513,7 @@
    "first_seen": "2026-11-06T12:40:23+09:00",
    "flag": 11,
    "id": "tmax:40341:2026-11-06",
-   "last_seen": "2026-11-06T13:10:22+09:00",
+   "last_seen": "2026-11-06T13:20:24+09:00",
    "last_stricter_date": null,
    "latitude": 36.1033,
    "local_rank": null,
@@ -1405,7 +1527,7 @@
    "muni": "土浦市",
    "name": "土浦",
    "notifiable": true,
-   "notified_at": "2026-11-06T12:40:23+09:00",
+   "notified_at": "2026-11-06T13:20:24+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "茨城県",
@@ -1429,12 +1551,13 @@
    "stats_start": 1978,
    "status": "PROVISIONAL",
    "tags": [
-    "MONTHLY_1ST"
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER"
    ],
-   "time": "12:31",
+   "time": "12:53",
    "top3": [],
    "unit": "℃",
-   "value": 25.9,
+   "value": 26.1,
    "years_since": null
   },
   "tmax:41376:2026-11-06": {
@@ -1445,7 +1568,7 @@
    "first_seen": "2026-11-06T12:30:33+09:00",
    "flag": 11,
    "id": "tmax:41376:2026-11-06",
-   "last_seen": "2026-11-06T13:10:22+09:00",
+   "last_seen": "2026-11-06T13:20:24+09:00",
    "last_stricter_date": null,
    "latitude": 36.3383,
    "local_rank": null,
@@ -1485,7 +1608,7 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "12:31",
+   "time": "12:54",
    "top3": [],
    "unit": "℃",
    "value": 25.3,
@@ -1771,8 +1894,8 @@
    "years_since": 2
   }
  },
- "last_run": "2026-11-06T13:10:22+09:00",
- "runs": 6736,
+ "last_run": "2026-11-06T13:20:24+09:00",
+ "runs": 6737,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1792,21 +1915,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 06 Nov 2026 04:00:48 GMT",
-   "last_success": "2026-11-06T13:10:23+09:00",
-   "source_time": "2026-11-06T12:40"
+   "last_modified": "Fri, 06 Nov 2026 04:10:52 GMT",
+   "last_success": "2026-11-06T13:20:24+09:00",
+   "source_time": "2026-11-06T12:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 06 Nov 2026 04:00:46 GMT",
-   "last_success": "2026-11-06T13:10:24+09:00",
-   "source_time": "2026-11-06T12:40"
+   "last_modified": "Fri, 06 Nov 2026 04:10:48 GMT",
+   "last_success": "2026-11-06T13:20:26+09:00",
+   "source_time": "2026-11-06T12:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 06 Nov 2026 04:00:47 GMT",
+   "last_modified": "Fri, 06 Nov 2026 04:10:49 GMT",
    "last_success": "2026-11-06T12:30:36+09:00",
    "source_time": "2026-11-06T12:00"
   },
