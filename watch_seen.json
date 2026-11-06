@@ -30,10 +30,21 @@
 "topic": "暴風・高波",
 "updated": "2026-11-06T21:54:26Z",
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261106215427_0_VPFJ50_015000.xml"
+},
+"https://www.data.jma.go.jp/developer/xml/data/20261106220437_0_VPFJ50_011000.xml": {
+"author": "稚内地方気象台",
+"content": "【宗谷地方気象解説情報（暴風・高波）】宗谷北部と利尻・礼文では、７日夜遅くにかけて暴風に、８日明け方にかけて高波に警戒してください。",
+"held": "2026-11-06T22:10:25.078059+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "暴風・高波",
+"updated": "2026-11-06T22:04:36Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261106220437_0_VPFJ50_011000.xml"
 }
 },
 "topics": {
 "暴風・高波": {
+"宗谷": "2026-11-06T22:10:25.078059+00:00",
 "山形": "2026-11-06T20:40:23.400584+00:00",
 "東北": "2026-11-06T20:10:24.911998+00:00",
 "渡島・檜山": "2026-11-06T21:30:33.840087+00:00",
@@ -94,6 +105,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261106211049_0_VPFJ50_016000.xml": "2026-11-06T21:20:22.848228+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106212351_0_VPFJ50_017000.xml": "2026-11-06T21:30:33.840087+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106214916_0_VPFJ50_012000.xml": "2026-11-06T21:50:25.327002+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106215427_0_VPFJ50_015000.xml": "2026-11-06T22:00:41.294687+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261106215427_0_VPFJ50_015000.xml": "2026-11-06T22:00:41.294687+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261106220437_0_VPFJ50_011000.xml": "2026-11-06T22:10:25.078059+00:00"
 }
 }
