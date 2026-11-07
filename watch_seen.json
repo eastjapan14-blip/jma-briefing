@@ -8,11 +8,11 @@
 "渡島・檜山": "2026-11-07T21:30:32.905044+00:00"
 },
 "暴風・高波・大雪": {
+"上川・留萌": "2026-11-07T22:50:23.462322+00:00",
 "北海道": "2026-11-07T20:00:39.751329+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261104223924_0_VXWW50_130000.xml": "2026-11-04T22:40:23.687204+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261105050626_0_VPZK50_010000.xml": "2026-11-05T05:10:23.428490+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261105072212_0_VPCJ50_016000.xml": "2026-11-05T07:30:40.998288+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261105072411_0_VPCJ50_040000.xml": "2026-11-05T07:30:40.998288+00:00",
@@ -69,6 +69,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261107202910_0_VPFJ50_060000.xml": "2026-11-07T20:30:32.645993+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261107212212_0_VPFJ50_017000.xml": "2026-11-07T21:30:32.905044+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261107213532_0_VPFJ50_011000.xml": "2026-11-07T21:40:24.571468+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261107223821_0_VPFJ50_012000.xml": "2026-11-07T22:50:23.462322+00:00",
 "https://www.youtube.com/watch?v=H65ovjc9jiE": "2026-11-07T16:40:21.901694+00:00"
 }
 }
