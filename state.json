@@ -33,18 +33,6 @@
    "notified_members": 2,
    "pref": "東京都"
   },
-  "snowdepth:新潟県:2026-10-31": {
-   "date": "2026-10-31",
-   "members": [
-    "54296",
-    "54816",
-    "54836"
-   ],
-   "metric": "snowdepth",
-   "notified_at": "2026-10-31T10:20:24+09:00",
-   "notified_members": 3,
-   "pref": "新潟県"
-  },
   "tmax:栃木県:2026-11-06": {
    "date": "2026-11-06",
    "members": [
@@ -883,7 +871,7 @@
    "first_seen": "2026-11-07T08:00:43+09:00",
    "flag": 11,
    "id": "pre24h:54606:2026-11-07",
-   "last_seen": "2026-11-07T23:50:24+09:00",
+   "last_seen": "2026-11-08T00:00:42+09:00",
    "last_stricter_date": null,
    "latitude": 37.2917,
    "local_rank": null,
@@ -942,7 +930,7 @@
    "first_seen": "2026-11-07T10:00:41+09:00",
    "flag": 11,
    "id": "pre24h:54721:2026-11-07",
-   "last_seen": "2026-11-07T23:50:24+09:00",
+   "last_seen": "2026-11-08T00:00:42+09:00",
    "last_stricter_date": null,
    "latitude": 37.0833,
    "local_rank": null,
@@ -1251,279 +1239,6 @@
    "unit": "mm",
    "value": 179.0,
    "years_since": 0
-  },
-  "snow24h:54816:2026-10-31": {
-   "date": "2026-10-31",
-   "elevation": 350,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-31T09:30:32+09:00",
-   "flag": 10,
-   "id": "snow24h:54816:2026-10-31",
-   "last_seen": "2026-10-31T10:10:22+09:00",
-   "last_stricter_date": null,
-   "latitude": 36.9333,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 138.2217,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "snow24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "妙高市",
-   "name": "関山",
-   "notifiable": true,
-   "notified_at": "2026-10-31T09:30:32+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "新潟県",
-   "pref_full": "新潟県",
-   "prev": null,
-   "prev_monthly": {
-    "date": "1992-10-31",
-    "value": 1.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "タイ記録",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update"
-   ],
-   "station": "54816",
-   "stats_period": null,
-   "stats_start": 1980,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST_TIE"
-   ],
-   "time": "09:00",
-   "top3": [],
-   "unit": "cm",
-   "value": 1.0,
-   "years_since": null
-  },
-  "snowdepth:35486:2026-10-31": {
-   "date": "2026-10-31",
-   "elevation": 140,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-31T14:24:21+09:00",
-   "flag": 10,
-   "id": "snowdepth:35486:2026-10-31",
-   "last_seen": "2026-10-31T14:50:22+09:00",
-   "last_stricter_date": null,
-   "latitude": 38.0783,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.735,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "snowdepth",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "西置賜郡小国町",
-   "name": "小国",
-   "notifiable": true,
-   "notified_at": "2026-10-31T14:24:21+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "山形県",
-   "pref_full": "山形県",
-   "prev": null,
-   "prev_monthly": {
-    "date": "2025-10-31",
-    "value": 0.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update"
-   ],
-   "station": "35486",
-   "stats_period": null,
-   "stats_start": 1988,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST"
-   ],
-   "time": "14:00",
-   "top3": [],
-   "unit": "cm",
-   "value": 1.0,
-   "years_since": null
-  },
-  "snowdepth:54296:2026-10-31": {
-   "date": "2026-10-31",
-   "elevation": 3,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-31T10:20:24+09:00",
-   "flag": 10,
-   "id": "snowdepth:54296:2026-10-31",
-   "last_seen": "2026-10-31T11:00:40+09:00",
-   "last_stricter_date": null,
-   "latitude": 37.7917,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.0867,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "snowdepth",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "新潟市秋葉区",
-   "name": "新津",
-   "notifiable": true,
-   "notified_at": "2026-10-31T10:20:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "新潟県",
-   "pref_full": "新潟県",
-   "prev": null,
-   "prev_monthly": {
-    "date": "2025-10-31",
-    "value": 0.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update"
-   ],
-   "station": "54296",
-   "stats_period": null,
-   "stats_start": 1982,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "10:00",
-   "top3": [],
-   "unit": "cm",
-   "value": 1.0,
-   "years_since": null
-  },
-  "snowdepth:54816:2026-10-31": {
-   "date": "2026-10-31",
-   "elevation": 350,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-31T09:30:32+09:00",
-   "flag": 10,
-   "id": "snowdepth:54816:2026-10-31",
-   "last_seen": "2026-10-31T10:10:22+09:00",
-   "last_stricter_date": null,
-   "latitude": 36.9333,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 138.2217,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "snowdepth",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "妙高市",
-   "name": "関山",
-   "notifiable": true,
-   "notified_at": "2026-10-31T10:20:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "新潟県",
-   "pref_full": "新潟県",
-   "prev": null,
-   "prev_monthly": {
-    "date": "1992-10-30",
-    "value": 1.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "タイ記録",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update"
-   ],
-   "station": "54816",
-   "stats_period": null,
-   "stats_start": 1982,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST_TIE",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "09:00",
-   "top3": [],
-   "unit": "cm",
-   "value": 1.0,
-   "years_since": null
-  },
-  "snowdepth:54836:2026-10-31": {
-   "date": "2026-10-31",
-   "elevation": 452,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-10-31T10:20:24+09:00",
-   "flag": 10,
-   "id": "snowdepth:54836:2026-10-31",
-   "last_seen": "2026-10-31T11:20:24+09:00",
-   "last_stricter_date": null,
-   "latitude": 36.9967,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 138.6833,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "snowdepth",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "中魚沼郡津南町",
-   "name": "津南",
-   "notifiable": true,
-   "notified_at": "2026-10-31T10:20:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "新潟県",
-   "pref_full": "新潟県",
-   "prev": null,
-   "prev_monthly": {
-    "date": "2025-10-31",
-    "value": 0.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update"
-   ],
-   "station": "54836",
-   "stats_period": null,
-   "stats_start": 1989,
-   "status": "PROVISIONAL",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "10:00",
-   "top3": [],
-   "unit": "cm",
-   "value": 1.0,
-   "years_since": null
   },
   "tmax:40091:2026-11-06": {
    "date": "2026-11-06",
@@ -2368,8 +2083,8 @@
    "years_since": 2
   }
  },
- "last_run": "2026-11-07T23:50:24+09:00",
- "runs": 6949,
+ "last_run": "2026-11-08T00:00:42+09:00",
+ "runs": 6950,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2389,33 +2104,33 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 07 Nov 2026 14:30:44 GMT",
-   "last_success": "2026-11-07T23:40:27+09:00",
-   "source_time": "2026-11-07T23:10"
+   "last_modified": "Sat, 07 Nov 2026 14:50:41 GMT",
+   "last_success": "2026-11-08T00:00:43+09:00",
+   "source_time": "2026-11-07T23:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 07 Nov 2026 14:30:41 GMT",
-   "last_success": "2026-11-07T23:40:28+09:00",
-   "source_time": "2026-11-07T23:10"
+   "last_modified": "Sat, 07 Nov 2026 14:50:39 GMT",
+   "last_success": "2026-11-08T00:00:44+09:00",
+   "source_time": "2026-11-07T23:40"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 07 Nov 2026 14:30:41 GMT",
+   "last_modified": "Sat, 07 Nov 2026 14:50:39 GMT",
    "last_success": "2026-11-07T23:30:36+09:00",
    "source_time": "2026-11-07T23:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 07 Nov 2026 13:51:24 GMT"
+   "last_modified": "Sat, 07 Nov 2026 14:51:52 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 07 Nov 2026 13:51:48 GMT"
+   "last_modified": "Sat, 07 Nov 2026 14:52:16 GMT"
   }
  }
 }
