@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"暴風・高波": {
-"胆振・日高": "2026-11-07T09:30:33.389496+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261104144424_0_VXWW50_120000.xml": "2026-11-04T14:50:26.294834+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261104163340_0_VXWW50_130000.xml": "2026-11-04T16:40:28.260253+00:00",
