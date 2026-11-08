@@ -872,7 +872,7 @@
    "first_seen": "2026-11-07T08:00:43+09:00",
    "flag": 11,
    "id": "pre24h:54606:2026-11-07",
-   "last_seen": "2026-11-08T16:50:23+09:00",
+   "last_seen": "2026-11-08T17:00:40+09:00",
    "last_stricter_date": null,
    "latitude": 37.2917,
    "local_rank": null,
@@ -931,7 +931,7 @@
    "first_seen": "2026-11-07T10:00:41+09:00",
    "flag": 11,
    "id": "pre24h:54721:2026-11-07",
-   "last_seen": "2026-11-08T16:50:23+09:00",
+   "last_seen": "2026-11-08T17:00:40+09:00",
    "last_stricter_date": null,
    "latitude": 37.0833,
    "local_rank": null,
@@ -2084,8 +2084,8 @@
    "years_since": 2
   }
  },
- "last_run": "2026-11-08T16:50:23+09:00",
- "runs": 7055,
+ "last_run": "2026-11-08T17:00:40+09:00",
+ "runs": 7056,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2105,33 +2105,33 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 08 Nov 2026 07:40:40 GMT",
-   "last_success": "2026-11-08T16:50:23+09:00",
-   "source_time": "2026-11-08T16:20"
+   "last_modified": "Sun, 08 Nov 2026 07:50:38 GMT",
+   "last_success": "2026-11-08T17:00:41+09:00",
+   "source_time": "2026-11-08T16:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 08 Nov 2026 07:40:37 GMT",
-   "last_success": "2026-11-08T16:50:25+09:00",
-   "source_time": "2026-11-08T16:20"
+   "last_modified": "Sun, 08 Nov 2026 07:50:36 GMT",
+   "last_success": "2026-11-08T17:00:42+09:00",
+   "source_time": "2026-11-08T16:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 08 Nov 2026 07:40:37 GMT",
+   "last_modified": "Sun, 08 Nov 2026 07:50:36 GMT",
    "last_success": "2026-11-08T16:30:36+09:00",
    "source_time": "2026-11-08T16:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 08 Nov 2026 06:51:27 GMT"
+   "last_modified": "Sun, 08 Nov 2026 07:51:29 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 08 Nov 2026 06:51:51 GMT"
+   "last_modified": "Sun, 08 Nov 2026 07:51:55 GMT"
   }
  }
 }
