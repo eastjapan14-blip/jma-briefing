@@ -872,7 +872,7 @@
    "first_seen": "2026-11-07T08:00:43+09:00",
    "flag": 11,
    "id": "pre24h:54606:2026-11-07",
-   "last_seen": "2026-11-08T13:00:41+09:00",
+   "last_seen": "2026-11-08T13:10:25+09:00",
    "last_stricter_date": null,
    "latitude": 37.2917,
    "local_rank": null,
@@ -931,7 +931,7 @@
    "first_seen": "2026-11-07T10:00:41+09:00",
    "flag": 11,
    "id": "pre24h:54721:2026-11-07",
-   "last_seen": "2026-11-08T13:00:41+09:00",
+   "last_seen": "2026-11-08T13:10:25+09:00",
    "last_stricter_date": null,
    "latitude": 37.0833,
    "local_rank": null,
@@ -2084,8 +2084,8 @@
    "years_since": 2
   }
  },
- "last_run": "2026-11-08T13:00:41+09:00",
- "runs": 7032,
+ "last_run": "2026-11-08T13:10:25+09:00",
+ "runs": 7033,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
