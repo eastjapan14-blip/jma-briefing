@@ -1,13 +1,23 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261109074915_0_VPFJ50_130000.xml": {
+"author": "気象庁",
+"content": "【東京都気象解説情報（台風第３２号）】小笠原諸島では、台風第３２号の影響により、１０日夜遅くから１１日にかけて暴風やうねりを伴う高波に警戒してください。",
+"held": "2026-11-09T07:50:23.685107+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３２号",
+"updated": "2026-11-09T07:49:14Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261109074915_0_VPFJ50_130000.xml"
+}
+},
+"topics": {
+"台風第３２号": {
+"東京": "2026-11-09T07:50:23.685107+00:00"
+}
+},
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261106073023_0_VPFJ50_012000.xml": "2026-11-06T07:40:24.647861+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106073429_0_VPFJ50_017000.xml": "2026-11-06T07:40:24.647861+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106073936_0_VPFJ50_060000.xml": "2026-11-06T07:40:24.647861+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106074408_0_VPFJ50_050000.xml": "2026-11-06T07:50:23.317604+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261106074411_0_VPFJ50_016000.xml": "2026-11-06T07:50:23.317604+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106080406_0_VPCJ50_040000.xml": "2026-11-06T08:10:23.181666+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106082748_0_VPFJ50_020000.xml": "2026-11-06T08:30:34.931569+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261106195613_0_VPCJ50_016000.xml": "2026-11-06T20:00:41.038045+00:00",
@@ -38,6 +48,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261107223821_0_VPFJ50_012000.xml": "2026-11-07T22:50:23.462322+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261107232225_0_VPFJ50_016000.xml": "2026-11-07T23:30:31.934182+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261107233847_0_VPFJ50_015000.xml": "2026-11-07T23:40:23.144348+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261109074915_0_VPFJ50_130000.xml": "2026-11-09T07:50:23.685107+00:00",
 "https://www.youtube.com/watch?v=H65ovjc9jiE": "2026-11-07T16:40:21.901694+00:00"
 }
 }
