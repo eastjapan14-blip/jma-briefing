@@ -413,7 +413,7 @@
    "first_seen": "2026-11-10T03:30:35+09:00",
    "flag": 11,
    "id": "pre1h:71192:2026-11-10",
-   "last_seen": "2026-11-10T05:20:26+09:00",
+   "last_seen": "2026-11-10T05:30:36+09:00",
    "last_stricter_date": "2026-09-09",
    "latitude": 33.87,
    "local_rank": null,
@@ -968,6 +968,99 @@
    "value": 179.0,
    "years_since": 0
   },
+  "preday:71192:2026-11-10": {
+   "date": "2026-11-10",
+   "elevation": 781,
+   "enrich_pending": false,
+   "enriched_at": "2026-11-10T05:30:45+09:00",
+   "first_seen": "2026-11-10T05:30:36+09:00",
+   "flag": 11,
+   "id": "preday:71192:2026-11-10",
+   "last_seen": "2026-11-10T05:30:36+09:00",
+   "last_stricter_date": "2026-09-08",
+   "latitude": 33.87,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 133.9783,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "preday",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     7.0,
+     "2025-11-25"
+    ],
+    [
+     2,
+     7.0,
+     "2025-11-09"
+    ],
+    [
+     3,
+     4.5,
+     "2025-11-06"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "東祖谷",
+   "notifiable": true,
+   "notified_at": "2026-11-10T05:30:36+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "徳島県",
+   "pref_full": "徳島県",
+   "prev": {
+    "date": "2026-06-02",
+    "value": 128.0
+   },
+   "prev_monthly": {
+    "date": "2025-11-25",
+    "value": 7.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": true,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=71&block_no=1677&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "71192",
+   "stats_period": "2025/92026/10",
+   "stats_start": 2025,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "SHORT_STATS"
+   ],
+   "time": null,
+   "top3": [
+    [
+     1,
+     128.0,
+     "2026-06-02"
+    ],
+    [
+     2,
+     103.5,
+     "2026-04-04"
+    ],
+    [
+     3,
+     95.5,
+     "2026-06-26"
+    ]
+   ],
+   "unit": "mm",
+   "value": 9.0,
+   "years_since": 0
+  },
   "snow24h:16217:2026-11-10": {
    "date": "2026-11-10",
    "elevation": 176,
@@ -976,7 +1069,7 @@
    "first_seen": "2026-11-10T02:20:26+09:00",
    "flag": 11,
    "id": "snow24h:16217:2026-11-10",
-   "last_seen": "2026-11-10T05:20:26+09:00",
+   "last_seen": "2026-11-10T05:30:36+09:00",
    "last_stricter_date": null,
    "latitude": 42.9,
    "local_rank": null,
@@ -1679,8 +1772,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-10T05:20:26+09:00",
- "runs": 7278,
+ "last_run": "2026-11-10T05:30:36+09:00",
+ "runs": 7279,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1700,23 +1793,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 09 Nov 2026 20:10:46 GMT",
-   "last_success": "2026-11-10T05:20:27+09:00",
-   "source_time": "2026-11-10T04:50"
+   "last_modified": "Mon, 09 Nov 2026 20:20:43 GMT",
+   "last_success": "2026-11-10T05:30:36+09:00",
+   "source_time": "2026-11-10T05:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 09 Nov 2026 20:10:43 GMT",
-   "last_success": "2026-11-10T05:20:28+09:00",
-   "source_time": "2026-11-10T04:50"
+   "last_modified": "Mon, 09 Nov 2026 20:20:40 GMT",
+   "last_success": "2026-11-10T05:30:37+09:00",
+   "source_time": "2026-11-10T05:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Mon, 09 Nov 2026 20:10:44 GMT",
-   "last_success": "2026-11-10T04:30:38+09:00",
-   "source_time": "2026-11-10T04:00"
+   "last_modified": "Mon, 09 Nov 2026 20:20:40 GMT",
+   "last_success": "2026-11-10T05:30:40+09:00",
+   "source_time": "2026-11-10T05:00"
   },
   "snc00": {
    "etag": "",
