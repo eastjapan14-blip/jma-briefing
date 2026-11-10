@@ -50,7 +50,8 @@
   "2026-11-04": true,
   "2026-11-05": true,
   "2026-11-06": true,
-  "2026-11-07": true
+  "2026-11-07": true,
+  "2026-11-10": true
  },
  "events": {
   "pre1h:35257:2026-11-05": {
@@ -471,7 +472,7 @@
    "station": "71192",
    "stats_period": "2025/92026/10",
    "stats_start": 2025,
-   "status": "PROVISIONAL",
+   "status": "UNLISTED",
    "tags": [
     "MONTHLY_1ST",
     "SHORT_STATS"
@@ -1034,7 +1035,7 @@
    "station": "71192",
    "stats_period": "2025/92026/10",
    "stats_start": 2025,
-   "status": "PROVISIONAL",
+   "status": "UNLISTED",
    "tags": [
     "MONTHLY_1ST",
     "SHORT_STATS"
@@ -1069,7 +1070,7 @@
    "first_seen": "2026-11-10T02:20:26+09:00",
    "flag": 11,
    "id": "snow24h:16217:2026-11-10",
-   "last_seen": "2026-11-11T04:40:26+09:00",
+   "last_seen": "2026-11-11T04:50:25+09:00",
    "last_stricter_date": null,
    "latitude": 42.9,
    "local_rank": null,
@@ -1105,7 +1106,7 @@
    "station": "16217",
    "stats_period": null,
    "stats_start": 1999,
-   "status": "PROVISIONAL",
+   "status": "CONFIRMED",
    "tags": [
     "MONTHLY_1ST"
    ],
@@ -1837,7 +1838,7 @@
    "station": "15156",
    "stats_period": "2022/102026/11",
    "stats_start": 2022,
-   "status": "PROVISIONAL",
+   "status": "UNLISTED",
    "tags": [
     "MONTHLY_1ST",
     "SHORT_STATS"
@@ -1958,8 +1959,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-11T04:40:26+09:00",
- "runs": 7421,
+ "last_run": "2026-11-11T04:50:25+09:00",
+ "runs": 7422,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1979,21 +1980,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 19:30:43 GMT",
-   "last_success": "2026-11-11T04:40:30+09:00",
-   "source_time": "2026-11-11T04:10"
+   "last_modified": "Tue, 10 Nov 2026 19:40:49 GMT",
+   "last_success": "2026-11-11T04:50:25+09:00",
+   "source_time": "2026-11-11T04:20"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 19:30:38 GMT",
-   "last_success": "2026-11-11T04:40:31+09:00",
-   "source_time": "2026-11-11T04:10"
+   "last_modified": "Tue, 10 Nov 2026 19:40:45 GMT",
+   "last_success": "2026-11-11T04:50:27+09:00",
+   "source_time": "2026-11-11T04:20"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 19:30:39 GMT",
+   "last_modified": "Tue, 10 Nov 2026 19:40:46 GMT",
    "last_success": "2026-11-11T04:30:38+09:00",
    "source_time": "2026-11-11T04:00"
   },
@@ -2005,7 +2006,7 @@
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 18:48:14 GMT"
+   "last_modified": "Tue, 10 Nov 2026 19:48:12 GMT"
   }
  }
 }
