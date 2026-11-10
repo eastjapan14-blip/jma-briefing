@@ -413,7 +413,7 @@
    "first_seen": "2026-11-10T03:30:35+09:00",
    "flag": 11,
    "id": "pre1h:71192:2026-11-10",
-   "last_seen": "2026-11-10T18:20:26+09:00",
+   "last_seen": "2026-11-10T18:30:34+09:00",
    "last_stricter_date": "2026-09-09",
    "latitude": 33.87,
    "local_rank": null,
@@ -976,7 +976,7 @@
    "first_seen": "2026-11-10T05:30:36+09:00",
    "flag": 11,
    "id": "preday:71192:2026-11-10",
-   "last_seen": "2026-11-10T17:30:37+09:00",
+   "last_seen": "2026-11-10T18:30:34+09:00",
    "last_stricter_date": "2026-09-08",
    "latitude": 33.87,
    "local_rank": null,
@@ -1069,7 +1069,7 @@
    "first_seen": "2026-11-10T02:20:26+09:00",
    "flag": 11,
    "id": "snow24h:16217:2026-11-10",
-   "last_seen": "2026-11-10T18:20:26+09:00",
+   "last_seen": "2026-11-10T18:30:34+09:00",
    "last_stricter_date": null,
    "latitude": 42.9,
    "local_rank": null,
@@ -1772,8 +1772,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-10T18:20:26+09:00",
- "runs": 7358,
+ "last_run": "2026-11-10T18:30:34+09:00",
+ "runs": 7359,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1793,23 +1793,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 09:10:45 GMT",
-   "last_success": "2026-11-10T18:20:26+09:00",
-   "source_time": "2026-11-10T17:50"
+   "last_modified": "Tue, 10 Nov 2026 09:20:46 GMT",
+   "last_success": "2026-11-10T18:30:34+09:00",
+   "source_time": "2026-11-10T18:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 09:10:42 GMT",
-   "last_success": "2026-11-10T18:20:28+09:00",
-   "source_time": "2026-11-10T17:50"
+   "last_modified": "Tue, 10 Nov 2026 09:20:42 GMT",
+   "last_success": "2026-11-10T18:30:36+09:00",
+   "source_time": "2026-11-10T18:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 09:10:42 GMT",
-   "last_success": "2026-11-10T17:30:40+09:00",
-   "source_time": "2026-11-10T17:00"
+   "last_modified": "Tue, 10 Nov 2026 09:20:42 GMT",
+   "last_success": "2026-11-10T18:30:37+09:00",
+   "source_time": "2026-11-10T18:00"
   },
   "snc00": {
    "etag": "",
