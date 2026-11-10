@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"台風第３２号": {
-"東京": "2026-11-09T21:10:25.813708+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261107042245_0_VPZJ50_010000.xml": "2026-11-07T04:30:32.343294+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261107065136_0_VPCJ50_040000.xml": "2026-11-07T07:00:41.476962+00:00",
