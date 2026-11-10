@@ -1,7 +1,22 @@
 {
 "bodies": {},
-"pending": {},
-"topics": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261110022112_0_VPFJ50_130000.xml": {
+"author": "気象庁",
+"content": "【東京都気象解説情報（台風第３２号）】台風第３２号の影響で、小笠原諸島では、１０日夜遅くは暴風に厳重に警戒し、１０日夜のはじめ頃から１１日夕方にかけてうねりを伴う高波に警戒してください。また、１０日夜のはじめ頃から１１日昼前にかけて、土砂災害に注意・警戒してください。",
+"held": "2026-11-10T02:30:36.369124+00:00",
+"tier": "B",
+"title": "府県気象情報",
+"topic": "台風第３２号",
+"updated": "2026-11-10T02:21:12Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261110022112_0_VPFJ50_130000.xml"
+}
+},
+"topics": {
+"台風第３２号": {
+"東京": "2026-11-10T02:30:36.369124+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261107042245_0_VPZJ50_010000.xml": "2026-11-07T04:30:32.343294+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261107065136_0_VPCJ50_040000.xml": "2026-11-07T07:00:41.476962+00:00",
@@ -25,6 +40,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261109075008_0_VPZJ50_010000.xml": "2026-11-09T08:00:40.502557+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261109194815_0_VPZJ50_010000.xml": "2026-11-09T19:50:24.707436+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261109210442_0_VPFJ50_130000.xml": "2026-11-09T21:10:25.813708+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261110022112_0_VPFJ50_130000.xml": "2026-11-10T02:30:36.369124+00:00",
 "https://www.youtube.com/watch?v=H65ovjc9jiE": "2026-11-07T16:40:21.901694+00:00"
 }
 }
