@@ -1069,7 +1069,7 @@
    "first_seen": "2026-11-10T02:20:26+09:00",
    "flag": 11,
    "id": "snow24h:16217:2026-11-10",
-   "last_seen": "2026-11-11T02:30:36+09:00",
+   "last_seen": "2026-11-11T02:40:25+09:00",
    "last_stricter_date": null,
    "latitude": 42.9,
    "local_rank": null,
@@ -1863,44 +1863,137 @@
    "unit": "℃",
    "value": -15.9,
    "years_since": 0
+  },
+  "tmin:15156:2026-11-11": {
+   "date": "2026-11-11",
+   "elevation": 51,
+   "enrich_pending": false,
+   "enriched_at": "2026-11-11T02:40:37+09:00",
+   "first_seen": "2026-11-11T02:40:25+09:00",
+   "flag": 11,
+   "id": "tmin:15156:2026-11-11",
+   "last_seen": "2026-11-11T02:40:25+09:00",
+   "last_stricter_date": "2026-02-03",
+   "latitude": 43.78,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 141.9617,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "tmin",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     -10.0,
+     "2023-11-30"
+    ],
+    [
+     2,
+     -8.4,
+     "2024-11-19"
+    ],
+    [
+     3,
+     -7.8,
+     "2024-11-26"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "秩父別",
+   "notifiable": true,
+   "notified_at": "2026-11-11T02:40:25+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "北海道",
+   "pref_full": "北海道空知地方",
+   "prev": {
+    "date": "2023-01-30",
+    "value": -29.9
+   },
+   "prev_monthly": {
+    "date": "2026-11-10",
+    "value": -15.9
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": true,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=15&block_no=1674&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "15156",
+   "stats_period": "2022/102026/11",
+   "stats_start": 2022,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST",
+    "SHORT_STATS"
+   ],
+   "time": "00:37",
+   "top3": [
+    [
+     1,
+     -29.9,
+     "2023-01-30"
+    ],
+    [
+     2,
+     -28.7,
+     "2023-02-15"
+    ],
+    [
+     3,
+     -25.6,
+     "2024-01-21"
+    ]
+   ],
+   "unit": "℃",
+   "value": -17.4,
+   "years_since": 0
   }
  },
- "last_run": "2026-11-11T02:30:36+09:00",
- "runs": 7408,
+ "last_run": "2026-11-11T02:40:25+09:00",
+ "runs": 7409,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 15:49:57 GMT",
-   "last_success": "2026-11-11T01:40:30+09:00",
-   "source_time": "2026-11-10T24:00"
+   "last_modified": "Tue, 10 Nov 2026 16:45:58 GMT",
+   "last_success": "2026-11-11T02:40:27+09:00",
+   "source_time": "2026-11-11T01:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 15:49:56 GMT",
-   "last_success": "2026-11-11T01:40:28+09:00",
-   "source_time": "2026-11-10T24:00"
+   "last_modified": "Tue, 10 Nov 2026 16:45:57 GMT",
+   "last_success": "2026-11-11T02:40:25+09:00",
+   "source_time": "2026-11-11T01:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 17:20:48 GMT",
+   "last_modified": "Tue, 10 Nov 2026 17:30:50 GMT",
    "last_success": "2026-11-11T02:30:37+09:00",
    "source_time": "2026-11-11T02:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 17:20:44 GMT",
+   "last_modified": "Tue, 10 Nov 2026 17:30:45 GMT",
    "last_success": "2026-11-11T02:30:39+09:00",
    "source_time": "2026-11-11T02:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 17:20:44 GMT",
+   "last_modified": "Tue, 10 Nov 2026 17:30:46 GMT",
    "last_success": "2026-11-11T02:30:40+09:00",
    "source_time": "2026-11-11T02:00"
   },
