@@ -1070,7 +1070,7 @@
    "first_seen": "2026-11-10T02:20:26+09:00",
    "flag": 11,
    "id": "snow24h:16217:2026-11-10",
-   "last_seen": "2026-11-11T05:30:35+09:00",
+   "last_seen": "2026-11-11T05:40:26+09:00",
    "last_stricter_date": null,
    "latitude": 42.9,
    "local_rank": null,
@@ -1873,7 +1873,7 @@
    "first_seen": "2026-11-11T02:40:25+09:00",
    "flag": 11,
    "id": "tmin:15156:2026-11-11",
-   "last_seen": "2026-11-11T04:40:26+09:00",
+   "last_seen": "2026-11-11T05:40:26+09:00",
    "last_stricter_date": "2026-02-03",
    "latitude": 43.78,
    "local_rank": null,
@@ -1959,42 +1959,42 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-11T05:30:35+09:00",
- "runs": 7426,
+ "last_run": "2026-11-11T05:40:26+09:00",
+ "runs": 7427,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 18:45:58 GMT",
-   "last_success": "2026-11-11T04:40:28+09:00",
-   "source_time": "2026-11-11T03:00"
+   "last_modified": "Tue, 10 Nov 2026 19:45:59 GMT",
+   "last_success": "2026-11-11T05:40:27+09:00",
+   "source_time": "2026-11-11T04:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 18:45:58 GMT",
-   "last_success": "2026-11-11T04:40:27+09:00",
-   "source_time": "2026-11-11T03:00"
+   "last_modified": "Tue, 10 Nov 2026 19:45:58 GMT",
+   "last_success": "2026-11-11T05:40:26+09:00",
+   "source_time": "2026-11-11T04:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 20:20:47 GMT",
-   "last_success": "2026-11-11T05:30:36+09:00",
-   "source_time": "2026-11-11T05:00"
+   "last_modified": "Tue, 10 Nov 2026 20:30:43 GMT",
+   "last_success": "2026-11-11T05:40:29+09:00",
+   "source_time": "2026-11-11T05:10"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 20:20:43 GMT",
-   "last_success": "2026-11-11T05:30:37+09:00",
-   "source_time": "2026-11-11T05:00"
+   "last_modified": "Tue, 10 Nov 2026 20:30:38 GMT",
+   "last_success": "2026-11-11T05:40:30+09:00",
+   "source_time": "2026-11-11T05:10"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 10 Nov 2026 20:20:43 GMT",
+   "last_modified": "Tue, 10 Nov 2026 20:30:39 GMT",
    "last_success": "2026-11-11T05:30:39+09:00",
    "source_time": "2026-11-11T05:00"
   },
