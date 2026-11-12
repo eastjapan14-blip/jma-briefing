@@ -11,17 +11,6 @@
    "notified_members": 2,
    "pref": "新潟県"
   },
-  "pre24h:東京都:2026-11-05": {
-   "date": "2026-11-05",
-   "members": [
-    "44207",
-    "44216"
-   ],
-   "metric": "pre24h",
-   "notified_at": "2026-11-05T01:40:37+09:00",
-   "notified_members": 2,
-   "pref": "東京都"
-  },
   "tmax:栃木県:2026-11-06": {
    "date": "2026-11-06",
    "members": [
@@ -47,95 +36,11 @@
   }
  },
  "confirm_checked": {
-  "2026-11-05": true,
   "2026-11-06": true,
   "2026-11-07": true,
   "2026-11-10": true
  },
  "events": {
-  "pre1h:35257:2026-11-05": {
-   "date": "2026-11-05",
-   "elevation": 180,
-   "enrich_pending": false,
-   "enriched_at": "2026-11-05T02:30:54+09:00",
-   "first_seen": "2026-11-05T02:30:45+09:00",
-   "flag": 11,
-   "id": "pre1h:35257:2026-11-05",
-   "last_seen": "2026-11-06T00:30:36+09:00",
-   "last_stricter_date": "2026-10-21",
-   "latitude": 38.5233,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.7883,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     0.0,
-     "2026-11-01"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "上田沢",
-   "notifiable": true,
-   "notified_at": "2026-11-05T02:30:45+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "山形県",
-   "pref_full": "山形県",
-   "prev": {
-    "date": "2026-07-24",
-    "value": 41.0
-   },
-   "prev_monthly": {
-    "date": "2026-11-02",
-    "value": 4.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1678&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "35257",
-   "stats_period": "2026/32026/11",
-   "stats_start": 2026,
-   "status": "UNLISTED",
-   "tags": [
-    "MONTHLY_1ST_TIE",
-    "SHORT_STATS"
-   ],
-   "time": "02:08",
-   "top3": [
-    [
-     1,
-     41.0,
-     "2026-07-24"
-    ],
-    [
-     2,
-     30.5,
-     "2026-09-13"
-    ],
-    [
-     3,
-     27.5,
-     "2026-08-09"
-    ]
-   ],
-   "unit": "mm",
-   "value": 4.5,
-   "years_since": 0
-  },
   "pre1h:35257:2026-11-06": {
    "date": "2026-11-06",
    "elevation": 180,
@@ -218,99 +123,6 @@
    "unit": "mm",
    "value": 10.5,
    "years_since": 0
-  },
-  "pre1h:44216:2026-11-05": {
-   "date": "2026-11-05",
-   "elevation": 138,
-   "enrich_pending": false,
-   "enriched_at": "2026-11-05T02:20:35+09:00",
-   "first_seen": "2026-11-05T01:50:28+09:00",
-   "flag": 11,
-   "id": "pre1h:44216:2026-11-05",
-   "last_seen": "2026-11-06T23:50:26+09:00",
-   "last_stricter_date": "2023-09-08",
-   "latitude": 34.1883,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.1333,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     42.5,
-     "2022-11-15"
-    ],
-    [
-     2,
-     37.0,
-     "2004-11-12"
-    ],
-    [
-     3,
-     35.5,
-     "2013-11-10"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": "神津島村",
-   "name": "神津島",
-   "notifiable": true,
-   "notified_at": "2026-11-05T01:50:28+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "東京都",
-   "pref_full": "東京都",
-   "prev": {
-    "date": "2022-08-13",
-    "value": 76.5
-   },
-   "prev_monthly": {
-    "date": "2026-11-04",
-    "value": 46.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=44&block_no=1523&year=&month=&day=&view=",
-   "sources": [
-    "rank_update",
-    "csv"
-   ],
-   "station": "44216",
-   "stats_period": "2003/12026/11",
-   "stats_start": 2003,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST"
-   ],
-   "time": "01:55",
-   "top3": [
-    [
-     1,
-     76.5,
-     "2022-08-13"
-    ],
-    [
-     2,
-     71.0,
-     "2018-09-25"
-    ],
-    [
-     3,
-     67.5,
-     "2010-07-08"
-    ]
-   ],
-   "unit": "mm",
-   "value": 51.0,
-   "years_since": 3
   },
   "pre1h:71192:2026-11-10": {
    "date": "2026-11-10",
@@ -404,124 +216,6 @@
    "unit": "mm",
    "value": 4.5,
    "years_since": 0
-  },
-  "pre24h:44207:2026-11-05": {
-   "date": "2026-11-05",
-   "elevation": 29,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-11-05T00:30:38+09:00",
-   "flag": 11,
-   "id": "pre24h:44207:2026-11-05",
-   "last_seen": "2026-11-06T23:50:26+09:00",
-   "last_stricter_date": null,
-   "latitude": 34.3683,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.2683,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "新島村",
-   "name": "新島",
-   "notifiable": true,
-   "notified_at": "2026-11-05T01:40:37+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "東京都",
-   "pref_full": "東京都",
-   "prev": {
-    "date": "2026-09-07",
-    "value": 485.0
-   },
-   "prev_monthly": {
-    "date": "2024-11-11",
-    "value": 113.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "44207",
-   "stats_period": null,
-   "stats_start": 2003,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "06:00",
-   "top3": [],
-   "unit": "mm",
-   "value": 292.5,
-   "years_since": null
-  },
-  "pre24h:44216:2026-11-05": {
-   "date": "2026-11-05",
-   "elevation": 138,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-11-05T01:40:37+09:00",
-   "flag": 11,
-   "id": "pre24h:44216:2026-11-05",
-   "last_seen": "2026-11-06T23:50:26+09:00",
-   "last_stricter_date": null,
-   "latitude": 34.1883,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 139.1333,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "神津島村",
-   "name": "神津島",
-   "notifiable": true,
-   "notified_at": "2026-11-05T01:40:37+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "東京都",
-   "pref_full": "東京都",
-   "prev": {
-    "date": "2026-09-07",
-    "value": 375.5
-   },
-   "prev_monthly": {
-    "date": "2019-11-23",
-    "value": 174.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "44216",
-   "stats_period": null,
-   "stats_start": 2003,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "05:10",
-   "top3": [],
-   "unit": "mm",
-   "value": 240.5,
-   "years_since": null
   },
   "pre24h:54606:2026-11-07": {
    "date": "2026-11-07",
@@ -1434,99 +1128,6 @@
    "value": 25.0,
    "years_since": 0
   },
-  "tmax:71192:2026-11-05": {
-   "date": "2026-11-05",
-   "elevation": 781,
-   "enrich_pending": false,
-   "enriched_at": "2026-11-05T14:40:34+09:00",
-   "first_seen": "2026-11-05T13:40:23+09:00",
-   "flag": 11,
-   "id": "tmax:71192:2026-11-05",
-   "last_seen": "2026-11-06T01:40:23+09:00",
-   "last_stricter_date": "2026-08-03",
-   "latitude": 33.87,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 133.9783,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "tmax",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     18.1,
-     "2025-11-16"
-    ],
-    [
-     2,
-     18.1,
-     "2025-11-08"
-    ],
-    [
-     3,
-     17.7,
-     "2025-11-09"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "東祖谷",
-   "notifiable": true,
-   "notified_at": "2026-11-05T13:40:23+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "徳島県",
-   "pref_full": "徳島県",
-   "prev": {
-    "date": "2026-07-31",
-    "value": 35.9
-   },
-   "prev_monthly": {
-    "date": "2026-11-01",
-    "value": 19.9
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=71&block_no=1677&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "71192",
-   "stats_period": "2025/92026/10",
-   "stats_start": 2025,
-   "status": "UNLISTED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "12:14",
-   "top3": [
-    [
-     1,
-     35.9,
-     "2026-07-31"
-    ],
-    [
-     2,
-     35.5,
-     "2026-07-30"
-    ],
-    [
-     3,
-     34.6,
-     "2026-08-02"
-    ]
-   ],
-   "unit": "℃",
-   "value": 21.9,
-   "years_since": 0
-  },
   "tmin:15156:2026-11-10": {
    "date": "2026-11-10",
    "elevation": 51,
@@ -1714,54 +1315,54 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-12T23:50:29+09:00",
- "runs": 7684,
+ "last_run": "2026-11-13T00:00:43+09:00",
+ "runs": 7685,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 13:49:58 GMT",
-   "last_success": "2026-11-12T23:00:44+09:00",
-   "source_time": "2026-11-12T22:00"
+   "last_modified": "Thu, 12 Nov 2026 14:49:38 GMT",
+   "last_success": "2026-11-13T00:00:44+09:00",
+   "source_time": "2026-11-12T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 13:49:58 GMT",
-   "last_success": "2026-11-12T23:00:42+09:00",
-   "source_time": "2026-11-12T22:00"
+   "last_modified": "Thu, 12 Nov 2026 14:49:38 GMT",
+   "last_success": "2026-11-13T00:00:43+09:00",
+   "source_time": "2026-11-12T23:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 14:40:42 GMT",
-   "last_success": "2026-11-12T23:50:29+09:00",
-   "source_time": "2026-11-12T23:20"
+   "last_modified": "Thu, 12 Nov 2026 14:50:39 GMT",
+   "last_success": "2026-11-13T00:00:46+09:00",
+   "source_time": "2026-11-12T23:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 14:40:40 GMT",
-   "last_success": "2026-11-12T23:50:31+09:00",
-   "source_time": "2026-11-12T23:20"
+   "last_modified": "Thu, 12 Nov 2026 14:50:36 GMT",
+   "last_success": "2026-11-13T00:00:47+09:00",
+   "source_time": "2026-11-12T23:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 14:40:40 GMT",
+   "last_modified": "Thu, 12 Nov 2026 15:00:46 GMT",
    "last_success": "2026-11-12T23:30:38+09:00",
    "source_time": "2026-11-12T23:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 13:51:50 GMT"
+   "last_modified": "Thu, 12 Nov 2026 14:51:27 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 12 Nov 2026 13:52:15 GMT"
+   "last_modified": "Thu, 12 Nov 2026 14:51:52 GMT"
   }
  }
 }
