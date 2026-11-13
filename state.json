@@ -1315,8 +1315,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-13T16:00:41+09:00",
- "runs": 7783,
+ "last_run": "2026-11-13T16:10:26+09:00",
+ "runs": 7784,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1336,9 +1336,9 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 13 Nov 2026 06:50:43 GMT",
-   "last_success": "2026-11-13T16:00:44+09:00",
-   "source_time": "2026-11-13T15:30"
+   "last_modified": "Fri, 13 Nov 2026 07:00:44 GMT",
+   "last_success": "2026-11-13T16:10:27+09:00",
+   "source_time": "2026-11-13T15:40"
   },
   "pre24h00": {
    "etag": "",
