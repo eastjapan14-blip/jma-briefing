@@ -1,7 +1,11 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {},
+"topics": {
+"発達する低気圧": {
+"東北": "2026-11-14T06:10:24.435978+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261112050743_0_VPZK50_010000.xml": "2026-11-12T05:10:25.780557+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261113072030_0_VPFJ50_474000.xml": "2026-11-13T07:30:33.941366+00:00",
@@ -11,6 +15,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261113194624_0_VPCJ50_471000.xml": "2026-11-13T19:50:25.086792+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261113194918_0_VPFJ50_473000.xml": "2026-11-13T19:50:25.086792+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261113195032_0_VPFJ50_474000.xml": "2026-11-13T20:00:37.849744+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261113195954_0_VPFJ50_471000.xml": "2026-11-13T20:00:37.849744+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261113195954_0_VPFJ50_471000.xml": "2026-11-13T20:00:37.849744+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261114060019_0_VPZJ50_010000.xml": "2026-11-14T06:10:24.435978+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261114060506_0_VPCJ50_040000.xml": "2026-11-14T06:10:24.435978+00:00"
 }
 }
