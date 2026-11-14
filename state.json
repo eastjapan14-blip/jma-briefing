@@ -1,19 +1,6 @@
 {
- "clusters": {
-  "pre24h:新潟県:2026-11-07": {
-   "date": "2026-11-07",
-   "members": [
-    "54606",
-    "54721"
-   ],
-   "metric": "pre24h",
-   "notified_at": "2026-11-07T10:00:41+09:00",
-   "notified_members": 2,
-   "pref": "新潟県"
-  }
- },
+ "clusters": {},
  "confirm_checked": {
-  "2026-11-07": true,
   "2026-11-10": true
  },
  "events": {
@@ -109,124 +96,6 @@
    "unit": "mm",
    "value": 4.5,
    "years_since": 0
-  },
-  "pre24h:54606:2026-11-07": {
-   "date": "2026-11-07",
-   "elevation": 83,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-11-07T08:00:43+09:00",
-   "flag": 11,
-   "id": "pre24h:54606:2026-11-07",
-   "last_seen": "2026-11-08T23:50:23+09:00",
-   "last_stricter_date": null,
-   "latitude": 37.2917,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 138.7017,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "長岡市",
-   "name": "小国",
-   "notifiable": true,
-   "notified_at": "2026-11-07T10:00:41+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "新潟県",
-   "pref_full": "新潟県",
-   "prev": {
-    "date": "2005-06-28",
-    "value": 244.0
-   },
-   "prev_monthly": {
-    "date": "2025-11-18",
-    "value": 107.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "タイ記録",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "54606",
-   "stats_period": null,
-   "stats_start": 1977,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "12:10",
-   "top3": [],
-   "unit": "mm",
-   "value": 122.5,
-   "years_since": null
-  },
-  "pre24h:54721:2026-11-07": {
-   "date": "2026-11-07",
-   "elevation": 55,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-11-07T10:00:41+09:00",
-   "flag": 11,
-   "id": "pre24h:54721:2026-11-07",
-   "last_seen": "2026-11-08T23:50:23+09:00",
-   "last_stricter_date": null,
-   "latitude": 37.0833,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 138.0233,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "糸魚川市",
-   "name": "能生",
-   "notifiable": true,
-   "notified_at": "2026-11-07T10:00:41+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "新潟県",
-   "pref_full": "新潟県",
-   "prev": {
-    "date": "2019-10-13",
-    "value": 269.0
-   },
-   "prev_monthly": {
-    "date": "2025-11-18",
-    "value": 134.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "タイ記録",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "csv",
-    "rank_update"
-   ],
-   "station": "54721",
-   "stats_period": null,
-   "stats_start": 1976,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST",
-    "PREFECTURE_CLUSTER"
-   ],
-   "time": "15:00",
-   "top3": [],
-   "unit": "mm",
-   "value": 153.5,
-   "years_since": null
   },
   "preday:71192:2026-11-10": {
    "date": "2026-11-10",
@@ -562,54 +431,54 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-14T23:50:24+09:00",
- "runs": 7979,
+ "last_run": "2026-11-15T00:00:40+09:00",
+ "runs": 7980,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 13:49:55 GMT",
-   "last_success": "2026-11-14T23:00:42+09:00",
-   "source_time": "2026-11-14T22:00"
+   "last_modified": "Sat, 14 Nov 2026 14:49:49 GMT",
+   "last_success": "2026-11-15T00:00:42+09:00",
+   "source_time": "2026-11-14T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 13:49:55 GMT",
-   "last_success": "2026-11-14T23:00:41+09:00",
-   "source_time": "2026-11-14T22:00"
+   "last_modified": "Sat, 14 Nov 2026 14:49:49 GMT",
+   "last_success": "2026-11-15T00:00:40+09:00",
+   "source_time": "2026-11-14T23:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 14:40:40 GMT",
-   "last_success": "2026-11-14T23:50:24+09:00",
-   "source_time": "2026-11-14T23:20"
+   "last_modified": "Sat, 14 Nov 2026 15:00:42 GMT",
+   "last_success": "2026-11-15T00:00:43+09:00",
+   "source_time": "2026-11-14T23:40"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 14:40:38 GMT",
-   "last_success": "2026-11-14T23:50:26+09:00",
-   "source_time": "2026-11-14T23:20"
+   "last_modified": "Sat, 14 Nov 2026 15:00:40 GMT",
+   "last_success": "2026-11-15T00:00:45+09:00",
+   "source_time": "2026-11-14T23:40"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 14:40:38 GMT",
+   "last_modified": "Sat, 14 Nov 2026 15:00:40 GMT",
    "last_success": "2026-11-14T23:30:36+09:00",
    "source_time": "2026-11-14T23:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 13:51:49 GMT"
+   "last_modified": "Sat, 14 Nov 2026 14:51:45 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 13:52:15 GMT"
+   "last_modified": "Sat, 14 Nov 2026 14:52:10 GMT"
   }
  }
 }
