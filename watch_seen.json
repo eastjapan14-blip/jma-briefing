@@ -3,6 +3,7 @@
 "pending": {},
 "topics": {
 "発達する低気圧": {
+"北海道": "2026-11-14T07:00:41.198607+00:00",
 "東北": "2026-11-14T06:10:24.435978+00:00"
 }
 },
@@ -17,6 +18,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261113195032_0_VPFJ50_474000.xml": "2026-11-13T20:00:37.849744+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261113195954_0_VPFJ50_471000.xml": "2026-11-13T20:00:37.849744+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261114060019_0_VPZJ50_010000.xml": "2026-11-14T06:10:24.435978+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261114060506_0_VPCJ50_040000.xml": "2026-11-14T06:10:24.435978+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261114060506_0_VPCJ50_040000.xml": "2026-11-14T06:10:24.435978+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261114065013_0_VPCJ50_016000.xml": "2026-11-14T07:00:41.198607+00:00"
 }
 }
