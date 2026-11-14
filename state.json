@@ -105,7 +105,7 @@
    "first_seen": "2026-11-15T06:30:33+09:00",
    "flag": 11,
    "id": "pre1h:71192:2026-11-15",
-   "last_seen": "2026-11-15T06:50:24+09:00",
+   "last_seen": "2026-11-15T07:00:39+09:00",
    "last_stricter_date": "2026-09-09",
    "latitude": 33.87,
    "local_rank": null,
@@ -524,42 +524,42 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-15T06:50:24+09:00",
- "runs": 8023,
+ "last_run": "2026-11-15T07:00:39+09:00",
+ "runs": 8024,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 20:46:03 GMT",
-   "last_success": "2026-11-15T06:00:42+09:00",
-   "source_time": "2026-11-15T05:00"
+   "last_modified": "Sat, 14 Nov 2026 21:48:31 GMT",
+   "last_success": "2026-11-15T07:00:41+09:00",
+   "source_time": "2026-11-15T06:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 20:46:02 GMT",
-   "last_success": "2026-11-15T06:00:40+09:00",
-   "source_time": "2026-11-15T05:00"
+   "last_modified": "Sat, 14 Nov 2026 21:48:30 GMT",
+   "last_success": "2026-11-15T07:00:39+09:00",
+   "source_time": "2026-11-15T06:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 21:40:41 GMT",
-   "last_success": "2026-11-15T06:50:25+09:00",
-   "source_time": "2026-11-15T06:20"
+   "last_modified": "Sat, 14 Nov 2026 21:50:37 GMT",
+   "last_success": "2026-11-15T07:00:42+09:00",
+   "source_time": "2026-11-15T06:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 21:40:39 GMT",
-   "last_success": "2026-11-15T06:50:26+09:00",
-   "source_time": "2026-11-15T06:20"
+   "last_modified": "Sat, 14 Nov 2026 21:50:34 GMT",
+   "last_success": "2026-11-15T07:00:44+09:00",
+   "source_time": "2026-11-15T06:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 21:40:39 GMT",
+   "last_modified": "Sat, 14 Nov 2026 21:50:35 GMT",
    "last_success": "2026-11-15T06:30:36+09:00",
    "source_time": "2026-11-15T06:00"
   },
@@ -571,7 +571,7 @@
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sat, 14 Nov 2026 20:48:18 GMT"
+   "last_modified": "Sat, 14 Nov 2026 21:50:50 GMT"
   }
  }
 }
