@@ -617,8 +617,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-15T17:40:24+09:00",
- "runs": 8090,
+ "last_run": "2026-11-15T17:50:24+09:00",
+ "runs": 8091,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -652,7 +652,7 @@
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Sun, 15 Nov 2026 08:30:56 GMT",
+   "last_modified": "Sun, 15 Nov 2026 08:40:51 GMT",
    "last_success": "2026-11-15T17:30:36+09:00",
    "source_time": "2026-11-15T17:00"
   },
