@@ -1,6 +1,17 @@
 {
 "bodies": {},
-"pending": {},
+"pending": {
+"https://www.data.jma.go.jp/developer/xml/data/20261117165800_0_VXWW50_120000.xml": {
+"author": "銚子地方気象台",
+"content": "【千葉県レベル４土砂災害危険警報】＜レベル４土砂災害危険警報の補足情報＞\nレベル４土砂災害危険警報が発表されている地域では、崖の近くなど土砂災害の発生しやすい地区にお住まいの方は、早めの避難を心がけるとともに、市町村から発表される避難指示などの情報に注意してください。",
+"held": "2026-11-17T17:00:47.448043+00:00",
+"tier": "B",
+"title": "土砂災害警戒情報",
+"topic": "土砂災害警戒情報",
+"updated": "2026-11-17T16:57:58Z",
+"url": "https://www.data.jma.go.jp/developer/xml/data/20261117165800_0_VXWW50_120000.xml"
+}
+},
 "topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261114192423_0_VPCJ50_471000.xml": "2026-11-14T19:30:35.573894+00:00",
@@ -18,6 +29,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261116074608_0_VPCJ50_471000.xml": "2026-11-16T07:50:35.520754+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117070745_0_VPCJ50_040000.xml": "2026-11-17T07:10:24.668848+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117074608_0_VPZJ50_010000.xml": "2026-11-17T07:50:24.173987+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261117075011_0_VPFJ50_160000.xml": "2026-11-17T08:00:41.767689+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261117075011_0_VPFJ50_160000.xml": "2026-11-17T08:00:41.767689+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261117165800_0_VXWW50_120000.xml": "2026-11-17T17:00:47.448043+00:00"
 }
 }
