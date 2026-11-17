@@ -115,7 +115,7 @@
    "first_seen": "2026-11-17T11:00:43+09:00",
    "flag": 11,
    "id": "pre1h:87293:2026-11-17",
-   "last_seen": "2026-11-18T00:20:25+09:00",
+   "last_seen": "2026-11-18T00:30:36+09:00",
    "last_stricter_date": "2026-09-04",
    "latitude": 32.1233,
    "local_rank": null,
@@ -147,7 +147,7 @@
    "monthly_years_since": null,
    "muni": "児湯郡高鍋町",
    "name": "高鍋",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-11-17T11:00:43+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -161,7 +161,7 @@
     "date": "2020-11-07",
     "value": 21.0
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -204,11 +204,11 @@
    "date": "2026-11-17",
    "elevation": 100,
    "enrich_pending": false,
-   "enriched_at": "2026-11-17T23:30:48+09:00",
+   "enriched_at": "2026-11-18T00:30:45+09:00",
    "first_seen": "2026-11-17T23:20:37+09:00",
    "flag": 11,
    "id": "preday:44191:2026-11-17",
-   "last_seen": "2026-11-18T00:20:25+09:00",
+   "last_seen": "2026-11-18T00:30:36+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 34.5283,
    "local_rank": null,
@@ -240,7 +240,7 @@
    "monthly_years_since": null,
    "muni": "利島村",
    "name": "利島",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-11-17T23:20:37+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -254,7 +254,7 @@
     "date": "2024-11-02",
     "value": 96.5
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -291,7 +291,7 @@
     ]
    ],
    "unit": "mm",
-   "value": 120.5,
+   "value": 126.0,
    "years_since": 0
   },
   "preday:44316:2026-11-17": {
@@ -302,7 +302,7 @@
    "first_seen": "2026-11-17T16:30:35+09:00",
    "flag": 11,
    "id": "preday:44316:2026-11-17",
-   "last_seen": "2026-11-18T00:20:25+09:00",
+   "last_seen": "2026-11-18T00:30:36+09:00",
    "last_stricter_date": "2023-10-18",
    "latitude": 26.635,
    "local_rank": 9,
@@ -334,7 +334,7 @@
    "monthly_years_since": null,
    "muni": "小笠原村",
    "name": "母島",
-   "notifiable": false,
+   "notifiable": true,
    "notified_at": "2026-11-17T23:20:37+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -348,7 +348,7 @@
     "date": "2007-11-08",
     "value": 131.0
    },
-   "quality": "CAUTION",
+   "quality": "NORMAL",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -576,8 +576,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-18T00:20:25+09:00",
- "runs": 8425,
+ "last_run": "2026-11-18T00:30:36+09:00",
+ "runs": 8426,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -597,23 +597,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 15:00:57 GMT",
-   "last_success": "2026-11-18T00:01:00+09:00",
-   "source_time": "2026-11-17T23:40"
+   "last_modified": "Tue, 17 Nov 2026 15:20:48 GMT",
+   "last_success": "2026-11-18T00:30:36+09:00",
+   "source_time": "2026-11-17T24:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 15:00:53 GMT",
-   "last_success": "2026-11-18T00:10:28+09:00",
-   "source_time": "2026-11-17T23:40"
+   "last_modified": "Tue, 17 Nov 2026 15:20:46 GMT",
+   "last_success": "2026-11-18T00:30:38+09:00",
+   "source_time": "2026-11-17T24:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 15:00:53 GMT",
-   "last_success": "2026-11-17T23:30:39+09:00",
-   "source_time": "2026-11-17T23:00"
+   "last_modified": "Tue, 17 Nov 2026 15:20:47 GMT",
+   "last_success": "2026-11-18T00:30:39+09:00",
+   "source_time": "2026-11-17T24:00"
   },
   "snc00": {
    "etag": "",
