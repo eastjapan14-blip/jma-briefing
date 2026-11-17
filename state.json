@@ -12,103 +12,8 @@
    "pref": "東京都"
   }
  },
- "confirm_checked": {
-  "2026-11-10": true
- },
+ "confirm_checked": {},
  "events": {
-  "pre1h:71192:2026-11-10": {
-   "date": "2026-11-10",
-   "elevation": 781,
-   "enrich_pending": false,
-   "enriched_at": "2026-11-10T05:10:35+09:00",
-   "first_seen": "2026-11-10T03:30:35+09:00",
-   "flag": 11,
-   "id": "pre1h:71192:2026-11-10",
-   "last_seen": "2026-11-11T00:30:37+09:00",
-   "last_stricter_date": "2026-09-09",
-   "latitude": 33.87,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 133.9783,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "pre1h",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     2.5,
-     "2025-11-25"
-    ],
-    [
-     2,
-     2.5,
-     "2025-11-09"
-    ],
-    [
-     3,
-     2.0,
-     "2025-11-06"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "東祖谷",
-   "notifiable": true,
-   "notified_at": "2026-11-10T03:30:35+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "徳島県",
-   "pref_full": "徳島県",
-   "prev": {
-    "date": "2026-06-26",
-    "value": 29.0
-   },
-   "prev_monthly": {
-    "date": "2025-11-25",
-    "value": 2.5
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=71&block_no=1677&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "71192",
-   "stats_period": "2025/92026/10",
-   "stats_start": 2025,
-   "status": "UNLISTED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "04:32",
-   "top3": [
-    [
-     1,
-     29.0,
-     "2026-06-26"
-    ],
-    [
-     2,
-     27.0,
-     "2026-04-04"
-    ],
-    [
-     3,
-     25.5,
-     "2025-09-05"
-    ]
-   ],
-   "unit": "mm",
-   "value": 4.5,
-   "years_since": 0
-  },
   "pre1h:71192:2026-11-15": {
    "date": "2026-11-15",
    "elevation": 781,
@@ -210,7 +115,7 @@
    "first_seen": "2026-11-17T11:00:43+09:00",
    "flag": 11,
    "id": "pre1h:87293:2026-11-17",
-   "last_seen": "2026-11-17T23:50:25+09:00",
+   "last_seen": "2026-11-18T00:00:57+09:00",
    "last_stricter_date": "2026-09-04",
    "latitude": 32.1233,
    "local_rank": null,
@@ -242,7 +147,7 @@
    "monthly_years_since": null,
    "muni": "児湯郡高鍋町",
    "name": "高鍋",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-11-17T11:00:43+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -256,7 +161,7 @@
     "date": "2020-11-07",
     "value": 21.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -303,7 +208,7 @@
    "first_seen": "2026-11-17T23:20:37+09:00",
    "flag": 11,
    "id": "preday:44191:2026-11-17",
-   "last_seen": "2026-11-17T23:50:25+09:00",
+   "last_seen": "2026-11-18T00:00:57+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 34.5283,
    "local_rank": null,
@@ -335,7 +240,7 @@
    "monthly_years_since": null,
    "muni": "利島村",
    "name": "利島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-11-17T23:20:37+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -349,7 +254,7 @@
     "date": "2024-11-02",
     "value": 96.5
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -397,7 +302,7 @@
    "first_seen": "2026-11-17T16:30:35+09:00",
    "flag": 11,
    "id": "preday:44316:2026-11-17",
-   "last_seen": "2026-11-17T23:50:25+09:00",
+   "last_seen": "2026-11-18T00:00:57+09:00",
    "last_stricter_date": "2023-10-18",
    "latitude": 26.635,
    "local_rank": 9,
@@ -429,7 +334,7 @@
    "monthly_years_since": null,
    "muni": "小笠原村",
    "name": "母島",
-   "notifiable": true,
+   "notifiable": false,
    "notified_at": "2026-11-17T23:20:37+09:00",
    "notified_severity": "B",
    "notify_count": 1,
@@ -443,7 +348,7 @@
     "date": "2007-11-08",
     "value": 131.0
    },
-   "quality": "NORMAL",
+   "quality": "CAUTION",
    "record_age_years": null,
    "remark": "",
    "severity": "B",
@@ -483,99 +388,6 @@
    "unit": "mm",
    "value": 142.5,
    "years_since": 3
-  },
-  "preday:71192:2026-11-10": {
-   "date": "2026-11-10",
-   "elevation": 781,
-   "enrich_pending": false,
-   "enriched_at": "2026-11-10T11:30:44+09:00",
-   "first_seen": "2026-11-10T05:30:36+09:00",
-   "flag": 11,
-   "id": "preday:71192:2026-11-10",
-   "last_seen": "2026-11-10T23:30:36+09:00",
-   "last_stricter_date": "2026-09-08",
-   "latitude": 33.87,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 133.9783,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "preday",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     7.0,
-     "2025-11-25"
-    ],
-    [
-     2,
-     7.0,
-     "2025-11-09"
-    ],
-    [
-     3,
-     4.5,
-     "2025-11-06"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "東祖谷",
-   "notifiable": true,
-   "notified_at": "2026-11-10T05:30:36+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "徳島県",
-   "pref_full": "徳島県",
-   "prev": {
-    "date": "2026-06-02",
-    "value": 128.0
-   },
-   "prev_monthly": {
-    "date": "2025-11-25",
-    "value": 7.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=71&block_no=1677&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "71192",
-   "stats_period": "2025/92026/10",
-   "stats_start": 2025,
-   "status": "UNLISTED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": null,
-   "top3": [
-    [
-     1,
-     128.0,
-     "2026-06-02"
-    ],
-    [
-     2,
-     103.5,
-     "2026-04-04"
-    ],
-    [
-     3,
-     95.5,
-     "2026-06-26"
-    ]
-   ],
-   "unit": "mm",
-   "value": 17.5,
-   "years_since": 0
   },
   "preday:71192:2026-11-15": {
    "date": "2026-11-15",
@@ -668,153 +480,6 @@
    ],
    "unit": "mm",
    "value": 25.0,
-   "years_since": 0
-  },
-  "snow24h:16217:2026-11-10": {
-   "date": "2026-11-10",
-   "elevation": 176,
-   "enrich_pending": false,
-   "enriched_at": null,
-   "first_seen": "2026-11-10T02:20:26+09:00",
-   "flag": 11,
-   "id": "snow24h:16217:2026-11-10",
-   "last_seen": "2026-11-11T23:50:24+09:00",
-   "last_stricter_date": null,
-   "latitude": 42.9,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 140.7567,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "snow24h",
-   "monthly_rank": null,
-   "monthly_tie": false,
-   "muni": "虻田郡倶知安町",
-   "name": "倶知安",
-   "notifiable": true,
-   "notified_at": "2026-11-10T02:20:26+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "北海道",
-   "pref_full": "北海道 後志地方",
-   "prev": null,
-   "prev_monthly": {
-    "date": "2017-11-20",
-    "value": 45.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": false,
-   "source_ref": null,
-   "sources": [
-    "rank_update"
-   ],
-   "station": "16217",
-   "stats_period": null,
-   "stats_start": 1999,
-   "status": "CONFIRMED",
-   "tags": [
-    "MONTHLY_1ST"
-   ],
-   "time": "03:00",
-   "top3": [],
-   "unit": "cm",
-   "value": 46.0,
-   "years_since": null
-  },
-  "tmin:15156:2026-11-10": {
-   "date": "2026-11-10",
-   "elevation": 51,
-   "enrich_pending": false,
-   "enriched_at": "2026-11-11T01:40:40+09:00",
-   "first_seen": "2026-11-10T22:40:24+09:00",
-   "flag": 11,
-   "id": "tmin:15156:2026-11-10",
-   "last_seen": "2026-11-11T01:40:28+09:00",
-   "last_stricter_date": "2026-02-03",
-   "latitude": 43.78,
-   "local_rank": null,
-   "local_tie": false,
-   "longitude": 141.9617,
-   "margin_abs": null,
-   "margin_pct": null,
-   "metric": "tmin",
-   "monthly_last_stricter_date": null,
-   "monthly_rank": 1,
-   "monthly_tie": false,
-   "monthly_top3": [
-    [
-     1,
-     -10.0,
-     "2023-11-30"
-    ],
-    [
-     2,
-     -8.4,
-     "2024-11-19"
-    ],
-    [
-     3,
-     -7.8,
-     "2024-11-26"
-    ]
-   ],
-   "monthly_years_since": null,
-   "muni": null,
-   "name": "秩父別",
-   "notifiable": true,
-   "notified_at": "2026-11-10T22:40:24+09:00",
-   "notified_severity": "B",
-   "notify_count": 1,
-   "pref": "北海道",
-   "pref_full": "北海道空知地方",
-   "prev": {
-    "date": "2023-01-30",
-    "value": -29.9
-   },
-   "prev_monthly": {
-    "date": "2023-11-30",
-    "value": -10.0
-   },
-   "quality": "NORMAL",
-   "record_age_years": null,
-   "remark": "",
-   "severity": "B",
-   "short_stats": true,
-   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=15&block_no=1674&year=&month=&day=&view=",
-   "sources": [
-    "csv"
-   ],
-   "station": "15156",
-   "stats_period": "2022/102026/11",
-   "stats_start": 2022,
-   "status": "UNLISTED",
-   "tags": [
-    "MONTHLY_1ST",
-    "SHORT_STATS"
-   ],
-   "time": "23:19",
-   "top3": [
-    [
-     1,
-     -29.9,
-     "2023-01-30"
-    ],
-    [
-     2,
-     -28.7,
-     "2023-02-15"
-    ],
-    [
-     3,
-     -25.6,
-     "2024-01-21"
-    ]
-   ],
-   "unit": "℃",
-   "value": -15.9,
    "years_since": 0
   },
   "tmin:15156:2026-11-11": {
@@ -911,54 +576,54 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-17T23:50:25+09:00",
- "runs": 8422,
+ "last_run": "2026-11-18T00:00:57+09:00",
+ "runs": 8423,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 13:49:51 GMT",
-   "last_success": "2026-11-17T23:00:45+09:00",
-   "source_time": "2026-11-17T22:00"
+   "last_modified": "Tue, 17 Nov 2026 14:51:11 GMT",
+   "last_success": "2026-11-18T00:00:59+09:00",
+   "source_time": "2026-11-17T23:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 13:49:50 GMT",
-   "last_success": "2026-11-17T23:00:44+09:00",
-   "source_time": "2026-11-17T22:00"
+   "last_modified": "Tue, 17 Nov 2026 14:51:11 GMT",
+   "last_success": "2026-11-18T00:00:57+09:00",
+   "source_time": "2026-11-17T23:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 14:40:53 GMT",
-   "last_success": "2026-11-17T23:50:26+09:00",
-   "source_time": "2026-11-17T23:20"
+   "last_modified": "Tue, 17 Nov 2026 14:51:05 GMT",
+   "last_success": "2026-11-18T00:01:00+09:00",
+   "source_time": "2026-11-17T23:40"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 14:40:50 GMT",
-   "last_success": "2026-11-17T23:50:27+09:00",
-   "source_time": "2026-11-17T23:20"
+   "last_modified": "Tue, 17 Nov 2026 14:51:03 GMT",
+   "last_success": "2026-11-18T00:01:01+09:00",
+   "source_time": "2026-11-17T23:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 14:40:51 GMT",
+   "last_modified": "Tue, 17 Nov 2026 15:00:53 GMT",
    "last_success": "2026-11-17T23:30:39+09:00",
    "source_time": "2026-11-17T23:00"
   },
   "snc00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 13:51:40 GMT"
+   "last_modified": "Tue, 17 Nov 2026 14:53:03 GMT"
   },
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 13:52:05 GMT"
+   "last_modified": "Tue, 17 Nov 2026 14:53:29 GMT"
   }
  }
 }
