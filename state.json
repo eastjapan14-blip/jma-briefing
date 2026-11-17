@@ -22,7 +22,7 @@
    "first_seen": "2026-11-18T03:40:24+09:00",
    "flag": 11,
    "id": "pre1h:45086:2026-11-18",
-   "last_seen": "2026-11-18T04:10:26+09:00",
+   "last_seen": "2026-11-18T04:20:26+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 35.795,
    "local_rank": null,
@@ -208,7 +208,7 @@
    "first_seen": "2026-11-17T11:00:43+09:00",
    "flag": 11,
    "id": "pre1h:87293:2026-11-17",
-   "last_seen": "2026-11-18T04:10:26+09:00",
+   "last_seen": "2026-11-18T04:20:26+09:00",
    "last_stricter_date": "2026-09-04",
    "latitude": 32.1233,
    "local_rank": null,
@@ -293,6 +293,64 @@
    "value": 23.5,
    "years_since": 0
   },
+  "pre24h:44191:2026-11-18": {
+   "date": "2026-11-18",
+   "elevation": 100,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-11-18T04:20:26+09:00",
+   "flag": 11,
+   "id": "pre24h:44191:2026-11-18",
+   "last_seen": "2026-11-18T04:20:26+09:00",
+   "last_stricter_date": null,
+   "latitude": 34.5283,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.2817,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "pre24h",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "利島村",
+   "name": "利島",
+   "notifiable": true,
+   "notified_at": "2026-11-18T04:20:26+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "東京都",
+   "pref_full": "東京都",
+   "prev": {
+    "date": "2026-09-07",
+    "value": 384.0
+   },
+   "prev_monthly": {
+    "date": "2021-11-22",
+    "value": 144.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "csv",
+    "rank_update"
+   ],
+   "station": "44191",
+   "stats_period": null,
+   "stats_start": 2014,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": "04:00",
+   "top3": [],
+   "unit": "mm",
+   "value": 146.5,
+   "years_since": null
+  },
   "pre24h:45331:2026-11-18": {
    "date": "2026-11-18",
    "elevation": 70,
@@ -301,7 +359,7 @@
    "first_seen": "2026-11-18T01:40:24+09:00",
    "flag": 11,
    "id": "pre24h:45331:2026-11-18",
-   "last_seen": "2026-11-18T04:10:26+09:00",
+   "last_seen": "2026-11-18T04:20:26+09:00",
    "last_stricter_date": null,
    "latitude": 35.2517,
    "local_rank": null,
@@ -345,7 +403,7 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "03:40",
+   "time": "04:00",
    "top3": [],
    "unit": "mm",
    "value": 141.5,
@@ -359,7 +417,7 @@
    "first_seen": "2026-11-17T23:20:37+09:00",
    "flag": 11,
    "id": "preday:44191:2026-11-17",
-   "last_seen": "2026-11-18T04:10:26+09:00",
+   "last_seen": "2026-11-18T04:20:26+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 34.5283,
    "local_rank": null,
@@ -453,7 +511,7 @@
    "first_seen": "2026-11-17T16:30:35+09:00",
    "flag": 11,
    "id": "preday:44316:2026-11-17",
-   "last_seen": "2026-11-18T04:10:26+09:00",
+   "last_seen": "2026-11-18T04:20:26+09:00",
    "last_stricter_date": "2023-10-18",
    "latitude": 26.635,
    "local_rank": 9,
@@ -727,8 +785,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-18T04:10:26+09:00",
- "runs": 8449,
+ "last_run": "2026-11-18T04:20:26+09:00",
+ "runs": 8450,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -748,21 +806,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 19:00:43 GMT",
-   "last_success": "2026-11-18T04:10:26+09:00",
-   "source_time": "2026-11-18T03:40"
+   "last_modified": "Tue, 17 Nov 2026 19:10:40 GMT",
+   "last_success": "2026-11-18T04:20:27+09:00",
+   "source_time": "2026-11-18T03:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 19:00:41 GMT",
-   "last_success": "2026-11-18T04:10:28+09:00",
-   "source_time": "2026-11-18T03:40"
+   "last_modified": "Tue, 17 Nov 2026 19:10:37 GMT",
+   "last_success": "2026-11-18T04:20:28+09:00",
+   "source_time": "2026-11-18T03:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 19:00:41 GMT",
+   "last_modified": "Tue, 17 Nov 2026 19:10:37 GMT",
    "last_success": "2026-11-18T03:30:40+09:00",
    "source_time": "2026-11-18T03:00"
   },
