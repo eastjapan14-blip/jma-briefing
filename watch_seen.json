@@ -1,7 +1,11 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {},
+"topics": {
+"強風・高波・大雪": {
+"東北": "2026-11-17T07:10:24.668848+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261114071106_0_VPCJ50_471000.xml": "2026-11-14T07:20:23.943740+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261114071434_0_VPFJ50_473000.xml": "2026-11-14T07:20:23.943740+00:00",
@@ -20,6 +24,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261116071134_0_VPZJ50_010000.xml": "2026-11-16T07:20:25.919233+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261116071749_0_VPFJ50_474000.xml": "2026-11-16T07:20:25.919233+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261116072225_0_VPFJ50_473000.xml": "2026-11-16T07:30:32.952862+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261116074608_0_VPCJ50_471000.xml": "2026-11-16T07:50:35.520754+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261116074608_0_VPCJ50_471000.xml": "2026-11-16T07:50:35.520754+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261117070745_0_VPCJ50_040000.xml": "2026-11-17T07:10:24.668848+00:00"
 }
 }
