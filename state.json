@@ -210,7 +210,7 @@
    "first_seen": "2026-11-17T11:00:43+09:00",
    "flag": 11,
    "id": "pre1h:87293:2026-11-17",
-   "last_seen": "2026-11-17T23:20:37+09:00",
+   "last_seen": "2026-11-17T23:30:36+09:00",
    "last_stricter_date": "2026-09-04",
    "latitude": 32.1233,
    "local_rank": null,
@@ -299,12 +299,12 @@
    "date": "2026-11-17",
    "elevation": 100,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-11-17T23:30:48+09:00",
    "first_seen": "2026-11-17T23:20:37+09:00",
    "flag": 11,
    "id": "preday:44191:2026-11-17",
-   "last_seen": "2026-11-17T23:20:37+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-11-17T23:30:36+09:00",
+   "last_stricter_date": "2026-09-21",
    "latitude": 34.5283,
    "local_rank": null,
    "local_tie": false,
@@ -312,8 +312,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "preday",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     96.5,
+     "2024-11-02"
+    ],
+    [
+     2,
+     86.5,
+     "2021-11-21"
+    ],
+    [
+     3,
+     81.5,
+     "2017-11-23"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "利島村",
    "name": "利島",
    "notifiable": true,
@@ -322,7 +341,10 @@
    "notify_count": 1,
    "pref": "東京都",
    "pref_full": "東京都",
-   "prev": null,
+   "prev": {
+    "date": "2026-09-07",
+    "value": 294.5
+   },
    "prev_monthly": {
     "date": "2024-11-02",
     "value": 96.5
@@ -332,12 +354,13 @@
    "remark": "",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=44&block_no=1646&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "44191",
-   "stats_period": null,
+   "stats_period": "2014/72026/11",
    "stats_start": 2014,
    "status": "PROVISIONAL",
    "tags": [
@@ -345,10 +368,26 @@
     "PREFECTURE_CLUSTER"
    ],
    "time": null,
-   "top3": [],
+   "top3": [
+    [
+     1,
+     294.5,
+     "2026-09-07"
+    ],
+    [
+     2,
+     280.5,
+     "2021-07-01"
+    ],
+    [
+     3,
+     258.0,
+     "2024-06-18"
+    ]
+   ],
    "unit": "mm",
    "value": 120.5,
-   "years_since": null
+   "years_since": 0
   },
   "preday:44316:2026-11-17": {
    "date": "2026-11-17",
@@ -358,7 +397,7 @@
    "first_seen": "2026-11-17T16:30:35+09:00",
    "flag": 11,
    "id": "preday:44316:2026-11-17",
-   "last_seen": "2026-11-17T23:20:37+09:00",
+   "last_seen": "2026-11-17T23:30:36+09:00",
    "last_stricter_date": "2023-10-18",
    "latitude": 26.635,
    "local_rank": 9,
@@ -872,8 +911,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-17T23:20:37+09:00",
- "runs": 8419,
+ "last_run": "2026-11-17T23:30:36+09:00",
+ "runs": 8420,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -893,23 +932,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 14:10:52 GMT",
-   "last_success": "2026-11-17T23:20:37+09:00",
-   "source_time": "2026-11-17T22:50"
+   "last_modified": "Tue, 17 Nov 2026 14:20:53 GMT",
+   "last_success": "2026-11-17T23:30:37+09:00",
+   "source_time": "2026-11-17T23:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 14:10:49 GMT",
-   "last_success": "2026-11-17T23:20:38+09:00",
-   "source_time": "2026-11-17T22:50"
+   "last_modified": "Tue, 17 Nov 2026 14:20:51 GMT",
+   "last_success": "2026-11-17T23:30:38+09:00",
+   "source_time": "2026-11-17T23:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 17 Nov 2026 14:10:49 GMT",
-   "last_success": "2026-11-17T22:30:40+09:00",
-   "source_time": "2026-11-17T22:00"
+   "last_modified": "Tue, 17 Nov 2026 14:20:51 GMT",
+   "last_success": "2026-11-17T23:30:39+09:00",
+   "source_time": "2026-11-17T23:00"
   },
   "snc00": {
    "etag": "",
