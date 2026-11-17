@@ -1,7 +1,11 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {},
+"topics": {
+"暴風・落雷・突風": {
+"富山": "2026-11-17T20:50:27.827707+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261115060012_0_VPZJ50_010000.xml": "2026-11-15T06:00:43.115299+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261115063018_0_VPCJ50_016000.xml": "2026-11-15T06:40:25.113344+00:00",
@@ -17,6 +21,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261117074608_0_VPZJ50_010000.xml": "2026-11-17T07:50:24.173987+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117075011_0_VPFJ50_160000.xml": "2026-11-17T08:00:41.767689+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117165800_0_VXWW50_120000.xml": "2026-11-17T17:00:47.448043+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261117200149_0_VPZJ50_010000.xml": "2026-11-17T20:10:26.044658+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261117200149_0_VPZJ50_010000.xml": "2026-11-17T20:10:26.044658+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261117204644_0_VPFJ50_160000.xml": "2026-11-17T20:50:27.827707+00:00"
 }
 }
