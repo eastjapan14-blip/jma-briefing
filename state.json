@@ -24,7 +24,7 @@
    "first_seen": "2026-11-18T03:40:24+09:00",
    "flag": 11,
    "id": "pre1h:45086:2026-11-18",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 35.795,
    "local_rank": null,
@@ -210,7 +210,7 @@
    "first_seen": "2026-11-17T11:00:43+09:00",
    "flag": 11,
    "id": "pre1h:87293:2026-11-17",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": "2026-09-04",
    "latitude": 32.1233,
    "local_rank": null,
@@ -303,7 +303,7 @@
    "first_seen": "2026-11-18T04:20:26+09:00",
    "flag": 11,
    "id": "pre24h:44191:2026-11-18",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": null,
    "latitude": 34.5283,
    "local_rank": null,
@@ -361,7 +361,7 @@
    "first_seen": "2026-11-18T01:40:24+09:00",
    "flag": 11,
    "id": "pre24h:45331:2026-11-18",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": null,
    "latitude": 35.2517,
    "local_rank": null,
@@ -419,7 +419,7 @@
    "first_seen": "2026-11-17T23:20:37+09:00",
    "flag": 11,
    "id": "preday:44191:2026-11-17",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": "2026-09-21",
    "latitude": 34.5283,
    "local_rank": null,
@@ -513,7 +513,7 @@
    "first_seen": "2026-11-17T16:30:35+09:00",
    "flag": 11,
    "id": "preday:44316:2026-11-17",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": "2023-10-18",
    "latitude": 26.635,
    "local_rank": 9,
@@ -701,7 +701,7 @@
    "first_seen": "2026-11-18T15:20:25+09:00",
    "flag": 11,
    "id": "snow24h:81428:2026-11-18",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": null,
    "latitude": 33.9483,
    "local_rank": null,
@@ -755,7 +755,7 @@
    "first_seen": "2026-11-18T15:20:25+09:00",
    "flag": 11,
    "id": "snowdepth:81428:2026-11-18",
-   "last_seen": "2026-11-18T15:40:24+09:00",
+   "last_seen": "2026-11-18T15:50:25+09:00",
    "last_stricter_date": null,
    "latitude": 33.9483,
    "local_rank": null,
@@ -895,8 +895,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-18T15:40:24+09:00",
- "runs": 8519,
+ "last_run": "2026-11-18T15:50:25+09:00",
+ "runs": 8520,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -916,21 +916,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 18 Nov 2026 06:30:43 GMT",
-   "last_success": "2026-11-18T15:40:24+09:00",
-   "source_time": "2026-11-18T15:10"
+   "last_modified": "Wed, 18 Nov 2026 06:40:40 GMT",
+   "last_success": "2026-11-18T15:50:26+09:00",
+   "source_time": "2026-11-18T15:20"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 18 Nov 2026 06:30:41 GMT",
-   "last_success": "2026-11-18T15:40:26+09:00",
-   "source_time": "2026-11-18T15:10"
+   "last_modified": "Wed, 18 Nov 2026 06:40:38 GMT",
+   "last_success": "2026-11-18T15:50:27+09:00",
+   "source_time": "2026-11-18T15:20"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 18 Nov 2026 06:30:42 GMT",
+   "last_modified": "Wed, 18 Nov 2026 06:40:38 GMT",
    "last_success": "2026-11-18T15:30:38+09:00",
    "source_time": "2026-11-18T15:00"
   },
