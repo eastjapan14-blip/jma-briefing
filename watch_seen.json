@@ -9,11 +9,11 @@
 "東北": "2026-11-19T07:00:57.080351+00:00"
 },
 "暴風・高波": {
-"北海道": "2026-11-19T07:00:57.080351+00:00"
+"北海道": "2026-11-19T07:00:57.080351+00:00",
+"渡島・檜山": "2026-11-19T08:00:43.585799+00:00"
 }
 },
 "urls": {
-"https://www.data.jma.go.jp/developer/xml/data/20261116074608_0_VPCJ50_471000.xml": "2026-11-16T07:50:35.520754+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117070745_0_VPCJ50_040000.xml": "2026-11-17T07:10:24.668848+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117074608_0_VPZJ50_010000.xml": "2026-11-17T07:50:24.173987+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261117075011_0_VPFJ50_160000.xml": "2026-11-17T08:00:41.767689+00:00",
@@ -38,6 +38,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261119050749_0_VPZK50_010000.xml": "2026-11-19T05:10:25.967970+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261119065514_0_VPCJ50_016000.xml": "2026-11-19T07:00:57.080351+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261119065544_0_VPCJ50_040000.xml": "2026-11-19T07:00:57.080351+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261119070632_0_VPCJ50_150000.xml": "2026-11-19T07:10:25.191889+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261119070632_0_VPCJ50_150000.xml": "2026-11-19T07:10:25.191889+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261119075052_0_VPFJ50_017000.xml": "2026-11-19T08:00:43.585799+00:00"
 }
 }
