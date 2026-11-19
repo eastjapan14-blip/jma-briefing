@@ -584,7 +584,7 @@
    "first_seen": "2026-11-20T06:20:27+09:00",
    "flag": 11,
    "id": "pre24h:35162:2026-11-20",
-   "last_seen": "2026-11-20T08:10:32+09:00",
+   "last_seen": "2026-11-20T08:20:27+09:00",
    "last_stricter_date": null,
    "latitude": 38.7567,
    "local_rank": null,
@@ -642,7 +642,7 @@
    "first_seen": "2026-11-19T19:00:43+09:00",
    "flag": 11,
    "id": "pre24h:36426:2026-11-19",
-   "last_seen": "2026-11-20T08:10:32+09:00",
+   "last_seen": "2026-11-20T08:20:27+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -992,7 +992,7 @@
    "first_seen": "2026-11-20T00:20:27+09:00",
    "flag": 11,
    "id": "preday:36426:2026-11-19",
-   "last_seen": "2026-11-20T08:10:32+09:00",
+   "last_seen": "2026-11-20T08:20:27+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -1522,8 +1522,8 @@
    "years_since": null
   }
  },
- "last_run": "2026-11-20T08:10:32+09:00",
- "runs": 8768,
+ "last_run": "2026-11-20T08:20:27+09:00",
+ "runs": 8769,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1543,21 +1543,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 19 Nov 2026 23:00:48 GMT",
-   "last_success": "2026-11-20T08:10:32+09:00",
-   "source_time": "2026-11-20T07:40"
+   "last_modified": "Thu, 19 Nov 2026 23:10:43 GMT",
+   "last_success": "2026-11-20T08:20:27+09:00",
+   "source_time": "2026-11-20T07:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 19 Nov 2026 23:00:45 GMT",
-   "last_success": "2026-11-20T08:00:49+09:00",
-   "source_time": "2026-11-20T07:40"
+   "last_modified": "Thu, 19 Nov 2026 23:10:41 GMT",
+   "last_success": "2026-11-20T08:20:28+09:00",
+   "source_time": "2026-11-20T07:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 19 Nov 2026 23:00:45 GMT",
+   "last_modified": "Thu, 19 Nov 2026 23:10:41 GMT",
    "last_success": "2026-11-20T07:30:39+09:00",
    "source_time": "2026-11-20T07:00"
   },
