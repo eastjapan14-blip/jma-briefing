@@ -583,7 +583,7 @@
    "first_seen": "2026-11-19T19:00:43+09:00",
    "flag": 11,
    "id": "pre24h:36426:2026-11-19",
-   "last_seen": "2026-11-20T00:10:27+09:00",
+   "last_seen": "2026-11-20T00:20:27+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -924,6 +924,60 @@
    "unit": "mm",
    "value": 75.5,
    "years_since": 0
+  },
+  "preday:36426:2026-11-19": {
+   "date": "2026-11-19",
+   "elevation": 377,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-11-20T00:20:27+09:00",
+   "flag": 11,
+   "id": "preday:36426:2026-11-19",
+   "last_seen": "2026-11-20T00:20:27+09:00",
+   "last_stricter_date": null,
+   "latitude": 37.3433,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 139.3133,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "preday",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "南会津郡只見町",
+   "name": "只見",
+   "notifiable": true,
+   "notified_at": "2026-11-20T00:20:27+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "福島県",
+   "pref_full": "福島県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2003-11-21",
+    "value": 78.0
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "36426",
+   "stats_period": null,
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": null,
+   "top3": [],
+   "unit": "mm",
+   "value": 79.0,
+   "years_since": null
   },
   "preday:36597:2026-11-18": {
    "date": "2026-11-18",
@@ -1409,8 +1463,8 @@
    "years_since": null
   }
  },
- "last_run": "2026-11-20T00:10:27+09:00",
- "runs": 8719,
+ "last_run": "2026-11-20T00:20:27+09:00",
+ "runs": 8720,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -1430,21 +1484,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 19 Nov 2026 15:00:44 GMT",
-   "last_success": "2026-11-20T00:10:27+09:00",
-   "source_time": "2026-11-19T23:40"
+   "last_modified": "Thu, 19 Nov 2026 15:10:46 GMT",
+   "last_success": "2026-11-20T00:20:27+09:00",
+   "source_time": "2026-11-19T23:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 19 Nov 2026 15:00:40 GMT",
-   "last_success": "2026-11-20T00:10:29+09:00",
-   "source_time": "2026-11-19T23:40"
+   "last_modified": "Thu, 19 Nov 2026 15:10:44 GMT",
+   "last_success": "2026-11-20T00:20:29+09:00",
+   "source_time": "2026-11-19T23:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 19 Nov 2026 15:00:41 GMT",
+   "last_modified": "Thu, 19 Nov 2026 15:10:44 GMT",
    "last_success": "2026-11-19T23:30:41+09:00",
    "source_time": "2026-11-19T23:00"
   },
