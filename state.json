@@ -52,12 +52,13 @@
    "date": "2026-11-20",
    "members": [
     "35231",
+    "35257",
     "35332",
     "35376"
    ],
    "metric": "preday",
-   "notified_at": "2026-11-20T22:20:27+09:00",
-   "notified_members": 3,
+   "notified_at": "2026-11-20T23:30:38+09:00",
+   "notified_members": 4,
    "pref": "山形県"
   },
   "preday:東京都:2026-11-17": {
@@ -644,7 +645,7 @@
    "first_seen": "2026-11-20T16:30:37+09:00",
    "flag": 11,
    "id": "pre24h:32596:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 39.32,
    "local_rank": null,
@@ -703,7 +704,7 @@
    "first_seen": "2026-11-20T18:20:28+09:00",
    "flag": 11,
    "id": "pre24h:32691:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 39.1867,
    "local_rank": null,
@@ -762,7 +763,7 @@
    "first_seen": "2026-11-20T06:20:27+09:00",
    "flag": 11,
    "id": "pre24h:35162:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.7567,
    "local_rank": null,
@@ -821,7 +822,7 @@
    "first_seen": "2026-11-20T09:50:24+09:00",
    "flag": 11,
    "id": "pre24h:35201:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.6717,
    "local_rank": null,
@@ -880,7 +881,7 @@
    "first_seen": "2026-11-20T16:50:26+09:00",
    "flag": 11,
    "id": "pre24h:35231:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.6083,
    "local_rank": null,
@@ -939,7 +940,7 @@
    "first_seen": "2026-11-20T16:20:33+09:00",
    "flag": 11,
    "id": "pre24h:35332:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.46,
    "local_rank": null,
@@ -998,7 +999,7 @@
    "first_seen": "2026-11-20T16:20:33+09:00",
    "flag": 11,
    "id": "pre24h:35334:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.4117,
    "local_rank": null,
@@ -1057,7 +1058,7 @@
    "first_seen": "2026-11-20T16:50:26+09:00",
    "flag": 11,
    "id": "pre24h:35376:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.37,
    "local_rank": null,
@@ -1102,7 +1103,7 @@
     "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
-   "time": "16:50",
+   "time": "23:10",
    "top3": [],
    "unit": "mm",
    "value": 52.0,
@@ -1116,7 +1117,7 @@
    "first_seen": "2026-11-20T12:30:35+09:00",
    "flag": 11,
    "id": "pre24h:36176:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 37.6583,
    "local_rank": null,
@@ -1175,7 +1176,7 @@
    "first_seen": "2026-11-20T18:50:26+09:00",
    "flag": 11,
    "id": "pre24h:36342:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 37.4733,
    "local_rank": null,
@@ -1234,7 +1235,7 @@
    "first_seen": "2026-11-19T19:00:43+09:00",
    "flag": 11,
    "id": "pre24h:36426:2026-11-19",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -1408,7 +1409,7 @@
    "first_seen": "2026-11-20T11:30:35+09:00",
    "flag": 11,
    "id": "pre24h:54541:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 37.3517,
    "local_rank": null,
@@ -1466,7 +1467,7 @@
    "first_seen": "2026-11-20T16:50:26+09:00",
    "flag": 11,
    "id": "pre24h:57082:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 36.0383,
    "local_rank": null,
@@ -1525,7 +1526,7 @@
    "first_seen": "2026-11-20T12:10:26+09:00",
    "flag": 11,
    "id": "pre24h:57121:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 35.9717,
    "local_rank": null,
@@ -1580,11 +1581,11 @@
    "date": "2026-11-20",
    "elevation": 74,
    "enrich_pending": false,
-   "enriched_at": "2026-11-20T21:30:46+09:00",
+   "enriched_at": "2026-11-20T23:30:49+09:00",
    "first_seen": "2026-11-20T21:20:27+09:00",
    "flag": 11,
    "id": "preday:32691:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": "2024-09-21",
    "latitude": 39.1867,
    "local_rank": null,
@@ -1641,7 +1642,7 @@
     "csv"
    ],
    "station": "32691",
-   "stats_period": "1976/52026/10",
+   "stats_period": "1976/52026/11",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
@@ -1666,7 +1667,7 @@
     ]
    ],
    "unit": "mm",
-   "value": 48.5,
+   "value": 49.5,
    "years_since": 2
   },
   "preday:33206:2026-11-18": {
@@ -1766,11 +1767,11 @@
    "date": "2026-11-20",
    "elevation": 106,
    "enrich_pending": false,
-   "enriched_at": "2026-11-20T21:30:49+09:00",
+   "enriched_at": "2026-11-20T23:30:49+09:00",
    "first_seen": "2026-11-20T21:20:27+09:00",
    "flag": 11,
    "id": "preday:35231:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": "2026-07-25",
    "latitude": 38.6083,
    "local_rank": null,
@@ -1781,7 +1782,7 @@
    "metric": "preday",
    "monthly_last_stricter_date": null,
    "monthly_rank": 1,
-   "monthly_tie": true,
+   "monthly_tie": false,
    "monthly_top3": [
     [
      1,
@@ -1803,7 +1804,7 @@
    "muni": "尾花沢市",
    "name": "尾花沢",
    "notifiable": true,
-   "notified_at": "2026-11-20T22:20:27+09:00",
+   "notified_at": "2026-11-20T23:30:38+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -1853,7 +1854,7 @@
     ]
    ],
    "unit": "mm",
-   "value": 56.5,
+   "value": 60.0,
    "years_since": 0
   },
   "preday:35257:2026-11-19": {
@@ -1939,15 +1940,100 @@
    "value": 75.5,
    "years_since": 0
   },
+  "preday:35257:2026-11-20": {
+   "date": "2026-11-20",
+   "elevation": 180,
+   "enrich_pending": false,
+   "enriched_at": "2026-11-20T23:30:49+09:00",
+   "first_seen": "2026-11-20T23:30:38+09:00",
+   "flag": 11,
+   "id": "preday:35257:2026-11-20",
+   "last_seen": "2026-11-20T23:30:38+09:00",
+   "last_stricter_date": "2026-10-21",
+   "latitude": 38.5233,
+   "local_rank": 3,
+   "local_tie": false,
+   "longitude": 139.7883,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "preday",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     0.0,
+     "2026-11-01"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": null,
+   "name": "上田沢",
+   "notifiable": true,
+   "notified_at": "2026-11-20T23:30:38+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "山形県",
+   "pref_full": "山形県",
+   "prev": {
+    "date": "2026-10-21",
+    "value": 94.0
+   },
+   "prev_monthly": {
+    "date": "2026-11-19",
+    "value": 76.5
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": true,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1678&year=&month=&day=&view=",
+   "sources": [
+    "csv"
+   ],
+   "station": "35257",
+   "stats_period": "2026/32026/11",
+   "stats_start": 2026,
+   "status": "PROVISIONAL",
+   "tags": [
+    "ALL_TIME_TOP3",
+    "MONTHLY_1ST",
+    "PREFECTURE_CLUSTER",
+    "SHORT_STATS"
+   ],
+   "time": null,
+   "top3": [
+    [
+     1,
+     94.0,
+     "2026-10-21"
+    ],
+    [
+     2,
+     83.5,
+     "2026-07-24"
+    ],
+    [
+     3,
+     76.5,
+     "2026-06-21"
+    ]
+   ],
+   "unit": "mm",
+   "value": 78.5,
+   "years_since": 0
+  },
   "preday:35332:2026-11-20": {
    "date": "2026-11-20",
    "elevation": 80,
    "enrich_pending": false,
-   "enriched_at": "2026-11-20T22:30:48+09:00",
+   "enriched_at": "2026-11-20T23:30:49+09:00",
    "first_seen": "2026-11-20T22:20:27+09:00",
    "flag": 11,
    "id": "preday:35332:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": "2026-07-25",
    "latitude": 38.46,
    "local_rank": null,
@@ -1980,7 +2066,7 @@
    "muni": "村山市",
    "name": "村山",
    "notifiable": true,
-   "notified_at": "2026-11-20T22:20:27+09:00",
+   "notified_at": "2026-11-20T23:30:38+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -2030,18 +2116,18 @@
     ]
    ],
    "unit": "mm",
-   "value": 49.5,
+   "value": 51.5,
    "years_since": 0
   },
   "preday:35376:2026-11-20": {
    "date": "2026-11-20",
    "elevation": 133,
    "enrich_pending": false,
-   "enriched_at": "2026-11-20T22:30:51+09:00",
+   "enriched_at": "2026-11-20T23:30:49+09:00",
    "first_seen": "2026-11-20T22:20:27+09:00",
    "flag": 11,
    "id": "preday:35376:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": "2024-09-21",
    "latitude": 38.37,
    "local_rank": null,
@@ -2052,7 +2138,7 @@
    "metric": "preday",
    "monthly_last_stricter_date": null,
    "monthly_rank": 1,
-   "monthly_tie": true,
+   "monthly_tie": false,
    "monthly_top3": [
     [
      1,
@@ -2074,7 +2160,7 @@
    "muni": "西村山郡大江町",
    "name": "左沢",
    "notifiable": true,
-   "notified_at": "2026-11-20T22:20:27+09:00",
+   "notified_at": "2026-11-20T23:30:38+09:00",
    "notified_severity": "B",
    "notify_count": 1,
    "pref": "山形県",
@@ -2102,7 +2188,7 @@
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
-    "MONTHLY_1ST_TIE",
+    "MONTHLY_1ST",
     "PREFECTURE_CLUSTER"
    ],
    "time": null,
@@ -2124,18 +2210,18 @@
     ]
    ],
    "unit": "mm",
-   "value": 49.0,
+   "value": 50.5,
    "years_since": 2
   },
   "preday:36176:2026-11-20": {
    "date": "2026-11-20",
    "elevation": 212,
    "enrich_pending": false,
-   "enriched_at": "2026-11-20T22:30:54+09:00",
+   "enriched_at": "2026-11-20T23:30:49+09:00",
    "first_seen": "2026-11-20T22:20:27+09:00",
    "flag": 11,
    "id": "preday:36176:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": "2026-07-30",
    "latitude": 37.6583,
    "local_rank": null,
@@ -2217,7 +2303,7 @@
     ]
    ],
    "unit": "mm",
-   "value": 70.5,
+   "value": 73.0,
    "years_since": 0
   },
   "preday:36426:2026-11-19": {
@@ -2228,7 +2314,7 @@
    "first_seen": "2026-11-20T00:20:27+09:00",
    "flag": 11,
    "id": "preday:36426:2026-11-19",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -2564,7 +2650,7 @@
    "first_seen": "2026-11-20T18:20:28+09:00",
    "flag": 11,
    "id": "preday:54541:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": "2017-07-04",
    "latitude": 37.3517,
    "local_rank": null,
@@ -2648,6 +2734,99 @@
    "unit": "mm",
    "value": 104.0,
    "years_since": 9
+  },
+  "preday:57121:2026-11-20": {
+   "date": "2026-11-20",
+   "elevation": 182,
+   "enrich_pending": false,
+   "enriched_at": "2026-11-20T23:30:52+09:00",
+   "first_seen": "2026-11-20T23:30:38+09:00",
+   "flag": 11,
+   "id": "preday:57121:2026-11-20",
+   "last_seen": "2026-11-20T23:30:38+09:00",
+   "last_stricter_date": "2026-08-30",
+   "latitude": 35.9717,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 136.4967,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "preday",
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     77.5,
+     "2024-11-02"
+    ],
+    [
+     2,
+     74.0,
+     "1988-11-25"
+    ],
+    [
+     3,
+     68.5,
+     "2010-11-01"
+    ]
+   ],
+   "monthly_years_since": null,
+   "muni": "大野市",
+   "name": "大野",
+   "notifiable": true,
+   "notified_at": "2026-11-20T23:30:38+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "福井県",
+   "pref_full": "福井県",
+   "prev": {
+    "date": "2022-08-04",
+    "value": 211.0
+   },
+   "prev_monthly": {
+    "date": "2024-11-02",
+    "value": 77.5
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=57&block_no=0573&year=&month=&day=&view=",
+   "sources": [
+    "csv",
+    "rank_update"
+   ],
+   "station": "57121",
+   "stats_period": "1976/32026/11",
+   "stats_start": 1976,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": null,
+   "top3": [
+    [
+     1,
+     211.0,
+     "2022-08-04"
+    ],
+    [
+     2,
+     200.0,
+     "2026-08-30"
+    ],
+    [
+     3,
+     176.0,
+     "2024-06-23"
+    ]
+   ],
+   "unit": "mm",
+   "value": 81.5,
+   "years_since": 0
   },
   "preday:71192:2026-11-15": {
    "date": "2026-11-15",
@@ -2750,7 +2929,7 @@
    "first_seen": "2026-11-20T19:30:35+09:00",
    "flag": 11,
    "id": "snow24h:32771:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 38.96,
    "local_rank": null,
@@ -2790,7 +2969,7 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "22:00",
+   "time": "23:00",
    "top3": [],
    "unit": "cm",
    "value": 42.0,
@@ -2804,7 +2983,7 @@
    "first_seen": "2026-11-20T18:20:28+09:00",
    "flag": 11,
    "id": "snow24h:33186:2026-11-20",
-   "last_seen": "2026-11-20T23:20:27+09:00",
+   "last_seen": "2026-11-20T23:30:38+09:00",
    "last_stricter_date": null,
    "latitude": 40.04,
    "local_rank": null,
@@ -2844,7 +3023,7 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "22:00",
+   "time": "23:00",
    "top3": [],
    "unit": "cm",
    "value": 23.0,
@@ -2959,8 +3138,8 @@
    "years_since": null
   }
  },
- "last_run": "2026-11-20T23:20:27+09:00",
- "runs": 8861,
+ "last_run": "2026-11-20T23:30:38+09:00",
+ "runs": 8862,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2980,23 +3159,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 20 Nov 2026 14:10:44 GMT",
-   "last_success": "2026-11-20T23:20:28+09:00",
-   "source_time": "2026-11-20T22:50"
+   "last_modified": "Fri, 20 Nov 2026 14:20:42 GMT",
+   "last_success": "2026-11-20T23:30:38+09:00",
+   "source_time": "2026-11-20T23:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 20 Nov 2026 14:10:43 GMT",
-   "last_success": "2026-11-20T23:20:29+09:00",
-   "source_time": "2026-11-20T22:50"
+   "last_modified": "Fri, 20 Nov 2026 14:20:39 GMT",
+   "last_success": "2026-11-20T23:30:40+09:00",
+   "source_time": "2026-11-20T23:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 20 Nov 2026 14:10:43 GMT",
-   "last_success": "2026-11-20T22:30:39+09:00",
-   "source_time": "2026-11-20T22:00"
+   "last_modified": "Fri, 20 Nov 2026 14:20:40 GMT",
+   "last_success": "2026-11-20T23:30:42+09:00",
+   "source_time": "2026-11-20T23:00"
   },
   "snc00": {
    "etag": "",
