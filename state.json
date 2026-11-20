@@ -632,7 +632,7 @@
    "first_seen": "2026-11-20T16:30:37+09:00",
    "flag": 11,
    "id": "pre24h:32596:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 39.32,
    "local_rank": null,
@@ -691,7 +691,7 @@
    "first_seen": "2026-11-20T18:20:28+09:00",
    "flag": 11,
    "id": "pre24h:32691:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 39.1867,
    "local_rank": null,
@@ -750,7 +750,7 @@
    "first_seen": "2026-11-20T06:20:27+09:00",
    "flag": 11,
    "id": "pre24h:35162:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.7567,
    "local_rank": null,
@@ -809,7 +809,7 @@
    "first_seen": "2026-11-20T09:50:24+09:00",
    "flag": 11,
    "id": "pre24h:35201:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.6717,
    "local_rank": null,
@@ -868,7 +868,7 @@
    "first_seen": "2026-11-20T16:50:26+09:00",
    "flag": 11,
    "id": "pre24h:35231:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.6083,
    "local_rank": null,
@@ -927,7 +927,7 @@
    "first_seen": "2026-11-20T16:20:33+09:00",
    "flag": 11,
    "id": "pre24h:35332:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.46,
    "local_rank": null,
@@ -986,7 +986,7 @@
    "first_seen": "2026-11-20T16:20:33+09:00",
    "flag": 11,
    "id": "pre24h:35334:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.4117,
    "local_rank": null,
@@ -1045,7 +1045,7 @@
    "first_seen": "2026-11-20T16:50:26+09:00",
    "flag": 11,
    "id": "pre24h:35376:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.37,
    "local_rank": null,
@@ -1104,7 +1104,7 @@
    "first_seen": "2026-11-20T12:30:35+09:00",
    "flag": 11,
    "id": "pre24h:36176:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 37.6583,
    "local_rank": null,
@@ -1163,7 +1163,7 @@
    "first_seen": "2026-11-20T18:50:26+09:00",
    "flag": 11,
    "id": "pre24h:36342:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 37.4733,
    "local_rank": null,
@@ -1222,7 +1222,7 @@
    "first_seen": "2026-11-19T19:00:43+09:00",
    "flag": 11,
    "id": "pre24h:36426:2026-11-19",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -1396,7 +1396,7 @@
    "first_seen": "2026-11-20T11:30:35+09:00",
    "flag": 11,
    "id": "pre24h:54541:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 37.3517,
    "local_rank": null,
@@ -1454,7 +1454,7 @@
    "first_seen": "2026-11-20T16:50:26+09:00",
    "flag": 11,
    "id": "pre24h:57082:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 36.0383,
    "local_rank": null,
@@ -1513,7 +1513,7 @@
    "first_seen": "2026-11-20T12:10:26+09:00",
    "flag": 11,
    "id": "pre24h:57121:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 35.9717,
    "local_rank": null,
@@ -1568,12 +1568,12 @@
    "date": "2026-11-20",
    "elevation": 74,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-11-20T21:30:46+09:00",
    "first_seen": "2026-11-20T21:20:27+09:00",
    "flag": 11,
    "id": "preday:32691:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-11-20T21:30:35+09:00",
+   "last_stricter_date": "2024-09-21",
    "latitude": 39.1867,
    "local_rank": null,
    "local_tie": false,
@@ -1581,8 +1581,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "preday",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     46.0,
+     "2025-11-01"
+    ],
+    [
+     2,
+     45.5,
+     "2023-11-29"
+    ],
+    [
+     3,
+     42.0,
+     "2021-11-11"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "湯沢市",
    "name": "湯沢",
    "notifiable": true,
@@ -1591,7 +1610,10 @@
    "notify_count": 1,
    "pref": "秋田県",
    "pref_full": "秋田県",
-   "prev": null,
+   "prev": {
+    "date": "2024-07-24",
+    "value": 160.0
+   },
    "prev_monthly": {
     "date": "2025-11-01",
     "value": 46.0
@@ -1601,22 +1623,39 @@
    "remark": "",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=32&block_no=0202&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "32691",
-   "stats_period": null,
+   "stats_period": "1976/52026/10",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST"
    ],
    "time": null,
-   "top3": [],
+   "top3": [
+    [
+     1,
+     160.0,
+     "2024-07-24"
+    ],
+    [
+     2,
+     158.0,
+     "1987-08-17"
+    ],
+    [
+     3,
+     118.0,
+     "1979-08-05"
+    ]
+   ],
    "unit": "mm",
    "value": 46.5,
-   "years_since": null
+   "years_since": 2
   },
   "preday:33206:2026-11-18": {
    "date": "2026-11-18",
@@ -1715,12 +1754,12 @@
    "date": "2026-11-20",
    "elevation": 106,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-11-20T21:30:49+09:00",
    "first_seen": "2026-11-20T21:20:27+09:00",
    "flag": 11,
    "id": "preday:35231:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-11-20T21:30:35+09:00",
+   "last_stricter_date": "2026-07-25",
    "latitude": 38.6083,
    "local_rank": null,
    "local_tie": false,
@@ -1728,8 +1767,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "preday",
-   "monthly_rank": null,
-   "monthly_tie": false,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
+   "monthly_tie": true,
+   "monthly_top3": [
+    [
+     1,
+     52.5,
+     "2021-11-25"
+    ],
+    [
+     2,
+     51.5,
+     "2021-11-24"
+    ],
+    [
+     3,
+     45.0,
+     "2013-11-12"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "尾花沢市",
    "name": "尾花沢",
    "notifiable": true,
@@ -1738,7 +1796,10 @@
    "notify_count": 1,
    "pref": "山形県",
    "pref_full": "山形県",
-   "prev": null,
+   "prev": {
+    "date": "1997-06-28",
+    "value": 153.0
+   },
    "prev_monthly": {
     "date": "2021-11-25",
     "value": 52.5
@@ -1748,22 +1809,39 @@
    "remark": "タイ記録",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=35&block_no=1039&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "35231",
-   "stats_period": null,
+   "stats_period": "1976/12026/11",
    "stats_start": 1976,
    "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST_TIE"
    ],
    "time": null,
-   "top3": [],
+   "top3": [
+    [
+     1,
+     153.0,
+     "1997-06-28"
+    ],
+    [
+     2,
+     148.5,
+     "2024-07-25"
+    ],
+    [
+     3,
+     112.0,
+     "1999-09-15"
+    ]
+   ],
    "unit": "mm",
    "value": 52.5,
-   "years_since": null
+   "years_since": 0
   },
   "preday:35257:2026-11-19": {
    "date": "2026-11-19",
@@ -1856,7 +1934,7 @@
    "first_seen": "2026-11-20T00:20:27+09:00",
    "flag": 11,
    "id": "preday:36426:2026-11-19",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 37.3433,
    "local_rank": null,
@@ -2192,7 +2270,7 @@
    "first_seen": "2026-11-20T18:20:28+09:00",
    "flag": 11,
    "id": "preday:54541:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": "2017-07-04",
    "latitude": 37.3517,
    "local_rank": null,
@@ -2378,7 +2456,7 @@
    "first_seen": "2026-11-20T19:30:35+09:00",
    "flag": 11,
    "id": "snow24h:32771:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 38.96,
    "local_rank": null,
@@ -2432,7 +2510,7 @@
    "first_seen": "2026-11-20T18:20:28+09:00",
    "flag": 11,
    "id": "snow24h:33186:2026-11-20",
-   "last_seen": "2026-11-20T21:20:27+09:00",
+   "last_seen": "2026-11-20T21:30:35+09:00",
    "last_stricter_date": null,
    "latitude": 40.04,
    "local_rank": null,
@@ -2587,8 +2665,8 @@
    "years_since": null
   }
  },
- "last_run": "2026-11-20T21:20:27+09:00",
- "runs": 8849,
+ "last_run": "2026-11-20T21:30:35+09:00",
+ "runs": 8850,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -2608,23 +2686,23 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 20 Nov 2026 12:00:50 GMT",
-   "last_success": "2026-11-20T21:10:28+09:00",
-   "source_time": "2026-11-20T20:40"
+   "last_modified": "Fri, 20 Nov 2026 12:20:48 GMT",
+   "last_success": "2026-11-20T21:30:36+09:00",
+   "source_time": "2026-11-20T21:00"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 20 Nov 2026 12:00:47 GMT",
-   "last_success": "2026-11-20T21:00:53+09:00",
-   "source_time": "2026-11-20T20:40"
+   "last_modified": "Fri, 20 Nov 2026 12:20:46 GMT",
+   "last_success": "2026-11-20T21:30:37+09:00",
+   "source_time": "2026-11-20T21:00"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Fri, 20 Nov 2026 12:00:48 GMT",
-   "last_success": "2026-11-20T20:30:46+09:00",
-   "source_time": "2026-11-20T20:00"
+   "last_modified": "Fri, 20 Nov 2026 12:20:46 GMT",
+   "last_success": "2026-11-20T21:30:39+09:00",
+   "source_time": "2026-11-20T21:00"
   },
   "snc00": {
    "etag": "",
