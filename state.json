@@ -593,7 +593,7 @@
    "first_seen": "2026-11-24T11:30:34+09:00",
    "flag": 11,
    "id": "pre24h:31136:2026-11-24",
-   "last_seen": "2026-11-25T07:50:25+09:00",
+   "last_seen": "2026-11-25T08:00:43+09:00",
    "last_stricter_date": null,
    "latitude": 41.18,
    "local_rank": null,
@@ -1999,7 +1999,7 @@
    "first_seen": "2026-11-24T12:20:25+09:00",
    "flag": 11,
    "id": "preday:31136:2026-11-24",
-   "last_seen": "2026-11-25T07:50:25+09:00",
+   "last_seen": "2026-11-25T08:00:43+09:00",
    "last_stricter_date": "2022-08-10",
    "latitude": 41.18,
    "local_rank": null,
@@ -5241,12 +5241,12 @@
    "date": "2026-11-25",
    "elevation": 12,
    "enrich_pending": false,
-   "enriched_at": null,
+   "enriched_at": "2026-11-25T08:00:58+09:00",
    "first_seen": "2026-11-25T07:10:28+09:00",
    "flag": 11,
    "id": "tmin:84122:2026-11-25",
-   "last_seen": "2026-11-25T07:50:25+09:00",
-   "last_stricter_date": null,
+   "last_seen": "2026-11-25T08:00:43+09:00",
+   "last_stricter_date": "2026-01-22",
    "latitude": 33.7483,
    "local_rank": null,
    "local_tie": false,
@@ -5254,8 +5254,27 @@
    "margin_abs": null,
    "margin_pct": null,
    "metric": "tmin",
-   "monthly_rank": null,
+   "monthly_last_stricter_date": null,
+   "monthly_rank": 1,
    "monthly_tie": false,
+   "monthly_top3": [
+    [
+     1,
+     1.2,
+     "2010-11-27"
+    ],
+    [
+     2,
+     2.0,
+     "2010-11-26"
+    ],
+    [
+     3,
+     2.3,
+     "2012-11-27"
+    ]
+   ],
+   "monthly_years_since": null,
    "muni": "壱岐市",
    "name": "石田",
    "notifiable": true,
@@ -5264,7 +5283,10 @@
    "notify_count": 1,
    "pref": "長崎県",
    "pref_full": "長崎県",
-   "prev": null,
+   "prev": {
+    "date": "2012-02-03",
+    "value": -5.6
+   },
    "prev_monthly": {
     "date": "2010-11-27",
     "value": 1.2
@@ -5274,60 +5296,77 @@
    "remark": "",
    "severity": "B",
    "short_stats": false,
-   "source_ref": null,
+   "source_ref": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=84&block_no=1478&year=&month=&day=&view=",
    "sources": [
-    "rank_update"
+    "rank_update",
+    "csv"
    ],
    "station": "84122",
-   "stats_period": null,
+   "stats_period": "2003/12026/11",
    "stats_start": 2003,
    "status": "PROVISIONAL",
    "tags": [
     "MONTHLY_1ST"
    ],
    "time": "07:04",
-   "top3": [],
+   "top3": [
+    [
+     1,
+     -5.6,
+     "2012-02-03"
+    ],
+    [
+     2,
+     -4.9,
+     "2011-01-17"
+    ],
+    [
+     3,
+     -4.5,
+     "2016-01-24"
+    ]
+   ],
    "unit": "℃",
    "value": 0.8,
-   "years_since": null
+   "years_since": 0
   }
  },
- "last_run": "2026-11-25T07:50:25+09:00",
- "runs": 9501,
+ "last_run": "2026-11-25T08:00:43+09:00",
+ "runs": 9502,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 21:48:38 GMT",
-   "last_success": "2026-11-25T07:01:02+09:00",
-   "source_time": "2026-11-25T06:00"
+   "last_modified": "Tue, 24 Nov 2026 22:48:34 GMT",
+   "last_success": "2026-11-25T08:00:45+09:00",
+   "source_time": "2026-11-25T07:00"
   },
   "mxtemsadext00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 21:48:38 GMT",
-   "last_success": "2026-11-25T07:01:00+09:00",
-   "source_time": "2026-11-25T06:00"
+   "last_modified": "Tue, 24 Nov 2026 22:48:34 GMT",
+   "last_success": "2026-11-25T08:00:44+09:00",
+   "source_time": "2026-11-25T07:00"
   },
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 22:40:46 GMT",
-   "last_success": "2026-11-25T07:50:26+09:00",
-   "source_time": "2026-11-25T07:20"
+   "last_modified": "Tue, 24 Nov 2026 22:50:41 GMT",
+   "last_success": "2026-11-25T08:00:46+09:00",
+   "source_time": "2026-11-25T07:30"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 22:40:44 GMT",
-   "last_success": "2026-11-25T07:50:27+09:00",
-   "source_time": "2026-11-25T07:20"
+   "last_modified": "Tue, 24 Nov 2026 22:50:39 GMT",
+   "last_success": "2026-11-25T08:00:48+09:00",
+   "source_time": "2026-11-25T07:30"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 22:40:44 GMT",
+   "last_modified": "Tue, 24 Nov 2026 22:50:39 GMT",
    "last_success": "2026-11-25T07:30:43+09:00",
    "source_time": "2026-11-25T07:00"
   },
@@ -5339,7 +5378,7 @@
   "snd24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 21:50:51 GMT"
+   "last_modified": "Tue, 24 Nov 2026 22:50:50 GMT"
   }
  }
 }
