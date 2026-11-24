@@ -593,7 +593,7 @@
    "first_seen": "2026-11-24T11:30:34+09:00",
    "flag": 11,
    "id": "pre24h:31136:2026-11-24",
-   "last_seen": "2026-11-25T07:01:00+09:00",
+   "last_seen": "2026-11-25T07:10:28+09:00",
    "last_stricter_date": null,
    "latitude": 41.18,
    "local_rank": null,
@@ -1999,7 +1999,7 @@
    "first_seen": "2026-11-24T12:20:25+09:00",
    "flag": 11,
    "id": "preday:31136:2026-11-24",
-   "last_seen": "2026-11-25T07:01:00+09:00",
+   "last_seen": "2026-11-25T07:10:28+09:00",
    "last_stricter_date": "2022-08-10",
    "latitude": 41.18,
    "local_rank": null,
@@ -5236,10 +5236,64 @@
    "unit": "℃",
    "value": -4.8,
    "years_since": 0
+  },
+  "tmin:84122:2026-11-25": {
+   "date": "2026-11-25",
+   "elevation": 12,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-11-25T07:10:28+09:00",
+   "flag": 11,
+   "id": "tmin:84122:2026-11-25",
+   "last_seen": "2026-11-25T07:10:28+09:00",
+   "last_stricter_date": null,
+   "latitude": 33.7483,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 129.785,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "tmin",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "壱岐市",
+   "name": "石田",
+   "notifiable": true,
+   "notified_at": "2026-11-25T07:10:28+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "長崎県",
+   "pref_full": "長崎県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2010-11-27",
+    "value": 1.2
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "84122",
+   "stats_period": null,
+   "stats_start": 2003,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": "06:38",
+   "top3": [],
+   "unit": "℃",
+   "value": 0.9,
+   "years_since": null
   }
  },
- "last_run": "2026-11-25T07:01:00+09:00",
- "runs": 9496,
+ "last_run": "2026-11-25T07:10:28+09:00",
+ "runs": 9497,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -5266,9 +5320,9 @@
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Tue, 24 Nov 2026 21:50:38 GMT",
-   "last_success": "2026-11-25T07:01:05+09:00",
-   "source_time": "2026-11-25T06:30"
+   "last_modified": "Tue, 24 Nov 2026 22:00:53 GMT",
+   "last_success": "2026-11-25T07:10:29+09:00",
+   "source_time": "2026-11-25T06:40"
   },
   "predaily00": {
    "etag": "",
