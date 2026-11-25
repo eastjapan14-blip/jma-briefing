@@ -593,7 +593,7 @@
    "first_seen": "2026-11-24T11:30:34+09:00",
    "flag": 11,
    "id": "pre24h:31136:2026-11-24",
-   "last_seen": "2026-11-25T09:10:26+09:00",
+   "last_seen": "2026-11-25T09:20:26+09:00",
    "last_stricter_date": null,
    "latitude": 41.18,
    "local_rank": null,
@@ -1999,7 +1999,7 @@
    "first_seen": "2026-11-24T12:20:25+09:00",
    "flag": 11,
    "id": "preday:31136:2026-11-24",
-   "last_seen": "2026-11-25T09:10:26+09:00",
+   "last_seen": "2026-11-25T09:20:26+09:00",
    "last_stricter_date": "2022-08-10",
    "latitude": 41.18,
    "local_rank": null,
@@ -5245,7 +5245,7 @@
    "first_seen": "2026-11-25T07:10:28+09:00",
    "flag": 11,
    "id": "tmin:84122:2026-11-25",
-   "last_seen": "2026-11-25T09:10:26+09:00",
+   "last_seen": "2026-11-25T09:20:26+09:00",
    "last_stricter_date": "2026-01-22",
    "latitude": 33.7483,
    "local_rank": null,
@@ -5331,8 +5331,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-25T09:10:26+09:00",
- "runs": 9509,
+ "last_run": "2026-11-25T09:20:26+09:00",
+ "runs": 9510,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -5352,21 +5352,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 25 Nov 2026 00:00:50 GMT",
-   "last_success": "2026-11-25T09:10:26+09:00",
-   "source_time": "2026-11-25T08:40"
+   "last_modified": "Wed, 25 Nov 2026 00:10:47 GMT",
+   "last_success": "2026-11-25T09:20:26+09:00",
+   "source_time": "2026-11-25T08:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 25 Nov 2026 00:00:48 GMT",
-   "last_success": "2026-11-25T09:10:27+09:00",
-   "source_time": "2026-11-25T08:40"
+   "last_modified": "Wed, 25 Nov 2026 00:10:45 GMT",
+   "last_success": "2026-11-25T09:20:27+09:00",
+   "source_time": "2026-11-25T08:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Wed, 25 Nov 2026 00:00:48 GMT",
+   "last_modified": "Wed, 25 Nov 2026 00:10:45 GMT",
    "last_success": "2026-11-25T08:30:45+09:00",
    "source_time": "2026-11-25T08:00"
   },
