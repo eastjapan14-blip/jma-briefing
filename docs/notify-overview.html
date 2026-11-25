@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>気象庁XML通知システム</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;800&family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE work: 技術資料。共有相手が初見で全体を掴めること
+   IDEA 監視室の系統図。情報源から手元のスマホまでの配線を1枚で見せる
+   PICTURE 情報源→GitHub Actions→ntfy→iPhone→制作の流れ図（2系統）
+   COLOUR 鋼板グレーの図版帯、白地、黒、通知経路だけ警報レッド
+   TYPE Inter Tight 800 見出し + Inter / Noto Sans JP 本文
+   LAYOUT 結論→全幅の系統図→2系統の比較→段階と届き方→工夫→ファイル→制約 */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#16191c);--ink:light-dark(#111416,#e9edf0);--panel:light-dark(#d5dbe0,#1f2428);--box:light-dark(#ffffff,#262c31);--line:light-dark(#111416,#c9d1d7);--mute:light-dark(#4a535b,#a3adb5);--red:light-dark(#d81e12,#ff5a4c);--rule:light-dark(#c3cad0,#343b41)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,"Noto Sans JP",system-ui,sans-serif;overflow-x:clip}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+h1,h2{font-family:"Inter Tight","Noto Sans JP",sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.15;margin:0;text-wrap:balance}
+h1{font-size:clamp(30px,4.2vw,46px)}
+h2{font-size:clamp(21px,2.4vw,26px);margin-bottom:14px}
+p{margin:0 0 12px}
+.lead{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
+.lead p{font-size:17px;max-width:62ch}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.facts div{background:var(--bg);padding:12px 14px}
+.facts b{display:block;font:800 26px/1.1 "Inter Tight","Noto Sans JP",sans-serif;white-space:nowrap}
+.facts span{font-size:13px;color:var(--mute)}
+.diagram{background:var(--panel)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+figure{margin:0}
+figure svg{display:block;width:100%;min-width:900px;height:auto}
+figcaption{font-size:14px;color:var(--mute);margin-top:10px;max-width:80ch}
+.bx{fill:var(--box);stroke:var(--line);stroke-width:1.3}
+.bx.hot{stroke:var(--red);stroke-width:2.2}
+.bx.chip{stroke-dasharray:4 3}
+.t{fill:var(--ink);font:600 13.5px Inter,"Noto Sans JP",sans-serif}
+.t.b{font:800 15px "Inter Tight","Noto Sans JP",sans-serif}
+.t.s{font:400 12.5px Inter,"Noto Sans JP",sans-serif;fill:var(--mute)}
+.t.r{fill:var(--red)}
+.ln{stroke:var(--line);stroke-width:1.4;fill:none}
+.ln.hot{stroke:var(--red);stroke-width:2.2}
+.ah{fill:var(--line)}.ah.hot{fill:var(--red)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--rule)}
+thead th{border-bottom:2px solid var(--ink);font-weight:600;white-space:nowrap}
+td:first-child{font-weight:600;white-space:nowrap}
+.tag{display:inline-block;font:800 13px "Inter Tight",sans-serif;padding:1px 7px;border:1.5px solid currentColor;border-radius:3px}
+.tag.c{color:var(--red)}
+pre{background:var(--panel);padding:14px 16px;margin:0;font:13.5px/1.6 ui-monospace,Menlo,"Noto Sans JP",monospace;white-space:pre-wrap}
+code{font:14px ui-monospace,Menlo,monospace;overflow-wrap:anywhere}
+ul{margin:0;padding-left:1.2em}li{margin-bottom:6px}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+.note{font-size:13px;color:var(--mute);margin-top:10px}
+hr{border:0;border-top:1px solid var(--rule);margin:0}
+@media(max-width:760px){.lead,.two{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){table{font-size:13px}th,td{padding:6px 4px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px;border:0;padding:3px 0;white-space:normal}.stack td::before{content:attr(data-l);color:var(--mute);font-weight:400}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+
+<section class="band"><div class="wrap lead">
+  <div>
+    <h1>気象庁の発表を10分ごとに見張り、動画にする価値のある新着だけをスマホへ届ける</h1>
+  </div>
+  <div>
+    <p>気象庁の防災情報XML・報道発表・公式YouTube・アメダスの記録を、GitHub Actions が10分ごとに確認します。段階を判定し、重複や続報を除き、台風のような広域の情報はまとめてから、ntfy で iPhone に通知します。Mac を起動しておく必要はありません。</p>
+    <div class="facts">
+      <div><b>10分</b><span>確認の間隔</span></div>
+      <div><b>2系統</b><span>防災情報と観測記録</span></div>
+      <div><b>0円</b><span>無料の範囲で運用</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band diagram"><div class="wrap">
+  <h2>情報源から制作までの流れ</h2>
+  <div class="scroll"><figure>
+  <svg viewBox="0 0 1120 520" role="img" aria-label="気象庁の4つの情報源を、外部cronに起動されたGitHub Actionsの2つの処理が取得して判定し、ntfyを経由してiPhoneへ通知、人が判断してClaude Codeで台本とpptxを作る流れ">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+      <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah hot" d="M0,0 L10,5 L0,10 z"/></marker>
+    </defs>
+    <text class="t s" x="20" y="92">気象庁ほか（情報源）</text>
+    <text class="t s" x="320" y="30">GitHub Actions（判定）</text>
+    <text class="t s" x="660" y="196">配信</text>
+    <text class="t s" x="900" y="176">受け手</text>
+
+    <rect class="bx" x="20" y="108" width="220" height="58" rx="4"/>
+    <text class="t b" x="34" y="132">防災情報XML</text><text class="t s" x="34" y="154">随時・定時のAtomフィード</text>
+    <rect class="bx" x="20" y="178" width="220" height="46" rx="4"/>
+    <text class="t" x="34" y="206">報道発表資料の一覧</text>
+    <rect class="bx" x="20" y="236" width="220" height="46" rx="4"/>
+    <text class="t" x="34" y="264">公式YouTube（会見のRSS）</text>
+    <rect class="bx" x="20" y="380" width="220" height="70" rx="4"/>
+    <text class="t b" x="34" y="405">アメダス最新CSV</text><text class="t s" x="34" y="427">観測史上1位の更新状況ページ</text>
+
+    <rect class="bx chip" x="360" y="46" width="180" height="38" rx="4"/>
+    <text class="t" x="450" y="70" text-anchor="middle">cron-job.org 10分ごと</text>
+    <line class="ln" x1="450" y1="84" x2="450" y2="108" marker-end="url(#a)"/>
+    <rect class="bx" x="320" y="110" width="260" height="176" rx="4"/>
+    <text class="t b" x="336" y="136">jma-watch</text><text class="t s" x="430" y="136">scripts/notify.py</text>
+    <text class="t" x="336" y="164">1 段階A〜Dを判定</text>
+    <text class="t" x="336" y="188">2 重複・続報・解除を除く</text>
+    <text class="t" x="336" y="212">3 即時か、まとめるかを決める</text>
+    <line class="ln" x1="336" y1="232" x2="564" y2="232" stroke-dasharray="3 3"/>
+    <text class="t s" x="336" y="256">送信済みは watch-state</text><text class="t s" x="336" y="274">ブランチに保存</text>
+
+    <rect class="bx chip" x="360" y="300" width="180" height="38" rx="4"/>
+    <text class="t" x="450" y="324" text-anchor="middle">cron-job.org 10分ごと</text>
+    <line class="ln" x1="450" y1="338" x2="450" y2="358" marker-end="url(#a)"/>
+    <rect class="bx" x="320" y="360" width="260" height="140" rx="4"/>
+    <text class="t b" x="336" y="386">record-hunter</text><text class="t s" x="452" y="386">record_hunter/</text>
+    <text class="t" x="336" y="414">1 極値更新の印を拾う</text>
+    <text class="t" x="336" y="438">2 歴代順位と珍しさを付ける</text>
+    <text class="t" x="336" y="462">3 翌日、確定版と照合</text>
+    <text class="t s" x="336" y="488">状態は record-hunter-state に保存</text>
+
+    <line class="ln" x1="240" y1="137" x2="318" y2="150" marker-end="url(#a)"/>
+    <line class="ln" x1="240" y1="201" x2="318" y2="196" marker-end="url(#a)"/>
+    <line class="ln" x1="240" y1="259" x2="318" y2="240" marker-end="url(#a)"/>
+    <line class="ln" x1="240" y1="415" x2="318" y2="415" marker-end="url(#a)"/>
+    <text class="t s" x="252" y="134">取得</text>
+
+    <rect class="bx hot" x="660" y="206" width="170" height="110" rx="4"/>
+    <text class="t b r" x="676" y="236">ntfy.sh</text>
+    <text class="t" x="676" y="262">非公開のトピック</text>
+    <text class="t s" x="676" y="286">トピック名が合言葉</text>
+    <path class="ln hot" d="M580,196 L620,196 L620,240 L658,240" marker-end="url(#ar)"/>
+    <text class="t r" x="592" y="186">[A]〜[D]</text>
+    <path class="ln hot" d="M580,430 L620,430 L620,290 L658,290" marker-end="url(#ar)"/>
+    <text class="t r" x="590" y="452">[記録]</text>
+
+    <rect class="bx hot" x="900" y="186" width="200" height="78" rx="4"/>
+    <text class="t b" x="916" y="214">iPhone の ntfy</text><text class="t s" x="916" y="238">プッシュ通知で受け取る</text>
+    <line class="ln hot" x1="830" y1="236" x2="898" y2="226" marker-end="url(#ar)"/>
+    <text class="t r" x="844" y="222">配信</text>
+
+    <rect class="bx" x="900" y="300" width="200" height="50" rx="4"/>
+    <text class="t" x="916" y="330">人が作るかを判断</text>
+    <line class="ln" x1="1000" y1="264" x2="1000" y2="298" marker-end="url(#a)"/>
+    <rect class="bx" x="900" y="384" width="200" height="66" rx="4"/>
+    <text class="t b" x="916" y="410">Claude Code</text><text class="t s" x="916" y="432">通知のURLを /briefing に貼る</text>
+    <line class="ln" x1="1000" y1="350" x2="1000" y2="382" marker-end="url(#a)"/>
+    <text class="t s" x="900" y="480">台本と pptx → iCloud →</text><text class="t s" x="900" y="500">iPhone の Keynote で収録</text>
+    <line class="ln" x1="1000" y1="450" x2="1000" y2="464"/>
+  </svg>
+  </figure></div>
+  <figcaption>赤い線が通知の経路です。上の系統は防災情報（台風・大雨・特別警報・長期予報・記者会見）、下の系統はアメダスの観測記録を扱います。どちらも同じ ntfy トピックに送り、タイトルの先頭で区別します。動画を作るかどうかは人が決め、自動投稿はしません。</figcaption>
+</div></section>
+
+<section class="band"><div class="wrap two">
+  <div>
+    <h2>2つの系統は役割で分けている</h2>
+    <table class="stack">
+      <thead><tr><th></th><th>jma-watch</th><th>record-hunter</th></tr></thead>
+      <tbody>
+        <tr><td>見るもの</td><td>防災情報XML、報道発表、公式YouTube</td><td>アメダス最新CSV、更新状況ページ</td></tr>
+        <tr><td>拾うもの</td><td>動画の候補になる発表</td><td>観測史上1位・月の1位などの記録</td></tr>
+        <tr><td>通知の印</td><td>[A] [B] [C] [D]</td><td>[記録]</td></tr>
+        <tr><td>状態の保存</td><td>watch-state ブランチ</td><td>record-hunter-state ブランチ</td></tr>
+        <tr><td>処理の本体</td><td>scripts/notify.py</td><td>record_hunter/</td></tr>
+      </tbody>
+    </table>
+    <p class="note">状態の保存先を main と別のブランチにしているのは、毎回の自動更新でコードの履歴を汚さないためです。</p>
+  </div>
+  <div>
+    <h2>段階ごとに届き方が違う</h2>
+    <table class="stack">
+      <thead><tr><th>段階</th><th>対象</th><th>届き方</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tag">A</span></td><td>記者会見（報道発表と会見動画）</td><td>1件ずつすぐ</td></tr>
+        <tr><td><span class="tag">B</span></td><td>台風、線状降水帯の半日前予測、警報級の可能性</td><td>全般気象情報はすぐ。府県・地方の情報は下の規則でまとめる</td></tr>
+        <tr><td><span class="tag c">C</span></td><td>特別警報の新規発表、気象防災速報、記録的短時間大雨</td><td>すぐ。同じ回に複数県なら1通</td></tr>
+        <tr><td><span class="tag">D</span></td><td>1か月・3か月・暖候期・寒候期予報</td><td>1件ずつすぐ（優先度は低め）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></section>
+
+<hr>
+
+<section class="band"><div class="wrap two">
+  <div>
+    <h2>台風のときは、波が落ち着いてから1通にする</h2>
+    <p>台風が近づくと、本庁の全般気象情報、各管区の地方気象情報、各地方気象台の府県気象情報が、約80分かけて十数件出ます。1件ずつ通知すると読めないため、次の規則で束ねます。</p>
+    <ul>
+      <li><b>広域とみなす条件</b>：台風、または3時間以内に同じ事象で4つ以上の府県・地方が出たとき。</li>
+      <li><b>送る時点</b>：最後の追加から20分新着がないとき、または最初の保留から90分たったとき。</li>
+      <li><b>局地的な情報</b>：1県だけの大雨などは、府県の情報でも1件ずつすぐ届く。</li>
+      <li><b>土砂災害警戒情報と洪水予報</b>：補足情報が繰り返し出るので1時間ごとに1通。</li>
+    </ul>
+  </div>
+  <div>
+    <pre>[B] まとめ 台風第２５号（府県14）
+17件 〜9/21 06:39発表
+◎厳重に警戒 ○警戒 △注意
+〔地方 3〕
+関東甲信 ◎暴風・高波・土砂・浸水・河川・線状降水帯
+東海 ◎土砂・暴風・線状降水帯 ○浸水・河川・高波・強風
+東北 ◎土砂 ○浸水・河川・暴風・高波
+〔府県 14〕
+東京 ◎土砂・暴風・高波・河川・線状降水帯
+静岡 ◎土砂・暴風・線状降水帯 ○浸水・河川・高波
+三重 ○高波・強風
+長野 △土砂・浸水・河川
+…</pre>
+    <p class="note">2026年9月21日朝の実データで再現したまとめ通知（一部省略）。地域ごとに呼びかけの強さと災害の種類を1行にし、強い地域を上に並べます。</p>
+  </div>
+</div></section>
+
+<section class="band" style="padding-top:0"><div class="wrap two">
+  <div>
+    <h2>同じ内容が何度も来ないようにしている</h2>
+    <ul>
+      <li>「〜気象解説情報」は「〜気象情報」と同じ本文の別電文なので読まない。</li>
+      <li>府県気象情報に流れる「気象防災速報」の写しは、段階Cと重なるので読まない。</li>
+      <li>特別警報は電文の中身を読み、新しく「発表」されたときだけ通知する。継続中は同じ見出しが繰り返し流れる。</li>
+      <li>「解除」「可能性は低くなりました」などの情報は対象外。</li>
+      <li>送信済みのURLを保存し、保険として ntfy 側の直近24時間の履歴も照合する。</li>
+    </ul>
+  </div>
+  <div>
+    <h2>観測記録には珍しさを添える</h2>
+    <p>record-hunter は、気象庁のCSVにある極値更新の印から記録を拾い、地点ごとの順位ページで歴代順位を確かめます。通知には珍しさを4段階で付けます。</p>
+    <pre>📊 珍しさ ●●● とても珍しい
+・統計51年（1976年〜）の10月で最大
+・41年ぶりの更新（前回 203.0mm、1985/10/12）
+・同じ日に全国でほか8地点も24時間降水量が記録級</pre>
+    <p class="note">統計10年未満の地点は記録が出やすいので常に「珍しくない」。気象庁の更新状況ページは統計10年目以降の地点しか載せないため、翌日の照合でもこれらは対象外にしている。</p>
+  </div>
+</div></section>
+
+<hr>
+
+<section class="band"><div class="wrap">
+  <h2>中身を見るならこのファイルから</h2>
+  <p>コードは公開リポジトリ <a href="https://github.com/eastjapan14-blip/jma-briefing">github.com/eastjapan14-blip/jma-briefing</a> にあります。上から順に読むと全体が分かります。</p>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>ファイル</th><th>役割</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/blob/main/README.md">README.md</a></td><td>全体の説明。「監視と通知」「アメダス Record Hunter」の節が通知の仕組み</td></tr>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/blob/main/.github/workflows/watch.yml">.github/workflows/watch.yml</a></td><td>防災情報の監視を動かす設定。状態の書き戻しもここ</td></tr>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/blob/main/scripts/fetch_feed.py">scripts/fetch_feed.py</a></td><td>フィードの読み込みと段階A〜Dの判定規則</td></tr>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/blob/main/scripts/notify.py">scripts/notify.py</a></td><td>重複の除去、即時かまとめるかの振り分け、ntfy への送信</td></tr>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/blob/main/.github/workflows/record_hunter.yml">.github/workflows/record_hunter.yml</a></td><td>観測記録の監視を動かす設定</td></tr>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/tree/main/record_hunter">record_hunter/</a></td><td>記録の検出・順位付け・珍しさ・照合。設計は「アメダス Record Hunter 開発引き継ぎ書.md」</td></tr>
+      <tr><td><a href="https://github.com/eastjapan14-blip/jma-briefing/tree/main/tests">tests/</a></td><td>過去の実データを使った回帰テスト</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section class="band diagram"><div class="wrap two">
+  <div>
+    <h2>知っておきたい制約</h2>
+    <ul>
+      <li>GitHub の定期実行は混雑時に数時間遅れるため、外部の cron-job.org から10分ごとに起動している。GitHub 側の定期実行は保険として残している。</li>
+      <li>台風のまとめ通知は最大で90分遅れる。動き出しの合図は、波の最初にすぐ届く全般気象情報で受け取る。</li>
+      <li>観測値は速報値で、後から修正されることがある。</li>
+      <li>発信は気象庁の発表の範囲に留める。観測値と発表の解説は予報にあたらないが、独自の予測は扱わない。</li>
+    </ul>
+  </div>
+  <div>
+    <h2>使っているサービス</h2>
+    <ul>
+      <li><b>GitHub Actions</b>：公開リポジトリなので実行時間は無料。</li>
+      <li><b>ntfy.sh</b>：無料・アカウント不要。トピック名を知っている人は誰でも購読できるので、名前は GitHub の秘密情報に置き、外に出さない。</li>
+      <li><b>cron-job.org</b>：無料。GitHub の起動用トークンは、このリポジトリの Actions 操作だけに権限を絞っている。</li>
+    </ul>
+    <p class="note">この資料には、トピック名やトークンなどの秘密情報は載せていません。</p>
+  </div>
+</div></section>
+
+</body>
+</html>
