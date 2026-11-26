@@ -1453,7 +1453,7 @@
    "first_seen": "2026-11-27T00:40:25+09:00",
    "flag": 11,
    "id": "pre24h:91151:2026-11-27",
-   "last_seen": "2026-11-27T06:00:41+09:00",
+   "last_seen": "2026-11-27T06:10:27+09:00",
    "last_stricter_date": null,
    "latitude": 26.3733,
    "local_rank": null,
@@ -1497,7 +1497,7 @@
    "tags": [
     "MONTHLY_1ST"
    ],
-   "time": "05:40",
+   "time": "05:50",
    "top3": [],
    "unit": "mm",
    "value": 224.0,
@@ -2813,7 +2813,7 @@
    "first_seen": "2026-11-27T00:20:27+09:00",
    "flag": 11,
    "id": "preday:91151:2026-11-26",
-   "last_seen": "2026-11-27T06:00:41+09:00",
+   "last_seen": "2026-11-27T06:10:27+09:00",
    "last_stricter_date": null,
    "latitude": 26.3733,
    "local_rank": null,
@@ -4466,8 +4466,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-27T06:00:41+09:00",
- "runs": 9779,
+ "last_run": "2026-11-27T06:10:27+09:00",
+ "runs": 9780,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -4487,9 +4487,9 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 26 Nov 2026 20:50:40 GMT",
-   "last_success": "2026-11-27T06:00:44+09:00",
-   "source_time": "2026-11-27T05:30"
+   "last_modified": "Thu, 26 Nov 2026 21:00:45 GMT",
+   "last_success": "2026-11-27T06:10:27+09:00",
+   "source_time": "2026-11-27T05:40"
   },
   "pre24h00": {
    "etag": "",
