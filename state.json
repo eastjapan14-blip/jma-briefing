@@ -2746,6 +2746,60 @@
    "value": 28.5,
    "years_since": 0
   },
+  "preday:91151:2026-11-26": {
+   "date": "2026-11-26",
+   "elevation": 7,
+   "enrich_pending": false,
+   "enriched_at": null,
+   "first_seen": "2026-11-27T00:20:27+09:00",
+   "flag": 11,
+   "id": "preday:91151:2026-11-26",
+   "last_seen": "2026-11-27T00:20:27+09:00",
+   "last_stricter_date": null,
+   "latitude": 26.3733,
+   "local_rank": null,
+   "local_tie": false,
+   "longitude": 127.1417,
+   "margin_abs": null,
+   "margin_pct": null,
+   "metric": "preday",
+   "monthly_rank": null,
+   "monthly_tie": false,
+   "muni": "島尻郡渡名喜村",
+   "name": "渡名喜",
+   "notifiable": true,
+   "notified_at": "2026-11-27T00:20:27+09:00",
+   "notified_severity": "B",
+   "notify_count": 1,
+   "pref": "沖縄県",
+   "pref_full": "沖縄県",
+   "prev": null,
+   "prev_monthly": {
+    "date": "2022-11-12",
+    "value": 203.5
+   },
+   "quality": "NORMAL",
+   "record_age_years": null,
+   "remark": "",
+   "severity": "B",
+   "short_stats": false,
+   "source_ref": null,
+   "sources": [
+    "rank_update"
+   ],
+   "station": "91151",
+   "stats_period": null,
+   "stats_start": 2014,
+   "status": "PROVISIONAL",
+   "tags": [
+    "MONTHLY_1ST"
+   ],
+   "time": null,
+   "top3": [],
+   "unit": "mm",
+   "value": 209.5,
+   "years_since": null
+  },
   "snow24h:16252:2026-11-22": {
    "date": "2026-11-22",
    "elevation": 33,
@@ -4353,8 +4407,8 @@
    "years_since": 0
   }
  },
- "last_run": "2026-11-27T00:10:26+09:00",
- "runs": 9744,
+ "last_run": "2026-11-27T00:20:27+09:00",
+ "runs": 9745,
  "schema": 1,
  "sources": {
   "mntemsadext00": {
@@ -4374,21 +4428,21 @@
   "pre1h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 26 Nov 2026 15:00:45 GMT",
-   "last_success": "2026-11-27T00:00:49+09:00",
-   "source_time": "2026-11-26T23:40"
+   "last_modified": "Thu, 26 Nov 2026 15:10:43 GMT",
+   "last_success": "2026-11-27T00:20:28+09:00",
+   "source_time": "2026-11-26T23:50"
   },
   "pre24h00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 26 Nov 2026 15:00:42 GMT",
-   "last_success": "2026-11-27T00:00:50+09:00",
-   "source_time": "2026-11-26T23:40"
+   "last_modified": "Thu, 26 Nov 2026 15:10:41 GMT",
+   "last_success": "2026-11-27T00:20:29+09:00",
+   "source_time": "2026-11-26T23:50"
   },
   "predaily00": {
    "etag": "",
    "fail_count": 0,
-   "last_modified": "Thu, 26 Nov 2026 15:00:43 GMT",
+   "last_modified": "Thu, 26 Nov 2026 15:10:41 GMT",
    "last_success": "2026-11-26T23:28:58+09:00",
    "source_time": "2026-11-26T23:00"
   },
