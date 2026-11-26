@@ -3,6 +3,7 @@
 "pending": {},
 "topics": {
 "大雨・落雷・突風": {
+"八重山": "2026-11-26T03:00:44.763215+00:00",
 "宮古島": "2026-11-26T02:00:42.091980+00:00",
 "沖縄": "2026-11-26T02:00:42.091980+00:00"
 }
@@ -20,6 +21,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261124070828_0_VPZJ50_010000.xml": "2026-11-24T07:10:26.356777+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261124195741_0_VPCJ50_150000.xml": "2026-11-24T20:00:52.347069+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261126014933_0_VPCJ50_471000.xml": "2026-11-26T02:00:42.091980+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261126015821_0_VPFJ50_473000.xml": "2026-11-26T02:00:42.091980+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261126015821_0_VPFJ50_473000.xml": "2026-11-26T02:00:42.091980+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261126025607_0_VPFJ50_474000.xml": "2026-11-26T03:00:44.763215+00:00"
 }
 }
