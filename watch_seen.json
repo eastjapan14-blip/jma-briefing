@@ -7,7 +7,7 @@
 "topics": {
 "大雨・落雷・突風": {
 "宮古島": "2026-11-26T19:50:27.202227+00:00",
-"沖縄本島": "2026-11-26T18:40:27.663542+00:00"
+"沖縄本島": "2026-11-26T20:00:42.167454+00:00"
 }
 },
 "urls": {
@@ -32,6 +32,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261126184841_0_VPBS50_471000.xml": "2026-11-26T18:50:28.068449+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261126185323_0_VXWW50_471000.xml": "2026-11-26T19:00:45.345004+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261126190843_0_VPBS50_471000.xml": "2026-11-26T19:10:25.986327+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261126194005_0_VPFJ50_473000.xml": "2026-11-26T19:50:27.202227+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261126194005_0_VPFJ50_473000.xml": "2026-11-26T19:50:27.202227+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261126195713_0_VPFJ50_471000.xml": "2026-11-26T20:00:42.167454+00:00"
 }
 }
