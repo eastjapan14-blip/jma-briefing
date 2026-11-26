@@ -12,7 +12,11 @@
 "url": "https://www.data.jma.go.jp/developer/xml/data/20261126181514_0_VXWW50_471000.xml"
 }
 },
-"topics": {},
+"topics": {
+"大雨・落雷・突風": {
+"沖縄本島": "2026-11-26T18:40:27.663542+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261123200017_0_VPZJ50_010000.xml": "2026-11-23T20:10:34.762704+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261123201044_0_VPCJ50_040000.xml": "2026-11-23T20:20:27.935045+00:00",
@@ -29,6 +33,7 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261126071922_0_VPFJ50_471000.xml": "2026-11-26T07:20:26.553369+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261126072738_0_VPFJ50_473000.xml": "2026-11-26T07:30:37.347946+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261126072934_0_VPCJ50_471000.xml": "2026-11-26T07:30:37.347946+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261126181514_0_VXWW50_471000.xml": "2026-11-26T18:20:37.542892+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261126181514_0_VXWW50_471000.xml": "2026-11-26T18:20:37.542892+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261126183838_0_VPFJ50_471000.xml": "2026-11-26T18:40:27.663542+00:00"
 }
 }
