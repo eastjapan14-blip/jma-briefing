@@ -1,11 +1,7 @@
 {
 "bodies": {},
 "pending": {},
-"topics": {
-"大雨・落雷・突風": {
-"八重山": "2026-11-26T03:00:44.763215+00:00"
-}
-},
+"topics": {},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261123065940_0_VPCJ50_150000.xml": "2026-11-23T07:10:26.865252+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261123072215_0_VPCJ50_040000.xml": "2026-11-23T07:30:40.250235+00:00",
