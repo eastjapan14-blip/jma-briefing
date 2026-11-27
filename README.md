@@ -1,28 +1,25 @@
 # jma-briefing
 
-気象庁の発表を、防災YouTube向けの台本と pptx にする。
+気象庁の発表（防災情報XML・報道発表・公式YouTubeの記者会見）とアメダスの観測記録を見張り、新着を ntfy で iPhone に通知する。全体像は `docs/notify-overview.html`。
+
+2026-11 に動画・スライド制作の機能は削除し、通知だけを残した（過去の制作用スクリプトは git の履歴にある）。
 
 ```
-scripts/fetch_feed.py    防災情報XMLフィードを監視し、動画候補を段階(A/B/C)つきで一覧
-scripts/fetch_report.py  発表XMLを素材Markdown(source.md)に変換
-scripts/fetch_images.py  実況天気図PNG・台風経路図・雨雲レーダーを取得（Chrome headless）
-scripts/fetch_press.py   報道発表資料（本文＋PDF全文）を press.md に。--list で最近の一覧
-scripts/transcribe.py    公式YouTubeの記者会見を mlx-whisper で文字起こし（transcript.md）
+scripts/fetch_feed.py    防災情報XMLフィードを読み、段階（A〜D）を判定する
+scripts/fetch_press.py   報道発表の一覧（notify.py が使う）
 scripts/notify.py        新着候補（XML・報道発表・記者会見動画）を ntfy へ通知
-scripts/deliver.py       pptx と台本を iCloud Drive/jma-briefing へコピー（iPhone の Keynote 用）
-scripts/build_pptx.py    台本(script.md)から16:9のpptxを生成（ナレーションはノート欄）
-record_hunter/           アメダス Record Hunter（記録級の観測値を検出して ntfy へ候補通知）
+record_hunter/           アメダス Record Hunter（記録級の観測値を検出して ntfy へ通知）
 tools/build_etrn_index.py  地点索引（record_hunter/data/etrn_index.json）を一度だけ生成
 tests/                   pytest（Fixture は tests/fixtures/<日付>/）
-material/                素材・台本・pptx（日付_slug ごと）
-state/seen.json          確認済み候補
-.claude/commands/briefing.md   Claude Codeの /briefing コマンド
+docs/notify-overview.html  通知システムの概略図
 ```
+
+公開リポジトリにしているのは、GitHub Actions を無料で10分ごとに動かすため。秘密の値（ntfy のトピック名など）は GitHub の Secrets に置き、リポジトリには書かない。
 
 ## 監視と通知（GitHub Actions + ntfy）
 
 - `.github/workflows/watch.yml` が10分ごとに `scripts/notify.py` を実行し、新しい候補を ntfy.sh のトピックへ送る。Mac の起動は不要。
-- iPhone の ntfy アプリでトピック（GitHub の Secret `NTFY_TOPIC`）を購読する。通知本文に `/briefing <URL>` が入っているので、Claude Code に貼るだけで制作に入れる。
+- iPhone の ntfy アプリでトピック（GitHub の Secret `NTFY_TOPIC`）を購読する。通知本文の末尾に気象庁の原文 URL が入る。
 - 通知の振り分け（`scripts/notify.py`）
   - **即時・1件1通**: 段階A/C/D、全般気象情報、局地的な事象の府県・地方気象情報（例: 1県だけの大雨）
   - **即時・同時分を1通**: 段階Cが同じ実行で同じ事象に複数（線状降水帯直前予測が3県同時など）
@@ -47,7 +44,7 @@ GitHub の schedule に頼らず、外部の cron サービスから `workflow_d
    - Body: `{"ref":"main"}`
 3. GitHub の schedule はそのまま残す（外部 cron が止まったときの保険）。
 
-## アメダス Record Hunter（X 投稿候補の発見）
+## アメダス Record Hunter（観測記録の発見）
 
 気象庁「最新の気象データ」CSV の極値更新フラグから、観測史上1位・月別1位・歴代TOP3級の観測値を拾い、既存の ntfy トピックへ `[記録]` 付きで通知する。判定はすべてコードで行い、自動投稿はしない。設計は `アメダス Record Hunter 開発引き継ぎ書.md`。
 
@@ -65,19 +62,6 @@ python3 -m record_hunter replay --date 2026-09-14       # Fixture から再生�
 python3 -m pytest -q tests
 ```
 
-## セッション構成
+## 依存
 
-| セッション | 役割 |
-|---|---|
-| 監視 | GitHub Actions（Claude 不要） |
-| 制作 | 動画1本ごとに新規セッションで `/briefing <URL>` |
-| 改善 | スクリプトやルールの修正 |
-
-## 1本作る流れ
-
-1. `/briefing 候補` で候補を見る（または `python3 scripts/fetch_feed.py`）
-2. `/briefing <XMLのURL> ...` で素材化 → 図の取得 → 台本 → pptx まで自動
-3. 台本末尾の照合チェック表で数値・地名・時刻を確認する
-4. iPhone の「ファイル」→ iCloud Drive → jma-briefing の pptx を Keynote で開き、ノート欄を読みながら録音して動画に書き出す
-
-依存: Python 3.9+、python-pptx、Pillow、mlx-whisper（`pip3 install --user python-pptx pillow mlx-whisper`）、yt-dlp、ffmpeg、poppler（pdftotext）、Google Chrome（図の取得）
+Python 3.12（標準ライブラリのみ）。テストは pytest。`fetch_press.py` の PDF 本文取得を手元で使うときだけ poppler（pdftotext）が要る。

@@ -162,7 +162,7 @@ def publish(e):
     head = e["content"].splitlines()[0][:140] if e["content"] else ""
     return send({
         "title": f'[{e["tier"]}] {e["title"]}／{e["author"]}',
-        "message": f'{stamp(e)}\n{head}\n\n/briefing {e["url"]}',
+        "message": f'{stamp(e)}\n{head}\n\n{e["url"]}',
         "priority": PRIORITY[e["tier"]],
         "tags": TAGS[e["tier"]],
         "click": e["url"],
@@ -300,7 +300,7 @@ def publish_digest(topic, items, click):
     legend = "◎厳重に警戒 ○警戒 △注意" if any("◎" in l or "○" in l or "△" in l for l in lines) else ""
     return send({
         "title": f"[B] まとめ {topic}{title_tail}",
-        "message": "\n".join(x for x in [f"{len(items)}件 〜{stamp(newest)}", legend] if x) + "\n" + "\n".join(lines) + "\n\n/briefing 候補",
+        "message": "\n".join(x for x in [f"{len(items)}件 〜{stamp(newest)}", legend] if x) + "\n" + "\n".join(lines),
         "priority": 3,
         "tags": ["page_facing_up"],
         "click": click,
@@ -314,7 +314,7 @@ def publish_c_group(title, topic, es):
     newest = max(es, key=when)
     return send({
         "title": f"[C] {topic}／{regions}",
-        "message": f"{len(es)}件 {stamp(newest)}\n{body}\n\n/briefing " + " ".join(e["url"] for e in es),
+        "message": f"{len(es)}件 {stamp(newest)}\n{body}\n\n" + "\n".join(e["url"] for e in es),
         "priority": PRIORITY["C"],
         "tags": TAGS["C"],
         "click": newest["url"],

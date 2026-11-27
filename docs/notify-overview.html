@@ -9,7 +9,7 @@
 <style>
 /* VOICE work: 技術資料。共有相手が初見で全体を掴めること
    IDEA 監視室の系統図。情報源から手元のスマホまでの配線を1枚で見せる
-   PICTURE 情報源→GitHub Actions→ntfy→iPhone→制作の流れ図（2系統）
+   PICTURE 情報源→GitHub Actions→ntfy→iPhone の流れ図（2系統）
    COLOUR 鋼板グレーの図版帯、白地、黒、通知経路だけ警報レッド
    TYPE Inter Tight 800 見出し + Inter / Noto Sans JP 本文
    LAYOUT 結論→全幅の系統図→2系統の比較→段階と届き方→工夫→ファイル→制約 */
@@ -66,7 +66,7 @@ hr{border:0;border-top:1px solid var(--rule);margin:0}
 
 <section class="band"><div class="wrap lead">
   <div>
-    <h1>気象庁の発表を10分ごとに見張り、動画にする価値のある新着だけをスマホへ届ける</h1>
+    <h1>気象庁の発表を10分ごとに見張り、見逃したくない新着だけをスマホへ届ける</h1>
   </div>
   <div>
     <p>気象庁の防災情報XML・報道発表・公式YouTube・アメダスの記録を、GitHub Actions が10分ごとに確認します。段階を判定し、重複や続報を除き、台風のような広域の情報はまとめてから、ntfy で iPhone に通知します。Mac を起動しておく必要はありません。</p>
@@ -79,9 +79,9 @@ hr{border:0;border-top:1px solid var(--rule);margin:0}
 </div></section>
 
 <section class="band diagram"><div class="wrap">
-  <h2>情報源から制作までの流れ</h2>
+  <h2>情報源から通知までの流れ</h2>
   <div class="scroll"><figure>
-  <svg viewBox="0 0 1120 520" role="img" aria-label="気象庁の4つの情報源を、外部cronに起動されたGitHub Actionsの2つの処理が取得して判定し、ntfyを経由してiPhoneへ通知、人が判断してClaude Codeで台本とpptxを作る流れ">
+  <svg viewBox="0 0 1120 520" role="img" aria-label="気象庁の4つの情報源を、外部cronに起動されたGitHub Actionsの2つの処理が取得して判定し、ntfyを経由してiPhoneへ通知し、人が読んで判断する流れ">
     <defs>
       <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
       <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah hot" d="M0,0 L10,5 L0,10 z"/></marker>
@@ -142,16 +142,11 @@ hr{border:0;border-top:1px solid var(--rule);margin:0}
     <text class="t r" x="844" y="222">配信</text>
 
     <rect class="bx" x="900" y="300" width="200" height="50" rx="4"/>
-    <text class="t" x="916" y="330">人が作るかを判断</text>
+    <text class="t" x="916" y="330">人が読んで判断</text>
     <line class="ln" x1="1000" y1="264" x2="1000" y2="298" marker-end="url(#a)"/>
-    <rect class="bx" x="900" y="384" width="200" height="66" rx="4"/>
-    <text class="t b" x="916" y="410">Claude Code</text><text class="t s" x="916" y="432">通知のURLを /briefing に貼る</text>
-    <line class="ln" x1="1000" y1="350" x2="1000" y2="382" marker-end="url(#a)"/>
-    <text class="t s" x="900" y="480">台本と pptx → iCloud →</text><text class="t s" x="900" y="500">iPhone の Keynote で収録</text>
-    <line class="ln" x1="1000" y1="450" x2="1000" y2="464"/>
   </svg>
   </figure></div>
-  <figcaption>赤い線が通知の経路です。上の系統は防災情報（台風・大雨・特別警報・長期予報・記者会見）、下の系統はアメダスの観測記録を扱います。どちらも同じ ntfy トピックに送り、タイトルの先頭で区別します。動画を作るかどうかは人が決め、自動投稿はしません。</figcaption>
+  <figcaption>赤い線が通知の経路です。上の系統は防災情報（台風・大雨・特別警報・長期予報・記者会見）、下の系統はアメダスの観測記録を扱います。どちらも同じ ntfy トピックに送り、タイトルの先頭で区別します。通知を見てどう動くかは人が決め、自動投稿はしません。</figcaption>
 </div></section>
 
 <section class="band"><div class="wrap two">
@@ -161,7 +156,7 @@ hr{border:0;border-top:1px solid var(--rule);margin:0}
       <thead><tr><th></th><th>jma-watch</th><th>record-hunter</th></tr></thead>
       <tbody>
         <tr><td>見るもの</td><td>防災情報XML、報道発表、公式YouTube</td><td>アメダス最新CSV、更新状況ページ</td></tr>
-        <tr><td>拾うもの</td><td>動画の候補になる発表</td><td>観測史上1位・月の1位などの記録</td></tr>
+        <tr><td>拾うもの</td><td>注目すべき発表（段階A〜D）</td><td>観測史上1位・月の1位などの記録</td></tr>
         <tr><td>通知の印</td><td>[A] [B] [C] [D]</td><td>[記録]</td></tr>
         <tr><td>状態の保存</td><td>watch-state ブランチ</td><td>record-hunter-state ブランチ</td></tr>
         <tr><td>処理の本体</td><td>scripts/notify.py</td><td>record_hunter/</td></tr>

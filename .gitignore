@@ -4,3 +4,8 @@ __pycache__/
 .DS_Store
 .rh-state/
 .pytest_cache/
+# 手元だけに残す旧制作用ファイル（2026-11 に制作機能を削除）
+音源/
+完成品/
+.claude/launch.json
+scripts/description_footer.md
