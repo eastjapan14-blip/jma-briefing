@@ -4,7 +4,12 @@
 "気象庁|沖縄県本島北部では、線状降水帯による非常に激しい雨が同じ場所で降り続いています。命に危険が及ぶ災害発生の危険度が急激に高まっています。": "2026-11-26T19:10:25.986327+00:00"
 },
 "pending": {},
-"topics": {},
+"topics": {
+"大雨・落雷・突風": {
+"東北": "2026-11-27T07:00:42.510578+00:00",
+"関東甲信": "2026-11-27T07:00:42.510578+00:00"
+}
+},
 "urls": {
 "https://www.data.jma.go.jp/developer/xml/data/20261124070635_0_VPCJ50_150000.xml": "2026-11-24T07:10:26.356777+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261124070828_0_VPZJ50_010000.xml": "2026-11-24T07:10:26.356777+00:00",
@@ -29,6 +34,8 @@
 "https://www.data.jma.go.jp/developer/xml/data/20261127013323_0_VPCJ50_130000.xml": "2026-11-27T01:40:26.895573+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261127020007_0_VPCJ50_040000.xml": "2026-11-27T02:10:26.422916+00:00",
 "https://www.data.jma.go.jp/developer/xml/data/20261127021842_0_VPZJ50_010000.xml": "2026-11-27T02:20:24.724403+00:00",
-"https://www.data.jma.go.jp/developer/xml/data/20261127032822_0_VPCJ50_471000.xml": "2026-11-27T03:30:38.400231+00:00"
+"https://www.data.jma.go.jp/developer/xml/data/20261127032822_0_VPCJ50_471000.xml": "2026-11-27T03:30:38.400231+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261127065005_0_VPCJ50_040000.xml": "2026-11-27T07:00:42.510578+00:00",
+"https://www.data.jma.go.jp/developer/xml/data/20261127065718_0_VPCJ50_130000.xml": "2026-11-27T07:00:42.510578+00:00"
 }
 }
